@@ -1,0 +1,12 @@
+D:\GoogleDrive\adithyabhatp\uwm\cs838\deployment-archive>azure group create -n group14 -l "eastus"
+info:    Executing command group create
++ Getting resource group group14
++ Creating resource group group14
+info:    Created resource group group14
+data:    Id:                  /subscriptions/863be1c2-81ad-48fa-b54a-3d8e26153cc3/resourceGroups/group14
+data:    Name:                group14
+data:    Location:            eastus
+data:    Provisioning State:  Succeeded
+data:    Tags: null
+data:
+info:    group create command OK

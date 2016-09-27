@@ -29,3 +29,13 @@ Steps after starting vms:
 5. source run.sh
 6. start_all hadoop daemons
 7. to start running hive/mr or hive/tez, use scripts in /workload/hive-tpcds-tpch-workload/. Commands formats can be found in gather_query_data.sh
+
+[adbhat : 27/sep/2016 : 6 am]
+Scripts: In folder p1
+0. on_start_vm1.sh - take a look.
+1. master.h is the main for kicking off the data collection
+	a. Calls collector.sh and fetch.sh
+	b. dump data in gitPath/results/p1
+2. Need to verify gitPath in fetch.sh, *_results.sh
+	a. I think its ~/cs838_bigdata, which is what ive put
+3. Created folder for results in git

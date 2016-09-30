@@ -19,7 +19,7 @@ else
 		jhist_file_loc="/tmp/hadoop-yarn/staging/history"
 fi
 	
-pushd $workload_dir
+cd $workload_dir
 
 ###### BEFORE
 # collects disk and network data
@@ -78,4 +78,4 @@ else
 	echo $output_dir
 fi
 
-popd
+

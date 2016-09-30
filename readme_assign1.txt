@@ -33,9 +33,13 @@ Steps after starting vms:
 [adbhat : 27/sep/2016 : 6 am]
 Scripts: In folder p1
 0. on_start_vm1.sh - take a look.
-1. master.h is the main for kicking off the data collection
+1. master.sh is the main for kicking off the data collection
 	a. Calls collector.sh and fetch.sh
 	b. dump data in gitPath/results/p1
-2. Need to verify gitPath in fetch.sh, *_results.sh
-	a. I think its ~/cs838_bigdata, which is what ive put
-3. Created folder for results in git
+
+Hive :
+/apps/hive/tpcds__.db
+hdfs dfs -h /tmp/tpcds-generate/db_1/50/ - actual data
+
+
+

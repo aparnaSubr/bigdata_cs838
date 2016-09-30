@@ -10,18 +10,18 @@ else
         try_number=$3
 fi
 
-out_dir="/home/ubuntu/bigdata_cs838/results/$2/$1/try_$try_number/"
+out_dir="/home/ubuntu/query_run_output/$2/$1/try_$try_number/"
 
 rm -rf $out_dir/*
 
-scp script.sh vm2:~/scripts
+scp script.sh vm1:~/scripts
 scp script.sh vm3:~/scripts
 scp script.sh vm4:~/scripts
 
 #before
 sh script.sh $1 $2 master before $try_number
 
-ssh vm2 sh ~/scripts/script.sh $1 $2 slave2 before $try_number 
+ssh vm1 sh ~/scripts/script.sh $1 $2 slave1 before $try_number 
 ssh vm3 sh ~/scripts/script.sh $1 $2 slave3 before $try_number 
 ssh vm4 sh ~/scripts/script.sh $1 $2 slave4 before $try_number 
 
@@ -32,10 +32,10 @@ sh script.sh $1 $2 master query $try_number
 #after
 sh script.sh $1 $2 master after $try_number
 
-ssh vm2 sh ~/scripts/script.sh $1 $2 slave2 after $try_number 
+ssh vm1 sh ~/scripts/script.sh $1 $2 slave1 after $try_number 
 ssh vm3 sh ~/scripts/script.sh $1 $2 slave3 after $try_number 
 ssh vm4 sh ~/scripts/script.sh $1 $2 slave4 after $try_number 
 
-scp -r vm2:$out_dir/slave2 $out_dir 
+scp -r vm1:$out_dir/slave1 $out_dir 
 scp -r vm3:$out_dir/slave3 $out_dir 
 scp -r vm4:$out_dir/slave4 $out_dir 

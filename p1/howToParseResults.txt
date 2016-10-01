@@ -1,0 +1,49 @@
+
+1.
+a)
+/u/a/d/adbhat/private/gitRepository/bigdata_cs838/results/71/tez/try_1/master
+tpcds_query71_tez.out:
+Time taken: 404.328 seconds, Fetched: 36951 row(s)
+
+/u/a/d/adbhat/private/gitRepository/bigdata_cs838/results/12/mr/try_1/master
+tpcds_query12_mr.out
+Time taken: 365.424 seconds, Fetched: 36951 row(s)
+
+Last instance of time taken
+
+
+b)
+/u/a/d/adbhat/private/gitRepository/bigdata_cs838/results/71/tez/try_1/master
+diskstats_before_tez
+diskstats_after_tez
+
+dev_before_tez
+dev_after_tez
+split by multiple spaces - line 3 (eth0) and line 4 (lo) col 2 and col 10
+bytes recvd and transmitted
+
+ditto 
+/u/a/d/adbhat/private/gitRepository/bigdata_cs838/results/71/tez/try_1/
+slave2
+slave3
+slave4
+
+diskstats_after_tez
+diskstats_before_tez
+
+split by multiple spaces - 
+lines containing sda | sdb | sdc - cols 6 and 10
+sectors read and written - size 512Bytes
+
+c)
+* Total number of tasks; 
+* Ratio of tasks which aggregates data versus the number of tasks which read data from HDFS; 
+	M/R : Maps and Reduces
+	Tez : every stage which does not have any parent you should consider it as reading from HDFS. All the others are aggregators. 
+* Task distribution over query lifetime.
+
+d)
+DAGS
+
+
+

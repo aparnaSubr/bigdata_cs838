@@ -10,6 +10,9 @@ if [ "$#" -ne 1 ]; then
 	num_tries=1
 fi
 
+rm ~/DONE_CAN_SHUTDOWN_NOW.txt
+
+
 for query_id in "${query_ids[@]}"
 do
 	for i in `seq 1 $num_tries`
@@ -23,3 +26,5 @@ do
 		done
 	done
 done
+
+echo "done. you can shut down vms now." >> ~/DONE_CAN_SHUTDOWN_NOW.txt

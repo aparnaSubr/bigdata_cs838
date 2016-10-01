@@ -67,7 +67,11 @@ else
 	mv $output_dir/dev $output_dir/dev_after_$1
 	mv $output_dir/diskstats $output_dir/diskstats_after_$1
 
-	if [ $3 = "master" ]; then
+	if [ $3 = "master" ]; then		
+		echo "Going to sleep for 60"
+		sleep 60
+		echo "script.sh : master : Listing files in HDFS location " $jhist_file_loc
+		hadoop fs -ls $jhist_file_loc
 		hadoop fs -copyToLocal $jhist_file_loc $output_dir
 		echo "##### Listing contents of output dir after copying from HDFS"
 		ls -al $output_dir

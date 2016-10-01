@@ -20,7 +20,7 @@ else
 fi
 	
 
-echo "##### script.sh $1 $2 $3 $4 $5 START #####\n"
+echo "##### script.sh $1 $2 $3 $4 $5 START #####"
 
 ###### BEFORE
 # collects disk and network data
@@ -38,7 +38,9 @@ if [ $4 = "before" ]; then
 	mkdir -p $output_dir
 
 	if [ $3 = "master" ]; then
+		echo "Deleting " $workload_dir/output
 		rm -rf $workload_dir/output/*
+		echo "Deleting " $jhist_file_loc
 		hadoop fs -rm -r $jhist_file_loc
 	fi
 	

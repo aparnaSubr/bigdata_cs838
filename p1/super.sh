@@ -16,7 +16,9 @@ do
 	do  
 		for type in "${tez_or_mr[@]}"
 		do
-			echo "\n\n Query : ${query_id} Try : ${num_tries} Type : ${type}\n"
+			echo ""
+			echo "\n \n Query : ${query_id} Try : ${num_tries} Type : ${type}\n"
+			echo ""
 			sh master.sh $type $query_id $i
 		done
 	done

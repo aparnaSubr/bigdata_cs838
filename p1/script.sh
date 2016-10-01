@@ -23,7 +23,9 @@ fi
 ###### BEFORE
 # collects disk and network data
 if [ $4 = "before" ]; then
+	echo "Start Clearing Cache"
 	echo "newPass123123$" | sudo -S sh -c "sync; echo 3 > /proc/sys/vm/drop_caches"
+	echo "End Clearing Cache"
 	# deleting .dot file (step: d)
 	if [ $1 = "tez" ]; then
 		echo "deleting files in /mnt/logs/apps/ "
@@ -47,13 +49,15 @@ if [ $4 = "before" ]; then
 elif [ $4 = "query" ]; then
 	if [ $3 = "master" ]; then
 		###### QUERY
+		pushd $workload_dir
 		sh $workload_dir/run_query_hive_$1.sh $2 > $output_dir/cmdoutput_$2.txt
 		cp $workload_dir/output/tpcds_query$2_$1.out $output_dir
+		popd
 	fi
 	
 else 
 	###### AFTER
-	echo "newPass123123$" | sudo -S sh -c "sync; echo 3 > /proc/sys/vm/drop_caches"
+#	echo "newPass123123$" | sudo -S sh -c "sync; echo 3 > /proc/sys/vm/drop_caches"
 
 	cp $dev_file_loc $output_dir
 	cp $diskstats_file_loc $output_dir

@@ -1,7 +1,7 @@
 tez_or_mr=(tez mr)
 
-query_ids=( 12 21 50 71 85 )
-#query_ids=( 12 )
+#query_ids=( 12 21 50 71 85 )
+query_ids=( 12 )
 
 num_tries=$1
 

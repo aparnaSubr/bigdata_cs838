@@ -47,8 +47,8 @@ if [ $4 = "before" ]; then
 elif [ $4 = "query" ]; then
 	if [ $3 = "master" ]; then
 		###### QUERY
-		sh run_query_hive_$1.sh $2 > $output_dir/cmdoutput_$2.txt
-		cp output/tpcds_query$2_$1.out $output_dir
+		sh $workload_dir/run_query_hive_$1.sh $2 > $output_dir/cmdoutput_$2.txt
+		cp $workload_dir/output/tpcds_query$2_$1.out $output_dir
 	fi
 	
 else 
@@ -71,7 +71,7 @@ else
 		cp -rf /mnt/logs/apps/ $output_dir
 	fi
 	
-	chmod -R 777 $output_dir
+	chmod -R 666 $output_dir
 
 	echo "output_dir is ====> "
 	echo $output_dir

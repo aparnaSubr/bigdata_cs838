@@ -26,7 +26,7 @@ ssh vm3 sh ~/scripts/script.sh $1 $2 slave3 before $try_number
 ssh vm4 sh ~/scripts/script.sh $1 $2 slave4 before $try_number 
 
 #query
-echo "Executing query for: $1 query_id=$2 try_num=$3"
+echo "\nExecuting query for: $1 query_id=$2 try_num=$3"
 sh script.sh $1 $2 master query $try_number
 
 #after

@@ -28,7 +28,7 @@ if [ $4 = "before" ]; then
 	echo "End Clearing Cache"
 	# deleting .dot file (step: d)
 	if [ $1 = "tez" ]; then
-		echo "deleting files in /mnt/logs/apps/ "
+		echo "Tez : deleting files in /mnt/logs/apps/ "
 		rm -rf /mnt/logs/apps/*
 	fi
 
@@ -66,7 +66,7 @@ else
 
 	if [ $3 = "master" ]; then
 		hadoop fs -copyToLocal $jhist_file_loc $output_dir
-		echo "###################################"
+		echo "######### Listing contents of output dir"
 		ls -al $output_dir
 	fi
 	
@@ -75,10 +75,10 @@ else
 		cp -rf /mnt/logs/apps/ $output_dir
 	fi
 	
-	chmod -R 666 $output_dir
+	chmod -R 777 $output_dir
 
-	echo "output_dir is ====> "
-	echo $output_dir
+	echo "output_dir is ====>" $output_dir
+	echo "##### script.sh DONE #####\n"
 fi
 
 

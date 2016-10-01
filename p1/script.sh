@@ -20,12 +20,13 @@ else
 fi
 	
 
+echo "##### script.sh $1 $2 $3 $4 $5 START #####\n"
+
 ###### BEFORE
 # collects disk and network data
 if [ $4 = "before" ]; then
-	echo "Start Clearing Cache"
 	echo "newPass123123$" | sudo -S sh -c "sync; echo 3 > /proc/sys/vm/drop_caches"
-	echo "End Clearing Cache"
+	echo "Sudo was for Clearing Cache"
 	# deleting .dot file (step: d)
 	if [ $1 = "tez" ]; then
 		echo "Tez : deleting files in /mnt/logs/apps/ "
@@ -49,10 +50,10 @@ if [ $4 = "before" ]; then
 elif [ $4 = "query" ]; then
 	if [ $3 = "master" ]; then
 		###### QUERY
-		pushd $workload_dir
+		cd $workload_dir
 		sh $workload_dir/run_query_hive_$1.sh $2 > $output_dir/cmdoutput_$2.txt
 		cp $workload_dir/output/tpcds_query$2_$1.out $output_dir
-		popd
+		cd "/home/ubuntu/bigdata_cs838/p1"
 	fi
 	
 else 
@@ -66,19 +67,19 @@ else
 
 	if [ $3 = "master" ]; then
 		hadoop fs -copyToLocal $jhist_file_loc $output_dir
-		echo "######### Listing contents of output dir"
+		echo "##### Listing contents of output dir after copying from HDFS"
 		ls -al $output_dir
 	fi
 	
 	if [ $1 = "tez" ]; then
-		echo "it is tez so copying /mnt/logs/apps/ to output_dir"
+		echo "Tez : so copying /mnt/logs/apps/ to output_dir"
 		cp -rf /mnt/logs/apps/ $output_dir
 	fi
 	
 	chmod -R 777 $output_dir
 
 	echo "output_dir is ====>" $output_dir
-	echo "##### script.sh DONE #####\n"
+	echo "##### script.sh $1 $2 $3 $4 $5 DONE #####\n"
 fi
 
 

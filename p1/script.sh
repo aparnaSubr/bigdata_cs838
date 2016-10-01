@@ -68,8 +68,8 @@ else
 	mv $output_dir/diskstats $output_dir/diskstats_after_$1
 
 	if [ $3 = "master" ]; then		
-		echo "script.sh : Going to sleep for 60"
-		sleep 60
+		echo "script.sh : Going to sleep for 180"
+		sleep 180
 		echo "script.sh : master : Listing files in HDFS location " $jhist_file_loc
 		hadoop fs -ls $jhist_file_loc
 		hadoop fs -copyToLocal $jhist_file_loc $output_dir

@@ -20,7 +20,7 @@ else
 fi
 	
 
-echo "##### script.sh $1 $2 $3 $4 $5 START #####"
+echo "\n##### script.sh $1 $2 $3 $4 $5 START #####"
 
 ###### BEFORE
 # collects disk and network data
@@ -29,7 +29,7 @@ if [ $4 = "before" ]; then
 	echo "Sudo was for Clearing Cache"
 	# deleting .dot file (step: d)
 	if [ $1 = "tez" ]; then
-		echo "Tez : deleting files in /mnt/logs/apps/ "
+		echo "script.sh : Tez : deleting files in /mnt/logs/apps/ "
 		rm -rf /mnt/logs/apps/*
 	fi
 
@@ -38,9 +38,9 @@ if [ $4 = "before" ]; then
 	mkdir -p $output_dir
 
 	if [ $3 = "master" ]; then
-		echo "Deleting " $workload_dir/output
+		echo "script.sh : Deleting " $workload_dir/output
 		rm -rf $workload_dir/output/*
-		echo "Deleting " $jhist_file_loc
+		echo "script.sh : Deleting " $jhist_file_loc
 		hadoop fs -rm -r $jhist_file_loc
 	fi
 	
@@ -68,7 +68,7 @@ else
 	mv $output_dir/diskstats $output_dir/diskstats_after_$1
 
 	if [ $3 = "master" ]; then		
-		echo "Going to sleep for 60"
+		echo "script.sh : Going to sleep for 60"
 		sleep 60
 		echo "script.sh : master : Listing files in HDFS location " $jhist_file_loc
 		hadoop fs -ls $jhist_file_loc
@@ -78,13 +78,13 @@ else
 	fi
 	
 	if [ $1 = "tez" ]; then
-		echo "Tez : so copying /mnt/logs/apps/ to output_dir"
+		echo "script.sh : Tez : so copying /mnt/logs/apps/ to output_dir"
 		cp -rf /mnt/logs/apps/ $output_dir
 	fi
 	
 	chmod -R 777 $output_dir
 
-	echo "output_dir is ====>" $output_dir
+	echo "script.sh : output_dir is ====>" $output_dir
 	echo "##### script.sh $1 $2 $3 $4 $5 DONE #####\n"
 fi
 

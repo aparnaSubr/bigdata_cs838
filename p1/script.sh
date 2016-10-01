@@ -19,7 +19,6 @@ else
 		jhist_file_loc="/tmp/hadoop-yarn/staging/history"
 fi
 	
-pushd $workload_dir
 
 ###### BEFORE
 # collects disk and network data
@@ -36,7 +35,7 @@ if [ $4 = "before" ]; then
 	mkdir -p $output_dir
 
 	if [ $3 = "master" ]; then
-		rm -rf output/*
+		rm -rf $workload_dir/output/*
 		hadoop fs -rm -r $jhist_file_loc
 	fi
 	
@@ -78,4 +77,4 @@ else
 	echo $output_dir
 fi
 
-popd
+

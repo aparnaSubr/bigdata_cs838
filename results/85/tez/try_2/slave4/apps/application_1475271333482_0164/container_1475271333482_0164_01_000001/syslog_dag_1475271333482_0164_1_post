@@ -1,0 +1,45 @@
+2016-10-01 10:57:21,429 INFO [Dispatcher thread: Central] app.DAGAppMaster: Central Dispatcher queue size after DAG completion, before cleanup: 0
+2016-10-01 10:57:21,429 INFO [Dispatcher thread: Central] app.DAGAppMaster: Waiting for next DAG to be submitted.
+2016-10-01 10:57:21,429 INFO [Dispatcher thread: Central] app.DAGAppMaster: Cleaning up DAG: name=ubuntu_20161001104817_1767ddd1-57a4-4c38-b9ae-e36f5cd0a1db:1, with id=dag_1475271333482_0164_1
+2016-10-01 10:57:21,431 INFO [Dispatcher thread: Central] app.DAGAppMaster: Completed cleanup for DAG: name=ubuntu_20161001104817_1767ddd1-57a4-4c38-b9ae-e36f5cd0a1db:1, with id=dag_1475271333482_0164_1
+2016-10-01 10:57:21,542 INFO [IPC Server handler 0 on 44694] client.DAGClientHandler: Received message to shutdown AM
+2016-10-01 10:57:21,542 INFO [IPC Server handler 0 on 44694] rm.TaskSchedulerEventHandler: TaskScheduler notified that it should unregister from RM
+2016-10-01 10:57:21,542 INFO [IPC Server handler 0 on 44694] app.DAGAppMaster: No current running DAG, shutting down the AM
+2016-10-01 10:57:21,542 INFO [IPC Server handler 0 on 44694] app.DAGAppMaster: DAGAppMasterShutdownHandler invoked
+2016-10-01 10:57:21,542 INFO [IPC Server handler 0 on 44694] app.DAGAppMaster: Handling DAGAppMaster shutdown
+2016-10-01 10:57:21,543 INFO [AMShutdownThread] app.DAGAppMaster: Sleeping for 5 seconds before shutting down
+2016-10-01 10:57:26,543 INFO [AMShutdownThread] app.DAGAppMaster: Calling stop for all the services
+2016-10-01 10:57:26,543 INFO [AMShutdownThread] rm.YarnTaskSchedulerService: Initiate stop to YarnTaskScheduler
+2016-10-01 10:57:26,543 INFO [AMShutdownThread] rm.YarnTaskSchedulerService: Release held containers
+2016-10-01 10:57:26,543 INFO [AMShutdownThread] rm.YarnTaskSchedulerService: Remove all the taskRequests
+2016-10-01 10:57:26,544 INFO [AMShutdownThread] history.HistoryEventHandler: Stopping HistoryEventHandler
+2016-10-01 10:57:26,544 INFO [AMShutdownThread] recovery.RecoveryService: Stopping RecoveryService
+2016-10-01 10:57:26,544 INFO [AMShutdownThread] recovery.RecoveryService: Handle the remaining events in queue, queue size=0
+2016-10-01 10:57:26,544 INFO [RecoveryEventHandlingThread] recovery.RecoveryService: EventQueue take interrupted. Returning
+2016-10-01 10:57:26,544 INFO [AMShutdownThread] recovery.RecoveryService: Closing Summary Stream
+2016-10-01 10:57:26,551 WARN [AMShutdownThread] recovery.RecoveryService: Ignoring error while closing summary stream. The recovery directory at hdfs://10.0.0.4:8020/tmp/hive/ubuntu/_tez_session_dir/71bc1195-153b-4030-bca1-2c2e3e5417c5/.tez/application_1475271333482_0164/recovery/1 has already been deleted externally
+2016-10-01 10:57:26,551 INFO [AMShutdownThread] impl.SimpleHistoryLoggingService: Stopping SimpleHistoryLoggingService, eventQueueBacklog=0
+2016-10-01 10:57:26,551 INFO [HistoryEventHandlingThread] impl.SimpleHistoryLoggingService: EventQueue take interrupted. Returning
+2016-10-01 10:57:26,963 INFO [DelayedContainerManager] rm.YarnTaskSchedulerService: AllocatedContainerManager Thread interrupted
+2016-10-01 10:57:26,965 INFO [AMShutdownThread] rm.YarnTaskSchedulerService: Unregistering application from RM, exitStatus=SUCCEEDED, exitMessage=Session stats:submittedDAGs=1, successfulDAGs=1, failedDAGs=0, killedDAGs=0
+, trackingURL=
+2016-10-01 10:57:26,998 INFO [AMShutdownThread] impl.AMRMClientImpl: Waiting for application to be successfully unregistered.
+2016-10-01 10:57:27,100 INFO [AMShutdownThread] rm.YarnTaskSchedulerService: Successfully unregistered application from RM
+2016-10-01 10:57:27,100 INFO [AMRM Callback Handler Thread] impl.AMRMClientAsyncImpl: Interrupted while waiting for queue
+java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2017)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2052)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+	at org.apache.hadoop.yarn.client.api.async.impl.AMRMClientAsyncImpl$CallbackHandlerThread.run(AMRMClientAsyncImpl.java:274)
+2016-10-01 10:57:27,111 INFO [AMShutdownThread] mortbay.log: Stopped HttpServer2$SelectChannelConnectorWithSafeStartup@0.0.0.0:0
+2016-10-01 10:57:27,113 INFO [AMShutdownThread] ipc.Server: Stopping server on 43890
+2016-10-01 10:57:27,116 INFO [IPC Server listener on 43890] ipc.Server: Stopping IPC Server listener on 43890
+2016-10-01 10:57:27,116 INFO [IPC Server Responder] ipc.Server: Stopping IPC Server Responder
+2016-10-01 10:57:27,120 INFO [AMShutdownThread] ipc.Server: Stopping server on 44694
+2016-10-01 10:57:27,120 INFO [IPC Server listener on 44694] ipc.Server: Stopping IPC Server listener on 44694
+2016-10-01 10:57:27,120 INFO [IPC Server Responder] ipc.Server: Stopping IPC Server Responder
+2016-10-01 10:57:27,125 INFO [Thread-2] app.DAGAppMaster: DAGAppMasterShutdownHook invoked
+2016-10-01 10:57:27,125 INFO [Thread-2] app.DAGAppMaster: The shutdown handler is still running, waiting for it to complete
+2016-10-01 10:57:27,127 WARN [AMShutdownThread] app.DAGAppMaster: Failed to delete tez scratch data dir, path=hdfs://10.0.0.4:8020/tmp/hive/ubuntu/_tez_session_dir/71bc1195-153b-4030-bca1-2c2e3e5417c5/.tez/application_1475271333482_0164
+2016-10-01 10:57:27,127 INFO [AMShutdownThread] app.DAGAppMaster: Exiting DAGAppMaster..GoodBye!
+2016-10-01 10:57:27,127 INFO [Thread-2] app.DAGAppMaster: The shutdown handler has completed

@@ -1,0 +1,146 @@
+
+Logging initialized using configuration in jar:file:/home/ubuntu/software/hive-1.2.1/lib/hive-common-1.2.1.jar!/hive-log4j.properties
+Hive history file=/tmp/ubuntu/hive_job_log_bc64851a-3ba9-4b49-b62d-97a336c105f1_977323809.txt
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/home/ubuntu/software/tez-0.7.1-SNAPSHOT-minimal/lib/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/home/ubuntu/software/hadoop-2.6.0/share/hadoop/common/lib/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+OK
+Time taken: 1.043 seconds
+Query ID = ubuntu_20161001070020_6810d734-4df5-4c25-9bf3-cfbc488d6c16
+Total jobs = 8
+Stage-16 is selected by condition resolver.
+Stage-1 is filtered out by condition resolver.
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/home/ubuntu/software/tez-0.7.1-SNAPSHOT-minimal/lib/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/home/ubuntu/software/hadoop-2.6.0/share/hadoop/common/lib/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+Execution log at: /tmp/ubuntu/ubuntu_20161001070020_6810d734-4df5-4c25-9bf3-cfbc488d6c16.log
+2016-10-01 07:00:27	Starting to launch local task to process map join;	maximum memory = 932184064
+2016-10-01 07:00:29	Dump the side-table for tag: 1 with group count: 18445 into file: file:/tmp/ubuntu/bc64851a-3ba9-4b49-b62d-97a336c105f1/hive_2016-10-01_07-00-20_865_1035737831911712109-1/-local-10012/HashTable-Stage-11/MapJoin-mapfile21--.hashtable
+2016-10-01 07:00:29	Uploaded 1 File to: file:/tmp/ubuntu/bc64851a-3ba9-4b49-b62d-97a336c105f1/hive_2016-10-01_07-00-20_865_1035737831911712109-1/-local-10012/HashTable-Stage-11/MapJoin-mapfile21--.hashtable (2960337 bytes)
+2016-10-01 07:00:29	End of local task; Time Taken: 2.39 sec.
+Execution completed successfully
+MapredLocal task succeeded
+Launching Job 2 out of 8
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1475271333482_0070, Tracking URL = http://vm1:8088/proxy/application_1475271333482_0070/
+Kill Command = /home/ubuntu/software/hadoop-2.6.0/bin/hadoop job  -kill job_1475271333482_0070
+Hadoop job information for Stage-11: number of mappers: 26; number of reducers: 0
+2016-10-01 07:00:39,496 Stage-11 map = 0%,  reduce = 0%
+2016-10-01 07:00:53,128 Stage-11 map = 3%,  reduce = 0%, Cumulative CPU 77.18 sec
+2016-10-01 07:00:58,353 Stage-11 map = 5%,  reduce = 0%, Cumulative CPU 91.83 sec
+2016-10-01 07:00:59,395 Stage-11 map = 30%,  reduce = 0%, Cumulative CPU 103.63 sec
+2016-10-01 07:01:01,484 Stage-11 map = 32%,  reduce = 0%, Cumulative CPU 105.28 sec
+2016-10-01 07:01:02,525 Stage-11 map = 34%,  reduce = 0%, Cumulative CPU 117.78 sec
+2016-10-01 07:01:06,651 Stage-11 map = 41%,  reduce = 0%, Cumulative CPU 132.21 sec
+2016-10-01 07:01:07,688 Stage-11 map = 56%,  reduce = 0%, Cumulative CPU 138.98 sec
+2016-10-01 07:01:08,733 Stage-11 map = 62%,  reduce = 0%, Cumulative CPU 141.01 sec
+2016-10-01 07:01:15,031 Stage-11 map = 65%,  reduce = 0%, Cumulative CPU 144.45 sec
+2016-10-01 07:01:16,067 Stage-11 map = 66%,  reduce = 0%, Cumulative CPU 160.03 sec
+2016-10-01 07:01:18,139 Stage-11 map = 67%,  reduce = 0%, Cumulative CPU 191.84 sec
+2016-10-01 07:01:20,211 Stage-11 map = 69%,  reduce = 0%, Cumulative CPU 195.96 sec
+2016-10-01 07:01:21,253 Stage-11 map = 71%,  reduce = 0%, Cumulative CPU 199.3 sec
+2016-10-01 07:01:22,289 Stage-11 map = 77%,  reduce = 0%, Cumulative CPU 201.66 sec
+2016-10-01 07:01:23,324 Stage-11 map = 79%,  reduce = 0%, Cumulative CPU 203.95 sec
+2016-10-01 07:01:24,364 Stage-11 map = 81%,  reduce = 0%, Cumulative CPU 206.75 sec
+2016-10-01 07:01:25,403 Stage-11 map = 85%,  reduce = 0%, Cumulative CPU 211.59 sec
+2016-10-01 07:01:26,436 Stage-11 map = 86%,  reduce = 0%, Cumulative CPU 213.71 sec
+2016-10-01 07:01:28,502 Stage-11 map = 91%,  reduce = 0%, Cumulative CPU 219.0 sec
+2016-10-01 07:01:29,537 Stage-11 map = 95%,  reduce = 0%, Cumulative CPU 221.61 sec
+2016-10-01 07:01:30,568 Stage-11 map = 97%,  reduce = 0%, Cumulative CPU 222.2 sec
+2016-10-01 07:01:32,626 Stage-11 map = 99%,  reduce = 0%, Cumulative CPU 225.05 sec
+2016-10-01 07:01:33,662 Stage-11 map = 100%,  reduce = 0%, Cumulative CPU 225.36 sec
+MapReduce Total cumulative CPU time: 3 minutes 45 seconds 360 msec
+Ended Job = job_1475271333482_0070
+Stage-14 is selected by condition resolver.
+Stage-15 is filtered out by condition resolver.
+Stage-2 is filtered out by condition resolver.
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/home/ubuntu/software/tez-0.7.1-SNAPSHOT-minimal/lib/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/home/ubuntu/software/hadoop-2.6.0/share/hadoop/common/lib/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+Execution log at: /tmp/ubuntu/ubuntu_20161001070020_6810d734-4df5-4c25-9bf3-cfbc488d6c16.log
+2016-10-01 07:01:39	Starting to launch local task to process map join;	maximum memory = 932184064
+2016-10-01 07:01:41	Dump the side-table for tag: 1 with group count: 31 into file: file:/tmp/ubuntu/bc64851a-3ba9-4b49-b62d-97a336c105f1/hive_2016-10-01_07-00-20_865_1035737831911712109-1/-local-10008/HashTable-Stage-8/MapJoin-mapfile01--.hashtable
+2016-10-01 07:01:41	Uploaded 1 File to: file:/tmp/ubuntu/bc64851a-3ba9-4b49-b62d-97a336c105f1/hive_2016-10-01_07-00-20_865_1035737831911712109-1/-local-10008/HashTable-Stage-8/MapJoin-mapfile01--.hashtable (1288 bytes)
+2016-10-01 07:01:41	End of local task; Time Taken: 2.823 sec.
+Execution completed successfully
+MapredLocal task succeeded
+Launching Job 4 out of 8
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1475271333482_0071, Tracking URL = http://vm1:8088/proxy/application_1475271333482_0071/
+Kill Command = /home/ubuntu/software/hadoop-2.6.0/bin/hadoop job  -kill job_1475271333482_0071
+Hadoop job information for Stage-8: number of mappers: 7; number of reducers: 0
+2016-10-01 07:01:48,699 Stage-8 map = 0%,  reduce = 0%
+2016-10-01 07:01:56,032 Stage-8 map = 14%,  reduce = 0%, Cumulative CPU 4.11 sec
+2016-10-01 07:01:59,141 Stage-8 map = 43%,  reduce = 0%, Cumulative CPU 20.55 sec
+2016-10-01 07:02:00,181 Stage-8 map = 65%,  reduce = 0%, Cumulative CPU 38.42 sec
+2016-10-01 07:02:01,220 Stage-8 map = 72%,  reduce = 0%, Cumulative CPU 44.23 sec
+2016-10-01 07:02:02,261 Stage-8 map = 86%,  reduce = 0%, Cumulative CPU 48.45 sec
+2016-10-01 07:02:03,294 Stage-8 map = 100%,  reduce = 0%, Cumulative CPU 52.84 sec
+MapReduce Total cumulative CPU time: 52 seconds 840 msec
+Ended Job = job_1475271333482_0071
+Launching Job 5 out of 8
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1475271333482_0072, Tracking URL = http://vm1:8088/proxy/application_1475271333482_0072/
+Kill Command = /home/ubuntu/software/hadoop-2.6.0/bin/hadoop job  -kill job_1475271333482_0072
+Hadoop job information for Stage-3: number of mappers: 4; number of reducers: 1
+2016-10-01 07:02:09,685 Stage-3 map = 0%,  reduce = 0%
+2016-10-01 07:02:17,980 Stage-3 map = 75%,  reduce = 0%, Cumulative CPU 6.31 sec
+2016-10-01 07:02:19,016 Stage-3 map = 100%,  reduce = 0%, Cumulative CPU 9.54 sec
+2016-10-01 07:02:25,203 Stage-3 map = 100%,  reduce = 100%, Cumulative CPU 12.58 sec
+MapReduce Total cumulative CPU time: 12 seconds 580 msec
+Ended Job = job_1475271333482_0072
+Launching Job 6 out of 8
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1475271333482_0073, Tracking URL = http://vm1:8088/proxy/application_1475271333482_0073/
+Kill Command = /home/ubuntu/software/hadoop-2.6.0/bin/hadoop job  -kill job_1475271333482_0073
+Hadoop job information for Stage-4: number of mappers: 1; number of reducers: 1
+2016-10-01 07:02:31,066 Stage-4 map = 0%,  reduce = 0%
+2016-10-01 07:02:37,244 Stage-4 map = 100%,  reduce = 0%, Cumulative CPU 2.14 sec
+2016-10-01 07:02:43,414 Stage-4 map = 100%,  reduce = 100%, Cumulative CPU 5.51 sec
+MapReduce Total cumulative CPU time: 5 seconds 510 msec
+Ended Job = job_1475271333482_0073
+Launching Job 7 out of 8
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1475271333482_0074, Tracking URL = http://vm1:8088/proxy/application_1475271333482_0074/
+Kill Command = /home/ubuntu/software/hadoop-2.6.0/bin/hadoop job  -kill job_1475271333482_0074
+Hadoop job information for Stage-5: number of mappers: 1; number of reducers: 1
+2016-10-01 07:02:50,225 Stage-5 map = 0%,  reduce = 0%
+2016-10-01 07:02:56,409 Stage-5 map = 100%,  reduce = 0%, Cumulative CPU 2.11 sec
+2016-10-01 07:03:02,614 Stage-5 map = 100%,  reduce = 100%, Cumulative CPU 3.94 sec
+MapReduce Total cumulative CPU time: 3 seconds 940 msec
+Ended Job = job_1475271333482_0074
+MapReduce Jobs Launched: 
+Stage-Stage-11: Map: 26   Cumulative CPU: 225.36 sec   HDFS Read: 7607676612 HDFS Write: 1850142725 SUCCESS
+Stage-Stage-8: Map: 7   Cumulative CPU: 52.84 sec   HDFS Read: 1850232868 HDFS Write: 8225027 SUCCESS
+Stage-Stage-3: Map: 4  Reduce: 1   Cumulative CPU: 12.58 sec   HDFS Read: 8239541 HDFS Write: 1533078 SUCCESS
+Stage-Stage-4: Map: 1  Reduce: 1   Cumulative CPU: 5.51 sec   HDFS Read: 1541795 HDFS Write: 1607722 SUCCESS
+Stage-Stage-5: Map: 1  Reduce: 1   Cumulative CPU: 3.94 sec   HDFS Read: 1613875 HDFS Write: 18517 SUCCESS
+Total MapReduce CPU Time Spent: 5 minutes 0 seconds 230 msec
+OK
+Time taken: 162.846 seconds, Fetched: 100 row(s)
+38.42user 3.72system 2:50.27elapsed 24%CPU (0avgtext+0avgdata 738988maxresident)k
+113968inputs+314448outputs (110major+165625minor)pagefaults 0swaps

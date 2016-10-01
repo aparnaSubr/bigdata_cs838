@@ -1,0 +1,569 @@
+2016-10-01 11:11:02,444 INFO [main] task.TezChild: Refreshing UGI since Credentials have changed
+2016-10-01 11:11:02,445 INFO [main] task.TezChild: Credentials : #Tokens=1, #SecretKeys=0
+2016-10-01 11:11:02,445 INFO [main] task.TezChild: Localizing additional local resources for Task : {}
+2016-10-01 11:11:02,452 INFO [main] task.TezChild: Done localizing additional resources
+2016-10-01 11:11:02,496 INFO [main] metrics.TaskCounterUpdater:  Using ResourceCalculatorProcessTree : org.apache.tez.util.TezMxBeanResourceCalculator@3168b672
+2016-10-01 11:11:02,496 INFO [main] runtime.LogicalIOProcessorRuntimeTask: Initializing LogicalIOProcessorRuntimeTask with TaskSpec: DAGName : ubuntu_20161001111033_202e5e0c-2e03-4130-ab80-b940201376f1:1, VertexName: Map 1, VertexParallelism: 50, TaskAttemptID:attempt_1475271333482_0173_1_04_000005_0, processorName=org.apache.hadoop.hive.ql.exec.tez.MapTezProcessor, inputSpecListSize=3, outputSpecListSize=1, inputSpecList=[{{ sourceVertexName=web_sales, physicalEdgeCount=1, inputClassName=org.apache.tez.mapreduce.input.MRInputLegacy }}, {{ sourceVertexName=Map 7, physicalEdgeCount=13, inputClassName=org.apache.tez.runtime.library.input.UnorderedKVInput }}, {{ sourceVertexName=Map 8, physicalEdgeCount=1, inputClassName=org.apache.tez.runtime.library.input.UnorderedKVInput }}, ], outputSpecList=[{{ destinationVertexName=Reducer 2, physicalEdgeCount=3, outputClassName=org.apache.tez.runtime.library.output.OrderedPartitionedKVOutput }}, ]
+2016-10-01 11:11:02,510 INFO [main] resources.MemoryDistributor: InitialMemoryDistributor (isEnabled=true) invoked with: numInputs=3, numOutputs=1, JVM.maxFree=4287627264
+2016-10-01 11:11:02,530 INFO [TezChild] task.TezTaskRunner: Initializing task, taskAttemptId=attempt_1475271333482_0173_1_04_000005_0
+2016-10-01 11:11:02,530 INFO [TezChild] runtime.LogicalIOProcessorRuntimeTask: Initializing LogicalProcessorIORuntimeTask
+2016-10-01 11:11:02,530 INFO [TezChild] runtime.LogicalIOProcessorRuntimeTask: Creating processor, processorClassName=org.apache.hadoop.hive.ql.exec.tez.MapTezProcessor
+2016-10-01 11:11:02,553 INFO [TaskHeartbeatThread] task.TaskReporter: Routing events from heartbeat response to task, currentTaskAttemptId=attempt_1475271333482_0173_1_04_000005_0, eventCount=10 fromEventId=0 nextFromEventId=9
+2016-10-01 11:11:02,554 INFO [Initializer 0] runtime.LogicalIOProcessorRuntimeTask: Initializing Input using InputSpec: { sourceVertexName=web_sales, physicalEdgeCount=1, inputClassName=org.apache.tez.mapreduce.input.MRInputLegacy }
+2016-10-01 11:11:02,557 INFO [Initializer 0] runtime.LogicalIOProcessorRuntimeTask: Creating Input
+2016-10-01 11:11:02,564 INFO [Initializer 0] runtime.LogicalIOProcessorRuntimeTask: Initializing Input with src edge: web_sales
+2016-10-01 11:11:02,566 INFO [Initializer 0] resources.MemoryDistributor$RequestorInfo: Received request: 0, type: INPUT, componentVertexName: web_sales
+2016-10-01 11:11:02,570 INFO [Initializer 1] runtime.LogicalIOProcessorRuntimeTask: Initializing Input using InputSpec: { sourceVertexName=Map 7, physicalEdgeCount=13, inputClassName=org.apache.tez.runtime.library.input.UnorderedKVInput }
+2016-10-01 11:11:02,570 INFO [Initializer 1] runtime.LogicalIOProcessorRuntimeTask: Creating Input
+2016-10-01 11:11:02,580 INFO [Initializer 1] runtime.LogicalIOProcessorRuntimeTask: Initializing Input with src edge: Map 7
+2016-10-01 11:11:02,586 INFO [Initializer 2] runtime.LogicalIOProcessorRuntimeTask: Initializing Input using InputSpec: { sourceVertexName=Map 8, physicalEdgeCount=1, inputClassName=org.apache.tez.runtime.library.input.UnorderedKVInput }
+2016-10-01 11:11:02,586 INFO [Initializer 2] runtime.LogicalIOProcessorRuntimeTask: Creating Input
+2016-10-01 11:11:02,586 INFO [Initializer 2] runtime.LogicalIOProcessorRuntimeTask: Initializing Input with src edge: Map 8
+2016-10-01 11:11:02,593 INFO [Initializer 2] resources.MemoryDistributor$RequestorInfo: Received request: 1503238528, type: INPUT, componentVertexName: Map 8
+2016-10-01 11:11:02,594 INFO [Initializer 1] resources.MemoryDistributor$RequestorInfo: Received request: 1503238528, type: INPUT, componentVertexName: Map 7
+2016-10-01 11:11:02,597 INFO [TezChild] runtime.LogicalIOProcessorRuntimeTask: Initializing processor, processorClassName=org.apache.hadoop.hive.ql.exec.tez.MapTezProcessor
+2016-10-01 11:11:02,598 INFO [TezChild] log.PerfLogger: <PERFLOG method=TezInitializeProcessor from=org.apache.hadoop.hive.ql.exec.tez.TezProcessor>
+2016-10-01 11:11:02,618 INFO [Initializer 2] counters.Limits: Counter limits initialized with parameters:  GROUP_NAME_MAX=256, MAX_GROUPS=500, COUNTER_NAME_MAX=64, MAX_COUNTERS=1200
+2016-10-01 11:11:02,621 INFO [Initializer 1] runtime.LogicalIOProcessorRuntimeTask: Initialized Input with src edge: Map 7
+2016-10-01 11:11:02,621 INFO [Initializer 2] runtime.LogicalIOProcessorRuntimeTask: Initialized Input with src edge: Map 8
+2016-10-01 11:11:02,618 INFO [Initializer 3] runtime.LogicalIOProcessorRuntimeTask: Initializing Output using OutputSpec: { destinationVertexName=Reducer 2, physicalEdgeCount=3, outputClassName=org.apache.tez.runtime.library.output.OrderedPartitionedKVOutput }
+2016-10-01 11:11:02,623 INFO [Initializer 3] runtime.LogicalIOProcessorRuntimeTask: Creating Output
+2016-10-01 11:11:02,629 INFO [Initializer 3] runtime.LogicalIOProcessorRuntimeTask: Initializing Output with dest edge: Reducer 2
+2016-10-01 11:11:02,633 INFO [TezChild] Configuration.deprecation: mapred.committer.job.setup.cleanup.needed is deprecated. Instead, use mapreduce.job.committer.setup.cleanup.needed
+2016-10-01 11:11:02,649 INFO [Initializer 3] impl.ExternalSorter: Requested SortBufferSize (tez.runtime.io.sort.mb): 1024
+2016-10-01 11:11:02,649 INFO [Initializer 3] resources.MemoryDistributor$RequestorInfo: Received request: 1073741824, type: OUTPUT, componentVertexName: Reducer 2
+2016-10-01 11:11:02,649 INFO [Initializer 3] runtime.LogicalIOProcessorRuntimeTask: Initialized Output with dest edge: Reducer 2
+2016-10-01 11:11:02,650 INFO [TezChild] Configuration.deprecation: mapred.input.dir.recursive is deprecated. Instead, use mapreduce.input.fileinputformat.input.dir.recursive
+2016-10-01 11:11:02,673 INFO [TezChild] Configuration.deprecation: mapred.task.id is deprecated. Instead, use mapreduce.task.attempt.id
+2016-10-01 11:11:02,673 INFO [TezChild] Configuration.deprecation: mapred.task.partition is deprecated. Instead, use mapreduce.task.partition
+2016-10-01 11:11:02,674 INFO [TezChild] log.PerfLogger: </PERFLOG method=TezInitializeProcessor start=1475320262597 end=1475320262673 duration=76 from=org.apache.hadoop.hive.ql.exec.tez.TezProcessor>
+2016-10-01 11:11:02,674 INFO [TezChild] runtime.LogicalIOProcessorRuntimeTask: Initialized processor, processorClassName=org.apache.hadoop.hive.ql.exec.tez.MapTezProcessor
+2016-10-01 11:11:02,674 INFO [TezChild] runtime.LogicalIOProcessorRuntimeTask: Waiting for 4 initializers to finish
+2016-10-01 11:11:02,674 INFO [TezChild] runtime.LogicalIOProcessorRuntimeTask: Waiting for 3 initializers to finish
+2016-10-01 11:11:02,674 INFO [TezChild] runtime.LogicalIOProcessorRuntimeTask: Waiting for 2 initializers to finish
+2016-10-01 11:11:02,674 INFO [TezChild] runtime.LogicalIOProcessorRuntimeTask: Waiting for 1 initializers to finish
+2016-10-01 11:11:02,690 INFO [Initializer 0] input.MRInput: Using New mapreduce API: false, split information via event: true
+2016-10-01 11:11:02,690 INFO [Initializer 0] input.MRInputLegacy: MRInputLegacy deferring initialization
+2016-10-01 11:11:02,690 INFO [Initializer 0] runtime.LogicalIOProcessorRuntimeTask: Initialized Input with src edge: web_sales
+2016-10-01 11:11:02,690 INFO [TezChild] runtime.LogicalIOProcessorRuntimeTask: All initializers finished
+2016-10-01 11:11:02,700 INFO [TezChild] resources.MemoryDistributor: Using Allocator class: org.apache.tez.runtime.library.resources.WeightedScalingMemoryDistributor
+2016-10-01 11:11:02,711 INFO [TezChild] resources.WeightedScalingMemoryDistributor: Falling back to RequestType.OTHER for class: org.apache.tez.mapreduce.input.MRInputLegacy
+2016-10-01 11:11:02,711 INFO [TezChild] resources.WeightedScalingMemoryDistributor: ScaleFactor: 1, for type: OTHER
+2016-10-01 11:11:02,711 INFO [TezChild] resources.WeightedScalingMemoryDistributor: ScaleFactor: 1, for type: UNSORTED_INPUT
+2016-10-01 11:11:02,711 INFO [TezChild] resources.WeightedScalingMemoryDistributor: ScaleFactor: 1, for type: UNSORTED_INPUT
+2016-10-01 11:11:02,711 INFO [TezChild] resources.WeightedScalingMemoryDistributor: ScaleFactor: 12, for type: SORTED_OUTPUT
+2016-10-01 11:11:02,711 INFO [TezChild] resources.WeightedScalingMemoryDistributor: InitialReservationFraction=0.3, AdditionalReservationFractionForIOs=0.06, finalReserveFractionUsed=0.36
+2016-10-01 11:11:02,712 INFO [TezChild] resources.WeightedScalingMemoryDistributor: Scaling Requests. NumRequests: 4, numScaledRequests: 15, TotalRequested: 4080218880, TotalRequestedScaled: 1.0594252629333334E9, TotalJVMHeap: 4287627264, TotalAvailable: 2744081448, TotalRequested/TotalJVMHeap:0.95
+2016-10-01 11:11:02,712 INFO [TezChild] resources.MemoryDistributor: Informing: INPUT, web_sales, org.apache.tez.mapreduce.input.MRInputLegacy: requested=0, allocated=0
+2016-10-01 11:11:02,712 INFO [TezChild] resources.MemoryDistributor: Informing: INPUT, Map 8, org.apache.tez.runtime.library.input.UnorderedKVInput: requested=1503238528, allocated=259575268
+2016-10-01 11:11:02,712 INFO [TezChild] resources.MemoryDistributor: Informing: INPUT, Map 7, org.apache.tez.runtime.library.input.UnorderedKVInput: requested=1503238528, allocated=259575268
+2016-10-01 11:11:02,712 INFO [TezChild] resources.MemoryDistributor: Informing: OUTPUT, Reducer 2, org.apache.tez.runtime.library.output.OrderedPartitionedKVOutput: requested=1073741824, allocated=1073741824
+2016-10-01 11:11:02,712 INFO [TezChild] runtime.LogicalIOProcessorRuntimeTask: Starting Inputs/Outputs
+2016-10-01 11:11:02,713 INFO [Initializer 0] runtime.LogicalIOProcessorRuntimeTask: Starting Input with src edge: web_sales
+2016-10-01 11:11:02,713 INFO [Initializer 0] input.MRInput: MRInput setup to received 1 events
+2016-10-01 11:11:02,713 INFO [Initializer 0] runtime.LogicalIOProcessorRuntimeTask: Started Input with src edge: web_sales
+2016-10-01 11:11:02,713 INFO [TezChild] runtime.LogicalIOProcessorRuntimeTask: Input: web_sales being auto started by the framework. Subsequent instances will not be auto-started
+2016-10-01 11:11:02,714 INFO [Initializer 2] runtime.LogicalIOProcessorRuntimeTask: Starting Input with src edge: Map 7
+2016-10-01 11:11:02,716 INFO [Initializer 2] impl.SimpleFetchedInputAllocator: RequestedMem=1503238528, Allocated: 259575268
+2016-10-01 11:11:02,717 INFO [Initializer 2] impl.SimpleFetchedInputAllocator: SimpleInputManager -> MemoryLimit: 259575268, maxSingleMemLimit: 64893816
+2016-10-01 11:11:02,725 INFO [TezChild] runtime.LogicalIOProcessorRuntimeTask: Input: Map 7 being auto started by the framework. Subsequent instances will not be auto-started
+2016-10-01 11:11:02,726 INFO [Initializer 3] runtime.LogicalIOProcessorRuntimeTask: Starting Input with src edge: Map 8
+2016-10-01 11:11:02,726 INFO [Initializer 3] impl.SimpleFetchedInputAllocator: RequestedMem=1503238528, Allocated: 259575268
+2016-10-01 11:11:02,726 INFO [Initializer 3] impl.SimpleFetchedInputAllocator: SimpleInputManager -> MemoryLimit: 259575268, maxSingleMemLimit: 64893816
+2016-10-01 11:11:02,726 INFO [TezChild] runtime.LogicalIOProcessorRuntimeTask: Input: Map 8 being auto started by the framework. Subsequent instances will not be auto-started
+2016-10-01 11:11:02,727 INFO [TezChild] runtime.LogicalIOProcessorRuntimeTask: Num IOs determined for AutoStart: 3
+2016-10-01 11:11:02,727 INFO [TezChild] runtime.LogicalIOProcessorRuntimeTask: Waiting for 3 IOs to start
+2016-10-01 11:11:02,727 INFO [TezChild] runtime.LogicalIOProcessorRuntimeTask: Waiting for 2 IOs to start
+2016-10-01 11:11:02,807 INFO [Initializer 3] impl.ShuffleManager: ShuffleManager : numInputs=1, compressionCodec=NoCompressionCodec, numFetchers=1, ifileBufferSize=4096, ifileReadAheadEnabled=true, ifileReadAheadLength=4194304, localDiskFetchEnabled=true, sharedFetchEnabled=false, keepAlive=false, keepAliveMaxConnections=20, connectionTimeout=180000, readTimeout=180000, bufferSize=8192, sslShuffle=false, maxTaskOutputAtOnce=20
+2016-10-01 11:11:02,809 INFO [Initializer 2] impl.ShuffleManager: ShuffleManager : numInputs=13, compressionCodec=NoCompressionCodec, numFetchers=5, ifileBufferSize=4096, ifileReadAheadEnabled=true, ifileReadAheadLength=4194304, localDiskFetchEnabled=true, sharedFetchEnabled=false, keepAlive=false, keepAliveMaxConnections=20, connectionTimeout=180000, readTimeout=180000, bufferSize=8192, sslShuffle=false, maxTaskOutputAtOnce=20
+2016-10-01 11:11:02,818 INFO [Initializer 2] runtime.LogicalIOProcessorRuntimeTask: Started Input with src edge: Map 7
+2016-10-01 11:11:02,818 INFO [TezChild] runtime.LogicalIOProcessorRuntimeTask: Waiting for 1 IOs to start
+2016-10-01 11:11:02,818 INFO [Initializer 3] runtime.LogicalIOProcessorRuntimeTask: Started Input with src edge: Map 8
+2016-10-01 11:11:02,818 INFO [TezChild] runtime.LogicalIOProcessorRuntimeTask: AutoStartComplete
+2016-10-01 11:11:02,819 INFO [TezChild] task.TezTaskRunner: Running task, taskAttemptId=attempt_1475271333482_0173_1_04_000005_0
+2016-10-01 11:11:02,819 INFO [TezChild] log.PerfLogger: <PERFLOG method=TezRunProcessor from=org.apache.hadoop.hive.ql.exec.tez.TezProcessor>
+2016-10-01 11:11:02,820 INFO [TezChild] tez.TezProcessor: Running task: attempt_1475271333482_0173_1_04_000005_0_10001
+2016-10-01 11:11:02,823 INFO [TezTaskEventRouter[attempt_1475271333482_0173_1_04_000005_0]] impl.ShuffleInputEventHandlerImpl: DME srcIdx: 0, targetIndex: 4, attemptNum: 0, payload: [host: vm1, port: 13562, pathComponent: attempt_1475271333482_0173_1_02_000004_0_10002, runDuration: 0]
+2016-10-01 11:11:02,826 INFO [TezTaskEventRouter[attempt_1475271333482_0173_1_04_000005_0]] impl.ShuffleInputEventHandlerImpl: DME srcIdx: 0, targetIndex: 0, attemptNum: 0, payload: [host: vm1, port: 13562, pathComponent: attempt_1475271333482_0173_1_02_000000_0_10003, runDuration: 0]
+2016-10-01 11:11:02,829 INFO [ShuffleRunner [Map_7]] impl.ShuffleManager: Created Fetcher for host: vm1, info: , with inputs: [InputAttemptIdentifier [inputIdentifier=InputIdentifier [inputIndex=4], attemptNumber=0, pathComponent=attempt_1475271333482_0173_1_02_000004_0_10002, fetchTypeInfo=FINAL_MERGE_ENABLED, spillEventId=-1], InputAttemptIdentifier [inputIdentifier=InputIdentifier [inputIndex=0], attemptNumber=0, pathComponent=attempt_1475271333482_0173_1_02_000000_0_10003, fetchTypeInfo=FINAL_MERGE_ENABLED, spillEventId=-1]]
+2016-10-01 11:11:02,829 INFO [TezTaskEventRouter[attempt_1475271333482_0173_1_04_000005_0]] impl.ShuffleInputEventHandlerImpl: DME srcIdx: 0, targetIndex: 8, attemptNum: 0, payload: [host: vm1, port: 13562, pathComponent: attempt_1475271333482_0173_1_02_000008_0_10003, runDuration: 0]
+2016-10-01 11:11:02,830 INFO [TezTaskEventRouter[attempt_1475271333482_0173_1_04_000005_0]] impl.ShuffleInputEventHandlerImpl: DME srcIdx: 0, targetIndex: 0, attemptNum: 0, payload: [host: vm3, port: 13562, pathComponent: attempt_1475271333482_0173_1_00_000000_0_10003, runDuration: 0]
+2016-10-01 11:11:02,830 INFO [ShuffleRunner [Map_7]] impl.ShuffleManager: Created Fetcher for host: vm1, info: , with inputs: [InputAttemptIdentifier [inputIdentifier=InputIdentifier [inputIndex=8], attemptNumber=0, pathComponent=attempt_1475271333482_0173_1_02_000008_0_10003, fetchTypeInfo=FINAL_MERGE_ENABLED, spillEventId=-1]]
+2016-10-01 11:11:02,830 INFO [ShuffleRunner [Map_8]] impl.ShuffleManager: Created Fetcher for host: vm3, info: , with inputs: [InputAttemptIdentifier [inputIdentifier=InputIdentifier [inputIndex=0], attemptNumber=0, pathComponent=attempt_1475271333482_0173_1_00_000000_0_10003, fetchTypeInfo=FINAL_MERGE_ENABLED, spillEventId=-1]]
+2016-10-01 11:11:02,830 INFO [TezTaskEventRouter[attempt_1475271333482_0173_1_04_000005_0]] impl.ShuffleInputEventHandlerImpl: DME srcIdx: 0, targetIndex: 5, attemptNum: 0, payload: [host: vm2, port: 13562, pathComponent: attempt_1475271333482_0173_1_02_000005_0_10002, runDuration: 0]
+2016-10-01 11:11:02,838 INFO [TezTaskEventRouter[attempt_1475271333482_0173_1_04_000005_0]] impl.ShuffleInputEventHandlerImpl: DME srcIdx: 0, targetIndex: 1, attemptNum: 0, payload: [host: vm2, port: 13562, pathComponent: attempt_1475271333482_0173_1_02_000001_0_10003, runDuration: 0]
+2016-10-01 11:11:02,838 INFO [ShuffleRunner [Map_7]] impl.ShuffleManager: Created Fetcher for host: vm2, info: , with inputs: [InputAttemptIdentifier [inputIdentifier=InputIdentifier [inputIndex=5], attemptNumber=0, pathComponent=attempt_1475271333482_0173_1_02_000005_0_10002, fetchTypeInfo=FINAL_MERGE_ENABLED, spillEventId=-1]]
+2016-10-01 11:11:02,847 INFO [Fetcher [Map_7] #0] shuffle.HttpConnection: for url=http://vm1:13562/mapOutput?job=job_1475271333482_0173&reduce=0&map=attempt_1475271333482_0173_1_02_000004_0_10002,attempt_1475271333482_0173_1_02_000000_0_10003 sent hash and receievd reply 0 ms
+2016-10-01 11:11:02,847 INFO [Fetcher [Map_7] #0] impl.SimpleFetchedInputAllocator: Used memory after allocating 8914012 : 8914012
+2016-10-01 11:11:02,870 INFO [Fetcher [Map_7] #1] shuffle.HttpConnection: for url=http://vm1:13562/mapOutput?job=job_1475271333482_0173&reduce=0&map=attempt_1475271333482_0173_1_02_000008_0_10003 sent hash and receievd reply 20 ms
+2016-10-01 11:11:02,870 INFO [Fetcher [Map_7] #0] shuffle.Fetcher: fetcher about to shuffle output of srcAttempt InputAttemptIdentifier [inputIdentifier=InputIdentifier [inputIndex=4], attemptNumber=0, pathComponent=attempt_1475271333482_0173_1_02_000004_0_10002, fetchTypeInfo=FINAL_MERGE_ENABLED, spillEventId=-1] decomp: 8914012 len: 8914016 to MEMORY
+2016-10-01 11:11:02,874 INFO [TaskHeartbeatThread] task.TaskReporter: Routing events from heartbeat response to task, currentTaskAttemptId=attempt_1475271333482_0173_1_04_000005_0, eventCount=1 fromEventId=9 nextFromEventId=10
+2016-10-01 11:11:02,874 INFO [Fetcher [Map_7] #1] impl.SimpleFetchedInputAllocator: Used memory after allocating 11094703 : 20008715
+2016-10-01 11:11:02,876 INFO [Fetcher [Map_7] #1] shuffle.Fetcher: fetcher about to shuffle output of srcAttempt InputAttemptIdentifier [inputIdentifier=InputIdentifier [inputIndex=8], attemptNumber=0, pathComponent=attempt_1475271333482_0173_1_02_000008_0_10003, fetchTypeInfo=FINAL_MERGE_ENABLED, spillEventId=-1] decomp: 11094703 len: 11094707 to MEMORY
+2016-10-01 11:11:02,879 INFO [TezTaskEventRouter[attempt_1475271333482_0173_1_04_000005_0]] impl.ShuffleInputEventHandlerImpl: DME srcIdx: 0, targetIndex: 7, attemptNum: 0, payload: [host: vm4, port: 13562, pathComponent: attempt_1475271333482_0173_1_02_000007_0_10003, runDuration: 0]
+2016-10-01 11:11:02,879 INFO [ShuffleRunner [Map_7]] impl.ShuffleManager: Created Fetcher for host: vm2, info: , with inputs: [InputAttemptIdentifier [inputIdentifier=InputIdentifier [inputIndex=1], attemptNumber=0, pathComponent=attempt_1475271333482_0173_1_02_000001_0_10003, fetchTypeInfo=FINAL_MERGE_ENABLED, spillEventId=-1]]
+2016-10-01 11:11:02,881 INFO [Fetcher [Map_8] #0] shuffle.HttpConnection: for url=http://vm3:13562/mapOutput?job=job_1475271333482_0173&reduce=0&map=attempt_1475271333482_0173_1_00_000000_0_10003 sent hash and receievd reply 0 ms
+2016-10-01 11:11:02,881 INFO [Fetcher [Map_8] #0] impl.SimpleFetchedInputAllocator: Used memory after allocating 6138 : 6138
+2016-10-01 11:11:02,881 INFO [Fetcher [Map_8] #0] shuffle.Fetcher: fetcher about to shuffle output of srcAttempt InputAttemptIdentifier [inputIdentifier=InputIdentifier [inputIndex=0], attemptNumber=0, pathComponent=attempt_1475271333482_0173_1_00_000000_0_10003, fetchTypeInfo=FINAL_MERGE_ENABLED, spillEventId=-1] decomp: 6138 len: 6142 to MEMORY
+2016-10-01 11:11:02,882 INFO [Fetcher [Map_8] #0] shuffle.Fetcher: Read 6138 bytes from input for InputAttemptIdentifier [inputIdentifier=InputIdentifier [inputIndex=0], attemptNumber=0, pathComponent=attempt_1475271333482_0173_1_00_000000_0_10003, fetchTypeInfo=FINAL_MERGE_ENABLED, spillEventId=-1]
+2016-10-01 11:11:02,882 INFO [Fetcher [Map_8] #0] impl.ShuffleManager: Completed fetch for attempt: InputAttemptIdentifier [inputIdentifier=InputIdentifier [inputIndex=0], attemptNumber=0, pathComponent=attempt_1475271333482_0173_1_00_000000_0_10003, fetchTypeInfo=FINAL_MERGE_ENABLED, spillEventId=-1] to MEMORY, CompressedSize=6142, DecompressedSize=6138, EndTime=1475320262882, TimeTaken=1, Rate=5.86 MB/s
+2016-10-01 11:11:02,882 INFO [Fetcher [Map_8] #0] impl.ShuffleManager: All inputs fetched for input vertex : Map 8
+2016-10-01 11:11:02,882 INFO [Fetcher [Map_8] #0] impl.ShuffleManager: copy(1 (spillsFetched=1) of 1. Transfer rate (CumulativeDataFetched/TimeSinceInputStarted)) 0.01 MB/s)
+2016-10-01 11:11:02,885 INFO [ShuffleRunner [Map_8]] impl.ShuffleManager: Shutting down FetchScheduler, Was Interrupted: false
+2016-10-01 11:11:02,886 INFO [Fetcher [Map_8] #0] shuffle.HttpConnection: Closing input on  fetcher [Map_8] 2
+2016-10-01 11:11:02,889 INFO [Fetcher [Map_7] #2] shuffle.Fetcher: fetcher about to shuffle output of srcAttempt (direct disk)InputAttemptIdentifier [inputIdentifier=InputIdentifier [inputIndex=5], attemptNumber=0, pathComponent=attempt_1475271333482_0173_1_02_000005_0_10002, fetchTypeInfo=FINAL_MERGE_ENABLED, spillEventId=-1] decomp: 8865149 len: 8865153 to DISK_DIRECT
+2016-10-01 11:11:02,889 INFO [TezTaskEventRouter[attempt_1475271333482_0173_1_04_000005_0]] impl.ShuffleInputEventHandlerImpl: DME srcIdx: 0, targetIndex: 10, attemptNum: 0, payload: [host: vm4, port: 13562, pathComponent: attempt_1475271333482_0173_1_02_000010_0_10003, runDuration: 0]
+2016-10-01 11:11:02,889 INFO [TezTaskEventRouter[attempt_1475271333482_0173_1_04_000005_0]] impl.ShuffleInputEventHandlerImpl: DME srcIdx: 0, targetIndex: 3, attemptNum: 0, payload: [host: vm4, port: 13562, pathComponent: attempt_1475271333482_0173_1_02_000003_0_10003, runDuration: 0]
+2016-10-01 11:11:02,889 INFO [TezTaskEventRouter[attempt_1475271333482_0173_1_04_000005_0]] impl.ShuffleInputEventHandlerImpl: DME srcIdx: 0, targetIndex: 2, attemptNum: 0, payload: [host: vm3, port: 13562, pathComponent: attempt_1475271333482_0173_1_02_000002_0_10003, runDuration: 0]
+2016-10-01 11:11:02,889 INFO [ShuffleRunner [Map_8]] impl.ShuffleManager: Scheduler thread completed
+2016-10-01 11:11:02,893 INFO [ShuffleRunner [Map_7]] impl.ShuffleManager: Created Fetcher for host: vm4, info: , with inputs: [InputAttemptIdentifier [inputIdentifier=InputIdentifier [inputIndex=7], attemptNumber=0, pathComponent=attempt_1475271333482_0173_1_02_000007_0_10003, fetchTypeInfo=FINAL_MERGE_ENABLED, spillEventId=-1], InputAttemptIdentifier [inputIdentifier=InputIdentifier [inputIndex=10], attemptNumber=0, pathComponent=attempt_1475271333482_0173_1_02_000010_0_10003, fetchTypeInfo=FINAL_MERGE_ENABLED, spillEventId=-1], InputAttemptIdentifier [inputIdentifier=InputIdentifier [inputIndex=3], attemptNumber=0, pathComponent=attempt_1475271333482_0173_1_02_000003_0_10003, fetchTypeInfo=FINAL_MERGE_ENABLED, spillEventId=-1]]
+2016-10-01 11:11:02,894 INFO [Fetcher [Map_7] #2] impl.ShuffleManager: Completed fetch for attempt: InputAttemptIdentifier [inputIdentifier=InputIdentifier [inputIndex=5], attemptNumber=0, pathComponent=attempt_1475271333482_0173_1_02_000005_0_10002, fetchTypeInfo=FINAL_MERGE_ENABLED, spillEventId=-1] to DISK_DIRECT, CompressedSize=8865153, DecompressedSize=8865149, EndTime=1475320262893, TimeTaken=10, Rate=845.45 MB/s
+2016-10-01 11:11:02,894 INFO [Fetcher [Map_7] #3] shuffle.Fetcher: fetcher about to shuffle output of srcAttempt (direct disk)InputAttemptIdentifier [inputIdentifier=InputIdentifier [inputIndex=1], attemptNumber=0, pathComponent=attempt_1475271333482_0173_1_02_000001_0_10003, fetchTypeInfo=FINAL_MERGE_ENABLED, spillEventId=-1] decomp: 8909832 len: 8909836 to DISK_DIRECT
+2016-10-01 11:11:02,894 INFO [Fetcher [Map_7] #2] impl.ShuffleManager: copy(1 (spillsFetched=1) of 13. Transfer rate (CumulativeDataFetched/TimeSinceInputStarted)) 8.45 MB/s)
+2016-10-01 11:11:02,894 INFO [Fetcher [Map_7] #3] impl.ShuffleManager: Completed fetch for attempt: InputAttemptIdentifier [inputIdentifier=InputIdentifier [inputIndex=1], attemptNumber=0, pathComponent=attempt_1475271333482_0173_1_02_000001_0_10003, fetchTypeInfo=FINAL_MERGE_ENABLED, spillEventId=-1] to DISK_DIRECT, CompressedSize=8909836, DecompressedSize=8909832, EndTime=1475320262894, TimeTaken=5, Rate=1699.42 MB/s
+2016-10-01 11:11:02,895 INFO [ShuffleRunner [Map_7]] impl.ShuffleManager: Created Fetcher for host: vm3, info: , with inputs: [InputAttemptIdentifier [inputIdentifier=InputIdentifier [inputIndex=2], attemptNumber=0, pathComponent=attempt_1475271333482_0173_1_02_000002_0_10003, fetchTypeInfo=FINAL_MERGE_ENABLED, spillEventId=-1]]
+2016-10-01 11:11:02,895 INFO [Fetcher [Map_7] #3] impl.ShuffleManager: copy(2 (spillsFetched=2) of 13. Transfer rate (CumulativeDataFetched/TimeSinceInputStarted)) 16.95 MB/s)
+2016-10-01 11:11:02,899 INFO [Fetcher [Map_7] #2] shuffle.HttpConnection: for url=http://vm3:13562/mapOutput?job=job_1475271333482_0173&reduce=0&map=attempt_1475271333482_0173_1_02_000002_0_10003 sent hash and receievd reply 0 ms
+2016-10-01 11:11:02,899 INFO [Fetcher [Map_7] #2] impl.SimpleFetchedInputAllocator: Used memory after allocating 8917535 : 28926250
+2016-10-01 11:11:02,900 INFO [Fetcher [Map_7] #2] shuffle.Fetcher: fetcher about to shuffle output of srcAttempt InputAttemptIdentifier [inputIdentifier=InputIdentifier [inputIndex=2], attemptNumber=0, pathComponent=attempt_1475271333482_0173_1_02_000002_0_10003, fetchTypeInfo=FINAL_MERGE_ENABLED, spillEventId=-1] decomp: 8917535 len: 8917539 to MEMORY
+2016-10-01 11:11:02,904 INFO [Fetcher [Map_7] #4] shuffle.HttpConnection: for url=http://vm4:13562/mapOutput?job=job_1475271333482_0173&reduce=0&map=attempt_1475271333482_0173_1_02_000007_0_10003,attempt_1475271333482_0173_1_02_000010_0_10003,attempt_1475271333482_0173_1_02_000003_0_10003 sent hash and receievd reply 0 ms
+2016-10-01 11:11:02,904 INFO [Fetcher [Map_7] #4] impl.SimpleFetchedInputAllocator: Used memory after allocating 8892708 : 37818958
+2016-10-01 11:11:02,905 INFO [Fetcher [Map_7] #4] shuffle.Fetcher: fetcher about to shuffle output of srcAttempt InputAttemptIdentifier [inputIdentifier=InputIdentifier [inputIndex=7], attemptNumber=0, pathComponent=attempt_1475271333482_0173_1_02_000007_0_10003, fetchTypeInfo=FINAL_MERGE_ENABLED, spillEventId=-1] decomp: 8892708 len: 8892712 to MEMORY
+2016-10-01 11:11:02,997 INFO [TezChild] exec.Utilities: PLAN PATH = hdfs://10.0.0.4:8020/tmp/hive/ubuntu/091ec849-13a5-452d-9c67-4c413e7fb93d/hive_2016-10-01_11-10-33_899_3237225052405870548-1/ubuntu/_tez_scratch_dir/f5865b21-7474-4793-8f80-3ed8cdbd3bfa/map.xml
+2016-10-01 11:11:02,997 INFO [TezChild] exec.Utilities: ***************non-local mode***************
+2016-10-01 11:11:02,997 INFO [TezChild] exec.Utilities: local path = hdfs://10.0.0.4:8020/tmp/hive/ubuntu/091ec849-13a5-452d-9c67-4c413e7fb93d/hive_2016-10-01_11-10-33_899_3237225052405870548-1/ubuntu/_tez_scratch_dir/f5865b21-7474-4793-8f80-3ed8cdbd3bfa/map.xml
+2016-10-01 11:11:02,999 INFO [TezChild] log.PerfLogger: <PERFLOG method=deserializePlan from=org.apache.hadoop.hive.ql.exec.Utilities>
+2016-10-01 11:11:02,999 INFO [TezChild] exec.Utilities: Deserializing MapWork via kryo
+2016-10-01 11:11:03,062 INFO [Fetcher [Map_7] #2] shuffle.Fetcher: Read 8917535 bytes from input for InputAttemptIdentifier [inputIdentifier=InputIdentifier [inputIndex=2], attemptNumber=0, pathComponent=attempt_1475271333482_0173_1_02_000002_0_10003, fetchTypeInfo=FINAL_MERGE_ENABLED, spillEventId=-1]
+2016-10-01 11:11:03,062 INFO [Fetcher [Map_7] #2] impl.ShuffleManager: Completed fetch for attempt: InputAttemptIdentifier [inputIdentifier=InputIdentifier [inputIndex=2], attemptNumber=0, pathComponent=attempt_1475271333482_0173_1_02_000002_0_10003, fetchTypeInfo=FINAL_MERGE_ENABLED, spillEventId=-1] to MEMORY, CompressedSize=8917539, DecompressedSize=8917535, EndTime=1475320263062, TimeTaken=163, Rate=52.17 MB/s
+2016-10-01 11:11:03,062 INFO [Fetcher [Map_7] #2] impl.ShuffleManager: copy(3 (spillsFetched=3) of 13. Transfer rate (CumulativeDataFetched/TimeSinceInputStarted)) 25.46 MB/s)
+2016-10-01 11:11:03,062 INFO [Fetcher [Map_7] #2] shuffle.HttpConnection: Closing input on  fetcher [Map_7] 6
+2016-10-01 11:11:03,144 INFO [Fetcher [Map_7] #4] shuffle.Fetcher: Read 8892708 bytes from input for InputAttemptIdentifier [inputIdentifier=InputIdentifier [inputIndex=7], attemptNumber=0, pathComponent=attempt_1475271333482_0173_1_02_000007_0_10003, fetchTypeInfo=FINAL_MERGE_ENABLED, spillEventId=-1]
+2016-10-01 11:11:03,145 INFO [Fetcher [Map_7] #4] impl.ShuffleManager: Completed fetch for attempt: InputAttemptIdentifier [inputIdentifier=InputIdentifier [inputIndex=7], attemptNumber=0, pathComponent=attempt_1475271333482_0173_1_02_000007_0_10003, fetchTypeInfo=FINAL_MERGE_ENABLED, spillEventId=-1] to MEMORY, CompressedSize=8892712, DecompressedSize=8892708, EndTime=1475320263144, TimeTaken=240, Rate=35.34 MB/s
+2016-10-01 11:11:03,145 INFO [Fetcher [Map_7] #4] impl.ShuffleManager: copy(4 (spillsFetched=4) of 13. Transfer rate (CumulativeDataFetched/TimeSinceInputStarted)) 33.94 MB/s)
+2016-10-01 11:11:03,145 INFO [Fetcher [Map_7] #4] impl.SimpleFetchedInputAllocator: Used memory after allocating 8889956 : 46708914
+2016-10-01 11:11:03,146 INFO [Fetcher [Map_7] #4] shuffle.Fetcher: fetcher about to shuffle output of srcAttempt InputAttemptIdentifier [inputIdentifier=InputIdentifier [inputIndex=10], attemptNumber=0, pathComponent=attempt_1475271333482_0173_1_02_000010_0_10003, fetchTypeInfo=FINAL_MERGE_ENABLED, spillEventId=-1] decomp: 8889956 len: 8889960 to MEMORY
+2016-10-01 11:11:03,279 INFO [Fetcher [Map_7] #0] shuffle.Fetcher: Read 8914012 bytes from input for InputAttemptIdentifier [inputIdentifier=InputIdentifier [inputIndex=4], attemptNumber=0, pathComponent=attempt_1475271333482_0173_1_02_000004_0_10002, fetchTypeInfo=FINAL_MERGE_ENABLED, spillEventId=-1]
+2016-10-01 11:11:03,280 INFO [Fetcher [Map_7] #0] impl.ShuffleManager: Completed fetch for attempt: InputAttemptIdentifier [inputIdentifier=InputIdentifier [inputIndex=4], attemptNumber=0, pathComponent=attempt_1475271333482_0173_1_02_000004_0_10002, fetchTypeInfo=FINAL_MERGE_ENABLED, spillEventId=-1] to MEMORY, CompressedSize=8914016, DecompressedSize=8914012, EndTime=1475320263280, TimeTaken=432, Rate=19.68 MB/s
+2016-10-01 11:11:03,280 INFO [Fetcher [Map_7] #0] impl.ShuffleManager: copy(5 (spillsFetched=5) of 13. Transfer rate (CumulativeDataFetched/TimeSinceInputStarted)) 42.44 MB/s)
+2016-10-01 11:11:03,280 INFO [Fetcher [Map_7] #0] impl.SimpleFetchedInputAllocator: Used memory after allocating 8897704 : 55606618
+2016-10-01 11:11:03,281 INFO [Fetcher [Map_7] #0] shuffle.Fetcher: fetcher about to shuffle output of srcAttempt InputAttemptIdentifier [inputIdentifier=InputIdentifier [inputIndex=0], attemptNumber=0, pathComponent=attempt_1475271333482_0173_1_02_000000_0_10003, fetchTypeInfo=FINAL_MERGE_ENABLED, spillEventId=-1] decomp: 8897704 len: 8897708 to MEMORY
+2016-10-01 11:11:03,401 INFO [Fetcher [Map_7] #1] shuffle.Fetcher: Read 11094703 bytes from input for InputAttemptIdentifier [inputIdentifier=InputIdentifier [inputIndex=8], attemptNumber=0, pathComponent=attempt_1475271333482_0173_1_02_000008_0_10003, fetchTypeInfo=FINAL_MERGE_ENABLED, spillEventId=-1]
+2016-10-01 11:11:03,401 INFO [Fetcher [Map_7] #1] impl.ShuffleManager: Completed fetch for attempt: InputAttemptIdentifier [inputIdentifier=InputIdentifier [inputIndex=8], attemptNumber=0, pathComponent=attempt_1475271333482_0173_1_02_000008_0_10003, fetchTypeInfo=FINAL_MERGE_ENABLED, spillEventId=-1] to MEMORY, CompressedSize=11094707, DecompressedSize=11094703, EndTime=1475320263401, TimeTaken=531, Rate=19.93 MB/s
+2016-10-01 11:11:03,401 INFO [Fetcher [Map_7] #1] impl.ShuffleManager: copy(6 (spillsFetched=6) of 13. Transfer rate (CumulativeDataFetched/TimeSinceInputStarted)) 53.02 MB/s)
+2016-10-01 11:11:03,401 INFO [Fetcher [Map_7] #1] shuffle.HttpConnection: Closing input on  fetcher [Map_7] 1
+2016-10-01 11:11:03,494 INFO [Fetcher [Map_7] #0] shuffle.Fetcher: Read 8897704 bytes from input for InputAttemptIdentifier [inputIdentifier=InputIdentifier [inputIndex=0], attemptNumber=0, pathComponent=attempt_1475271333482_0173_1_02_000000_0_10003, fetchTypeInfo=FINAL_MERGE_ENABLED, spillEventId=-1]
+2016-10-01 11:11:03,494 INFO [Fetcher [Map_7] #0] impl.ShuffleManager: Completed fetch for attempt: InputAttemptIdentifier [inputIdentifier=InputIdentifier [inputIndex=0], attemptNumber=0, pathComponent=attempt_1475271333482_0173_1_02_000000_0_10003, fetchTypeInfo=FINAL_MERGE_ENABLED, spillEventId=-1] to MEMORY, CompressedSize=8897708, DecompressedSize=8897704, EndTime=1475320263494, TimeTaken=214, Rate=39.65 MB/s
+2016-10-01 11:11:03,494 INFO [Fetcher [Map_7] #0] impl.ShuffleManager: copy(7 (spillsFetched=7) of 13. Transfer rate (CumulativeDataFetched/TimeSinceInputStarted)) 61.50 MB/s)
+2016-10-01 11:11:03,494 INFO [Fetcher [Map_7] #0] shuffle.HttpConnection: Closing input on  fetcher [Map_7] 0
+2016-10-01 11:11:03,534 INFO [TezChild] log.PerfLogger: </PERFLOG method=deserializePlan start=1475320262999 end=1475320263534 duration=535 from=org.apache.hadoop.hive.ql.exec.Utilities>
+2016-10-01 11:11:03,534 INFO [TezChild] tez.ObjectCache: Caching key: ubuntu_20161001111033_202e5e0c-2e03-4130-ab80-b940201376f1__MAP_PLAN__
+2016-10-01 11:11:03,538 INFO [TezChild] log.PerfLogger: <PERFLOG method=TezInitializeOperators from=org.apache.hadoop.hive.ql.exec.tez.RecordProcessor>
+2016-10-01 11:11:03,542 INFO [TezChild] MapredContext: MapredContext initialized.
+2016-10-01 11:11:03,542 INFO [TezChild] input.MRInput: MRInput setup to received 1 events
+2016-10-01 11:11:03,544 INFO [TezChild] tez.MapRecordProcessor: The input names are: [web_sales, Map 7, Map 8]
+2016-10-01 11:11:03,545 INFO [TezChild] input.MRInput: Initialzed MRInput: web_sales
+2016-10-01 11:11:03,545 INFO [TezChild] input.MRInput: Initializing RecordReader from event
+2016-10-01 11:11:03,554 INFO [TezChild] input.MRInput: Split Details -> SplitClass: org.apache.hadoop.mapred.split.TezGroupedSplit, OldSplit: org.apache.hadoop.mapred.split.TezGroupedSplit@4fd2ac36
+2016-10-01 11:11:03,557 INFO [TezChild] exec.Utilities: PLAN PATH = hdfs://10.0.0.4:8020/tmp/hive/ubuntu/091ec849-13a5-452d-9c67-4c413e7fb93d/hive_2016-10-01_11-10-33_899_3237225052405870548-1/ubuntu/_tez_scratch_dir/f5865b21-7474-4793-8f80-3ed8cdbd3bfa/map.xml
+2016-10-01 11:11:03,614 INFO [Fetcher [Map_7] #4] shuffle.Fetcher: Read 8889956 bytes from input for InputAttemptIdentifier [inputIdentifier=InputIdentifier [inputIndex=10], attemptNumber=0, pathComponent=attempt_1475271333482_0173_1_02_000010_0_10003, fetchTypeInfo=FINAL_MERGE_ENABLED, spillEventId=-1]
+2016-10-01 11:11:03,614 INFO [Fetcher [Map_7] #4] impl.ShuffleManager: Completed fetch for attempt: InputAttemptIdentifier [inputIdentifier=InputIdentifier [inputIndex=10], attemptNumber=0, pathComponent=attempt_1475271333482_0173_1_02_000010_0_10003, fetchTypeInfo=FINAL_MERGE_ENABLED, spillEventId=-1] to MEMORY, CompressedSize=8889960, DecompressedSize=8889956, EndTime=1475320263614, TimeTaken=469, Rate=18.08 MB/s
+2016-10-01 11:11:03,614 INFO [Fetcher [Map_7] #4] impl.ShuffleManager: copy(8 (spillsFetched=8) of 13. Transfer rate (CumulativeDataFetched/TimeSinceInputStarted)) 69.98 MB/s)
+2016-10-01 11:11:03,614 INFO [Fetcher [Map_7] #4] impl.SimpleFetchedInputAllocator: Used memory after allocating 8892975 : 64499593
+2016-10-01 11:11:03,615 INFO [Fetcher [Map_7] #4] shuffle.Fetcher: fetcher about to shuffle output of srcAttempt InputAttemptIdentifier [inputIdentifier=InputIdentifier [inputIndex=3], attemptNumber=0, pathComponent=attempt_1475271333482_0173_1_02_000003_0_10003, fetchTypeInfo=FINAL_MERGE_ENABLED, spillEventId=-1] decomp: 8892975 len: 8892979 to MEMORY
+2016-10-01 11:11:04,030 INFO [TaskHeartbeatThread] task.TaskReporter: Routing events from heartbeat response to task, currentTaskAttemptId=attempt_1475271333482_0173_1_04_000005_0, eventCount=2 fromEventId=10 nextFromEventId=12
+2016-10-01 11:11:04,030 INFO [TezTaskEventRouter[attempt_1475271333482_0173_1_04_000005_0]] impl.ShuffleInputEventHandlerImpl: DME srcIdx: 0, targetIndex: 12, attemptNum: 0, payload: [host: vm1, port: 13562, pathComponent: attempt_1475271333482_0173_1_02_000012_0_10003, runDuration: 0]
+2016-10-01 11:11:04,030 INFO [TezTaskEventRouter[attempt_1475271333482_0173_1_04_000005_0]] impl.ShuffleInputEventHandlerImpl: DME srcIdx: 0, targetIndex: 6, attemptNum: 0, payload: [host: vm3, port: 13562, pathComponent: attempt_1475271333482_0173_1_02_000006_0_10003, runDuration: 0]
+2016-10-01 11:11:04,031 INFO [ShuffleRunner [Map_7]] impl.ShuffleManager: Created Fetcher for host: vm1, info: , with inputs: [InputAttemptIdentifier [inputIdentifier=InputIdentifier [inputIndex=12], attemptNumber=0, pathComponent=attempt_1475271333482_0173_1_02_000012_0_10003, fetchTypeInfo=FINAL_MERGE_ENABLED, spillEventId=-1]]
+2016-10-01 11:11:04,031 INFO [ShuffleRunner [Map_7]] impl.ShuffleManager: Created Fetcher for host: vm3, info: , with inputs: [InputAttemptIdentifier [inputIdentifier=InputIdentifier [inputIndex=6], attemptNumber=0, pathComponent=attempt_1475271333482_0173_1_02_000006_0_10003, fetchTypeInfo=FINAL_MERGE_ENABLED, spillEventId=-1]]
+2016-10-01 11:11:04,044 INFO [Fetcher [Map_7] #2] shuffle.HttpConnection: for url=http://vm3:13562/mapOutput?job=job_1475271333482_0173&reduce=0&map=attempt_1475271333482_0173_1_02_000006_0_10003 sent hash and receievd reply 0 ms
+2016-10-01 11:11:04,044 INFO [Fetcher [Map_7] #2] impl.SimpleFetchedInputAllocator: Used memory after allocating 8895409 : 73395002
+2016-10-01 11:11:04,045 INFO [Fetcher [Map_7] #2] shuffle.Fetcher: fetcher about to shuffle output of srcAttempt InputAttemptIdentifier [inputIdentifier=InputIdentifier [inputIndex=6], attemptNumber=0, pathComponent=attempt_1475271333482_0173_1_02_000006_0_10003, fetchTypeInfo=FINAL_MERGE_ENABLED, spillEventId=-1] decomp: 8895409 len: 8895413 to MEMORY
+2016-10-01 11:11:04,048 INFO [Fetcher [Map_7] #3] shuffle.HttpConnection: for url=http://vm1:13562/mapOutput?job=job_1475271333482_0173&reduce=0&map=attempt_1475271333482_0173_1_02_000012_0_10003 sent hash and receievd reply 0 ms
+2016-10-01 11:11:04,049 INFO [Fetcher [Map_7] #3] impl.SimpleFetchedInputAllocator: Used memory after allocating 4424680 : 77819682
+2016-10-01 11:11:04,050 INFO [Fetcher [Map_7] #3] shuffle.Fetcher: fetcher about to shuffle output of srcAttempt InputAttemptIdentifier [inputIdentifier=InputIdentifier [inputIndex=12], attemptNumber=0, pathComponent=attempt_1475271333482_0173_1_02_000012_0_10003, fetchTypeInfo=FINAL_MERGE_ENABLED, spillEventId=-1] decomp: 4424680 len: 4424684 to MEMORY
+2016-10-01 11:11:04,139 INFO [TaskHeartbeatThread] task.TaskReporter: Routing events from heartbeat response to task, currentTaskAttemptId=attempt_1475271333482_0173_1_04_000005_0, eventCount=1 fromEventId=12 nextFromEventId=13
+2016-10-01 11:11:04,139 INFO [TezTaskEventRouter[attempt_1475271333482_0173_1_04_000005_0]] impl.ShuffleInputEventHandlerImpl: DME srcIdx: 0, targetIndex: 11, attemptNum: 0, payload: [host: vm2, port: 13562, pathComponent: attempt_1475271333482_0173_1_02_000011_0_10003, runDuration: 0]
+2016-10-01 11:11:04,139 INFO [ShuffleRunner [Map_7]] impl.ShuffleManager: Created Fetcher for host: vm2, info: , with inputs: [InputAttemptIdentifier [inputIdentifier=InputIdentifier [inputIndex=11], attemptNumber=0, pathComponent=attempt_1475271333482_0173_1_02_000011_0_10003, fetchTypeInfo=FINAL_MERGE_ENABLED, spillEventId=-1]]
+2016-10-01 11:11:04,142 INFO [Fetcher [Map_7] #1] shuffle.Fetcher: fetcher about to shuffle output of srcAttempt (direct disk)InputAttemptIdentifier [inputIdentifier=InputIdentifier [inputIndex=11], attemptNumber=0, pathComponent=attempt_1475271333482_0173_1_02_000011_0_10003, fetchTypeInfo=FINAL_MERGE_ENABLED, spillEventId=-1] decomp: 6658448 len: 6658452 to DISK_DIRECT
+2016-10-01 11:11:04,142 INFO [Fetcher [Map_7] #1] impl.ShuffleManager: Completed fetch for attempt: InputAttemptIdentifier [inputIdentifier=InputIdentifier [inputIndex=11], attemptNumber=0, pathComponent=attempt_1475271333482_0173_1_02_000011_0_10003, fetchTypeInfo=FINAL_MERGE_ENABLED, spillEventId=-1] to DISK_DIRECT, CompressedSize=6658452, DecompressedSize=6658448, EndTime=1475320264142, TimeTaken=3, Rate=2116.66 MB/s
+2016-10-01 11:11:04,142 INFO [Fetcher [Map_7] #1] impl.ShuffleManager: copy(9 (spillsFetched=9) of 13. Transfer rate (CumulativeDataFetched/TimeSinceInputStarted)) 38.17 MB/s)
+2016-10-01 11:11:04,149 INFO [Fetcher [Map_7] #4] shuffle.Fetcher: Read 8892975 bytes from input for InputAttemptIdentifier [inputIdentifier=InputIdentifier [inputIndex=3], attemptNumber=0, pathComponent=attempt_1475271333482_0173_1_02_000003_0_10003, fetchTypeInfo=FINAL_MERGE_ENABLED, spillEventId=-1]
+2016-10-01 11:11:04,149 INFO [Fetcher [Map_7] #4] impl.ShuffleManager: Completed fetch for attempt: InputAttemptIdentifier [inputIdentifier=InputIdentifier [inputIndex=3], attemptNumber=0, pathComponent=attempt_1475271333482_0173_1_02_000003_0_10003, fetchTypeInfo=FINAL_MERGE_ENABLED, spillEventId=-1] to MEMORY, CompressedSize=8892979, DecompressedSize=8892975, EndTime=1475320264149, TimeTaken=535, Rate=15.85 MB/s
+2016-10-01 11:11:04,149 INFO [Fetcher [Map_7] #4] impl.ShuffleManager: copy(10 (spillsFetched=10) of 13. Transfer rate (CumulativeDataFetched/TimeSinceInputStarted)) 42.41 MB/s)
+2016-10-01 11:11:04,149 INFO [Fetcher [Map_7] #4] shuffle.HttpConnection: Closing input on  fetcher [Map_7] 5
+2016-10-01 11:11:04,166 INFO [Fetcher [Map_7] #2] shuffle.Fetcher: Read 8895409 bytes from input for InputAttemptIdentifier [inputIdentifier=InputIdentifier [inputIndex=6], attemptNumber=0, pathComponent=attempt_1475271333482_0173_1_02_000006_0_10003, fetchTypeInfo=FINAL_MERGE_ENABLED, spillEventId=-1]
+2016-10-01 11:11:04,166 INFO [Fetcher [Map_7] #2] impl.ShuffleManager: Completed fetch for attempt: InputAttemptIdentifier [inputIdentifier=InputIdentifier [inputIndex=6], attemptNumber=0, pathComponent=attempt_1475271333482_0173_1_02_000006_0_10003, fetchTypeInfo=FINAL_MERGE_ENABLED, spillEventId=-1] to MEMORY, CompressedSize=8895413, DecompressedSize=8895409, EndTime=1475320264166, TimeTaken=122, Rate=69.54 MB/s
+2016-10-01 11:11:04,166 INFO [Fetcher [Map_7] #2] impl.ShuffleManager: copy(11 (spillsFetched=11) of 13. Transfer rate (CumulativeDataFetched/TimeSinceInputStarted)) 46.65 MB/s)
+2016-10-01 11:11:04,166 INFO [Fetcher [Map_7] #2] shuffle.HttpConnection: Closing input on  fetcher [Map_7] 8
+2016-10-01 11:11:04,269 INFO [Fetcher [Map_7] #3] shuffle.Fetcher: Read 4424680 bytes from input for InputAttemptIdentifier [inputIdentifier=InputIdentifier [inputIndex=12], attemptNumber=0, pathComponent=attempt_1475271333482_0173_1_02_000012_0_10003, fetchTypeInfo=FINAL_MERGE_ENABLED, spillEventId=-1]
+2016-10-01 11:11:04,269 INFO [Fetcher [Map_7] #3] impl.ShuffleManager: Completed fetch for attempt: InputAttemptIdentifier [inputIdentifier=InputIdentifier [inputIndex=12], attemptNumber=0, pathComponent=attempt_1475271333482_0173_1_02_000012_0_10003, fetchTypeInfo=FINAL_MERGE_ENABLED, spillEventId=-1] to MEMORY, CompressedSize=4424684, DecompressedSize=4424680, EndTime=1475320264269, TimeTaken=220, Rate=19.18 MB/s
+2016-10-01 11:11:04,269 INFO [Fetcher [Map_7] #3] impl.ShuffleManager: copy(12 (spillsFetched=12) of 13. Transfer rate (CumulativeDataFetched/TimeSinceInputStarted)) 48.76 MB/s)
+2016-10-01 11:11:04,269 INFO [Fetcher [Map_7] #3] shuffle.HttpConnection: Closing input on  fetcher [Map_7] 7
+2016-10-01 11:11:04,293 INFO [TezChild] io.HiveContextAwareRecordReader: Processing file hdfs://10.0.0.4:8020/tmp/tpcds-generate/db_1/50/web_sales/data-m-00004
+2016-10-01 11:11:04,293 INFO [TezChild] lib.MRReaderMapred: Processing split: org.apache.hadoop.mapred.split.TezGroupedSplit@4fd2ac36
+2016-10-01 11:11:04,293 INFO [TezChild] input.MRInput: Initialized RecordReader from event
+2016-10-01 11:11:04,322 INFO [TezChild] impl.ExternalSorter: Initial Mem : 1073741824, assignedMb=1024
+2016-10-01 11:11:04,325 INFO [TezChild] impl.ExternalSorter: keySerializer=org.apache.tez.runtime.library.common.serializer.TezBytesWritableSerialization$TezBytesWritableSerializer@18bcd6c7; valueSerializer=org.apache.tez.runtime.library.common.serializer.TezBytesWritableSerialization$TezBytesWritableSerializer@15b8af81; comparator=org.apache.tez.runtime.library.common.comparator.TezBytesComparator@1351e327; conf=org.apache.tez.runtime.library.common.serializer.TezBytesWritableSerialization,org.apache.tez.runtime.library.common.serializer.TezBytesWritableSerialization,org.apache.hadoop.io.serializer.WritableSerialization,org.apache.hadoop.io.serializer.avro.AvroSpecificSerialization,org.apache.hadoop.io.serializer.avro.AvroReflectSerialization
+2016-10-01 11:11:04,336 INFO [TezChild] impl.ExternalSorter: Instantiating Partitioner: [org.apache.tez.mapreduce.partition.MRPartitioner]
+2016-10-01 11:11:04,338 INFO [TezChild] common.TezRuntimeUtils: Using partitioner class: org.apache.tez.mapreduce.partition.MRPartitioner
+2016-10-01 11:11:04,339 INFO [TezChild] common.TezRuntimeUtils: No combiner specified via tez.runtime.combiner.class. Combiner will not be used
+2016-10-01 11:11:04,340 INFO [TezChild] impl.PipelinedSorter: Number of Blocks : 1, maxMemUsage=1073741824, BLOCK_SIZE=1073741824, finalMergeEnabled=true, pipelinedShuffle=false, sendEmptyPartitionDetails=true
+2016-10-01 11:11:04,554 INFO [TaskHeartbeatThread] task.TaskReporter: Routing events from heartbeat response to task, currentTaskAttemptId=attempt_1475271333482_0173_1_04_000005_0, eventCount=1 fromEventId=13 nextFromEventId=14
+2016-10-01 11:11:04,555 INFO [TezTaskEventRouter[attempt_1475271333482_0173_1_04_000005_0]] impl.ShuffleInputEventHandlerImpl: DME srcIdx: 0, targetIndex: 9, attemptNum: 0, payload: [host: vm2, port: 13562, pathComponent: attempt_1475271333482_0173_1_02_000009_0_10003, runDuration: 0]
+2016-10-01 11:11:04,555 INFO [ShuffleRunner [Map_7]] impl.ShuffleManager: Created Fetcher for host: vm2, info: , with inputs: [InputAttemptIdentifier [inputIdentifier=InputIdentifier [inputIndex=9], attemptNumber=0, pathComponent=attempt_1475271333482_0173_1_02_000009_0_10003, fetchTypeInfo=FINAL_MERGE_ENABLED, spillEventId=-1]]
+2016-10-01 11:11:04,556 INFO [Fetcher [Map_7] #0] shuffle.Fetcher: fetcher about to shuffle output of srcAttempt (direct disk)InputAttemptIdentifier [inputIdentifier=InputIdentifier [inputIndex=9], attemptNumber=0, pathComponent=attempt_1475271333482_0173_1_02_000009_0_10003, fetchTypeInfo=FINAL_MERGE_ENABLED, spillEventId=-1] decomp: 8902490 len: 8902494 to DISK_DIRECT
+2016-10-01 11:11:04,556 INFO [Fetcher [Map_7] #0] impl.ShuffleManager: Completed fetch for attempt: InputAttemptIdentifier [inputIdentifier=InputIdentifier [inputIndex=9], attemptNumber=0, pathComponent=attempt_1475271333482_0173_1_02_000009_0_10003, fetchTypeInfo=FINAL_MERGE_ENABLED, spillEventId=-1] to DISK_DIRECT, CompressedSize=8902494, DecompressedSize=8902490, EndTime=1475320264556, TimeTaken=1, Rate=8490.08 MB/s
+2016-10-01 11:11:04,556 INFO [Fetcher [Map_7] #0] impl.ShuffleManager: All inputs fetched for input vertex : Map 7
+2016-10-01 11:11:04,556 INFO [Fetcher [Map_7] #0] impl.ShuffleManager: copy(13 (spillsFetched=13) of 13. Transfer rate (CumulativeDataFetched/TimeSinceInputStarted)) 53.00 MB/s)
+2016-10-01 11:11:04,557 INFO [ShuffleRunner [Map_7]] impl.ShuffleManager: Shutting down FetchScheduler, Was Interrupted: false
+2016-10-01 11:11:04,557 INFO [ShuffleRunner [Map_7]] impl.ShuffleManager: Scheduler thread completed
+2016-10-01 11:11:04,672 INFO [TezChild] impl.PipelinedSorter: tez.runtime.io.sort.mb = 1024
+2016-10-01 11:11:04,673 INFO [TezChild] impl.PipelinedSorter: reserved.remaining() = 1073741824
+2016-10-01 11:11:04,673 INFO [TezChild] impl.PipelinedSorter: reserved.metasize = 16777216
+2016-10-01 11:11:04,676 INFO [TezChild] impl.PipelinedSorter: Using the HashComparator
+2016-10-01 11:11:04,678 INFO [TezChild] tez.MapRecordProcessor: Main input name is Map 1
+2016-10-01 11:11:04,678 INFO [TezChild] exec.MapOperator: Initializing operator MAP[7]
+2016-10-01 11:11:04,678 INFO [TezChild] exec.MapOperator: Initialization Done 7 MAP
+2016-10-01 11:11:04,678 INFO [TezChild] exec.MapOperator: Operator 7 MAP initialized
+2016-10-01 11:11:04,805 INFO [TezChild] tez.MapRecordProcessor: 
+<MAP>Id =7
+  <Children>
+    <TS>Id =0
+      <Children>
+        <FIL>Id =1
+          <Children>
+            <MAPJOIN>Id =2
+              <Children>
+                <MAPJOIN>Id =3
+                  <Children>
+                    <RS>Id =4
+                      <Children>
+                      <\Children>
+                      <Parent>Id = 3 null<\Parent>
+                    <\RS>
+                  <\Children>
+                  <Parent>Id = 2 nullId = 5 
+                <HASHTABLEDUMMY>Id =5
+                  <Children>null
+                  <\Children>
+                  <Parent><\Parent>
+                <\HASHTABLEDUMMY><\Parent>
+                <\MAPJOIN>
+              <\Children>
+              <Parent>Id = 1 nullId = 6 
+            <HASHTABLEDUMMY>Id =6
+              <Children>null
+              <\Children>
+              <Parent><\Parent>
+            <\HASHTABLEDUMMY><\Parent>
+            <\MAPJOIN>
+          <\Children>
+          <Parent>Id = 0 null<\Parent>
+        <\FIL>
+      <\Children>
+      <Parent>Id = 7 null<\Parent>
+    <\TS>
+  <\Children>
+  <Parent><\Parent>
+<\MAP>
+2016-10-01 11:11:04,806 INFO [TezChild] exec.TableScanOperator: Initializing operator TS[0]
+2016-10-01 11:11:04,806 INFO [TezChild] exec.TableScanOperator: Initialization Done 0 TS
+2016-10-01 11:11:04,806 INFO [TezChild] exec.TableScanOperator: Operator 0 TS initialized
+2016-10-01 11:11:04,806 INFO [TezChild] exec.TableScanOperator: Initializing children of 0 TS
+2016-10-01 11:11:04,806 INFO [TezChild] exec.FilterOperator: Initializing child 1 FIL
+2016-10-01 11:11:04,807 INFO [TezChild] exec.FilterOperator: Initializing operator FIL[1]
+2016-10-01 11:11:05,176 INFO [TezChild] exec.FilterOperator: Initialization Done 1 FIL
+2016-10-01 11:11:05,176 INFO [TezChild] exec.FilterOperator: Operator 1 FIL initialized
+2016-10-01 11:11:05,176 INFO [TezChild] exec.FilterOperator: Initializing children of 1 FIL
+2016-10-01 11:11:05,176 INFO [TezChild] exec.MapJoinOperator: Initializing child 2 MAPJOIN
+2016-10-01 11:11:05,176 INFO [TezChild] exec.HashTableDummyOperator: Initializing operator HASHTABLEDUMMY[6]
+2016-10-01 11:11:05,187 INFO [TezChild] exec.HashTableDummyOperator: Initialization Done 6 HASHTABLEDUMMY
+2016-10-01 11:11:05,187 INFO [TezChild] exec.HashTableDummyOperator: Operator 6 HASHTABLEDUMMY initialized
+2016-10-01 11:11:05,187 INFO [TezChild] exec.HashTableDummyOperator: Initializing children of 6 HASHTABLEDUMMY
+2016-10-01 11:11:05,187 INFO [TezChild] exec.MapJoinOperator: Initializing child 2 MAPJOIN
+2016-10-01 11:11:05,187 INFO [TezChild] exec.MapJoinOperator: Initializing operator MAPJOIN[2]
+2016-10-01 11:11:05,198 INFO [TezChild] exec.CommonJoinOperator: JOIN struct<_col0:int,_col3:int,_col12:int,_col17:int,_col18:int,_col21:float,_col33:float,_col39:int,_col41:int,_col43:int,_col45:int,_col49:int,_col50:int,_col55:float,_col57:float> totalsz = 15
+2016-10-01 11:11:05,203 INFO [TezChild] exec.MapJoinOperator: This is not bucket map join, so cache
+2016-10-01 11:11:05,204 INFO [TezChild] exec.MapJoinOperator: Initialization Done 2 MAPJOIN
+2016-10-01 11:11:05,204 INFO [TezChild] exec.MapJoinOperator: Operator 2 MAPJOIN initialized
+2016-10-01 11:11:05,204 INFO [TezChild] exec.MapJoinOperator: Initializing children of 2 MAPJOIN
+2016-10-01 11:11:05,204 INFO [pool-5-thread-1] log.PerfLogger: <PERFLOG method=LoadHashtable from=org.apache.hadoop.hive.ql.exec.MapJoinOperator>
+2016-10-01 11:11:05,204 INFO [TezChild] exec.MapJoinOperator: Initializing child 3 MAPJOIN
+2016-10-01 11:11:05,215 INFO [pool-5-thread-1] persistence.HashMapWrapper: Key count from statistics is 252103; setting map size to 336138
+2016-10-01 11:11:05,215 INFO [pool-5-thread-1] persistence.HybridHashTableContainer: Total available memory: 10000000
+2016-10-01 11:11:05,215 INFO [pool-5-thread-1] persistence.HybridHashTableContainer: Estimated small table size: 8067296
+2016-10-01 11:11:05,215 INFO [pool-5-thread-1] persistence.HybridHashTableContainer: Number of hash partitions to be created: 16
+2016-10-01 11:11:05,215 INFO [pool-5-thread-1] persistence.HybridHashTableContainer: Write buffer size: 524288
+2016-10-01 11:11:05,219 INFO [pool-5-thread-1] persistence.HybridHashTableContainer: Number of partitions created: 16
+2016-10-01 11:11:05,219 INFO [pool-5-thread-1] persistence.HybridHashTableContainer: Number of partitions spilled directly to disk on creation: 3
+2016-10-01 11:11:05,219 INFO [pool-5-thread-1] tez.HashTableLoader: Using tableContainer HybridHashTableContainer
+2016-10-01 11:11:05,236 INFO [pool-5-thread-1] persistence.HybridHashTableContainer: Initializing container with org.apache.hadoop.hive.serde2.binarysortable.BinarySortableSerDe and org.apache.hadoop.hive.serde2.lazybinary.LazyBinarySerDe
+2016-10-01 11:11:05,240 INFO [pool-5-thread-1] persistence.KeyValueContainer: KeyValueContainer created temp file /workspace/storage/data/local/nm/usercache/ubuntu/appcache/application_1475271333482_0173/container_1475271333482_0173_01_000084/tmp/key-value-container7975333524737536773/KeyValueContainer1768745975816522296.tmp
+2016-10-01 11:11:05,245 INFO [pool-5-thread-1] persistence.KeyValueContainer: KeyValueContainer created temp file /workspace/storage/data/local/nm/usercache/ubuntu/appcache/application_1475271333482_0173/container_1475271333482_0173_01_000084/tmp/key-value-container3567555672412698159/KeyValueContainer7479634286211293545.tmp
+2016-10-01 11:11:05,246 INFO [pool-5-thread-1] persistence.KeyValueContainer: KeyValueContainer created temp file /workspace/storage/data/local/nm/usercache/ubuntu/appcache/application_1475271333482_0173/container_1475271333482_0173_01_000084/tmp/key-value-container7271809038317935584/KeyValueContainer8494596744471414475.tmp
+2016-10-01 11:11:05,319 INFO [pool-5-thread-1] persistence.HybridHashTableContainer: Spilling hash partition 4 (Rows: 91, Mem size: 786532): /workspace/storage/data/local/nm/usercache/ubuntu/appcache/application_1475271333482_0173/container_1475271333482_0173_01_000084/tmp/partition-4-5591321710308176461.tmp
+2016-10-01 11:11:05,320 INFO [pool-5-thread-1] persistence.HybridHashTableContainer: Memory usage before spilling: 10224916
+2016-10-01 11:11:05,320 INFO [pool-5-thread-1] persistence.HybridHashTableContainer: Memory usage after spilling: 9438384
+2016-10-01 11:11:05,321 INFO [pool-5-thread-1] persistence.KeyValueContainer: KeyValueContainer created temp file /workspace/storage/data/local/nm/usercache/ubuntu/appcache/application_1475271333482_0173/container_1475271333482_0173_01_000084/tmp/key-value-container8334903251219262391/KeyValueContainer1617615956525216492.tmp
+2016-10-01 11:11:06,235 INFO [pool-5-thread-1] persistence.HybridHashTableContainer: Spilling hash partition 6 (Rows: 12951, Mem size: 1310820): /workspace/storage/data/local/nm/usercache/ubuntu/appcache/application_1475271333482_0173/container_1475271333482_0173_01_000084/tmp/partition-6-4801778845736943181.tmp
+2016-10-01 11:11:06,235 INFO [pool-5-thread-1] persistence.HybridHashTableContainer: Memory usage before spilling: 11011356
+2016-10-01 11:11:06,235 INFO [pool-5-thread-1] persistence.HybridHashTableContainer: Memory usage after spilling: 9700536
+2016-10-01 11:11:06,236 INFO [pool-5-thread-1] persistence.KeyValueContainer: KeyValueContainer created temp file /workspace/storage/data/local/nm/usercache/ubuntu/appcache/application_1475271333482_0173/container_1475271333482_0173_01_000084/tmp/key-value-container4713227569747978668/KeyValueContainer1798080010768651707.tmp
+2016-10-01 11:11:06,245 INFO [pool-5-thread-1] persistence.HybridHashTableContainer: Spilling hash partition 11 (Rows: 12968, Mem size: 1310820): /workspace/storage/data/local/nm/usercache/ubuntu/appcache/application_1475271333482_0173/container_1475271333482_0173_01_000084/tmp/partition-11-3574119276412186848.tmp
+2016-10-01 11:11:06,245 INFO [pool-5-thread-1] persistence.HybridHashTableContainer: Memory usage before spilling: 10749220
+2016-10-01 11:11:06,245 INFO [pool-5-thread-1] persistence.HybridHashTableContainer: Memory usage after spilling: 9438400
+2016-10-01 11:11:06,251 INFO [pool-5-thread-1] persistence.KeyValueContainer: KeyValueContainer created temp file /workspace/storage/data/local/nm/usercache/ubuntu/appcache/application_1475271333482_0173/container_1475271333482_0173_01_000084/tmp/key-value-container5855542108381922709/KeyValueContainer7253980683427063715.tmp
+2016-10-01 11:11:06,261 INFO [pool-5-thread-1] persistence.HybridHashTableContainer: Spilling hash partition 8 (Rows: 13010, Mem size: 1310820): /workspace/storage/data/local/nm/usercache/ubuntu/appcache/application_1475271333482_0173/container_1475271333482_0173_01_000084/tmp/partition-8-3590244208244294388.tmp
+2016-10-01 11:11:06,261 INFO [pool-5-thread-1] persistence.HybridHashTableContainer: Memory usage before spilling: 11535660
+2016-10-01 11:11:06,261 INFO [pool-5-thread-1] persistence.HybridHashTableContainer: Memory usage after spilling: 10224840
+2016-10-01 11:11:06,268 INFO [pool-5-thread-1] persistence.KeyValueContainer: KeyValueContainer created temp file /workspace/storage/data/local/nm/usercache/ubuntu/appcache/application_1475271333482_0173/container_1475271333482_0173_01_000084/tmp/key-value-container8694773567016623369/KeyValueContainer1452016026463105677.tmp
+2016-10-01 11:11:06,282 INFO [pool-5-thread-1] persistence.HybridHashTableContainer: Spilling hash partition 1 (Rows: 13078, Mem size: 1310820): /workspace/storage/data/local/nm/usercache/ubuntu/appcache/application_1475271333482_0173/container_1475271333482_0173_01_000084/tmp/partition-1-2874667818635405064.tmp
+2016-10-01 11:11:06,282 INFO [pool-5-thread-1] persistence.HybridHashTableContainer: Memory usage before spilling: 11273524
+2016-10-01 11:11:06,282 INFO [pool-5-thread-1] persistence.HybridHashTableContainer: Memory usage after spilling: 9962704
+2016-10-01 11:11:06,286 INFO [pool-5-thread-1] persistence.KeyValueContainer: KeyValueContainer created temp file /workspace/storage/data/local/nm/usercache/ubuntu/appcache/application_1475271333482_0173/container_1475271333482_0173_01_000084/tmp/key-value-container6576051341617133402/KeyValueContainer2857058149545995431.tmp
+2016-10-01 11:11:06,306 INFO [pool-5-thread-1] persistence.HybridHashTableContainer: Spilling hash partition 12 (Rows: 13188, Mem size: 1310820): /workspace/storage/data/local/nm/usercache/ubuntu/appcache/application_1475271333482_0173/container_1475271333482_0173_01_000084/tmp/partition-12-1637974506520630963.tmp
+2016-10-01 11:11:06,307 INFO [pool-5-thread-1] persistence.HybridHashTableContainer: Memory usage before spilling: 10487100
+2016-10-01 11:11:06,307 INFO [pool-5-thread-1] persistence.HybridHashTableContainer: Memory usage after spilling: 9176280
+2016-10-01 11:11:06,307 INFO [pool-5-thread-1] persistence.KeyValueContainer: KeyValueContainer created temp file /workspace/storage/data/local/nm/usercache/ubuntu/appcache/application_1475271333482_0173/container_1475271333482_0173_01_000084/tmp/key-value-container582719378384423830/KeyValueContainer1815599077515692713.tmp
+2016-10-01 11:11:07,104 INFO [pool-5-thread-1] persistence.HybridHashTableContainer: Spilling hash partition 0 (Rows: 24932, Mem size: 1572964): /workspace/storage/data/local/nm/usercache/ubuntu/appcache/application_1475271333482_0173/container_1475271333482_0173_01_000084/tmp/partition-0-5374206530944460496.tmp
+2016-10-01 11:11:07,105 INFO [pool-5-thread-1] persistence.HybridHashTableContainer: Memory usage before spilling: 11011396
+2016-10-01 11:11:07,105 INFO [pool-5-thread-1] persistence.HybridHashTableContainer: Memory usage after spilling: 9438432
+2016-10-01 11:11:07,105 INFO [pool-5-thread-1] persistence.KeyValueContainer: KeyValueContainer created temp file /workspace/storage/data/local/nm/usercache/ubuntu/appcache/application_1475271333482_0173/container_1475271333482_0173_01_000084/tmp/key-value-container5685647201731381604/KeyValueContainer2648248244634482714.tmp
+2016-10-01 11:11:07,183 INFO [pool-5-thread-1] persistence.HybridHashTableContainer: Spilling hash partition 5 (Rows: 25873, Mem size: 2097252): /workspace/storage/data/local/nm/usercache/ubuntu/appcache/application_1475271333482_0173/container_1475271333482_0173_01_000084/tmp/partition-5-6947080466964589342.tmp
+2016-10-01 11:11:07,184 INFO [pool-5-thread-1] persistence.HybridHashTableContainer: Memory usage before spilling: 12059980
+2016-10-01 11:11:07,184 INFO [pool-5-thread-1] persistence.HybridHashTableContainer: Memory usage after spilling: 9962728
+2016-10-01 11:11:07,184 INFO [pool-5-thread-1] persistence.KeyValueContainer: KeyValueContainer created temp file /workspace/storage/data/local/nm/usercache/ubuntu/appcache/application_1475271333482_0173/container_1475271333482_0173_01_000084/tmp/key-value-container8172002310531164695/KeyValueContainer3599044721836027224.tmp
+2016-10-01 11:11:07,201 INFO [pool-5-thread-1] persistence.HybridHashTableContainer: Spilling hash partition 3 (Rows: 26063, Mem size: 2097252): /workspace/storage/data/local/nm/usercache/ubuntu/appcache/application_1475271333482_0173/container_1475271333482_0173_01_000084/tmp/partition-3-7587021945631322675.tmp
+2016-10-01 11:11:07,207 INFO [pool-5-thread-1] persistence.HybridHashTableContainer: Memory usage before spilling: 10487124
+2016-10-01 11:11:07,207 INFO [pool-5-thread-1] persistence.HybridHashTableContainer: Memory usage after spilling: 8389872
+2016-10-01 11:11:07,208 INFO [pool-5-thread-1] persistence.KeyValueContainer: KeyValueContainer created temp file /workspace/storage/data/local/nm/usercache/ubuntu/appcache/application_1475271333482_0173/container_1475271333482_0173_01_000084/tmp/key-value-container3826269941999559232/KeyValueContainer7319727267885514652.tmp
+2016-10-01 11:11:07,557 INFO [pool-5-thread-1] persistence.HybridHashTableContainer: Spilling hash partition 7 (Rows: 38995, Mem size: 2621540): /workspace/storage/data/local/nm/usercache/ubuntu/appcache/application_1475271333482_0173/container_1475271333482_0173_01_000084/tmp/partition-7-6996415688327401216.tmp
+2016-10-01 11:11:07,557 INFO [pool-5-thread-1] persistence.HybridHashTableContainer: Memory usage before spilling: 10487132
+2016-10-01 11:11:07,558 INFO [pool-5-thread-1] persistence.HybridHashTableContainer: Memory usage after spilling: 7865592
+2016-10-01 11:11:07,558 INFO [pool-5-thread-1] persistence.KeyValueContainer: KeyValueContainer created temp file /workspace/storage/data/local/nm/usercache/ubuntu/appcache/application_1475271333482_0173/container_1475271333482_0173_01_000084/tmp/key-value-container2768282975500846843/KeyValueContainer5548601583773468014.tmp
+2016-10-01 11:11:07,682 INFO [pool-5-thread-1] impl.SimpleFetchedInputAllocator: Used memory after freeing 8917535 : 68902147
+2016-10-01 11:11:07,720 INFO [pool-5-thread-1] persistence.HybridHashTableContainer: Spilling hash partition 10 (Rows: 51558, Mem size: 3670116): /workspace/storage/data/local/nm/usercache/ubuntu/appcache/application_1475271333482_0173/container_1475271333482_0173_01_000084/tmp/partition-10-7540986850899098926.tmp
+2016-10-01 11:11:07,720 INFO [pool-5-thread-1] persistence.HybridHashTableContainer: Memory usage before spilling: 11011428
+2016-10-01 11:11:07,720 INFO [pool-5-thread-1] persistence.HybridHashTableContainer: Memory usage after spilling: 7341312
+2016-10-01 11:11:07,720 INFO [pool-5-thread-1] persistence.KeyValueContainer: KeyValueContainer created temp file /workspace/storage/data/local/nm/usercache/ubuntu/appcache/application_1475271333482_0173/container_1475271333482_0173_01_000084/tmp/key-value-container5179610370104397338/KeyValueContainer8537152415467454981.tmp
+2016-10-01 11:11:07,835 INFO [pool-5-thread-1] impl.SimpleFetchedInputAllocator: Used memory after freeing 8892708 : 60009439
+2016-10-01 11:11:07,989 INFO [pool-5-thread-1] impl.SimpleFetchedInputAllocator: Used memory after freeing 8914012 : 51095427
+2016-10-01 11:11:08,054 INFO [pool-5-thread-1] persistence.HybridHashTableContainer: Spilling hash partition 2 (Rows: 90720, Mem size: 5242980): /workspace/storage/data/local/nm/usercache/ubuntu/appcache/application_1475271333482_0173/container_1475271333482_0173_01_000084/tmp/partition-2-3828353714264118968.tmp
+2016-10-01 11:11:08,055 INFO [pool-5-thread-1] persistence.HybridHashTableContainer: Memory usage before spilling: 10487148
+2016-10-01 11:11:08,055 INFO [pool-5-thread-1] persistence.HybridHashTableContainer: Memory usage after spilling: 5244168
+2016-10-01 11:11:08,055 INFO [pool-5-thread-1] persistence.KeyValueContainer: KeyValueContainer created temp file /workspace/storage/data/local/nm/usercache/ubuntu/appcache/application_1475271333482_0173/container_1475271333482_0173_01_000084/tmp/key-value-container1296489455098760848/KeyValueContainer741041341154702807.tmp
+2016-10-01 11:11:08,138 INFO [pool-5-thread-1] impl.SimpleFetchedInputAllocator: Used memory after freeing 11094703 : 40000724
+2016-10-01 11:11:08,208 INFO [pool-5-thread-1] impl.SimpleFetchedInputAllocator: Used memory after freeing 8897704 : 31103020
+2016-10-01 11:11:08,288 INFO [pool-5-thread-1] impl.SimpleFetchedInputAllocator: Used memory after freeing 8889956 : 22213064
+2016-10-01 11:11:08,562 INFO [pool-5-thread-1] impl.SimpleFetchedInputAllocator: Used memory after freeing 8892975 : 13320089
+2016-10-01 11:11:08,626 INFO [pool-5-thread-1] impl.SimpleFetchedInputAllocator: Used memory after freeing 8895409 : 4424680
+2016-10-01 11:11:08,660 INFO [pool-5-thread-1] impl.SimpleFetchedInputAllocator: Used memory after freeing 4424680 : 0
+2016-10-01 11:11:08,702 WARN [pool-5-thread-1] persistence.HybridHashTableContainer: This LAST partition in memory won't be spilled!
+2016-10-01 11:11:09,044 INFO [pool-5-thread-1] readers.UnorderedKVReader: Num Records read: 3295016
+2016-10-01 11:11:09,044 INFO [pool-5-thread-1] log.PerfLogger: </PERFLOG method=LoadHashtable start=1475320265204 end=1475320269044 duration=3840 from=org.apache.hadoop.hive.ql.exec.MapJoinOperator>
+2016-10-01 11:11:09,044 INFO [pool-5-thread-1] tez.ObjectCache: Caching key: ubuntu_20161001111033_202e5e0c-2e03-4130-ab80-b940201376f1__HASH_MAP_MAPJOIN_96_container
+2016-10-01 11:11:09,045 INFO [TezChild] exec.HashTableDummyOperator: Initializing operator HASHTABLEDUMMY[5]
+2016-10-01 11:11:09,045 INFO [TezChild] exec.HashTableDummyOperator: Initialization Done 5 HASHTABLEDUMMY
+2016-10-01 11:11:09,045 INFO [TezChild] exec.HashTableDummyOperator: Operator 5 HASHTABLEDUMMY initialized
+2016-10-01 11:11:09,045 INFO [TezChild] exec.HashTableDummyOperator: Initializing children of 5 HASHTABLEDUMMY
+2016-10-01 11:11:09,045 INFO [TezChild] exec.MapJoinOperator: Initializing child 3 MAPJOIN
+2016-10-01 11:11:09,045 INFO [TezChild] exec.MapJoinOperator: Initializing operator MAPJOIN[3]
+2016-10-01 11:11:09,046 INFO [TezChild] exec.CommonJoinOperator: JOIN struct<_col0:int,_col3:int,_col12:int,_col17:int,_col18:int,_col21:float,_col33:float,_col39:int,_col41:int,_col43:int,_col45:int,_col49:int,_col50:int,_col55:float,_col57:float,_col64:int> totalsz = 16
+2016-10-01 11:11:09,047 INFO [TezChild] exec.MapJoinOperator: This is not bucket map join, so cache
+2016-10-01 11:11:09,047 INFO [TezChild] exec.MapJoinOperator: Initialization Done 3 MAPJOIN
+2016-10-01 11:11:09,047 INFO [TezChild] exec.MapJoinOperator: Operator 3 MAPJOIN initialized
+2016-10-01 11:11:09,047 INFO [TezChild] exec.MapJoinOperator: Initializing children of 3 MAPJOIN
+2016-10-01 11:11:09,047 INFO [TezChild] exec.ReduceSinkOperator: Initializing child 4 RS
+2016-10-01 11:11:09,047 INFO [TezChild] exec.ReduceSinkOperator: Initializing operator RS[4]
+2016-10-01 11:11:09,049 INFO [TezChild] exec.ReduceSinkOperator: Using tag = 0
+2016-10-01 11:11:09,050 INFO [TezChild] exec.ReduceSinkOperator: Initialization Done 4 RS
+2016-10-01 11:11:09,050 INFO [TezChild] exec.ReduceSinkOperator: Operator 4 RS initialized
+2016-10-01 11:11:09,050 INFO [pool-5-thread-2] log.PerfLogger: <PERFLOG method=LoadHashtable from=org.apache.hadoop.hive.ql.exec.MapJoinOperator>
+2016-10-01 11:11:09,050 INFO [pool-5-thread-2] persistence.HashMapWrapper: Key count from statistics is 10602; setting map size to 14136
+2016-10-01 11:11:09,066 INFO [pool-5-thread-2] persistence.HybridHashTableContainer: Total available memory: 10000000
+2016-10-01 11:11:09,066 INFO [pool-5-thread-2] persistence.HybridHashTableContainer: Estimated small table size: 42407
+2016-10-01 11:11:09,066 INFO [pool-5-thread-2] persistence.HybridHashTableContainer: Number of hash partitions to be created: 16
+2016-10-01 11:11:09,066 INFO [pool-5-thread-2] persistence.HybridHashTableContainer: Write buffer size: 524288
+2016-10-01 11:11:09,067 INFO [pool-5-thread-2] persistence.HybridHashTableContainer: Number of partitions created: 16
+2016-10-01 11:11:09,067 INFO [pool-5-thread-2] persistence.HybridHashTableContainer: Number of partitions spilled directly to disk on creation: 0
+2016-10-01 11:11:09,067 INFO [pool-5-thread-2] tez.HashTableLoader: Using tableContainer HybridHashTableContainer
+2016-10-01 11:11:09,068 INFO [pool-5-thread-2] persistence.HybridHashTableContainer: Initializing container with org.apache.hadoop.hive.serde2.binarysortable.BinarySortableSerDe and org.apache.hadoop.hive.serde2.lazybinary.LazyBinarySerDe
+2016-10-01 11:11:09,070 INFO [pool-5-thread-2] impl.SimpleFetchedInputAllocator: Used memory after freeing 6138 : 0
+2016-10-01 11:11:09,070 INFO [pool-5-thread-2] readers.UnorderedKVReader: Num Records read: 876
+2016-10-01 11:11:09,070 INFO [pool-5-thread-2] log.PerfLogger: </PERFLOG method=LoadHashtable start=1475320269050 end=1475320269070 duration=20 from=org.apache.hadoop.hive.ql.exec.MapJoinOperator>
+2016-10-01 11:11:09,070 INFO [pool-5-thread-2] tez.ObjectCache: Caching key: ubuntu_20161001111033_202e5e0c-2e03-4130-ab80-b940201376f1__HASH_MAP_MAPJOIN_97_container
+2016-10-01 11:11:09,080 INFO [TezChild] exec.OperatorUtils: Setting output collector: RS[4] --> Reducer 2
+2016-10-01 11:11:09,080 INFO [TezChild] log.PerfLogger: </PERFLOG method=TezInitializeOperators start=1475320263538 end=1475320269080 duration=5542 from=org.apache.hadoop.hive.ql.exec.tez.RecordProcessor>
+2016-10-01 11:11:09,080 INFO [TezChild] exec.Utilities: PLAN PATH = hdfs://10.0.0.4:8020/tmp/hive/ubuntu/091ec849-13a5-452d-9c67-4c413e7fb93d/hive_2016-10-01_11-10-33_899_3237225052405870548-1/ubuntu/_tez_scratch_dir/f5865b21-7474-4793-8f80-3ed8cdbd3bfa/map.xml
+2016-10-01 11:11:09,407 WARN [TezChild] lazy.LazyStruct: Extra bytes detected at the end of the row! Ignoring similar problems.
+2016-10-01 11:11:09,413 INFO [TezChild] persistence.ObjectContainer: ObjectContainer created temp file /workspace/storage/data/local/nm/usercache/ubuntu/appcache/application_1475271333482_0173/container_1475271333482_0173_01_000084/tmp/object-container589583045974586921/ObjectContainer5308104300179672473.tmp
+2016-10-01 11:11:09,420 INFO [TezChild] exec.MapOperator: MAP[7]: records read - 1
+2016-10-01 11:11:09,420 INFO [TezChild] persistence.ObjectContainer: ObjectContainer created temp file /workspace/storage/data/local/nm/usercache/ubuntu/appcache/application_1475271333482_0173/container_1475271333482_0173_01_000084/tmp/object-container706140665115109163/ObjectContainer5740365320150401886.tmp
+2016-10-01 11:11:09,424 INFO [TezChild] persistence.ObjectContainer: ObjectContainer created temp file /workspace/storage/data/local/nm/usercache/ubuntu/appcache/application_1475271333482_0173/container_1475271333482_0173_01_000084/tmp/object-container7651916761666610084/ObjectContainer8454825166397718172.tmp
+2016-10-01 11:11:09,426 INFO [TezChild] persistence.ObjectContainer: ObjectContainer created temp file /workspace/storage/data/local/nm/usercache/ubuntu/appcache/application_1475271333482_0173/container_1475271333482_0173_01_000084/tmp/object-container1413384465167470013/ObjectContainer5950219760113923961.tmp
+2016-10-01 11:11:09,428 INFO [TezChild] persistence.ObjectContainer: ObjectContainer created temp file /workspace/storage/data/local/nm/usercache/ubuntu/appcache/application_1475271333482_0173/container_1475271333482_0173_01_000084/tmp/object-container3854028826687440575/ObjectContainer7615870789429437492.tmp
+2016-10-01 11:11:09,431 INFO [TezChild] persistence.ObjectContainer: ObjectContainer created temp file /workspace/storage/data/local/nm/usercache/ubuntu/appcache/application_1475271333482_0173/container_1475271333482_0173_01_000084/tmp/object-container6454240397847396167/ObjectContainer1340311432480127063.tmp
+2016-10-01 11:11:09,436 INFO [TezChild] exec.MapOperator: MAP[7]: records read - 10
+2016-10-01 11:11:09,447 INFO [TezChild] persistence.ObjectContainer: ObjectContainer created temp file /workspace/storage/data/local/nm/usercache/ubuntu/appcache/application_1475271333482_0173/container_1475271333482_0173_01_000084/tmp/object-container8842267359161434024/ObjectContainer4802619266599668251.tmp
+2016-10-01 11:11:09,452 INFO [TezChild] persistence.ObjectContainer: ObjectContainer created temp file /workspace/storage/data/local/nm/usercache/ubuntu/appcache/application_1475271333482_0173/container_1475271333482_0173_01_000084/tmp/object-container1857532494330655310/ObjectContainer6171877102924133783.tmp
+2016-10-01 11:11:09,468 INFO [TezChild] persistence.ObjectContainer: ObjectContainer created temp file /workspace/storage/data/local/nm/usercache/ubuntu/appcache/application_1475271333482_0173/container_1475271333482_0173_01_000084/tmp/object-container5741241010593235462/ObjectContainer3870218911072332927.tmp
+2016-10-01 11:11:09,470 INFO [TezChild] persistence.ObjectContainer: ObjectContainer created temp file /workspace/storage/data/local/nm/usercache/ubuntu/appcache/application_1475271333482_0173/container_1475271333482_0173_01_000084/tmp/object-container5154112963842365346/ObjectContainer8831262450341587507.tmp
+2016-10-01 11:11:09,473 INFO [TezChild] persistence.ObjectContainer: ObjectContainer created temp file /workspace/storage/data/local/nm/usercache/ubuntu/appcache/application_1475271333482_0173/container_1475271333482_0173_01_000084/tmp/object-container3659323701245391420/ObjectContainer1808970900456184505.tmp
+2016-10-01 11:11:09,475 INFO [TezChild] persistence.ObjectContainer: ObjectContainer created temp file /workspace/storage/data/local/nm/usercache/ubuntu/appcache/application_1475271333482_0173/container_1475271333482_0173_01_000084/tmp/object-container9169945143704062837/ObjectContainer5402384803566019750.tmp
+2016-10-01 11:11:09,477 INFO [TezChild] persistence.ObjectContainer: ObjectContainer created temp file /workspace/storage/data/local/nm/usercache/ubuntu/appcache/application_1475271333482_0173/container_1475271333482_0173_01_000084/tmp/object-container2845720384693846855/ObjectContainer1707641689493694577.tmp
+2016-10-01 11:11:09,478 INFO [TezChild] persistence.ObjectContainer: ObjectContainer created temp file /workspace/storage/data/local/nm/usercache/ubuntu/appcache/application_1475271333482_0173/container_1475271333482_0173_01_000084/tmp/object-container1049277654703496646/ObjectContainer8859856720188087062.tmp
+2016-10-01 11:11:09,497 INFO [TezChild] persistence.ObjectContainer: ObjectContainer created temp file /workspace/storage/data/local/nm/usercache/ubuntu/appcache/application_1475271333482_0173/container_1475271333482_0173_01_000084/tmp/object-container2026449380813459746/ObjectContainer6924957394004227196.tmp
+2016-10-01 11:11:09,525 INFO [TezChild] exec.ReduceSinkOperator: keys are [reducesinkkey0] num distributions: 1
+2016-10-01 11:11:09,526 INFO [TezChild] exec.ReduceSinkOperator: RS[4]: records written - 1
+2016-10-01 11:11:09,542 INFO [TezChild] exec.MapOperator: MAP[7]: records read - 100
+2016-10-01 11:11:09,855 INFO [TezChild] exec.MapOperator: MAP[7]: records read - 1000
+2016-10-01 11:11:10,049 INFO [TezChild] exec.ReduceSinkOperator: RS[4]: records written - 10
+2016-10-01 11:11:10,483 INFO [TezChild] exec.MapOperator: MAP[7]: records read - 10000
+2016-10-01 11:11:10,736 INFO [TezChild] exec.ReduceSinkOperator: RS[4]: records written - 100
+2016-10-01 11:11:13,036 INFO [TezChild] exec.MapOperator: MAP[7]: records read - 100000
+2016-10-01 11:11:15,149 INFO [TezChild] exec.ReduceSinkOperator: RS[4]: records written - 1000
+2016-10-01 11:11:52,614 INFO [TezChild] io.HiveContextAwareRecordReader: Processing file hdfs://10.0.0.4:8020/tmp/tpcds-generate/db_1/50/web_sales/data-m-00004
+2016-10-01 11:12:03,960 INFO [TezChild] log.PerfLogger: </PERFLOG method=TezRunProcessor start=1475320262819 end=1475320323960 duration=61141 from=org.apache.hadoop.hive.ql.exec.tez.TezProcessor>
+2016-10-01 11:12:03,960 INFO [TezChild] exec.MapOperator: 7 finished. closing... 
+2016-10-01 11:12:03,960 INFO [TezChild] exec.MapOperator: RECORDS_IN_Map_1:718647
+2016-10-01 11:12:03,960 INFO [TezChild] exec.MapOperator: DESERIALIZE_ERRORS:0
+2016-10-01 11:12:03,960 INFO [TezChild] exec.TableScanOperator: 0 finished. closing... 
+2016-10-01 11:12:03,961 INFO [TezChild] exec.FilterOperator: 1 finished. closing... 
+2016-10-01 11:12:03,961 INFO [TezChild] exec.FilterOperator: 1 Close done
+2016-10-01 11:12:03,961 INFO [TezChild] exec.TableScanOperator: 0 Close done
+2016-10-01 11:12:03,961 INFO [TezChild] exec.MapOperator: 7 Close done
+2016-10-01 11:12:03,961 INFO [TezChild] exec.HashTableDummyOperator: 6 finished. closing... 
+2016-10-01 11:12:03,961 INFO [TezChild] exec.MapJoinOperator: 2 finished. closing... 
+2016-10-01 11:12:03,961 INFO [TezChild] persistence.BytesBytesMultiHashMap: Map metrics: keys allocated 1, keys assigned 0, write conflict 150963, write max dist 17, read conflict 0, expanded 1 times in 39ms
+2016-10-01 11:12:03,961 INFO [TezChild] persistence.BytesBytesMultiHashMap: Map metrics: keys allocated 1, keys assigned 0, write conflict 41284, write max dist 16, read conflict 0, expanded 0 times in 0ms
+2016-10-01 11:12:03,961 INFO [TezChild] persistence.BytesBytesMultiHashMap: Map metrics: keys allocated 1, keys assigned 0, write conflict 728098, write max dist 47, read conflict 0, expanded 2 times in 28ms
+2016-10-01 11:12:03,961 INFO [TezChild] persistence.BytesBytesMultiHashMap: Map metrics: keys allocated 1, keys assigned 0, write conflict 156768, write max dist 16, read conflict 0, expanded 1 times in 19ms
+2016-10-01 11:12:03,961 INFO [TezChild] persistence.BytesBytesMultiHashMap: Map metrics: keys allocated 1, keys assigned 0, write conflict 3, write max dist 1, read conflict 0, expanded 0 times in 0ms
+2016-10-01 11:12:03,961 INFO [TezChild] persistence.BytesBytesMultiHashMap: Map metrics: keys allocated 1, keys assigned 0, write conflict 156163, write max dist 22, read conflict 0, expanded 1 times in 3ms
+2016-10-01 11:12:03,961 INFO [TezChild] persistence.BytesBytesMultiHashMap: Map metrics: keys allocated 1, keys assigned 0, write conflict 40628, write max dist 15, read conflict 0, expanded 0 times in 0ms
+2016-10-01 11:12:03,961 INFO [TezChild] persistence.BytesBytesMultiHashMap: Map metrics: keys allocated 1, keys assigned 0, write conflict 259674, write max dist 22, read conflict 0, expanded 1 times in 27ms
+2016-10-01 11:12:03,961 INFO [TezChild] persistence.BytesBytesMultiHashMap: Map metrics: keys allocated 1, keys assigned 0, write conflict 40982, write max dist 15, read conflict 0, expanded 0 times in 0ms
+2016-10-01 11:12:03,961 INFO [TezChild] persistence.BytesBytesMultiHashMap: Map metrics: keys allocated 524288, keys assigned 205442, write conflict 1767048, write max dist 17, read conflict 259469, expanded 4 times in 104ms
+2016-10-01 11:12:03,961 INFO [TezChild] persistence.BytesBytesMultiHashMap: Map metrics: keys allocated 1, keys assigned 0, write conflict 385516, write max dist 17, read conflict 0, expanded 2 times in 21ms
+2016-10-01 11:12:03,961 INFO [TezChild] persistence.BytesBytesMultiHashMap: Map metrics: keys allocated 1, keys assigned 0, write conflict 41117, write max dist 16, read conflict 0, expanded 0 times in 0ms
+2016-10-01 11:12:03,961 INFO [TezChild] persistence.BytesBytesMultiHashMap: Map metrics: keys allocated 1, keys assigned 0, write conflict 42562, write max dist 15, read conflict 0, expanded 0 times in 0ms
+2016-10-01 11:12:03,961 INFO [TezChild] persistence.HybridHashTableContainer: In memory partitions have been processed successfully: 1 partitions in memory have been processed; 15 partitions have been spilled to disk and will be processed next.
+2016-10-01 11:12:03,961 INFO [TezChild] exec.MapJoinOperator: Hybrid Grace Hash Join: Number of rows restored from KeyValueContainer: 181646
+2016-10-01 11:12:03,983 INFO [TezChild] persistence.BytesBytesMultiHashMap: Expand and rehash to 262144 from 65536
+2016-10-01 11:12:03,984 INFO [TezChild] exec.MapJoinOperator: Hybrid Grace Hash Join: Deserializing spilled hash partition...
+2016-10-01 11:12:03,984 INFO [TezChild] exec.MapJoinOperator: Hybrid Grace Hash Join: Number of rows in hashmap: 206578
+2016-10-01 11:12:03,984 WARN [TezChild] exec.MapJoinOperator: Hybrid Grace Hash Join: Hash table cannot be reloaded since it will be greater than memory limit. Recursive spilling is currently not supported
+2016-10-01 11:12:09,256 INFO [TezChild] exec.MapJoinOperator: Hybrid Grace Hash Join: Number of rows restored from KeyValueContainer: 192585
+2016-10-01 11:12:09,261 INFO [TezChild] persistence.BytesBytesMultiHashMap: Expand and rehash to 262144 from 32768
+2016-10-01 11:12:09,262 INFO [TezChild] exec.MapJoinOperator: Hybrid Grace Hash Join: Deserializing spilled hash partition...
+2016-10-01 11:12:09,262 INFO [TezChild] exec.MapJoinOperator: Hybrid Grace Hash Join: Number of rows in hashmap: 205663
+2016-10-01 11:12:09,262 WARN [TezChild] exec.MapJoinOperator: Hybrid Grace Hash Join: Hash table cannot be reloaded since it will be greater than memory limit. Recursive spilling is currently not supported
+2016-10-01 11:12:13,129 INFO [TezChild] exec.ReduceSinkOperator: RS[4]: records written - 10000
+2016-10-01 11:12:13,986 INFO [TezChild] exec.MapJoinOperator: Hybrid Grace Hash Join: Number of rows restored from KeyValueContainer: 114654
+2016-10-01 11:12:14,002 INFO [TezChild] persistence.BytesBytesMultiHashMap: Expand and rehash to 262144 from 131072
+2016-10-01 11:12:14,003 INFO [TezChild] exec.MapJoinOperator: Hybrid Grace Hash Join: Deserializing spilled hash partition...
+2016-10-01 11:12:14,003 INFO [TezChild] exec.MapJoinOperator: Hybrid Grace Hash Join: Number of rows in hashmap: 205374
+2016-10-01 11:12:14,003 WARN [TezChild] exec.MapJoinOperator: Hybrid Grace Hash Join: Hash table cannot be reloaded since it will be greater than memory limit. Recursive spilling is currently not supported
+2016-10-01 11:12:19,577 INFO [TezChild] exec.MapJoinOperator: Hybrid Grace Hash Join: Number of rows restored from KeyValueContainer: 179582
+2016-10-01 11:12:19,598 INFO [TezChild] persistence.BytesBytesMultiHashMap: Expand and rehash to 262144 from 65536
+2016-10-01 11:12:19,598 INFO [TezChild] exec.MapJoinOperator: Hybrid Grace Hash Join: Deserializing spilled hash partition...
+2016-10-01 11:12:19,598 INFO [TezChild] exec.MapJoinOperator: Hybrid Grace Hash Join: Number of rows in hashmap: 205645
+2016-10-01 11:12:19,598 WARN [TezChild] exec.MapJoinOperator: Hybrid Grace Hash Join: Hash table cannot be reloaded since it will be greater than memory limit. Recursive spilling is currently not supported
+2016-10-01 11:12:23,226 INFO [TezChild] exec.MapJoinOperator: Hybrid Grace Hash Join: Number of rows restored from KeyValueContainer: 205777
+2016-10-01 11:12:23,228 INFO [TezChild] persistence.BytesBytesMultiHashMap: Expand and rehash to 262144 from 32768
+2016-10-01 11:12:23,228 INFO [TezChild] exec.MapJoinOperator: Hybrid Grace Hash Join: Deserializing spilled hash partition...
+2016-10-01 11:12:23,228 INFO [TezChild] exec.MapJoinOperator: Hybrid Grace Hash Join: Number of rows in hashmap: 205868
+2016-10-01 11:12:23,228 WARN [TezChild] exec.MapJoinOperator: Hybrid Grace Hash Join: Hash table cannot be reloaded since it will be greater than memory limit. Recursive spilling is currently not supported
+2016-10-01 11:12:29,071 INFO [TezChild] exec.MapJoinOperator: Hybrid Grace Hash Join: Number of rows restored from KeyValueContainer: 180707
+2016-10-01 11:12:29,075 INFO [TezChild] persistence.BytesBytesMultiHashMap: Expand and rehash to 262144 from 65536
+2016-10-01 11:12:29,075 INFO [TezChild] exec.MapJoinOperator: Hybrid Grace Hash Join: Deserializing spilled hash partition...
+2016-10-01 11:12:29,075 INFO [TezChild] exec.MapJoinOperator: Hybrid Grace Hash Join: Number of rows in hashmap: 206580
+2016-10-01 11:12:29,075 WARN [TezChild] exec.MapJoinOperator: Hybrid Grace Hash Join: Hash table cannot be reloaded since it will be greater than memory limit. Recursive spilling is currently not supported
+2016-10-01 11:12:34,387 INFO [TezChild] exec.MapJoinOperator: Hybrid Grace Hash Join: Number of rows restored from KeyValueContainer: 193055
+2016-10-01 11:12:34,390 INFO [TezChild] persistence.BytesBytesMultiHashMap: Expand and rehash to 262144 from 32768
+2016-10-01 11:12:34,391 INFO [TezChild] exec.MapJoinOperator: Hybrid Grace Hash Join: Deserializing spilled hash partition...
+2016-10-01 11:12:34,391 INFO [TezChild] exec.MapJoinOperator: Hybrid Grace Hash Join: Number of rows in hashmap: 206006
+2016-10-01 11:12:34,391 WARN [TezChild] exec.MapJoinOperator: Hybrid Grace Hash Join: Hash table cannot be reloaded since it will be greater than memory limit. Recursive spilling is currently not supported
+2016-10-01 11:12:38,364 INFO [TezChild] exec.MapJoinOperator: Hybrid Grace Hash Join: Number of rows restored from KeyValueContainer: 167344
+2016-10-01 11:12:38,377 INFO [TezChild] persistence.BytesBytesMultiHashMap: Expand and rehash to 262144 from 65536
+2016-10-01 11:12:38,377 INFO [TezChild] exec.MapJoinOperator: Hybrid Grace Hash Join: Deserializing spilled hash partition...
+2016-10-01 11:12:38,377 INFO [TezChild] exec.MapJoinOperator: Hybrid Grace Hash Join: Number of rows in hashmap: 206339
+2016-10-01 11:12:38,377 WARN [TezChild] exec.MapJoinOperator: Hybrid Grace Hash Join: Hash table cannot be reloaded since it will be greater than memory limit. Recursive spilling is currently not supported
+2016-10-01 11:12:42,744 INFO [TezChild] exec.MapJoinOperator: Hybrid Grace Hash Join: Number of rows restored from KeyValueContainer: 192875
+2016-10-01 11:12:42,747 INFO [TezChild] persistence.BytesBytesMultiHashMap: Expand and rehash to 262144 from 32768
+2016-10-01 11:12:42,747 INFO [TezChild] exec.MapJoinOperator: Hybrid Grace Hash Join: Deserializing spilled hash partition...
+2016-10-01 11:12:42,747 INFO [TezChild] exec.MapJoinOperator: Hybrid Grace Hash Join: Number of rows in hashmap: 205885
+2016-10-01 11:12:42,747 WARN [TezChild] exec.MapJoinOperator: Hybrid Grace Hash Join: Hash table cannot be reloaded since it will be greater than memory limit. Recursive spilling is currently not supported
+2016-10-01 11:12:48,123 INFO [TezChild] exec.MapJoinOperator: Hybrid Grace Hash Join: Number of rows restored from KeyValueContainer: 154427
+2016-10-01 11:12:48,130 INFO [TezChild] persistence.BytesBytesMultiHashMap: Expand and rehash to 524288 from 131072
+2016-10-01 11:12:48,131 INFO [TezChild] exec.MapJoinOperator: Hybrid Grace Hash Join: Deserializing spilled hash partition...
+2016-10-01 11:12:48,131 INFO [TezChild] exec.MapJoinOperator: Hybrid Grace Hash Join: Number of rows in hashmap: 205985
+2016-10-01 11:12:48,131 WARN [TezChild] exec.MapJoinOperator: Hybrid Grace Hash Join: Hash table cannot be reloaded since it will be greater than memory limit. Recursive spilling is currently not supported
+2016-10-01 11:12:52,146 INFO [TezChild] exec.MapJoinOperator: Hybrid Grace Hash Join: Number of rows restored from KeyValueContainer: 192703
+2016-10-01 11:12:52,149 INFO [TezChild] persistence.BytesBytesMultiHashMap: Expand and rehash to 262144 from 32768
+2016-10-01 11:12:52,149 INFO [TezChild] exec.MapJoinOperator: Hybrid Grace Hash Join: Deserializing spilled hash partition...
+2016-10-01 11:12:52,149 INFO [TezChild] exec.MapJoinOperator: Hybrid Grace Hash Join: Number of rows in hashmap: 205671
+2016-10-01 11:12:52,149 WARN [TezChild] exec.MapJoinOperator: Hybrid Grace Hash Join: Hash table cannot be reloaded since it will be greater than memory limit. Recursive spilling is currently not supported
+2016-10-01 11:12:54,666 INFO [TezChild] exec.MapJoinOperator: Hybrid Grace Hash Join: Number of rows restored from KeyValueContainer: 192721
+2016-10-01 11:12:54,669 INFO [TezChild] persistence.BytesBytesMultiHashMap: Expand and rehash to 262144 from 32768
+2016-10-01 11:12:54,669 INFO [TezChild] exec.MapJoinOperator: Hybrid Grace Hash Join: Deserializing spilled hash partition...
+2016-10-01 11:12:54,669 INFO [TezChild] exec.MapJoinOperator: Hybrid Grace Hash Join: Number of rows in hashmap: 205909
+2016-10-01 11:12:54,669 WARN [TezChild] exec.MapJoinOperator: Hybrid Grace Hash Join: Hash table cannot be reloaded since it will be greater than memory limit. Recursive spilling is currently not supported
+2016-10-01 11:12:58,204 INFO [TezChild] exec.MapJoinOperator: Hybrid Grace Hash Join: Number of rows restored from KeyValueContainer: 205997
+2016-10-01 11:12:58,205 INFO [TezChild] exec.MapJoinOperator: Hybrid Grace Hash Join: Deserializing spilled hash partition...
+2016-10-01 11:12:58,205 INFO [TezChild] exec.MapJoinOperator: Hybrid Grace Hash Join: Number of rows in hashmap: 205997
+2016-10-01 11:12:58,205 WARN [TezChild] exec.MapJoinOperator: Hybrid Grace Hash Join: Hash table cannot be reloaded since it will be greater than memory limit. Recursive spilling is currently not supported
+2016-10-01 11:13:02,078 INFO [TezChild] exec.MapJoinOperator: Hybrid Grace Hash Join: Number of rows restored from KeyValueContainer: 205909
+2016-10-01 11:13:02,079 INFO [TezChild] exec.MapJoinOperator: Hybrid Grace Hash Join: Deserializing spilled hash partition...
+2016-10-01 11:13:02,079 INFO [TezChild] exec.MapJoinOperator: Hybrid Grace Hash Join: Number of rows in hashmap: 205909
+2016-10-01 11:13:02,079 WARN [TezChild] exec.MapJoinOperator: Hybrid Grace Hash Join: Hash table cannot be reloaded since it will be greater than memory limit. Recursive spilling is currently not supported
+2016-10-01 11:13:05,637 INFO [TezChild] exec.MapJoinOperator: Hybrid Grace Hash Join: Number of rows restored from KeyValueContainer: 206165
+2016-10-01 11:13:05,638 INFO [TezChild] exec.MapJoinOperator: Hybrid Grace Hash Join: Deserializing spilled hash partition...
+2016-10-01 11:13:05,638 INFO [TezChild] exec.MapJoinOperator: Hybrid Grace Hash Join: Number of rows in hashmap: 206165
+2016-10-01 11:13:05,638 WARN [TezChild] exec.MapJoinOperator: Hybrid Grace Hash Join: Hash table cannot be reloaded since it will be greater than memory limit. Recursive spilling is currently not supported
+2016-10-01 11:13:08,932 INFO [TezChild] exec.MapJoinOperator: spilled: true abort: false. Clearing spilled partitions.
+2016-10-01 11:13:08,933 INFO [TezChild] tez.ObjectCache: Removing key: ubuntu_20161001111033_202e5e0c-2e03-4130-ab80-b940201376f1__HASH_MAP_MAPJOIN_96_container
+2016-10-01 11:13:08,933 INFO [TezChild] exec.MapJoinOperator: 2 Close done
+2016-10-01 11:13:08,933 INFO [TezChild] exec.HashTableDummyOperator: 6 Close done
+2016-10-01 11:13:08,933 INFO [TezChild] exec.HashTableDummyOperator: 5 finished. closing... 
+2016-10-01 11:13:08,933 INFO [TezChild] exec.MapJoinOperator: 3 finished. closing... 
+2016-10-01 11:13:08,933 INFO [TezChild] persistence.BytesBytesMultiHashMap: Map metrics: keys allocated 8192, keys assigned 49, write conflict 1, write max dist 1, read conflict 143, expanded 0 times in 0ms
+2016-10-01 11:13:08,933 INFO [TezChild] persistence.BytesBytesMultiHashMap: Map metrics: keys allocated 8192, keys assigned 47, write conflict 1, write max dist 1, read conflict 50, expanded 0 times in 0ms
+2016-10-01 11:13:08,933 INFO [TezChild] persistence.BytesBytesMultiHashMap: Map metrics: keys allocated 8192, keys assigned 60, write conflict 3, write max dist 1, read conflict 296, expanded 0 times in 0ms
+2016-10-01 11:13:08,933 INFO [TezChild] persistence.BytesBytesMultiHashMap: Map metrics: keys allocated 8192, keys assigned 55, write conflict 2, write max dist 1, read conflict 113, expanded 0 times in 0ms
+2016-10-01 11:13:08,933 INFO [TezChild] persistence.BytesBytesMultiHashMap: Map metrics: keys allocated 8192, keys assigned 55, write conflict 1, write max dist 1, read conflict 56, expanded 0 times in 0ms
+2016-10-01 11:13:08,934 INFO [TezChild] persistence.BytesBytesMultiHashMap: Map metrics: keys allocated 8192, keys assigned 52, write conflict 2, write max dist 1, read conflict 117, expanded 0 times in 0ms
+2016-10-01 11:13:08,934 INFO [TezChild] persistence.BytesBytesMultiHashMap: Map metrics: keys allocated 8192, keys assigned 54, write conflict 2, write max dist 1, read conflict 180, expanded 0 times in 0ms
+2016-10-01 11:13:08,934 INFO [TezChild] persistence.BytesBytesMultiHashMap: Map metrics: keys allocated 8192, keys assigned 53, write conflict 1, write max dist 1, read conflict 62, expanded 0 times in 0ms
+2016-10-01 11:13:08,934 INFO [TezChild] persistence.BytesBytesMultiHashMap: Map metrics: keys allocated 8192, keys assigned 53, write conflict 2, write max dist 1, read conflict 204, expanded 0 times in 0ms
+2016-10-01 11:13:08,934 INFO [TezChild] persistence.BytesBytesMultiHashMap: Map metrics: keys allocated 8192, keys assigned 55, write conflict 3, write max dist 1, read conflict 193, expanded 0 times in 0ms
+2016-10-01 11:13:08,934 INFO [TezChild] persistence.BytesBytesMultiHashMap: Map metrics: keys allocated 8192, keys assigned 58, write conflict 3, write max dist 1, read conflict 146, expanded 0 times in 0ms
+2016-10-01 11:13:08,934 INFO [TezChild] persistence.BytesBytesMultiHashMap: Map metrics: keys allocated 8192, keys assigned 64, write conflict 2, write max dist 1, read conflict 93, expanded 0 times in 0ms
+2016-10-01 11:13:08,934 INFO [TezChild] persistence.BytesBytesMultiHashMap: Map metrics: keys allocated 8192, keys assigned 50, write conflict 5, write max dist 1, read conflict 272, expanded 0 times in 0ms
+2016-10-01 11:13:08,934 INFO [TezChild] persistence.BytesBytesMultiHashMap: Map metrics: keys allocated 8192, keys assigned 61, write conflict 6, write max dist 1, read conflict 441, expanded 0 times in 0ms
+2016-10-01 11:13:08,934 INFO [TezChild] persistence.BytesBytesMultiHashMap: Map metrics: keys allocated 8192, keys assigned 59, write conflict 3, write max dist 1, read conflict 286, expanded 0 times in 0ms
+2016-10-01 11:13:08,934 INFO [TezChild] persistence.BytesBytesMultiHashMap: Map metrics: keys allocated 8192, keys assigned 51, write conflict 0, write max dist 0, read conflict 0, expanded 0 times in 0ms
+2016-10-01 11:13:08,934 INFO [TezChild] exec.ReduceSinkOperator: 4 finished. closing... 
+2016-10-01 11:13:08,934 INFO [TezChild] exec.ReduceSinkOperator: RS[4]: records written - 65921
+2016-10-01 11:13:08,934 INFO [TezChild] exec.ReduceSinkOperator: RECORDS_OUT_INTERMEDIATE_Map_1:65921
+2016-10-01 11:13:08,934 INFO [TezChild] exec.ReduceSinkOperator: 4 Close done
+2016-10-01 11:13:08,934 INFO [TezChild] exec.MapJoinOperator: 3 Close done
+2016-10-01 11:13:08,934 INFO [TezChild] exec.HashTableDummyOperator: 5 Close done
+2016-10-01 11:13:08,939 INFO [TezChild] task.TezTaskRunner: Closing task, taskAttemptId=attempt_1475271333482_0173_1_04_000005_0
+2016-10-01 11:13:08,939 INFO [TezChild] impl.ShuffleManager: Shutting down pending fetchers on sourceMap_7: 0
+2016-10-01 11:13:08,939 INFO [TezChild] impl.ShuffleManager: Shutting down pending fetchers on sourceMap_8: 0
+2016-10-01 11:13:08,939 INFO [TezChild] impl.PipelinedSorter: Starting flush of map output
+2016-10-01 11:13:08,939 INFO [TezChild] impl.PipelinedSorter: Span0.length = 65921, perItem = 56
+2016-10-01 11:13:09,106 INFO [TezChild] impl.PipelinedSorter: done sorting span=0, length=65921, time=167
+2016-10-01 11:13:09,109 INFO [TezChild] impl.PipelinedSorter: Heap = SpanIterator<0:65920> (span=Span[16777216,3749750]),
+2016-10-01 11:13:09,109 INFO [TezChild] impl.PipelinedSorter: Spilling to /workspace/storage/data/local/nm/usercache/ubuntu/appcache/application_1475271333482_0173/output/attempt_1475271333482_0173_1_04_000005_0_10005_0/file.out
+2016-10-01 11:13:09,242 INFO [TezChild] impl.PipelinedSorter: numSpills=1, finalOutputFile=/workspace/storage/data/local/nm/usercache/ubuntu/appcache/application_1475271333482_0173/output/attempt_1475271333482_0173_1_04_000005_0_10005/file.out, finalIndexFile=/workspace/storage/data/local/nm/usercache/ubuntu/appcache/application_1475271333482_0173/output/attempt_1475271333482_0173_1_04_000005_0_10005/file.out.index, filename=/workspace/storage/data/local/nm/usercache/ubuntu/appcache/application_1475271333482_0173/output/attempt_1475271333482_0173_1_04_000005_0_10005_0/file.out, indexFilename=/workspace/storage/data/local/nm/usercache/ubuntu/appcache/application_1475271333482_0173/output/attempt_1475271333482_0173_1_04_000005_0_10005_0/file.out.index
+2016-10-01 11:13:09,247 INFO [TezChild] runtime.LogicalIOProcessorRuntimeTask: Joining on EventRouter
+2016-10-01 11:13:09,252 INFO [TezChild] task.TezTaskRunner: Task completed, taskAttemptId=attempt_1475271333482_0173_1_04_000005_0, fatalErrorOccurred=false
+2016-10-01 11:13:09,264 INFO [TezChild] runtime.LogicalIOProcessorRuntimeTask: Final Counters : Counters: 38 [[File System Counters FILE_BYTES_READ=33336143, FILE_BYTES_WRITTEN=3881702, FILE_READ_OPS=0, FILE_LARGE_READ_OPS=0, FILE_WRITE_OPS=0, HDFS_BYTES_READ=151426318, HDFS_BYTES_WRITTEN=0, HDFS_READ_OPS=2, HDFS_LARGE_READ_OPS=0, HDFS_WRITE_OPS=0][org.apache.tez.common.counters.TaskCounter SPILLED_RECORDS=65921, NUM_SHUFFLED_INPUTS=14, NUM_FAILED_SHUFFLE_INPUTS=0, GC_TIME_MILLIS=870, CPU_MILLISECONDS=53100, PHYSICAL_MEMORY_BYTES=2739404800, VIRTUAL_MEMORY_BYTES=5596610560, COMMITTED_HEAP_BYTES=2739404800, INPUT_RECORDS_PROCESSED=4014539, OUTPUT_RECORDS=65921, OUTPUT_BYTES=3749750, OUTPUT_BYTES_WITH_OVERHEAD=3881610, OUTPUT_BYTES_PHYSICAL=3881622, ADDITIONAL_SPILLS_BYTES_WRITTEN=0, ADDITIONAL_SPILLS_BYTES_READ=0, ADDITIONAL_SPILL_COUNT=0, SHUFFLE_CHUNK_COUNT=1, SHUFFLE_BYTES=111161795, SHUFFLE_BYTES_DECOMPRESSED=111161739, SHUFFLE_BYTES_TO_MEM=77825860, SHUFFLE_BYTES_TO_DISK=0, SHUFFLE_BYTES_DISK_DIRECT=33335935, SHUFFLE_PHASE_TIME=1995, FIRST_EVENT_RECEIVED=209, LAST_EVENT_RECEIVED=1938][HIVE DESERIALIZE_ERRORS=0, RECORDS_IN_Map_1=718647, RECORDS_OUT_INTERMEDIATE_Map_1=65921]]
+2016-10-01 11:13:09,264 INFO [TezChild] impl.TezInputContextImpl: Cleared TezInputContextImpl related information
+2016-10-01 11:13:09,264 INFO [TezChild] impl.TezInputContextImpl: Cleared TezInputContextImpl related information
+2016-10-01 11:13:09,264 INFO [TezChild] impl.TezInputContextImpl: Cleared TezInputContextImpl related information
+2016-10-01 11:13:09,264 INFO [TezChild] impl.TezOutputContextImpl: Cleared TezOutputContextImpl related information
+2016-10-01 11:13:09,264 INFO [TezChild] impl.TezProcessorContextImpl: Cleared TezProcessorContextImpl related information

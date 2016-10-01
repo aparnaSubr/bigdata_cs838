@@ -1,0 +1,5 @@
+2016-10-01 08:10:20,696 INFO [main] task.TezChild: TezChild starting
+2016-10-01 08:10:20,727 INFO [main] task.TezChild: PID, containerIdentifier:  64860, container_1475271333482_0106_01_000392
+2016-10-01 08:10:21,650 INFO [TezChild] task.ContainerReporter: Attempting to fetch new task for container container_1475271333482_0106_01_000392
+2016-10-01 08:10:22,026 INFO [TezChild] task.ContainerReporter: Got TaskUpdate for containerId= container_1475271333482_0106_01_000392: 0 ms after starting to poll. TaskInfo: shouldDie: false, currentTaskAttemptId: attempt_1475271333482_0106_1_04_000032_0
+2016-10-01 08:10:22,029 INFO [main] common.TezUtilsInternal: Redirecting log file based on addend: attempt_1475271333482_0106_1_04_000032_0

@@ -1,0 +1,162 @@
+2016-10-01 08:33:42,443 INFO [main] task.TezChild: Refreshing UGI since Credentials have changed
+2016-10-01 08:33:42,443 INFO [main] task.TezChild: Credentials : #Tokens=1, #SecretKeys=0
+2016-10-01 08:33:42,444 INFO [main] task.TezChild: Localizing additional local resources for Task : {}
+2016-10-01 08:33:42,446 INFO [main] task.TezChild: Done localizing additional resources
+2016-10-01 08:33:42,464 INFO [main] metrics.TaskCounterUpdater:  Using ResourceCalculatorProcessTree : org.apache.tez.util.TezMxBeanResourceCalculator@16c7d858
+2016-10-01 08:33:42,464 INFO [main] runtime.LogicalIOProcessorRuntimeTask: Initializing LogicalIOProcessorRuntimeTask with TaskSpec: DAGName : ubuntu_20161001082804_f019bbe9-068f-4f33-8c7c-7ae641bdb7e4:1, VertexName: Reducer 4, VertexParallelism: 1, TaskAttemptID:attempt_1475271333482_0113_1_07_000000_0, processorName=org.apache.hadoop.hive.ql.exec.tez.ReduceTezProcessor, inputSpecListSize=1, outputSpecListSize=1, inputSpecList=[{{ sourceVertexName=Reducer 3, physicalEdgeCount=1, inputClassName=org.apache.tez.runtime.library.input.OrderedGroupedKVInput }}, ], outputSpecList=[{{ destinationVertexName=out_Reducer 4, physicalEdgeCount=0, outputClassName=org.apache.tez.mapreduce.output.MROutput }}, ]
+2016-10-01 08:33:42,465 INFO [main] resources.MemoryDistributor: InitialMemoryDistributor (isEnabled=true) invoked with: numInputs=1, numOutputs=1, JVM.maxFree=4287627264
+2016-10-01 08:33:42,478 INFO [TezChild] task.TezTaskRunner: Initializing task, taskAttemptId=attempt_1475271333482_0113_1_07_000000_0
+2016-10-01 08:33:42,478 INFO [TezChild] runtime.LogicalIOProcessorRuntimeTask: Initializing LogicalProcessorIORuntimeTask
+2016-10-01 08:33:42,478 INFO [TezChild] runtime.LogicalIOProcessorRuntimeTask: Creating processor, processorClassName=org.apache.hadoop.hive.ql.exec.tez.ReduceTezProcessor
+2016-10-01 08:33:42,479 INFO [TaskHeartbeatThread] task.TaskReporter: Routing events from heartbeat response to task, currentTaskAttemptId=attempt_1475271333482_0113_1_07_000000_0, eventCount=1 fromEventId=0 nextFromEventId=1
+2016-10-01 08:33:42,490 INFO [Initializer 0] runtime.LogicalIOProcessorRuntimeTask: Initializing Input using InputSpec: { sourceVertexName=Reducer 3, physicalEdgeCount=1, inputClassName=org.apache.tez.runtime.library.input.OrderedGroupedKVInput }
+2016-10-01 08:33:42,491 INFO [TezChild] runtime.LogicalIOProcessorRuntimeTask: Initializing processor, processorClassName=org.apache.hadoop.hive.ql.exec.tez.ReduceTezProcessor
+2016-10-01 08:33:42,491 INFO [TezChild] log.PerfLogger: <PERFLOG method=TezInitializeProcessor from=org.apache.hadoop.hive.ql.exec.tez.TezProcessor>
+2016-10-01 08:33:42,491 INFO [Initializer 1] runtime.LogicalIOProcessorRuntimeTask: Initializing Output using OutputSpec: { destinationVertexName=out_Reducer 4, physicalEdgeCount=0, outputClassName=org.apache.tez.mapreduce.output.MROutput }
+2016-10-01 08:33:42,493 INFO [Initializer 1] runtime.LogicalIOProcessorRuntimeTask: Creating Output
+2016-10-01 08:33:42,493 INFO [Initializer 0] runtime.LogicalIOProcessorRuntimeTask: Creating Input
+2016-10-01 08:33:42,506 INFO [TezChild] Configuration.deprecation: mapred.committer.job.setup.cleanup.needed is deprecated. Instead, use mapreduce.job.committer.setup.cleanup.needed
+2016-10-01 08:33:42,511 INFO [TezChild] Configuration.deprecation: mapred.input.dir.recursive is deprecated. Instead, use mapreduce.input.fileinputformat.input.dir.recursive
+2016-10-01 08:33:42,516 INFO [TezChild] Configuration.deprecation: mapred.task.id is deprecated. Instead, use mapreduce.task.attempt.id
+2016-10-01 08:33:42,516 INFO [TezChild] Configuration.deprecation: mapred.task.partition is deprecated. Instead, use mapreduce.task.partition
+2016-10-01 08:33:42,516 INFO [TezChild] log.PerfLogger: </PERFLOG method=TezInitializeProcessor start=1475310822491 end=1475310822516 duration=25 from=org.apache.hadoop.hive.ql.exec.tez.TezProcessor>
+2016-10-01 08:33:42,516 INFO [TezChild] runtime.LogicalIOProcessorRuntimeTask: Initialized processor, processorClassName=org.apache.hadoop.hive.ql.exec.tez.ReduceTezProcessor
+2016-10-01 08:33:42,516 INFO [TezChild] runtime.LogicalIOProcessorRuntimeTask: Waiting for 2 initializers to finish
+2016-10-01 08:33:42,614 INFO [Initializer 0] runtime.LogicalIOProcessorRuntimeTask: Initializing Input with src edge: Reducer 3
+2016-10-01 08:33:42,617 INFO [Initializer 1] runtime.LogicalIOProcessorRuntimeTask: Initializing Output with dest edge: out_Reducer 4
+2016-10-01 08:33:42,617 INFO [Initializer 1] output.MROutput: Initializing Simple Output
+2016-10-01 08:33:42,618 INFO [Initializer 1] resources.MemoryDistributor$RequestorInfo: Received request: 0, type: OUTPUT, componentVertexName: out_Reducer 4
+2016-10-01 08:33:42,662 INFO [Initializer 0] orderedgrouped.MergeManager: Initial Shuffle Memory Required: 3001339136, based on INPUT_BUFFER_factor: 0.7
+2016-10-01 08:33:42,662 INFO [Initializer 0] orderedgrouped.MergeManager: Initial Memory required for final merged output: 0, using factor: 0.0
+2016-10-01 08:33:42,662 INFO [Initializer 0] resources.MemoryDistributor$RequestorInfo: Received request: 3001339136, type: INPUT, componentVertexName: Reducer 3
+2016-10-01 08:33:42,662 INFO [Initializer 0] counters.Limits: Counter limits initialized with parameters:  GROUP_NAME_MAX=256, MAX_GROUPS=500, COUNTER_NAME_MAX=64, MAX_COUNTERS=1200
+2016-10-01 08:33:42,666 INFO [Initializer 0] runtime.LogicalIOProcessorRuntimeTask: Initialized Input with src edge: Reducer 3
+2016-10-01 08:33:42,666 INFO [TezChild] runtime.LogicalIOProcessorRuntimeTask: Waiting for 1 initializers to finish
+2016-10-01 08:33:43,112 INFO [Initializer 1] output.MROutput: Initialized Simple Output, using_new_api: false
+2016-10-01 08:33:43,112 INFO [Initializer 1] runtime.LogicalIOProcessorRuntimeTask: Initialized Output with dest edge: out_Reducer 4
+2016-10-01 08:33:43,112 INFO [TezChild] runtime.LogicalIOProcessorRuntimeTask: All initializers finished
+2016-10-01 08:33:43,166 INFO [TezChild] resources.MemoryDistributor: Using Allocator class: org.apache.tez.runtime.library.resources.WeightedScalingMemoryDistributor
+2016-10-01 08:33:43,170 INFO [TezChild] resources.WeightedScalingMemoryDistributor: Falling back to RequestType.OTHER for class: org.apache.tez.mapreduce.output.MROutput
+2016-10-01 08:33:43,170 INFO [TezChild] resources.WeightedScalingMemoryDistributor: ScaleFactor: 1, for type: OTHER
+2016-10-01 08:33:43,170 INFO [TezChild] resources.WeightedScalingMemoryDistributor: ScaleFactor: 12, for type: SORTED_MERGED_INPUT
+2016-10-01 08:33:43,170 INFO [TezChild] resources.WeightedScalingMemoryDistributor: InitialReservationFraction=0.3, AdditionalReservationFractionForIOs=0.03, finalReserveFractionUsed=0.32999999999999996
+2016-10-01 08:33:43,171 INFO [TezChild] resources.WeightedScalingMemoryDistributor: Scaling Requests. NumRequests: 2, numScaledRequests: 13, TotalRequested: 3001339136, TotalRequestedScaled: 2.770466894769231E9, TotalJVMHeap: 4287627264, TotalAvailable: 2872710266, TotalRequested/TotalJVMHeap:0.70
+2016-10-01 08:33:43,171 INFO [TezChild] resources.MemoryDistributor: Informing: OUTPUT, out_Reducer 4, org.apache.tez.mapreduce.output.MROutput: requested=0, allocated=0
+2016-10-01 08:33:43,171 INFO [TezChild] resources.MemoryDistributor: Informing: INPUT, Reducer 3, org.apache.tez.runtime.library.input.OrderedGroupedKVInput: requested=3001339136, allocated=2872710266
+2016-10-01 08:33:43,171 INFO [TezChild] runtime.LogicalIOProcessorRuntimeTask: Starting Inputs/Outputs
+2016-10-01 08:33:43,171 INFO [TezChild] runtime.LogicalIOProcessorRuntimeTask: Input: Reducer 3 being auto started by the framework. Subsequent instances will not be auto-started
+2016-10-01 08:33:43,172 INFO [Initializer 0] runtime.LogicalIOProcessorRuntimeTask: Starting Input with src edge: Reducer 3
+2016-10-01 08:33:43,172 INFO [TezChild] runtime.LogicalIOProcessorRuntimeTask: Num IOs determined for AutoStart: 1
+2016-10-01 08:33:43,172 INFO [TezChild] runtime.LogicalIOProcessorRuntimeTask: Waiting for 1 IOs to start
+2016-10-01 08:33:43,233 INFO [Initializer 0] common.TezRuntimeUtils: No combiner specified via tez.runtime.combiner.class. Combiner will not be used
+2016-10-01 08:33:43,235 INFO [Initializer 0] orderedgrouped.Shuffle: Shuffle assigned with 1 inputs, codec: NoneifileReadAhead: true
+2016-10-01 08:33:43,237 INFO [Initializer 0] orderedgrouped.ShuffleScheduler: ShuffleScheduler running for sourceVertex: Reducer 3 with configuration: maxFetchFailuresBeforeReporting=5, reportReadErrorImmediately=true, maxFailedUniqueFetches=1, abortFailureLimit=30, maxMapRuntime=0, maxTaskOutputAtOnce=20
+2016-10-01 08:33:43,239 INFO [Initializer 0] orderedgrouped.MergeManager: InitialRequest: ShuffleMem=3001339136, postMergeMem=0, RuntimeTotalAvailable=2872710266. Updated to: ShuffleMem=2872710266, postMergeMem: 0
+2016-10-01 08:33:43,240 INFO [Initializer 0] orderedgrouped.MergeManager: MergerManager: memoryLimit=2872710266, maxSingleShuffleLimit=718177536, mergeThreshold=1895988736, ioSortFactor=10, memToMemMergeOutputsThreshold=10
+2016-10-01 08:33:43,242 INFO [Initializer 0] orderedgrouped.Shuffle: Num fetchers being started: 1
+2016-10-01 08:33:43,244 INFO [Initializer 0] runtime.LogicalIOProcessorRuntimeTask: Started Input with src edge: Reducer 3
+2016-10-01 08:33:43,244 INFO [TezChild] runtime.LogicalIOProcessorRuntimeTask: AutoStartComplete
+2016-10-01 08:33:43,245 INFO [TezChild] task.TezTaskRunner: Running task, taskAttemptId=attempt_1475271333482_0113_1_07_000000_0
+2016-10-01 08:33:43,245 INFO [TezChild] log.PerfLogger: <PERFLOG method=TezRunProcessor from=org.apache.hadoop.hive.ql.exec.tez.TezProcessor>
+2016-10-01 08:33:43,245 INFO [TezChild] tez.TezProcessor: Running task: attempt_1475271333482_0113_1_07_000000_0_10001
+2016-10-01 08:33:43,247 INFO [TezTaskEventRouter[attempt_1475271333482_0113_1_07_000000_0]] orderedgrouped.ShuffleInputEventHandlerOrderedGrouped: DME srcIdx: 0, targetIdx: 0, attemptNum: 0, payload: [host: vm3, port: 13562, pathComponent: attempt_1475271333482_0113_1_06_000000_0_10003, runDuration: 0]
+2016-10-01 08:33:43,271 INFO [fetcher [Reducer_3] #1] shuffle.HttpConnection: for url=http://vm3:13562/mapOutput?job=job_1475271333482_0113&reduce=0&map=attempt_1475271333482_0113_1_06_000000_0_10003 sent hash and receievd reply 0 ms
+2016-10-01 08:33:43,273 INFO [fetcher [Reducer_3] #1] orderedgrouped.FetcherOrderedGrouped: fetcher#1 about to shuffle output of map InputAttemptIdentifier [inputIdentifier=InputIdentifier [inputIndex=0], attemptNumber=0, pathComponent=attempt_1475271333482_0113_1_06_000000_0_10003, fetchTypeInfo=FINAL_MERGE_ENABLED, spillEventId=-1] decomp: 7078 len: 7082 to MEMORY
+2016-10-01 08:33:43,280 INFO [fetcher [Reducer_3] #1] orderedgrouped.FetcherOrderedGrouped: Read 7078 bytes from input for InputAttemptIdentifier [inputIdentifier=InputIdentifier [inputIndex=0], attemptNumber=0, pathComponent=attempt_1475271333482_0113_1_06_000000_0_10003, fetchTypeInfo=FINAL_MERGE_ENABLED, spillEventId=-1]
+2016-10-01 08:33:43,280 INFO [fetcher [Reducer_3] #1] orderedgrouped.MergeManager: closeInMemoryFile -> map-output of size: 7078, inMemoryMapOutputs.size() -> 1, commitMemory -> 0, usedMemory ->7078, mapOutput=MapOutput( AttemptIdentifier: InputAttemptIdentifier [inputIdentifier=InputIdentifier [inputIndex=0], attemptNumber=0, pathComponent=attempt_1475271333482_0113_1_06_000000_0_10003, fetchTypeInfo=FINAL_MERGE_ENABLED, spillEventId=-1], Type: MEMORY)
+2016-10-01 08:33:43,280 INFO [fetcher [Reducer_3] #1] orderedgrouped.ShuffleScheduler: Completed fetch for attempt: InputAttemptIdentifier [inputIdentifier=InputIdentifier [inputIndex=0], attemptNumber=0, pathComponent=attempt_1475271333482_0113_1_06_000000_0_10003, fetchTypeInfo=FINAL_MERGE_ENABLED, spillEventId=-1] to MEMORY, CompressedSize=7082, DecompressedSize=7078, EndTime=1475310823280, TimeTaken=9, Rate=0.75 MB/s
+2016-10-01 08:33:43,280 INFO [fetcher [Reducer_3] #1] orderedgrouped.ShuffleScheduler: All inputs fetched for input vertex : Reducer 3
+2016-10-01 08:33:43,280 INFO [fetcher [Reducer_3] #1] orderedgrouped.ShuffleScheduler: copy(1 (spillsFetched=1) of 1. Transfer rate (CumulativeDataFetched/TimeSinceInputStarted)) 0.01 MB/s)
+2016-10-01 08:33:43,280 INFO [fetcher [Reducer_3] #1] shuffle.HttpConnection: Closing input on fetcher [Reducer_3] #1
+2016-10-01 08:33:43,280 INFO [ShuffleAndMergeRunner [Reducer_3]] shuffle.HttpConnection: Closing input on fetcher [Reducer_3] #1
+2016-10-01 08:33:43,280 INFO [fetcher [Reducer_3] #1] shuffle.HttpConnection: Closing input on fetcher [Reducer_3] #1
+2016-10-01 08:33:43,280 INFO [fetcher [Reducer_3] #1] orderedgrouped.ShuffleScheduler: vm3:13562 freed by fetcher [Reducer_3] #1 in 31ms
+2016-10-01 08:33:43,280 INFO [ShuffleAndMergeRunner [Reducer_3]] orderedgrouped.Shuffle: Shutdown..fetcher [Reducer_3] #1, status:false, isInterrupted:false
+2016-10-01 08:33:43,281 INFO [ShuffleAndMergeRunner [Reducer_3]] orderedgrouped.MergeManager: finalMerge called with 1 in-memory map-outputs and 0 on-disk map-outputs
+2016-10-01 08:33:43,297 INFO [ShuffleAndMergeRunner [Reducer_3]] impl.TezMerger: Merging 1 sorted segments
+2016-10-01 08:33:43,298 INFO [ShuffleAndMergeRunner [Reducer_3]] impl.TezMerger: Down to the last merge-pass, with 1 segments left of total size: 7002 bytes
+2016-10-01 08:33:43,310 INFO [ShuffleAndMergeRunner [Reducer_3]] orderedgrouped.MergeManager: Merged 1 segments, 7078 bytes to disk to satisfy reduce memory limit. outputPath=/workspace/storage/data/local/nm/usercache/ubuntu/appcache/application_1475271333482_0113/attempt_1475271333482_0113_1_07_000000_0_10002_src_0_spill_2147483647.out.merged
+2016-10-01 08:33:43,310 INFO [ShuffleAndMergeRunner [Reducer_3]] orderedgrouped.MergeManager: Disk file=/workspace/storage/data/local/nm/usercache/ubuntu/appcache/application_1475271333482_0113/attempt_1475271333482_0113_1_07_000000_0_10002_src_0_spill_2147483647.out.merged, len=7082, isLocal=false
+2016-10-01 08:33:43,310 INFO [ShuffleAndMergeRunner [Reducer_3]] orderedgrouped.MergeManager: Merging 1 files, 7082 bytes from disk
+2016-10-01 08:33:43,311 INFO [TezChild] exec.Utilities: PLAN PATH = hdfs://10.0.0.4:8020/tmp/hive/ubuntu/de6921be-9803-4287-abd1-b657db8675d9/hive_2016-10-01_08-28-04_666_7640811666997613525-1/ubuntu/_tez_scratch_dir/e3df1a68-7aa6-40cf-acbe-cd3f5b87363a/reduce.xml
+2016-10-01 08:33:43,311 INFO [ShuffleAndMergeRunner [Reducer_3]] orderedgrouped.MergeManager: Merging 0 segments, 0 bytes from memory into reduce
+2016-10-01 08:33:43,311 INFO [TezChild] exec.Utilities: ***************non-local mode***************
+2016-10-01 08:33:43,311 INFO [ShuffleAndMergeRunner [Reducer_3]] impl.TezMerger: Merging 1 sorted segments
+2016-10-01 08:33:43,311 INFO [TezChild] exec.Utilities: local path = hdfs://10.0.0.4:8020/tmp/hive/ubuntu/de6921be-9803-4287-abd1-b657db8675d9/hive_2016-10-01_08-28-04_666_7640811666997613525-1/ubuntu/_tez_scratch_dir/e3df1a68-7aa6-40cf-acbe-cd3f5b87363a/reduce.xml
+2016-10-01 08:33:43,333 INFO [TezChild] log.PerfLogger: <PERFLOG method=deserializePlan from=org.apache.hadoop.hive.ql.exec.Utilities>
+2016-10-01 08:33:43,333 INFO [TezChild] exec.Utilities: Deserializing ReduceWork via kryo
+2016-10-01 08:33:43,334 INFO [ShuffleAndMergeRunner [Reducer_3]] impl.TezMerger: Down to the last merge-pass, with 1 segments left of total size: 6998 bytes
+2016-10-01 08:33:43,334 INFO [ShuffleAndMergeRunner [Reducer_3]] orderedgrouped.Shuffle: merge complete for input vertex : Reducer 3
+2016-10-01 08:33:43,334 INFO [ShuffleAndMergeRunner [Reducer_3]] orderedgrouped.Shuffle: Shuffle Runner thread complete
+2016-10-01 08:33:43,461 INFO [TezChild] log.PerfLogger: </PERFLOG method=deserializePlan start=1475310823333 end=1475310823461 duration=128 from=org.apache.hadoop.hive.ql.exec.Utilities>
+2016-10-01 08:33:43,461 INFO [TezChild] tez.ObjectCache: Caching key: ubuntu_20161001082804_f019bbe9-068f-4f33-8c7c-7ae641bdb7e4__REDUCE_PLAN__
+2016-10-01 08:33:43,462 INFO [TezChild] log.PerfLogger: <PERFLOG method=TezInitializeOperators from=org.apache.hadoop.hive.ql.exec.tez.RecordProcessor>
+2016-10-01 08:33:43,469 INFO [TezChild] MapredContext: MapredContext initialized.
+2016-10-01 08:33:43,469 INFO [TezChild] tez.ReduceRecordProcessor: Waiting for ShuffleInputs to become ready
+2016-10-01 08:33:43,472 INFO [TezChild] common.ValuesIterator: keyDeserializer=org.apache.tez.runtime.library.common.serializer.TezBytesWritableSerialization$TezBytesWritableDeserializer@17dfbeb8; valueDeserializer=org.apache.tez.runtime.library.common.serializer.TezBytesWritableSerialization$TezBytesWritableDeserializer@62622e46
+2016-10-01 08:33:43,529 INFO [TezChild] log.PerfLogger: </PERFLOG method=TezInitializeOperators start=1475310823462 end=1475310823529 duration=67 from=org.apache.hadoop.hive.ql.exec.tez.ReduceRecordSource>
+2016-10-01 08:33:43,529 INFO [TezChild] exec.SelectOperator: Initializing operator SEL[0]
+2016-10-01 08:33:43,533 INFO [TezChild] exec.SelectOperator: SELECT struct<key:struct<reducesinkkey0:string,reducesinkkey1:int,reducesinkkey2:string,reducesinkkey3:string,reducesinkkey4:string,reducesinkkey5:string,reducesinkkey6:string,reducesinkkey7:string,reducesinkkey8:string,reducesinkkey9:string>,value:struct<_col0:bigint,_col1:bigint,_col2:bigint,_col3:bigint,_col4:bigint>>
+2016-10-01 08:33:43,534 INFO [TezChild] exec.SelectOperator: Initialization Done 0 SEL
+2016-10-01 08:33:43,534 INFO [TezChild] exec.SelectOperator: Operator 0 SEL initialized
+2016-10-01 08:33:43,534 INFO [TezChild] exec.SelectOperator: Initializing children of 0 SEL
+2016-10-01 08:33:43,534 INFO [TezChild] exec.LimitOperator: Initializing child 1 LIM
+2016-10-01 08:33:43,534 INFO [TezChild] exec.LimitOperator: Initializing operator LIM[1]
+2016-10-01 08:33:43,534 INFO [TezChild] Configuration.deprecation: mapred.task.is.map is deprecated. Instead, use mapreduce.task.ismap
+2016-10-01 08:33:43,534 INFO [TezChild] exec.LimitOperator: Initialization Done 1 LIM
+2016-10-01 08:33:43,534 INFO [TezChild] exec.LimitOperator: Operator 1 LIM initialized
+2016-10-01 08:33:43,534 INFO [TezChild] exec.LimitOperator: Initializing children of 1 LIM
+2016-10-01 08:33:43,534 INFO [TezChild] exec.FileSinkOperator: Initializing child 2 FS
+2016-10-01 08:33:43,534 INFO [TezChild] exec.FileSinkOperator: Initializing operator FS[2]
+2016-10-01 08:33:43,665 INFO [TezChild] exec.FileSinkOperator: Using serializer : class org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe[[[B@22926ec8]:[_col0, _col1, _col2, _col3, _col4, _col5, _col6, _col7, _col8, _col9, _col10, _col11, _col12, _col13, _col14]:[string, int, string, string, string, string, string, string, string, string, bigint, bigint, bigint, bigint, bigint]] and formatter : org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat@3ba71e33
+2016-10-01 08:33:43,665 INFO [TezChild] Configuration.deprecation: mapred.healthChecker.script.timeout is deprecated. Instead, use mapreduce.tasktracker.healthchecker.script.timeout
+2016-10-01 08:33:43,685 INFO [TezChild] exec.FileSinkOperator: Initialization Done 2 FS
+2016-10-01 08:33:43,685 INFO [TezChild] exec.FileSinkOperator: Operator 2 FS initialized
+2016-10-01 08:33:43,685 INFO [TezChild] tez.ReduceRecordProcessor: 
+<SEL>Id =0
+  <Children>
+    <LIM>Id =1
+      <Children>
+        <FS>Id =2
+          <Children>
+          <\Children>
+          <Parent>Id = 1 null<\Parent>
+        <\FS>
+      <\Children>
+      <Parent>Id = 0 null<\Parent>
+    <\LIM>
+  <\Children>
+  <Parent><\Parent>
+<\SEL>
+2016-10-01 08:33:43,703 INFO [TezChild] log.PerfLogger: </PERFLOG method=TezInitializeOperators start=1475310823462 end=1475310823703 duration=241 from=org.apache.hadoop.hive.ql.exec.tez.RecordProcessor>
+2016-10-01 08:33:43,704 INFO [TezChild] tez.ReduceRecordProcessor: Starting Output: out_Reducer 4
+2016-10-01 08:33:43,708 INFO [TezChild] exec.FileSinkOperator: Final Path: FS hdfs://10.0.0.4:8020/tmp/hive/ubuntu/de6921be-9803-4287-abd1-b657db8675d9/hive_2016-10-01_08-28-04_666_7640811666997613525-1/-mr-10001/.hive-staging_hive_2016-10-01_08-28-04_666_7640811666997613525-1/_tmp.-ext-10002/000000_0
+2016-10-01 08:33:43,709 INFO [TezChild] exec.FileSinkOperator: Writing to temp file: FS hdfs://10.0.0.4:8020/tmp/hive/ubuntu/de6921be-9803-4287-abd1-b657db8675d9/hive_2016-10-01_08-28-04_666_7640811666997613525-1/-mr-10001/.hive-staging_hive_2016-10-01_08-28-04_666_7640811666997613525-1/_task_tmp.-ext-10002/_tmp.000000_0
+2016-10-01 08:33:43,709 INFO [TezChild] exec.FileSinkOperator: New Final Path: FS hdfs://10.0.0.4:8020/tmp/hive/ubuntu/de6921be-9803-4287-abd1-b657db8675d9/hive_2016-10-01_08-28-04_666_7640811666997613525-1/-mr-10001/.hive-staging_hive_2016-10-01_08-28-04_666_7640811666997613525-1/_tmp.-ext-10002/000000_0
+2016-10-01 08:33:43,896 INFO [TezChild] exec.FileSinkOperator: FS[2]: records written - 1
+2016-10-01 08:33:43,898 INFO [TezChild] exec.FileSinkOperator: FS[2]: records written - 10
+2016-10-01 08:33:43,916 INFO [TezChild] log.PerfLogger: </PERFLOG method=TezRunProcessor start=1475310823245 end=1475310823915 duration=670 from=org.apache.hadoop.hive.ql.exec.tez.TezProcessor>
+2016-10-01 08:33:43,916 INFO [TezChild] exec.SelectOperator: 0 finished. closing... 
+2016-10-01 08:33:43,916 INFO [TezChild] exec.LimitOperator: 1 finished. closing... 
+2016-10-01 08:33:43,916 INFO [TezChild] exec.FileSinkOperator: 2 finished. closing... 
+2016-10-01 08:33:43,916 INFO [TezChild] exec.FileSinkOperator: FS[2]: records written - 72
+2016-10-01 08:33:44,151 INFO [TezChild] exec.FileSinkOperator: RECORDS_OUT_0:72
+2016-10-01 08:33:44,151 INFO [TezChild] exec.FileSinkOperator: 2 Close done
+2016-10-01 08:33:44,151 INFO [TezChild] exec.LimitOperator: 1 Close done
+2016-10-01 08:33:44,151 INFO [TezChild] exec.SelectOperator: 0 Close done
+2016-10-01 08:33:44,152 INFO [TezChild] task.TezTaskRunner: Closing task, taskAttemptId=attempt_1475271333482_0113_1_07_000000_0
+2016-10-01 08:33:44,152 INFO [TezChild] orderedgrouped.Shuffle: Shutting down Shuffle for source: Reducer_3
+2016-10-01 08:33:44,152 INFO [TezChild] orderedgrouped.MergeManager: finalMerge called with 0 in-memory map-outputs and 0 on-disk map-outputs
+2016-10-01 08:33:44,152 INFO [TezChild] orderedgrouped.MergeManager: Merging 0 files, 0 bytes from disk
+2016-10-01 08:33:44,152 INFO [TezChild] orderedgrouped.MergeManager: Merging 0 segments, 0 bytes from memory into reduce
+2016-10-01 08:33:44,152 INFO [TezChild] impl.TezMerger: Merging 0 sorted segments
+2016-10-01 08:33:44,152 INFO [TezChild] impl.TezMerger: Nothing to merge. Returning an empty iterator
+2016-10-01 08:33:44,153 INFO [TezChild] output.MROutput: Flushing Simple Output
+2016-10-01 08:33:44,153 INFO [TezChild] output.MROutput: Flushed Simple Output
+2016-10-01 08:33:44,153 INFO [TezChild] runtime.LogicalIOProcessorRuntimeTask: Joining on EventRouter
+2016-10-01 08:33:44,157 INFO [TezChild] task.TezTaskRunner: Task completed, taskAttemptId=attempt_1475271333482_0113_1_07_000000_0, fatalErrorOccurred=false
+2016-10-01 08:33:44,166 INFO [TezChild] runtime.LogicalIOProcessorRuntimeTask: Final Counters : Counters: 45 [[File System Counters FILE_BYTES_READ=7082, FILE_BYTES_WRITTEN=7082, FILE_READ_OPS=0, FILE_LARGE_READ_OPS=0, FILE_WRITE_OPS=0, HDFS_BYTES_READ=0, HDFS_BYTES_WRITTEN=6427, HDFS_READ_OPS=2, HDFS_LARGE_READ_OPS=0, HDFS_WRITE_OPS=2][org.apache.tez.common.counters.TaskCounter REDUCE_INPUT_GROUPS=72, REDUCE_INPUT_RECORDS=72, COMBINE_INPUT_RECORDS=0, SPILLED_RECORDS=72, NUM_SHUFFLED_INPUTS=1, NUM_SKIPPED_INPUTS=0, NUM_FAILED_SHUFFLE_INPUTS=0, MERGED_MAP_OUTPUTS=1, GC_TIME_MILLIS=22, CPU_MILLISECONDS=1950, PHYSICAL_MEMORY_BYTES=442499072, VIRTUAL_MEMORY_BYTES=5596852224, COMMITTED_HEAP_BYTES=442499072, OUTPUT_RECORDS=0, ADDITIONAL_SPILLS_BYTES_WRITTEN=7082, ADDITIONAL_SPILLS_BYTES_READ=7082, SHUFFLE_BYTES=7082, SHUFFLE_BYTES_DECOMPRESSED=7078, SHUFFLE_BYTES_TO_MEM=7082, SHUFFLE_BYTES_TO_DISK=0, SHUFFLE_BYTES_DISK_DIRECT=0, NUM_MEM_TO_DISK_MERGES=0, NUM_DISK_TO_DISK_MERGES=0, SHUFFLE_PHASE_TIME=45, MERGE_PHASE_TIME=99, FIRST_EVENT_RECEIVED=14, LAST_EVENT_RECEIVED=14][HIVE CREATED_FILES=1, RECORDS_OUT_0=72][Shuffle Errors BAD_ID=0, CONNECTION=0, IO_ERROR=0, WRONG_LENGTH=0, WRONG_MAP=0, WRONG_REDUCE=0]]
+2016-10-01 08:33:44,166 INFO [TezChild] impl.TezInputContextImpl: Cleared TezInputContextImpl related information
+2016-10-01 08:33:44,166 INFO [TezChild] impl.TezOutputContextImpl: Cleared TezOutputContextImpl related information
+2016-10-01 08:33:44,166 INFO [TezChild] impl.TezProcessorContextImpl: Cleared TezProcessorContextImpl related information
+2016-10-01 08:33:44,268 INFO [main] common.TezUtilsInternal: Redirecting log file based on addend: 

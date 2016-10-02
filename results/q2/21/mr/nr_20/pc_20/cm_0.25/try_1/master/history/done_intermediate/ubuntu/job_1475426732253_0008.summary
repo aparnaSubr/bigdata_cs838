@@ -1,0 +1,1 @@
+zjobId=job_1475426732253_0008,submitTime=1475427293218,launchTime=1475427297818,firstMapTaskLaunchTime=1475427300037,firstReduceTaskLaunchTime=0,finishTime=1475427310845,resourcesPerMap=4800,resourcesPerReduce=0,numMaps=3,numReduces=0,user=ubuntu,queue=default,status=SUCCEEDED,mapSlotSeconds=149,reduceSlotSeconds=0,jobName=select  *\n from(select w_warehouse_nam...100(Stage-9)

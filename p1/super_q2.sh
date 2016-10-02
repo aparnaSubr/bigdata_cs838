@@ -6,7 +6,7 @@ query_ids=( 21 12 50 )
 
 #reducers=( 5 )
 #reducers=( 1 5 10 20 )
-reducers=( 5 20 )
+reducers=( 20 )
 
 #parallel_copies=( 5 )
 #parallel_copies=( 5 10 15 20 )

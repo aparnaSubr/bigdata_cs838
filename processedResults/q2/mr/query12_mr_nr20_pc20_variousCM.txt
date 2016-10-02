@@ -1,0 +1,60 @@
+Query12	mr	nr20	pc20	cm0.05	trial1
+Time taken:	 179.047	seconds
+Fetched:	 100	row(s)
+TotalNetStats
+eth0 rx (MB)	eth0 tx (MB)	lo rx (MB)	lo tx (MB)
+3049	2927	8864	8864
+
+TotalDiskStats
+Read (MB)	Write (MB)
+7802	3175
+
+
+Query12	mr	nr20	pc20	cm0.25	trial1
+Time taken:	 182.356	seconds
+Fetched:	 100	row(s)
+TotalNetStats
+eth0 rx (MB)	eth0 tx (MB)	lo rx (MB)	lo tx (MB)
+2328	2235	9574	9574
+
+TotalDiskStats
+Read (MB)	Write (MB)
+7760	3092
+
+
+Query12	mr	nr20	pc20	cm0.5	trial1
+Time taken:	 180.841	seconds
+Fetched:	 100	row(s)
+TotalNetStats
+eth0 rx (MB)	eth0 tx (MB)	lo rx (MB)	lo tx (MB)
+4209	4046	7692	7692
+
+TotalDiskStats
+Read (MB)	Write (MB)
+7763	3133
+
+
+Query12	mr	nr20	pc20	cm0.75	trial1
+Time taken:	 175.267	seconds
+Fetched:	 100	row(s)
+TotalNetStats
+eth0 rx (MB)	eth0 tx (MB)	lo rx (MB)	lo tx (MB)
+2226	2134	9652	9652
+
+TotalDiskStats
+Read (MB)	Write (MB)
+7727	2926
+
+
+Query12	mr	nr20	pc20	cm1	trial1
+Time taken:	 176.163	seconds
+Fetched:	 100	row(s)
+TotalNetStats
+eth0 rx (MB)	eth0 tx (MB)	lo rx (MB)	lo tx (MB)
+3730	3605	8177	8177
+
+TotalDiskStats
+Read (MB)	Write (MB)
+7590	3072
+
+

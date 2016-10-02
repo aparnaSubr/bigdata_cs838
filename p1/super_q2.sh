@@ -4,9 +4,9 @@ tez_or_mr=(mr)
 query_ids=( 21 12 50 )
 #query_ids=( 21 )
 
-#reducers=( 5 )
+reducers=( 5 )
 #reducers=( 1 5 10 20 )
-reducers=( 20 )
+#reducers=( 20 )
 
 #parallel_copies=( 5 )
 #parallel_copies=( 5 10 15 20 )

@@ -266,7 +266,7 @@ def compareVaryingParallelCopies(queryTypeDir, outFile, nr, queryId, type="mr", 
 
 def compareVaryingCompletedMaps(queryTypeDir, outFile, nr, pc, queryId, type = "mr", trialNum='1'):
 
-    cms = ['0.05', '0.25', '0.50', '0.75', '1']
+    cms = ['0.05', '0.25', '0.5', '0.75', '1']
 
     for cm in cms:
         inDir = os.path.join(queryTypeDir, "nr_" + nr, "pc_" + pc, "cm_" + cm, "try_1")
@@ -512,13 +512,13 @@ outFile_mr_nr = os.path.join(outDir, "mr", "query" + queryId + "_" + "mr" + "_va
 silentremove(outFile_mr_nr)
 compareVaryingNumReducers(inDir_mr, outFile_mr_nr, queryId, "mr", "1")
 
-nr = '1'
+nr = '20'
 outFile_mr_pc = os.path.join(outDir, "mr", "query" + queryId + "_" + "mr" + "_nr" + str(nr) + "_variousPC" + ".txt")
 silentremove(outFile_mr_pc)
 compareVaryingParallelCopies(inDir_mr, outFile_mr_pc, nr, queryId, "mr", "1")
 
-nr = '1'
-pc = '15'
+nr = '20'
+pc = '20'
 outFile_mr_cm = os.path.join(outDir, "mr", "query" + queryId + "_" + "mr" + "_nr" + str(nr) + "_pc" + str(pc) + "_variousCM" + ".txt")
 silentremove(outFile_mr_cm)
 compareVaryingCompletedMaps(inDir_mr, outFile_mr_cm, nr, pc, queryId, "mr", "1")

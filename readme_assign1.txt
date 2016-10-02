@@ -23,9 +23,10 @@ If there is some error with the VM extension, goto the azure portal -> vm -> ext
 Steps after starting vms:
 
 1. reset access and password
+4. reset password-less ssh on all hosts. Use repopulate_known_hosts.sh
+	Then can use pdsh -R ssh -w ^instances "ls -l / | grep 'workspace'" etc
 2. unmount and mount disks appropriately. Use re_mount_disk.sh <workspace disk> <mnt disk>
 3. reset permissions on /mnt and /workspace. SKIP THIS STEP IF USING re_mount_disk.sh!!
-4. reset password-less ssh on all hosts. Use repopulate_known_hosts.sh
 5. source run.sh
 6. start_all hadoop daemons
 7. to start running hive/mr or hive/tez, use scripts in /workload/hive-tpcds-tpch-workload/. Commands formats can be found in gather_query_data.sh

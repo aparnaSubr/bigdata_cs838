@@ -15,7 +15,7 @@ fi
 
 out_dir="/home/ubuntu/bigdata_cs838/results/q2_${query_id}/$1/$4/$5/$6/try_$try_number/"
 
-echo "\n***** master_q2_mr.sh $1 $2 $3 $4 $5 $6 start\n"
+echo "\n***** master_q2_mr.sh $1 q-$2 t-$3 nr-$4 pc-$5 cm-$6 start\n"
 
 rm -rf $out_dir/*
 
@@ -46,4 +46,4 @@ scp -r vm3:$out_dir/slave3 $out_dir
 scp -r vm4:$out_dir/slave4 $out_dir 
 
 echo "master.sh : SCPing from slaves : end"
-echo "\n***** master_q2_mr.sh $1 $2 $3 $4 $5 $6 end\n"
+echo "\n***** master_q2_mr.sh $1 q-$2 t-$3 nr-$4 pc-$5 cm-$6 end\n"

@@ -14,7 +14,7 @@ dev_file_loc="/proc/net/dev"
 diskstats_file_loc="/proc/diskstats"
 
 workload_dir="/home/ubuntu/workload/hive-tpcds-tpch-workload"
-output_dir="/home/ubuntu/bigdata_cs838/results/q2_${query_id}/$1/$6/$7/$8/try_$trial/$3"
+output_dir="/home/ubuntu/bigdata_cs838/results/q2_${query_id}/$1/nr$6/pc$7/cm$8/try_$trial/$3"
 
 if [ $1 = "tez" ]; then	
 		jhist_file_loc="/tmp/tez-history"
@@ -22,7 +22,7 @@ else
 		jhist_file_loc="/tmp/hadoop-yarn/staging/history"
 fi
 
-echo "\n##### script_q2_mr.sh $1 $2 $3 $4 $5 $6 $7 $8 START #####"
+echo "\n##### script_q2_mr.sh $1 q-$2 $3 $4 t-$5 nr-$6 pc-$7 cm-$8 START #####"
 
 ###### BEFORE
 # collects disk and network data
@@ -87,7 +87,7 @@ else
 	chmod -R 777 $output_dir
 
 	echo "script_q2_mr.sh : output_dir is ====>" $output_dir
-	echo "##### script_q2_mr.sh $1 $2 $3 $4 $5 $6 $7 $8 DONE #####\n"
+	echo "\n##### script_q2_mr.sh $1 q-$2 $3 $4 t-$5 nr-$6 pc-$7 cm-$8 DONE #####"
 fi
 
 

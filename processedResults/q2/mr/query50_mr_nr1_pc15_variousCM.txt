@@ -1,0 +1,10 @@
+Some errorSome errorSome errorSome errorQuery50	mr	nr1	pc15	cm1	trial1
+TotalNetStats
+eth0 rx (MB)	eth0 tx (MB)	lo rx (MB)	lo tx (MB)
+7974	7698	19947	19947
+
+TotalDiskStats
+Read (MB)	Write (MB)
+24260	6684
+
+

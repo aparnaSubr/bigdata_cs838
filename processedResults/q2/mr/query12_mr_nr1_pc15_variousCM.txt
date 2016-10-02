@@ -1,0 +1,12 @@
+Some errorSome errorSome errorSome errorQuery12	mr	nr1	pc15	cm1	trial1
+Time taken:	 162.671	seconds
+Fetched:	 100	row(s)
+TotalNetStats
+eth0 rx (MB)	eth0 tx (MB)	lo rx (MB)	lo tx (MB)
+2832	2722	8991	8991
+
+TotalDiskStats
+Read (MB)	Write (MB)
+7592	2890
+
+

@@ -1,0 +1,96 @@
+Query12	tez	pc5	crtrue	trial1
+Time taken:	 62.989	seconds
+Fetched:	 100	row(s)
+TotalNetStats
+eth0 rx (MB)	eth0 tx (MB)	lo rx (MB)	lo tx (MB)
+990	952	6499	6499
+
+TotalDiskStats
+Read (MB)	Write (MB)
+7621	43
+
+
+Query12	tez	pc10	crtrue	trial1
+Time taken:	 63.792	seconds
+Fetched:	 100	row(s)
+TotalNetStats
+eth0 rx (MB)	eth0 tx (MB)	lo rx (MB)	lo tx (MB)
+676	651	6791	6791
+
+TotalDiskStats
+Read (MB)	Write (MB)
+7633	42
+
+
+Query12	tez	pc15	crtrue	trial1
+Time taken:	 64.858	seconds
+Fetched:	 100	row(s)
+TotalNetStats
+eth0 rx (MB)	eth0 tx (MB)	lo rx (MB)	lo tx (MB)
+1162	1118	6323	6323
+
+TotalDiskStats
+Read (MB)	Write (MB)
+7629	37
+
+
+Query12	tez	pc20	crtrue	trial1
+Time taken:	 63.98	seconds
+Fetched:	 100	row(s)
+TotalNetStats
+eth0 rx (MB)	eth0 tx (MB)	lo rx (MB)	lo tx (MB)
+864	832	6618	6618
+
+TotalDiskStats
+Read (MB)	Write (MB)
+7627	39
+
+
+Query12	tez	pc5	crfalse	trial1
+Time taken:	 76.953	seconds
+Fetched:	 100	row(s)
+TotalNetStats
+eth0 rx (MB)	eth0 tx (MB)	lo rx (MB)	lo tx (MB)
+1220	1174	6325	6325
+
+TotalDiskStats
+Read (MB)	Write (MB)
+7661	54
+
+
+Query12	tez	pc10	crfalse	trial1
+Time taken:	 76.713	seconds
+Fetched:	 100	row(s)
+TotalNetStats
+eth0 rx (MB)	eth0 tx (MB)	lo rx (MB)	lo tx (MB)
+1367	1317	6178	6178
+
+TotalDiskStats
+Read (MB)	Write (MB)
+7661	56
+
+
+Query12	tez	pc15	crfalse	trial1
+Time taken:	 80.537	seconds
+Fetched:	 100	row(s)
+TotalNetStats
+eth0 rx (MB)	eth0 tx (MB)	lo rx (MB)	lo tx (MB)
+1073	1031	6469	6469
+
+TotalDiskStats
+Read (MB)	Write (MB)
+7664	49
+
+
+Query12	tez	pc20	crfalse	trial1
+Time taken:	 77.528	seconds
+Fetched:	 100	row(s)
+TotalNetStats
+eth0 rx (MB)	eth0 tx (MB)	lo rx (MB)	lo tx (MB)
+1219	1172	6328	6328
+
+TotalDiskStats
+Read (MB)	Write (MB)
+7680	54
+
+

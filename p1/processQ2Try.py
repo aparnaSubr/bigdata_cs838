@@ -183,6 +183,8 @@ def compareVaryingNumReducers(queryTypeDir, outFile, queryId, type="mr", trialNu
                 myfile.write(lines)
         except:
             print "Some error"
+            with open(outFile, "a") as myfile:
+                myfile.write("Some error")
 
 
 
@@ -258,11 +260,13 @@ def compareVaryingParallelCopies(queryTypeDir, outFile, nr, queryId, type="mr", 
                 myfile.write(lines)
         except:
             print "Some error"
+            with open(outFile, "a") as myfile:
+                myfile.write("Some error")
 
 
 def compareVaryingCompletedMaps(queryTypeDir, outFile, nr, pc, queryId, type = "mr", trialNum='1'):
 
-    cm = ['0.05', '0.25', '0.50', '0.75', '1']
+    cms = ['0.05', '0.25', '0.50', '0.75', '1']
 
     for cm in cms:
         inDir = os.path.join(queryTypeDir, "nr_" + nr, "pc_" + pc, "cm_" + cm, "try_1")
@@ -405,6 +409,8 @@ def compareVaryingContainerReuse(queryTypeDir, outFile, queryId, type="tez", tri
                 myfile.write(lines)
         except:
             print "Some error"
+            with open(outFile, "a") as myfile:
+                myfile.write("Some error")
 
 
 def compareVaryingParallelCopies_tez(queryTypeDir, outFile, cr, queryId, type="tez", trialNum='1'):
@@ -477,6 +483,8 @@ def compareVaryingParallelCopies_tez(queryTypeDir, outFile, cr, queryId, type="t
                 myfile.write(lines)
         except:
             print "Some error"
+            with open(outFile, "a") as myfile:
+                myfile.write("Some error")
 
 
 
@@ -500,32 +508,34 @@ if (not os.path.exists(inDir)):
 if not os.path.exists(outDir):
     os.makedirs(outDir)
 
-outFile_mr_nr = os.path.join(outDir, "query" + queryId + "_" + "mr" + "_variousNR" + ".txt")
+outFile_mr_nr = os.path.join(outDir, "mr", "query" + queryId + "_" + "mr" + "_variousNR" + ".txt")
 silentremove(outFile_mr_nr)
 compareVaryingNumReducers(inDir_mr, outFile_mr_nr, queryId, "mr", "1")
 
-# nr = 1
-# outFile_mr_pc = os.path.join(outDir, "query" + queryId + "_" + type + "_nr" + str(nr) + "_variousPC" + ".txt")
-# silentremove(outFile_mr_pc)
-# compareVaryingParallelCopies(inDir_mr, outFile_mr_pc, nr, queryId, "mr", "1")
+nr = '1'
+outFile_mr_pc = os.path.join(outDir, "mr", "query" + queryId + "_" + "mr" + "_nr" + str(nr) + "_variousPC" + ".txt")
+silentremove(outFile_mr_pc)
+compareVaryingParallelCopies(inDir_mr, outFile_mr_pc, nr, queryId, "mr", "1")
+
+nr = '1'
+pc = '15'
+outFile_mr_cm = os.path.join(outDir, "mr", "query" + queryId + "_" + "mr" + "_nr" + str(nr) + "_pc" + str(pc) + "_variousCM" + ".txt")
+silentremove(outFile_mr_cm)
+compareVaryingCompletedMaps(inDir_mr, outFile_mr_cm, nr, pc, queryId, "mr", "1")
+
+
+# inDir_tez = os.path.join(inDir, queryId, "tez")
 #
-# nr = 1
-# pc = 15
-# outFile_mr_cm = os.path.join(outDir, "query" + queryId + "_" + type + "_nr" + str(nr) + "_pc" + str(pc) + "_variousCM" + ".txt")
-# silentremove(outFile_mr_cm)
-# compareVaryingCompletedMaps(inDir_mr, outFile_mr_cm, nr, pc, queryId, "mr", "1")
-
-
-inDir_tez = os.path.join(inDir, queryId, "tez")
-
-outFile_tez_cr = os.path.join(outDir, "query" + queryId + "_" + "tez" + "_variousCR" + ".txt")
-silentremove(outFile_tez_cr)
-compareVaryingContainerReuse(inDir_tez, outFile_tez_cr, queryId, "tez", "1")
-
-# cr = true
-# outFile_tez_pc = os.path.join(outDir, "query" + queryId + "_" + "tez" + "_variousPC" + ".txt")
+# outFile_tez_cr = os.path.join(outDir, "tez", "query" + queryId + "_" + "tez" + "_variousCR" + ".txt")
+# silentremove(outFile_tez_cr)
+# compareVaryingContainerReuse(inDir_tez, outFile_tez_cr, queryId, "tez", "1")
+#
+# outFile_tez_pc = os.path.join(outDir, "tez", "query" + queryId + "_" + "tez" + "_variousPC" + ".txt")
 # silentremove(outFile_tez_pc)
-# compareVaryingParallelCopies_tez(inDir_tez, outFile_tez_pc, cr, queryId, "tez", "1")
+# cr = 'true'
+# compareVaryingParallelCopies_tez(inDir_tez, "tez", outFile_tez_pc, cr, queryId, "tez", "1")
+# cr = 'false'
+# compareVaryingParallelCopies_tez(inDir_tez, "tez", outFile_tez_pc, cr, queryId, "tez", "1")
 
 
 

@@ -1,0 +1,24 @@
+Query50	tez	pc5	crtrue	trial1
+Time taken:	 325.233	seconds
+Fetched:	 72	row(s)
+TotalNetStats
+eth0 rx (MB)	eth0 tx (MB)	lo rx (MB)	lo tx (MB)
+5439	5280	18400	18400
+
+TotalDiskStats
+Read (MB)	Write (MB)
+21474	9397
+
+
+Query50	tez	pc5	crfalse	trial1
+Time taken:	 361.775	seconds
+Fetched:	 72	row(s)
+TotalNetStats
+eth0 rx (MB)	eth0 tx (MB)	lo rx (MB)	lo tx (MB)
+5901	5717	18030	18030
+
+TotalDiskStats
+Read (MB)	Write (MB)
+21684	7789
+
+

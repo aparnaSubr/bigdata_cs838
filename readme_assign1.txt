@@ -43,4 +43,21 @@ Hive :
 hdfs dfs -h /tmp/tpcds-generate/db_1/50/ - actual data
 
 
+Varying params :
+
+# --hiveconf mapred.reduce.tasks=val
+# --hiveconf mapreduce.reduce.shuffle.parallelcopies=
+# --hiveconf mapreduce.job.reduce.slowstart.completedmaps=
+
+MR - Reduce Tasks - verify in output file itself.
+MR - Parallel Copies - in history/done/.../conf.xml - grep 'mapreduce.reduce.shuffle.parallelcopies'
+MR - Completed Maps - in history/done/.../conf.xml - grep 'mapreduce.job.reduce.slowstart.completedmaps'
+
+# --hiveconf tez.am.container.reuse.enabled=
+# --hiveconf tez.runtime.shuffle.parallel.copies=
+
+Tez - Container Reuse - in tez-history - grep 'tez.am.container.reuse.enabled'
+Tez - Parallel Copies - in tez-history - grep 'tez.runtime.shuffle.parallel.copies'
+
+
 

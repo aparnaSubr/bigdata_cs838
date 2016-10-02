@@ -1,0 +1,120 @@
+2016-10-02 10:11:43,292 INFO [Dispatcher thread: Central] app.DAGAppMaster: Central Dispatcher queue size after DAG completion, before cleanup: 0
+2016-10-02 10:11:43,292 INFO [Dispatcher thread: Central] app.DAGAppMaster: Waiting for next DAG to be submitted.
+2016-10-02 10:11:43,292 INFO [Dispatcher thread: Central] app.DAGAppMaster: Cleaning up DAG: name=ubuntu_20161002101101_bd99a664-2205-475b-90a2-9779495827ed:1, with id=dag_1475401111718_0012_1
+2016-10-02 10:11:43,294 INFO [Dispatcher thread: Central] app.DAGAppMaster: Completed cleanup for DAG: name=ubuntu_20161002101101_bd99a664-2205-475b-90a2-9779495827ed:1, with id=dag_1475401111718_0012_1
+2016-10-02 10:11:43,499 INFO [IPC Server handler 0 on 38016] client.DAGClientHandler: Received message to shutdown AM
+2016-10-02 10:11:43,499 INFO [IPC Server handler 0 on 38016] rm.TaskSchedulerEventHandler: TaskScheduler notified that it should unregister from RM
+2016-10-02 10:11:43,499 INFO [IPC Server handler 0 on 38016] app.DAGAppMaster: No current running DAG, shutting down the AM
+2016-10-02 10:11:43,499 INFO [IPC Server handler 0 on 38016] app.DAGAppMaster: DAGAppMasterShutdownHandler invoked
+2016-10-02 10:11:43,499 INFO [IPC Server handler 0 on 38016] app.DAGAppMaster: Handling DAGAppMaster shutdown
+2016-10-02 10:11:43,500 INFO [AMShutdownThread] app.DAGAppMaster: Sleeping for 5 seconds before shutting down
+2016-10-02 10:11:45,795 INFO [DelayedContainerManager] rm.YarnTaskSchedulerService: No taskRequests. Container's idle timeout delay expired or is new. Releasing container, containerId=container_1475401111718_0012_01_000015, containerExpiryTime=1475403105744, idleTimeout=5000, taskRequestsCount=0, heldContainers=7, delayedContainers=6, isNew=false
+2016-10-02 10:11:45,795 INFO [DelayedContainerManager] rm.YarnTaskSchedulerService: Releasing unused container: container_1475401111718_0012_01_000015
+2016-10-02 10:11:45,796 INFO [Dispatcher thread: Central] history.HistoryEventHandler: [HISTORY][DAG:dag_1475401111718_0012_1][Event:CONTAINER_STOPPED]: containerId=container_1475401111718_0012_01_000015, stoppedTime=1475403105796, exitStatus=0
+2016-10-02 10:11:45,796 INFO [HistoryEventHandlingThread] impl.SimpleHistoryLoggingService: Writing event CONTAINER_STOPPED to history file
+2016-10-02 10:11:45,796 INFO [Dispatcher thread: Central] container.AMContainerImpl: AMContainer container_1475401111718_0012_01_000015 transitioned from IDLE to STOP_REQUESTED via event C_STOP_REQUEST
+2016-10-02 10:11:45,796 INFO [ContainerLauncher #8] launcher.ContainerLauncherImpl: Processing the event EventType: CONTAINER_STOP_REQUEST
+2016-10-02 10:11:45,796 INFO [ContainerLauncher #8] launcher.ContainerLauncherImpl: Sending a stop request to the NM for ContainerId: container_1475401111718_0012_01_000015
+2016-10-02 10:11:45,796 INFO [ContainerLauncher #8] impl.ContainerManagementProtocolProxy: Opening proxy : vm4:49204
+2016-10-02 10:11:45,811 INFO [Dispatcher thread: Central] container.AMContainerImpl: AMContainer container_1475401111718_0012_01_000015 transitioned from STOP_REQUESTED to STOPPING via event C_NM_STOP_SENT
+2016-10-02 10:11:46,097 INFO [DelayedContainerManager] rm.YarnTaskSchedulerService: No taskRequests. Container's idle timeout delay expired or is new. Releasing container, containerId=container_1475401111718_0012_01_000099, containerExpiryTime=1475403106062, idleTimeout=5000, taskRequestsCount=0, heldContainers=6, delayedContainers=5, isNew=false
+2016-10-02 10:11:46,097 INFO [DelayedContainerManager] rm.YarnTaskSchedulerService: Releasing unused container: container_1475401111718_0012_01_000099
+2016-10-02 10:11:46,097 INFO [Dispatcher thread: Central] history.HistoryEventHandler: [HISTORY][DAG:dag_1475401111718_0012_1][Event:CONTAINER_STOPPED]: containerId=container_1475401111718_0012_01_000099, stoppedTime=1475403106097, exitStatus=0
+2016-10-02 10:11:46,097 INFO [HistoryEventHandlingThread] impl.SimpleHistoryLoggingService: Writing event CONTAINER_STOPPED to history file
+2016-10-02 10:11:46,097 INFO [Dispatcher thread: Central] container.AMContainerImpl: AMContainer container_1475401111718_0012_01_000099 transitioned from IDLE to STOP_REQUESTED via event C_STOP_REQUEST
+2016-10-02 10:11:46,097 INFO [ContainerLauncher #0] launcher.ContainerLauncherImpl: Processing the event EventType: CONTAINER_STOP_REQUEST
+2016-10-02 10:11:46,097 INFO [ContainerLauncher #0] launcher.ContainerLauncherImpl: Sending a stop request to the NM for ContainerId: container_1475401111718_0012_01_000099
+2016-10-02 10:11:46,098 INFO [ContainerLauncher #0] impl.ContainerManagementProtocolProxy: Opening proxy : vm3:50015
+2016-10-02 10:11:46,107 INFO [Dispatcher thread: Central] container.AMContainerImpl: AMContainer container_1475401111718_0012_01_000099 transitioned from STOP_REQUESTED to STOPPING via event C_NM_STOP_SENT
+2016-10-02 10:11:46,185 INFO [AMRM Callback Handler Thread] rm.YarnTaskSchedulerService: Released container completed:container_1475401111718_0012_01_000015 last allocated to task: attempt_1475401111718_0012_1_03_000021_0
+2016-10-02 10:11:46,185 INFO [Dispatcher thread: Central] container.AMContainerImpl: Container container_1475401111718_0012_01_000015 exited with diagnostics set to Container failed, exitCode=-100. Container released by application
+2016-10-02 10:11:46,185 INFO [Dispatcher thread: Central] container.AMContainerImpl: AMContainer container_1475401111718_0012_01_000015 transitioned from STOPPING to COMPLETED via event C_COMPLETED
+2016-10-02 10:11:46,438 INFO [AMRM Callback Handler Thread] rm.YarnTaskSchedulerService: Released container completed:container_1475401111718_0012_01_000099 last allocated to task: attempt_1475401111718_0012_1_03_000016_0
+2016-10-02 10:11:46,438 INFO [Dispatcher thread: Central] container.AMContainerImpl: Container container_1475401111718_0012_01_000099 exited with diagnostics set to Container failed, exitCode=-100. Container released by application
+2016-10-02 10:11:46,438 INFO [Dispatcher thread: Central] container.AMContainerImpl: AMContainer container_1475401111718_0012_01_000099 transitioned from STOPPING to COMPLETED via event C_COMPLETED
+2016-10-02 10:11:47,768 INFO [DelayedContainerManager] rm.YarnTaskSchedulerService: No taskRequests. Container's idle timeout delay expired or is new. Releasing container, containerId=container_1475401111718_0012_01_000119, containerExpiryTime=1475403107642, idleTimeout=5000, taskRequestsCount=0, heldContainers=5, delayedContainers=4, isNew=false
+2016-10-02 10:11:47,768 INFO [DelayedContainerManager] rm.YarnTaskSchedulerService: Releasing unused container: container_1475401111718_0012_01_000119
+2016-10-02 10:11:47,768 INFO [HistoryEventHandlingThread] impl.SimpleHistoryLoggingService: Writing event CONTAINER_STOPPED to history file
+2016-10-02 10:11:47,768 INFO [Dispatcher thread: Central] history.HistoryEventHandler: [HISTORY][DAG:dag_1475401111718_0012_1][Event:CONTAINER_STOPPED]: containerId=container_1475401111718_0012_01_000119, stoppedTime=1475403107768, exitStatus=0
+2016-10-02 10:11:47,768 INFO [Dispatcher thread: Central] container.AMContainerImpl: AMContainer container_1475401111718_0012_01_000119 transitioned from IDLE to STOP_REQUESTED via event C_STOP_REQUEST
+2016-10-02 10:11:47,769 INFO [ContainerLauncher #9] launcher.ContainerLauncherImpl: Processing the event EventType: CONTAINER_STOP_REQUEST
+2016-10-02 10:11:47,769 INFO [ContainerLauncher #9] launcher.ContainerLauncherImpl: Sending a stop request to the NM for ContainerId: container_1475401111718_0012_01_000119
+2016-10-02 10:11:47,769 INFO [ContainerLauncher #9] impl.ContainerManagementProtocolProxy: Opening proxy : vm3:50015
+2016-10-02 10:11:47,778 INFO [Dispatcher thread: Central] container.AMContainerImpl: AMContainer container_1475401111718_0012_01_000119 transitioned from STOP_REQUESTED to STOPPING via event C_NM_STOP_SENT
+2016-10-02 10:11:48,054 INFO [DelayedContainerManager] rm.YarnTaskSchedulerService: No taskRequests. Container's idle timeout delay expired or is new. Releasing container, containerId=container_1475401111718_0012_01_000118, containerExpiryTime=1475403108028, idleTimeout=5000, taskRequestsCount=0, heldContainers=4, delayedContainers=3, isNew=false
+2016-10-02 10:11:48,054 INFO [DelayedContainerManager] rm.YarnTaskSchedulerService: Releasing unused container: container_1475401111718_0012_01_000118
+2016-10-02 10:11:48,054 INFO [Dispatcher thread: Central] history.HistoryEventHandler: [HISTORY][DAG:dag_1475401111718_0012_1][Event:CONTAINER_STOPPED]: containerId=container_1475401111718_0012_01_000118, stoppedTime=1475403108054, exitStatus=0
+2016-10-02 10:11:48,054 INFO [HistoryEventHandlingThread] impl.SimpleHistoryLoggingService: Writing event CONTAINER_STOPPED to history file
+2016-10-02 10:11:48,054 INFO [Dispatcher thread: Central] container.AMContainerImpl: AMContainer container_1475401111718_0012_01_000118 transitioned from IDLE to STOP_REQUESTED via event C_STOP_REQUEST
+2016-10-02 10:11:48,054 INFO [ContainerLauncher #2] launcher.ContainerLauncherImpl: Processing the event EventType: CONTAINER_STOP_REQUEST
+2016-10-02 10:11:48,054 INFO [ContainerLauncher #2] launcher.ContainerLauncherImpl: Sending a stop request to the NM for ContainerId: container_1475401111718_0012_01_000118
+2016-10-02 10:11:48,054 INFO [ContainerLauncher #2] impl.ContainerManagementProtocolProxy: Opening proxy : vm3:50015
+2016-10-02 10:11:48,060 INFO [Dispatcher thread: Central] container.AMContainerImpl: AMContainer container_1475401111718_0012_01_000118 transitioned from STOP_REQUESTED to STOPPING via event C_NM_STOP_SENT
+2016-10-02 10:11:48,212 INFO [AMRM Callback Handler Thread] rm.YarnTaskSchedulerService: Released container completed:container_1475401111718_0012_01_000119 last allocated to task: attempt_1475401111718_0012_1_03_000019_0
+2016-10-02 10:11:48,212 INFO [Dispatcher thread: Central] container.AMContainerImpl: Container container_1475401111718_0012_01_000119 exited with diagnostics set to Container failed, exitCode=-100. Container released by application
+2016-10-02 10:11:48,212 INFO [Dispatcher thread: Central] container.AMContainerImpl: AMContainer container_1475401111718_0012_01_000119 transitioned from STOPPING to COMPLETED via event C_COMPLETED
+2016-10-02 10:11:48,464 INFO [AMRM Callback Handler Thread] rm.YarnTaskSchedulerService: Released container completed:container_1475401111718_0012_01_000118 last allocated to task: attempt_1475401111718_0012_1_03_000018_0
+2016-10-02 10:11:48,464 INFO [Dispatcher thread: Central] container.AMContainerImpl: Container container_1475401111718_0012_01_000118 exited with diagnostics set to Container failed, exitCode=-100. Container released by application
+2016-10-02 10:11:48,464 INFO [Dispatcher thread: Central] container.AMContainerImpl: AMContainer container_1475401111718_0012_01_000118 transitioned from STOPPING to COMPLETED via event C_COMPLETED
+2016-10-02 10:11:48,500 INFO [AMShutdownThread] app.DAGAppMaster: Calling stop for all the services
+2016-10-02 10:11:48,500 INFO [AMShutdownThread] rm.YarnTaskSchedulerService: Initiate stop to YarnTaskScheduler
+2016-10-02 10:11:48,500 INFO [AMShutdownThread] rm.YarnTaskSchedulerService: Release held containers
+2016-10-02 10:11:48,500 INFO [AMShutdownThread] rm.YarnTaskSchedulerService: Remove all the taskRequests
+2016-10-02 10:11:48,501 INFO [AMShutdownThread] history.HistoryEventHandler: Stopping HistoryEventHandler
+2016-10-02 10:11:48,501 INFO [AMShutdownThread] recovery.RecoveryService: Stopping RecoveryService
+2016-10-02 10:11:48,501 INFO [AMShutdownThread] recovery.RecoveryService: Handle the remaining events in queue, queue size=0
+2016-10-02 10:11:48,501 INFO [RecoveryEventHandlingThread] recovery.RecoveryService: EventQueue take interrupted. Returning
+2016-10-02 10:11:48,501 INFO [AMShutdownThread] recovery.RecoveryService: Closing Summary Stream
+2016-10-02 10:11:48,502 INFO [Dispatcher thread: Central] history.HistoryEventHandler: [HISTORY][DAG:dag_1475401111718_0012_1][Event:CONTAINER_STOPPED]: containerId=container_1475401111718_0012_01_000125, stoppedTime=1475403108501, exitStatus=0
+2016-10-02 10:11:48,502 INFO [Dispatcher thread: Central] container.AMContainerImpl: AMContainer container_1475401111718_0012_01_000125 transitioned from IDLE to STOP_REQUESTED via event C_STOP_REQUEST
+2016-10-02 10:11:48,502 INFO [Dispatcher thread: Central] history.HistoryEventHandler: [HISTORY][DAG:dag_1475401111718_0012_1][Event:CONTAINER_STOPPED]: containerId=container_1475401111718_0012_01_000124, stoppedTime=1475403108502, exitStatus=0
+2016-10-02 10:11:48,502 INFO [Dispatcher thread: Central] container.AMContainerImpl: AMContainer container_1475401111718_0012_01_000124 transitioned from IDLE to STOP_REQUESTED via event C_STOP_REQUEST
+2016-10-02 10:11:48,502 INFO [Dispatcher thread: Central] history.HistoryEventHandler: [HISTORY][DAG:dag_1475401111718_0012_1][Event:CONTAINER_STOPPED]: containerId=container_1475401111718_0012_01_000011, stoppedTime=1475403108502, exitStatus=0
+2016-10-02 10:11:48,502 INFO [Dispatcher thread: Central] container.AMContainerImpl: AMContainer container_1475401111718_0012_01_000011 transitioned from IDLE to STOP_REQUESTED via event C_STOP_REQUEST
+2016-10-02 10:11:48,502 INFO [ContainerLauncher #7] launcher.ContainerLauncherImpl: Processing the event EventType: CONTAINER_STOP_REQUEST
+2016-10-02 10:11:48,502 INFO [HistoryEventHandlingThread] impl.SimpleHistoryLoggingService: Writing event CONTAINER_STOPPED to history file
+2016-10-02 10:11:48,502 INFO [ContainerLauncher #6] launcher.ContainerLauncherImpl: Processing the event EventType: CONTAINER_STOP_REQUEST
+2016-10-02 10:11:48,502 INFO [ContainerLauncher #3] launcher.ContainerLauncherImpl: Processing the event EventType: CONTAINER_STOP_REQUEST
+2016-10-02 10:11:48,503 INFO [HistoryEventHandlingThread] impl.SimpleHistoryLoggingService: Writing event CONTAINER_STOPPED to history file
+2016-10-02 10:11:48,504 INFO [HistoryEventHandlingThread] impl.SimpleHistoryLoggingService: Writing event CONTAINER_STOPPED to history file
+2016-10-02 10:11:48,504 INFO [ContainerLauncher #6] launcher.ContainerLauncherImpl: Sending a stop request to the NM for ContainerId: container_1475401111718_0012_01_000011
+2016-10-02 10:11:48,504 INFO [ContainerLauncher #6] impl.ContainerManagementProtocolProxy: Opening proxy : vm2:54003
+2016-10-02 10:11:48,502 INFO [ContainerLauncher #7] launcher.ContainerLauncherImpl: Sending a stop request to the NM for ContainerId: container_1475401111718_0012_01_000125
+2016-10-02 10:11:48,504 INFO [ContainerLauncher #3] launcher.ContainerLauncherImpl: Sending a stop request to the NM for ContainerId: container_1475401111718_0012_01_000124
+2016-10-02 10:11:48,505 INFO [ContainerLauncher #3] impl.ContainerManagementProtocolProxy: Opening proxy : vm2:54003
+2016-10-02 10:11:48,506 INFO [ContainerLauncher #7] impl.ContainerManagementProtocolProxy: Opening proxy : vm2:54003
+2016-10-02 10:11:48,514 WARN [AMShutdownThread] recovery.RecoveryService: Ignoring error while closing summary stream. The recovery directory at hdfs://10.0.0.4:8020/tmp/hive/ubuntu/_tez_session_dir/84859681-11b9-4361-a4d1-2bc70b0ebed7/.tez/application_1475401111718_0012/recovery/1 has already been deleted externally
+2016-10-02 10:11:48,514 INFO [AMShutdownThread] impl.SimpleHistoryLoggingService: Stopping SimpleHistoryLoggingService, eventQueueBacklog=0
+2016-10-02 10:11:48,514 INFO [HistoryEventHandlingThread] impl.SimpleHistoryLoggingService: EventQueue take interrupted. Returning
+2016-10-02 10:11:48,516 INFO [Dispatcher thread: Central] container.AMContainerImpl: AMContainer container_1475401111718_0012_01_000011 transitioned from STOP_REQUESTED to STOPPING via event C_NM_STOP_SENT
+2016-10-02 10:11:48,517 INFO [Dispatcher thread: Central] container.AMContainerImpl: AMContainer container_1475401111718_0012_01_000124 transitioned from STOP_REQUESTED to STOPPING via event C_NM_STOP_SENT
+2016-10-02 10:11:48,518 INFO [Dispatcher thread: Central] container.AMContainerImpl: AMContainer container_1475401111718_0012_01_000125 transitioned from STOP_REQUESTED to STOPPING via event C_NM_STOP_SENT
+2016-10-02 10:11:48,560 INFO [DelayedContainerManager] rm.YarnTaskSchedulerService: Skipping delayed container as container is no longer running, containerId=container_1475401111718_0012_01_000125
+2016-10-02 10:11:48,670 INFO [DelayedContainerManager] rm.YarnTaskSchedulerService: Skipping delayed container as container is no longer running, containerId=container_1475401111718_0012_01_000124
+2016-10-02 10:11:48,698 INFO [DelayedContainerManager] rm.YarnTaskSchedulerService: Skipping delayed container as container is no longer running, containerId=container_1475401111718_0012_01_000011
+2016-10-02 10:11:48,722 INFO [AMRM Callback Handler Thread] rm.YarnTaskSchedulerService: Container container_1475401111718_0012_01_000011 is completed
+2016-10-02 10:11:48,722 INFO [AMRM Callback Handler Thread] rm.YarnTaskSchedulerService: Container container_1475401111718_0012_01_000124 is completed
+2016-10-02 10:11:48,722 INFO [AMRM Callback Handler Thread] rm.YarnTaskSchedulerService: Container container_1475401111718_0012_01_000125 is completed
+2016-10-02 10:11:48,936 INFO [DelayedContainerManager] rm.YarnTaskSchedulerService: AllocatedContainerManager Thread interrupted
+2016-10-02 10:11:48,937 INFO [AMShutdownThread] rm.YarnTaskSchedulerService: Unregistering application from RM, exitStatus=SUCCEEDED, exitMessage=Session stats:submittedDAGs=1, successfulDAGs=1, failedDAGs=0, killedDAGs=0
+, trackingURL=
+2016-10-02 10:11:48,944 INFO [AMShutdownThread] impl.AMRMClientImpl: Waiting for application to be successfully unregistered.
+2016-10-02 10:11:49,047 INFO [AMShutdownThread] rm.YarnTaskSchedulerService: Successfully unregistered application from RM
+2016-10-02 10:11:49,047 INFO [AMRM Callback Handler Thread] impl.AMRMClientAsyncImpl: Interrupted while waiting for queue
+java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2017)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2052)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+	at org.apache.hadoop.yarn.client.api.async.impl.AMRMClientAsyncImpl$CallbackHandlerThread.run(AMRMClientAsyncImpl.java:274)
+2016-10-02 10:11:49,064 INFO [AMShutdownThread] mortbay.log: Stopped HttpServer2$SelectChannelConnectorWithSafeStartup@0.0.0.0:0
+2016-10-02 10:11:49,066 INFO [AMShutdownThread] ipc.Server: Stopping server on 34855
+2016-10-02 10:11:49,071 INFO [IPC Server listener on 34855] ipc.Server: Stopping IPC Server listener on 34855
+2016-10-02 10:11:49,072 INFO [IPC Server Responder] ipc.Server: Stopping IPC Server Responder
+2016-10-02 10:11:49,072 INFO [AMShutdownThread] ipc.Server: Stopping server on 38016
+2016-10-02 10:11:49,072 INFO [IPC Server listener on 38016] ipc.Server: Stopping IPC Server listener on 38016
+2016-10-02 10:11:49,073 INFO [IPC Server Responder] ipc.Server: Stopping IPC Server Responder
+2016-10-02 10:11:49,074 INFO [Thread-2] app.DAGAppMaster: DAGAppMasterShutdownHook invoked
+2016-10-02 10:11:49,075 INFO [Thread-2] app.DAGAppMaster: The shutdown handler is still running, waiting for it to complete
+2016-10-02 10:11:49,080 WARN [AMShutdownThread] app.DAGAppMaster: Failed to delete tez scratch data dir, path=hdfs://10.0.0.4:8020/tmp/hive/ubuntu/_tez_session_dir/84859681-11b9-4361-a4d1-2bc70b0ebed7/.tez/application_1475401111718_0012
+2016-10-02 10:11:49,080 INFO [AMShutdownThread] app.DAGAppMaster: Exiting DAGAppMaster..GoodBye!
+2016-10-02 10:11:49,080 INFO [Thread-2] app.DAGAppMaster: The shutdown handler has completed

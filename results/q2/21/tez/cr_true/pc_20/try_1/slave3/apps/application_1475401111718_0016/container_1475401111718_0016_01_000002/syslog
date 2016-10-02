@@ -1,0 +1,16 @@
+2016-10-02 10:17:18,751 INFO [main] task.TezChild: TezChild starting
+2016-10-02 10:17:18,832 INFO [main] task.TezChild: PID, containerIdentifier:  12395, container_1475401111718_0016_01_000002
+2016-10-02 10:17:21,342 INFO [TezChild] task.ContainerReporter: Attempting to fetch new task for container container_1475401111718_0016_01_000002
+2016-10-02 10:17:21,972 INFO [TezChild] task.ContainerReporter: Got TaskUpdate for containerId= container_1475401111718_0016_01_000002: 0 ms after starting to poll. TaskInfo: shouldDie: false, currentTaskAttemptId: attempt_1475401111718_0016_1_01_000000_0
+2016-10-02 10:17:21,974 INFO [main] common.TezUtilsInternal: Redirecting log file based on addend: attempt_1475401111718_0016_1_01_000000_0
+2016-10-02 10:17:27,247 INFO [TezChild] task.ContainerReporter: Attempting to fetch new task for container container_1475401111718_0016_01_000002
+2016-10-02 10:17:27,259 INFO [TezChild] task.ContainerReporter: Got TaskUpdate for containerId= container_1475401111718_0016_01_000002: 0 ms after starting to poll. TaskInfo: shouldDie: false, currentTaskAttemptId: attempt_1475401111718_0016_1_03_000006_0
+2016-10-02 10:17:27,260 INFO [main] common.TezUtilsInternal: Redirecting log file based on addend: attempt_1475401111718_0016_1_03_000006_0
+2016-10-02 10:17:34,691 INFO [TezChild] task.ContainerReporter: Attempting to fetch new task for container container_1475401111718_0016_01_000002
+2016-10-02 10:17:34,714 INFO [TezChild] task.ContainerReporter: Got TaskUpdate for containerId= container_1475401111718_0016_01_000002: 0 ms after starting to poll. TaskInfo: shouldDie: false, currentTaskAttemptId: attempt_1475401111718_0016_1_03_000020_0
+2016-10-02 10:17:34,714 INFO [main] common.TezUtilsInternal: Redirecting log file based on addend: attempt_1475401111718_0016_1_03_000020_0
+2016-10-02 10:17:40,934 INFO [TezChild] task.ContainerReporter: Attempting to fetch new task for container container_1475401111718_0016_01_000002
+2016-10-02 10:17:42,880 INFO [TezChild] task.ContainerReporter: Sleeping for 200ms before retrying getTask again. Got null now. Next getTask sleep message after 2000ms
+2016-10-02 10:17:44,914 INFO [TezChild] task.ContainerReporter: Sleeping for 200ms before retrying getTask again. Got null now. Next getTask sleep message after 2000ms
+2016-10-02 10:17:46,952 INFO [TezChild] task.ContainerReporter: Sleeping for 200ms before retrying getTask again. Got null now. Next getTask sleep message after 2000ms
+2016-10-02 10:17:48,983 INFO [TezChild] task.ContainerReporter: Sleeping for 200ms before retrying getTask again. Got null now. Next getTask sleep message after 2000ms

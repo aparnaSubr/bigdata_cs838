@@ -1,0 +1,17 @@
+2016-10-02 10:14:34,398 INFO [main] task.TezChild: TezChild starting
+2016-10-02 10:14:34,410 INFO [main] task.TezChild: PID, containerIdentifier:  10448, container_1475401111718_0014_01_000130
+2016-10-02 10:14:35,316 INFO [TezChild] task.ContainerReporter: Attempting to fetch new task for container container_1475401111718_0014_01_000130
+2016-10-02 10:14:35,576 INFO [TezChild] task.ContainerReporter: Got TaskUpdate for containerId= container_1475401111718_0014_01_000130: 0 ms after starting to poll. TaskInfo: shouldDie: false, currentTaskAttemptId: attempt_1475401111718_0014_1_03_000024_0
+2016-10-02 10:14:35,578 INFO [main] common.TezUtilsInternal: Redirecting log file based on addend: attempt_1475401111718_0014_1_03_000024_0
+2016-10-02 10:14:41,283 INFO [TezChild] task.ContainerReporter: Attempting to fetch new task for container container_1475401111718_0014_01_000130
+2016-10-02 10:14:43,215 INFO [TezChild] task.ContainerReporter: Sleeping for 200ms before retrying getTask again. Got null now. Next getTask sleep message after 2000ms
+2016-10-02 10:14:44,224 INFO [TezChild] task.ContainerReporter: Got TaskUpdate for containerId= container_1475401111718_0014_01_000130: 2939 ms after starting to poll. TaskInfo: shouldDie: false, currentTaskAttemptId: attempt_1475401111718_0014_1_04_000000_0
+2016-10-02 10:14:44,224 INFO [main] common.TezUtilsInternal: Redirecting log file based on addend: attempt_1475401111718_0014_1_04_000000_0
+2016-10-02 10:14:45,311 INFO [TezChild] task.ContainerReporter: Attempting to fetch new task for container container_1475401111718_0014_01_000130
+2016-10-02 10:14:47,247 INFO [TezChild] task.ContainerReporter: Sleeping for 200ms before retrying getTask again. Got null now. Next getTask sleep message after 2000ms
+2016-10-02 10:14:49,265 INFO [TezChild] task.ContainerReporter: Sleeping for 200ms before retrying getTask again. Got null now. Next getTask sleep message after 2000ms
+2016-10-02 10:14:51,290 INFO [TezChild] task.ContainerReporter: Sleeping for 200ms before retrying getTask again. Got null now. Next getTask sleep message after 2000ms
+2016-10-02 10:14:51,693 INFO [TezChild] task.ContainerReporter: Got TaskUpdate for containerId= container_1475401111718_0014_01_000130: 6379 ms after starting to poll. TaskInfo: shouldDie: true
+2016-10-02 10:14:51,693 INFO [main] task.TezChild: ContainerTask returned shouldDie=true for container container_1475401111718_0014_01_000130, Exiting
+2016-10-02 10:14:51,693 INFO [main] task.TezChild: Shutdown invoked for container container_1475401111718_0014_01_000130
+2016-10-02 10:14:51,693 INFO [main] task.TezChild: Shutting down container container_1475401111718_0014_01_000130

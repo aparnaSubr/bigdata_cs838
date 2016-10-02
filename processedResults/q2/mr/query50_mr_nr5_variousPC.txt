@@ -1,0 +1,44 @@
+Query50	mr	nr5	pc5	cm1	trial1
+Time taken:	 402.34	seconds
+Fetched:	 72	row(s)
+TotalNetStats
+eth0 rx (MB)	eth0 tx (MB)	lo rx (MB)	lo tx (MB)
+9674	9354	22727	22727
+
+TotalDiskStats
+Read (MB)	Write (MB)
+21258	14663
+
+
+Query50	mr	nr5	pc10	cm1	trial1
+Time taken:	 395.182	seconds
+Fetched:	 72	row(s)
+TotalNetStats
+eth0 rx (MB)	eth0 tx (MB)	lo rx (MB)	lo tx (MB)
+9229	8946	23122	23122
+
+TotalDiskStats
+Read (MB)	Write (MB)
+21254	13545
+
+
+Query50	mr	nr5	pc15	cm1	trial1
+TotalNetStats
+eth0 rx (MB)	eth0 tx (MB)	lo rx (MB)	lo tx (MB)
+630	606	6871	6871
+
+TotalDiskStats
+Read (MB)	Write (MB)
+7265	1416
+
+
+Query50	mr	nr5	pc20	cm1	trial1
+TotalNetStats
+eth0 rx (MB)	eth0 tx (MB)	lo rx (MB)	lo tx (MB)
+0	0	0	0
+
+TotalDiskStats
+Read (MB)	Write (MB)
+86	1
+
+

@@ -512,13 +512,13 @@ outFile_mr_nr = os.path.join(outDir, "mr", "query" + queryId + "_" + "mr" + "_va
 silentremove(outFile_mr_nr)
 compareVaryingNumReducers(inDir_mr, outFile_mr_nr, queryId, "mr", "1")
 
-nr = '20'
+nr = '5'
 outFile_mr_pc = os.path.join(outDir, "mr", "query" + queryId + "_" + "mr" + "_nr" + str(nr) + "_variousPC" + ".txt")
 silentremove(outFile_mr_pc)
 compareVaryingParallelCopies(inDir_mr, outFile_mr_pc, nr, queryId, "mr", "1")
 
-nr = '20'
-pc = '20'
+nr = '5'
+pc = '15'
 outFile_mr_cm = os.path.join(outDir, "mr", "query" + queryId + "_" + "mr" + "_nr" + str(nr) + "_pc" + str(pc) + "_variousCM" + ".txt")
 silentremove(outFile_mr_cm)
 compareVaryingCompletedMaps(inDir_mr, outFile_mr_cm, nr, pc, queryId, "mr", "1")

@@ -10,10 +10,10 @@ reducers=( 5 )
 
 #parallel_copies=( 5 )
 #parallel_copies=( 5 10 15 20 )
-parallel_copies=( 20 )
+parallel_copies=( 15 )
 
 #completed_maps=( 1 )
-completed_maps=( 0.05 0.25 0.5 0.75 )
+completed_maps=( 0.05 0.25 0.5 0.75 1 )
 
 container_reuse=("true" "false")
 #container_reuse=("false")

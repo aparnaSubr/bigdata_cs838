@@ -1,7 +1,9 @@
 tez_or_mr=(tez mr)
-query_ids=( 21 12 50 )
+#query_ids=( 21 12 50 )
+query_ids=( 21 )
 
-reducers=( 1 5 10 20 )
+#reducers=( 1 5 10 20 )
+reducers=( 5 )
 
 parallel_copies=( 5 )
 #parallel_copies=( 10 15 20 )
@@ -9,7 +11,8 @@ parallel_copies=( 5 )
 completed_maps=( 1 )
 #completed_maps=( 0.05 0.25 0.5 0.75 )
 
-container_reuse=("true" "false")
+#container_reuse=("true" "false")
+container_reuse=("false")
 
 num_tries=$1
 
@@ -42,7 +45,7 @@ do
 						echo ""
 						echo ""						
 
-#						sh master_q2_tez.sh $type $query_id $i $cr $pc
+						sh master_q2_tez.sh $type $query_id $i $cr $pc
 
 					done
 
@@ -57,7 +60,7 @@ do
 							echo ""
 							echo ""
 
-	#						sh master_q2_mr.sh $type $query_id $i $nr $pc $cm
+							sh master_q2_mr.sh $type $query_id $i $nr $pc $cm
 
 						done
 					done

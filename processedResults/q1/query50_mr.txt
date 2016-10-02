@@ -1,0 +1,48 @@
+Query50	mr	trial1
+Time taken:	 387.8	seconds
+Fetched:	 72	row(s)
+TotalNetStats
+eth0 rx	eth0 tx	lo rx	lo tx
+8944211179	8604979477	25124171606	25124171606
+
+TotalDiskStats
+Read	Write
+22282137600	9033068544
+
+
+Query50	mr	trial2
+Time taken:	 381.164	seconds
+Fetched:	 72	row(s)
+TotalNetStats
+eth0 rx	eth0 tx	lo rx	lo tx
+9566904828	9197953017	24554625076	24554625076
+
+TotalDiskStats
+Read	Write
+22302932992	11463782400
+
+
+Query50	mr	trial3
+Time taken:	 413.723	seconds
+Fetched:	 72	row(s)
+TotalNetStats
+eth0 rx	eth0 tx	lo rx	lo tx
+9278473908	8934695976	24811027409	24811027409
+
+TotalDiskStats
+Read	Write
+22326403072	9126973440
+
+
+Query50	mr	trial4
+Time taken:	 384.107	seconds
+Fetched:	 72	row(s)
+TotalNetStats
+eth0 rx	eth0 tx	lo rx	lo tx
+9197072008	8844140031	24920970338	24920970338
+
+TotalDiskStats
+Read	Write
+22292619264	10399752192
+
+

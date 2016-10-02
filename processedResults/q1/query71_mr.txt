@@ -1,0 +1,48 @@
+Query71	mr	trial1
+Time taken:	 365.424	seconds
+Fetched:	 36951	row(s)
+TotalNetStats
+eth0 rx	eth0 tx	lo rx	lo tx
+6091557154	5845116102	39359900604	39359900604
+
+TotalDiskStats
+Read	Write
+43576430592	1557897216
+
+
+Query71	mr	trial2
+Time taken:	 365.141	seconds
+Fetched:	 36951	row(s)
+TotalNetStats
+eth0 rx	eth0 tx	lo rx	lo tx
+7316465149	7020813464	38174976034	38174976034
+
+TotalDiskStats
+Read	Write
+43592929280	1561219072
+
+
+Query71	mr	trial3
+Time taken:	 367.769	seconds
+Fetched:	 36951	row(s)
+TotalNetStats
+eth0 rx	eth0 tx	lo rx	lo tx
+6012075143	5758583639	39436782745	39436782745
+
+TotalDiskStats
+Read	Write
+43569909760	1489879040
+
+
+Query71	mr	trial4
+Time taken:	 364.671	seconds
+Fetched:	 36951	row(s)
+TotalNetStats
+eth0 rx	eth0 tx	lo rx	lo tx
+6753343056	6479450689	38704573109	38704573109
+
+TotalDiskStats
+Read	Write
+43579117568	1473974272
+
+

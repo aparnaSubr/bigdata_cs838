@@ -20,11 +20,15 @@ do
 		for type in "${tez_or_mr[@]}"
 		do
 			echo ""
-			echo "\n \n Query : ${query_id} Try : ${num_tries} Type : ${type}\n"
+			echo "\n \n Query : ${query_id} Try : ${i} Type : ${type}\n"
 			echo ""
-			sh master.sh $type $query_id $i
+			# Below line is for q1
+			# sh master.sh $type $query_id $i
+
+			# Below line is for parsing q1
+			python processTry.py ${query_id} ${i} ${type}
 		done
 	done
 done
 
-echo "done. you can shut down vms now." >> ~/DONE_CAN_SHUTDOWN_NOW.txt
+#echo "done. you can shut down vms now." >> ~/DONE_CAN_SHUTDOWN_NOW.txt

@@ -1,0 +1,48 @@
+Query21	tez	trial1
+Time taken:	 47.42	seconds
+Fetched:	 100	row(s)
+TotalNetStats
+eth0 rx	eth0 tx	lo rx	lo tx
+382701810	369021585	853521850	853521850
+
+TotalDiskStats
+Read	Write
+1484746752	29573120
+
+
+Query21	tez	trial2
+Time taken:	 47.273	seconds
+Fetched:	 100	row(s)
+TotalNetStats
+eth0 rx	eth0 tx	lo rx	lo tx
+283993712	273403610	947631901	947631901
+
+TotalDiskStats
+Read	Write
+1483059200	26759168
+
+
+Query21	tez	trial3
+Time taken:	 48.153	seconds
+Fetched:	 100	row(s)
+TotalNetStats
+eth0 rx	eth0 tx	lo rx	lo tx
+284602044	274267559	947676797	947676797
+
+TotalDiskStats
+Read	Write
+1482690560	27918336
+
+
+Query21	tez	trial4
+Time taken:	 48.508	seconds
+Fetched:	 100	row(s)
+TotalNetStats
+eth0 rx	eth0 tx	lo rx	lo tx
+234660772	225500476	994882275	994882275
+
+TotalDiskStats
+Read	Write
+1481789440	25948160
+
+

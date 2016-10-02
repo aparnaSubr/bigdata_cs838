@@ -17,8 +17,8 @@ def getMasterData(masterDir, queryId, type):
     query_out_file = open(query_out_filePath, 'r')
     for inLine in query_out_file:
         if "Time taken:" in inLine and "Fetched:" in inLine:
-            outLines += inLine.split(", ")[0].replace(":", ":\t").replace(" seconds", "\tseconds") + "\n"
-            outLines += inLine.split(", ")[1].replace(":", ":\t").replace(" row", "\trow") + "\n"
+            outLines += inLine.split(", ")[0].replace(":", ":\t").replace(" seconds", "\tseconds").strip() + "\n"
+            outLines += inLine.split(", ")[1].replace(":", ":\t").replace(" row", "\trow").strip() + "\n"
     return outLines
 
 
@@ -50,7 +50,7 @@ def processProcDiskstatsData(procDiskstatsFilePath):
         if "sd" in inLine:
             fragments = inLine.split()
             if "1" in fragments[2]:
-                innerDict = {"read": fragments[5], "write": fragments[9]}
+                innerDict = {"read": fragments[5].strip(), "write": fragments[9].strip()}
                 op_dict[fragments[2]] = innerDict
 
     # debug
@@ -137,7 +137,9 @@ print "\ninDir: " + inDir
 
 slaveDirNames = ["master", "slave2", "slave3", "slave4"]
 
-lines = "Query" + queryId + "\t" + type + "\ttrial" + trialNum +"\n"
+lines = ""
+# lines = inDir + "\n"
+lines += "Query" + queryId + "\t" + type + "\ttrial" + trialNum + "\n"
 
 lines += getMasterData(os.path.join(inDir, "master"), queryId, type)
 print "Master data:\n" + lines
@@ -187,10 +189,12 @@ lines += str(totNetStats['eth0']['rx']) + "\t" + str(totNetStats['eth0']['tx']) 
 lines += "\n"
 lines += "\nTotalDiskStats\n"
 lines += "Read\tWrite\n"
-lines += str(totDiskStats['read']) + "\t" + str(totDiskStats['write']) +"\n"
+lines += str(totDiskStats['read']) + "\t" + str(totDiskStats['write']) + "\n"
+
+lines += "\n"
+lines += "\n"
 
 print "\n\nOutput\n" + lines
-
 
 with open(outFile, "a") as myfile:
     myfile.write(lines)

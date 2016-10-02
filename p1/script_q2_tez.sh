@@ -70,8 +70,8 @@ else
 	mv $output_dir/diskstats $output_dir/diskstats_after_$1
 
 	if [ $3 = "master" ]; then		
-		echo "script_q2_tez.sh : Going to sleep for 60"
-		sleep 60
+		echo "script_q2_tez.sh : Going to sleep for 10"
+		sleep 10
 		echo "script_q2_tez.sh : master : Listing files in HDFS location " $jhist_file_loc
 		hadoop fs -ls $jhist_file_loc
 		hadoop fs -copyToLocal $jhist_file_loc $output_dir

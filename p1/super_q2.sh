@@ -1,24 +1,24 @@
 tez_or_mr=(tez mr)
-#query_ids=( 21 12 50 )
-query_ids=( 21 )
+query_ids=( 21 12 50 )
+#query_ids=( 21 )
 
-#reducers=( 1 5 10 20 )
-reducers=( 5 )
+reducers=( 1 5 10 20 )
+#reducers=( 5 )
 
-parallel_copies=( 5 )
-#parallel_copies=( 10 15 20 )
+#parallel_copies=( 5 )
+parallel_copies=( 5 10 15 20 )
 
 completed_maps=( 1 )
 #completed_maps=( 0.05 0.25 0.5 0.75 )
 
-#container_reuse=("true" "false")
-container_reuse=("false")
+container_reuse=("true" "false")
+#container_reuse=("false")
 
 num_tries=$1
 
 if [ "$#" -ne 1 ]; then
-	echo "You haven't entered num_tries paramter. So, default=2 number of times each query will be run"
-	num_tries=2
+	echo "You haven't entered num_tries paramter. So, default=1 number of times each query will be run"
+	num_tries=1
 fi
 
 workload_dir="/home/ubuntu/workload/hive-tpcds-tpch-workload"

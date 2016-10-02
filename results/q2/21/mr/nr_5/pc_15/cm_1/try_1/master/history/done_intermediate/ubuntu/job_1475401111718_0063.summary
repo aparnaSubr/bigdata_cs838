@@ -1,0 +1,1 @@
+|jobId=job_1475401111718_0063,submitTime=1475406101267,launchTime=1475406106070,firstMapTaskLaunchTime=1475406108273,firstReduceTaskLaunchTime=0,finishTime=1475406167350,resourcesPerMap=4800,resourcesPerReduce=0,numMaps=5,numReduces=0,user=ubuntu,queue=default,status=SUCCEEDED,mapSlotSeconds=1354,reduceSlotSeconds=0,jobName=select  *\n from(select w_warehouse_nam...100(Stage-15)

@@ -1,0 +1,24 @@
+2016-10-02 13:10:14,444 INFO [main] task.TezChild: TezChild starting
+2016-10-02 13:10:14,457 INFO [main] task.TezChild: PID, containerIdentifier:  20680, container_1475401111718_0188_01_000005
+2016-10-02 13:10:15,549 INFO [TezChild] task.ContainerReporter: Attempting to fetch new task for container container_1475401111718_0188_01_000005
+2016-10-02 13:10:15,817 INFO [TezChild] task.ContainerReporter: Got TaskUpdate for containerId= container_1475401111718_0188_01_000005: 0 ms after starting to poll. TaskInfo: shouldDie: false, currentTaskAttemptId: attempt_1475401111718_0188_1_04_000014_0
+2016-10-02 13:10:15,819 INFO [main] common.TezUtilsInternal: Redirecting log file based on addend: attempt_1475401111718_0188_1_04_000014_0
+2016-10-02 13:10:54,382 INFO [TezChild] task.ContainerReporter: Attempting to fetch new task for container container_1475401111718_0188_01_000005
+2016-10-02 13:10:54,384 INFO [TezChild] task.ContainerReporter: Got TaskUpdate for containerId= container_1475401111718_0188_01_000005: 0 ms after starting to poll. TaskInfo: shouldDie: false, currentTaskAttemptId: attempt_1475401111718_0188_1_04_000022_0
+2016-10-02 13:10:54,384 INFO [main] common.TezUtilsInternal: Redirecting log file based on addend: attempt_1475401111718_0188_1_04_000022_0
+2016-10-02 13:11:37,450 INFO [TezChild] task.ContainerReporter: Attempting to fetch new task for container container_1475401111718_0188_01_000005
+2016-10-02 13:11:37,490 INFO [TezChild] task.ContainerReporter: Got TaskUpdate for containerId= container_1475401111718_0188_01_000005: 0 ms after starting to poll. TaskInfo: shouldDie: false, currentTaskAttemptId: attempt_1475401111718_0188_1_03_000000_0
+2016-10-02 13:11:37,491 INFO [main] common.TezUtilsInternal: Redirecting log file based on addend: attempt_1475401111718_0188_1_03_000000_0
+2016-10-02 13:11:41,616 INFO [TezChild] task.ContainerReporter: Attempting to fetch new task for container container_1475401111718_0188_01_000005
+2016-10-02 13:11:41,624 INFO [TezChild] task.ContainerReporter: Got TaskUpdate for containerId= container_1475401111718_0188_01_000005: 0 ms after starting to poll. TaskInfo: shouldDie: false, currentTaskAttemptId: attempt_1475401111718_0188_1_03_000008_0
+2016-10-02 13:11:41,625 INFO [main] common.TezUtilsInternal: Redirecting log file based on addend: attempt_1475401111718_0188_1_03_000008_0
+2016-10-02 13:11:45,921 INFO [TezChild] task.ContainerReporter: Attempting to fetch new task for container container_1475401111718_0188_01_000005
+2016-10-02 13:11:45,962 INFO [TezChild] task.ContainerReporter: Got TaskUpdate for containerId= container_1475401111718_0188_01_000005: 0 ms after starting to poll. TaskInfo: shouldDie: false, currentTaskAttemptId: attempt_1475401111718_0188_1_03_000024_0
+2016-10-02 13:11:45,963 INFO [main] common.TezUtilsInternal: Redirecting log file based on addend: attempt_1475401111718_0188_1_03_000024_0
+2016-10-02 13:11:50,398 INFO [TezChild] task.ContainerReporter: Attempting to fetch new task for container container_1475401111718_0188_01_000005
+2016-10-02 13:11:50,399 INFO [TezChild] task.ContainerReporter: Got TaskUpdate for containerId= container_1475401111718_0188_01_000005: 0 ms after starting to poll. TaskInfo: shouldDie: false, currentTaskAttemptId: attempt_1475401111718_0188_1_03_000035_0
+2016-10-02 13:11:50,400 INFO [main] common.TezUtilsInternal: Redirecting log file based on addend: attempt_1475401111718_0188_1_03_000035_0
+2016-10-02 13:11:54,727 INFO [TezChild] task.ContainerReporter: Attempting to fetch new task for container container_1475401111718_0188_01_000005
+2016-10-02 13:11:54,731 INFO [TezChild] task.ContainerReporter: Got TaskUpdate for containerId= container_1475401111718_0188_01_000005: 0 ms after starting to poll. TaskInfo: shouldDie: false, currentTaskAttemptId: attempt_1475401111718_0188_1_03_000044_0
+2016-10-02 13:11:54,732 INFO [main] common.TezUtilsInternal: Redirecting log file based on addend: attempt_1475401111718_0188_1_03_000044_0
+2016-10-02 13:11:59,297 INFO [TezChild] task.ContainerReporter: Attempting to fetch new task for container container_1475401111718_0188_01_000005

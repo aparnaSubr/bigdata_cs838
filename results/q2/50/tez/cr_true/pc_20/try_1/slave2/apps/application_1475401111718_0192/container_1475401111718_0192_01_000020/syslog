@@ -1,0 +1,15 @@
+2016-10-02 13:35:36,873 INFO [main] task.TezChild: TezChild starting
+2016-10-02 13:35:36,970 INFO [main] task.TezChild: PID, containerIdentifier:  12829, container_1475401111718_0192_01_000020
+2016-10-02 13:35:39,812 INFO [TezChild] task.ContainerReporter: Attempting to fetch new task for container container_1475401111718_0192_01_000020
+2016-10-02 13:35:40,413 INFO [TezChild] task.ContainerReporter: Got TaskUpdate for containerId= container_1475401111718_0192_01_000020: 0 ms after starting to poll. TaskInfo: shouldDie: false, currentTaskAttemptId: attempt_1475401111718_0192_1_03_000013_0
+2016-10-02 13:35:40,415 INFO [main] common.TezUtilsInternal: Redirecting log file based on addend: attempt_1475401111718_0192_1_03_000013_0
+2016-10-02 13:35:49,991 INFO [TezChild] task.ContainerReporter: Attempting to fetch new task for container container_1475401111718_0192_01_000020
+2016-10-02 13:35:50,006 INFO [TezChild] task.ContainerReporter: Got TaskUpdate for containerId= container_1475401111718_0192_01_000020: 0 ms after starting to poll. TaskInfo: shouldDie: false, currentTaskAttemptId: attempt_1475401111718_0192_1_03_000021_0
+2016-10-02 13:35:50,006 INFO [main] common.TezUtilsInternal: Redirecting log file based on addend: attempt_1475401111718_0192_1_03_000021_0
+2016-10-02 13:35:52,406 INFO [TezChild] task.ContainerReporter: Attempting to fetch new task for container container_1475401111718_0192_01_000020
+2016-10-02 13:35:52,422 INFO [TezChild] task.ContainerReporter: Got TaskUpdate for containerId= container_1475401111718_0192_01_000020: 0 ms after starting to poll. TaskInfo: shouldDie: false, currentTaskAttemptId: attempt_1475401111718_0192_1_04_000011_0
+2016-10-02 13:35:52,422 INFO [main] common.TezUtilsInternal: Redirecting log file based on addend: attempt_1475401111718_0192_1_04_000011_0
+2016-10-02 13:36:26,651 INFO [TezChild] task.ContainerReporter: Attempting to fetch new task for container container_1475401111718_0192_01_000020
+2016-10-02 13:36:26,670 INFO [TezChild] task.ContainerReporter: Got TaskUpdate for containerId= container_1475401111718_0192_01_000020: 0 ms after starting to poll. TaskInfo: shouldDie: false, currentTaskAttemptId: attempt_1475401111718_0192_1_04_000019_0
+2016-10-02 13:36:26,670 INFO [main] common.TezUtilsInternal: Redirecting log file based on addend: attempt_1475401111718_0192_1_04_000019_0
+2016-10-02 13:36:48,607 INFO [TezChild] task.ContainerReporter: Attempting to fetch new task for container container_1475401111718_0192_01_000020

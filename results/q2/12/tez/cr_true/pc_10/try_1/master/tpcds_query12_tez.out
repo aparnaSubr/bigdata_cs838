@@ -1,0 +1,90 @@
+
+Logging initialized using configuration in jar:file:/home/ubuntu/software/hive-1.2.1/lib/hive-common-1.2.1.jar!/hive-log4j.properties
+Hive history file=/tmp/ubuntu/hive_job_log_5a60f1da-be09-4cfc-a24c-d2364ded7ee9_423145021.txt
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/home/ubuntu/software/tez-0.7.1-SNAPSHOT-minimal/lib/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/home/ubuntu/software/hadoop-2.6.0/share/hadoop/common/lib/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+OK
+Time taken: 0.946 seconds
+Query ID = ubuntu_20161002113736_3afa9032-6041-4d98-8e00-027d30bf6d60
+Total jobs = 1
+Launching Job 1 out of 1
+
+
+Status: Running (Executing on YARN cluster with App id application_1475401111718_0100)
+
+Map 1: -/-	Map 5: -/-	Map 6: -/-	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 0/50	Map 5: 0/1	Map 6: 0/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 0(+2)/50	Map 5: 0(+1)/1	Map 6: 0(+1)/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 0(+2)/50	Map 5: 0(+1)/1	Map 6: 0(+1)/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 0(+3)/50	Map 5: 0(+1)/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 0(+3)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 0(+4)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 0(+8)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 0(+12)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 0(+16)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 0(+16)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 0(+16)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 1(+15)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 2(+15)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 2(+16)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 3(+15)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 4(+15)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 4(+16)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 4(+16)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 4(+16)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 6(+14)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 6(+16)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 7(+15)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 8(+14)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 9(+16)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 11(+14)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 12(+15)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 13(+16)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 14(+16)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 16(+15)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 18(+15)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 19(+15)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 20(+15)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 20(+16)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 20(+16)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 21(+15)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 22(+15)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 23(+14)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 24(+14)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 26(+14)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 27(+13)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 28(+12)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 29(+13)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 30(+12)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 31(+12)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 31(+13)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 32(+13)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 36(+12)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 36(+13)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 36(+14)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 36(+14)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 37(+13)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 38(+12)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39(+11)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 41(+9)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 42(+8)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 43(+7)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 44(+6)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 44(+6)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 45(+5)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 46(+4)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 47(+3)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 48(+2)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 49(+1)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 50/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0(+1)/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 50/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 1/1	Reducer 3: 0(+1)/1	Reducer 4: 0/1	
+Map 1: 50/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 1/1	Reducer 3: 1/1	Reducer 4: 0/1	
+Map 1: 50/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 1/1	Reducer 3: 1/1	Reducer 4: 0(+1)/1	
+Map 1: 50/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 1/1	Reducer 3: 1/1	Reducer 4: 1/1	
+OK
+Time taken: 63.792 seconds, Fetched: 100 row(s)
+16.28user 0.95system 1:28.27elapsed 19%CPU (0avgtext+0avgdata 713104maxresident)k
+114872inputs+928outputs (112major+63478minor)pagefaults 0swaps

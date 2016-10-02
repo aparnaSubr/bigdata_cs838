@@ -1,0 +1,13 @@
+2016-10-02 11:42:21,191 INFO [main] task.TezChild: TezChild starting
+2016-10-02 11:42:21,206 INFO [main] task.TezChild: PID, containerIdentifier:  35706, container_1475401111718_0102_01_000202
+2016-10-02 11:42:22,316 INFO [TezChild] task.ContainerReporter: Attempting to fetch new task for container container_1475401111718_0102_01_000202
+2016-10-02 11:42:22,653 INFO [TezChild] task.ContainerReporter: Got TaskUpdate for containerId= container_1475401111718_0102_01_000202: 0 ms after starting to poll. TaskInfo: shouldDie: false, currentTaskAttemptId: attempt_1475401111718_0102_1_02_000046_0
+2016-10-02 11:42:22,654 INFO [main] common.TezUtilsInternal: Redirecting log file based on addend: attempt_1475401111718_0102_1_02_000046_0
+2016-10-02 11:42:34,568 INFO [TezChild] task.ContainerReporter: Attempting to fetch new task for container container_1475401111718_0102_01_000202
+2016-10-02 11:42:36,506 INFO [TezChild] task.ContainerReporter: Sleeping for 200ms before retrying getTask again. Got null now. Next getTask sleep message after 2000ms
+2016-10-02 11:42:38,525 INFO [TezChild] task.ContainerReporter: Sleeping for 200ms before retrying getTask again. Got null now. Next getTask sleep message after 2000ms
+2016-10-02 11:42:39,944 INFO [TezChild] task.ContainerReporter: Got TaskUpdate for containerId= container_1475401111718_0102_01_000202: 5374 ms after starting to poll. TaskInfo: shouldDie: false, currentTaskAttemptId: attempt_1475401111718_0102_1_05_000000_0
+2016-10-02 11:42:39,945 INFO [main] common.TezUtilsInternal: Redirecting log file based on addend: attempt_1475401111718_0102_1_05_000000_0
+2016-10-02 11:42:41,333 INFO [TezChild] task.ContainerReporter: Attempting to fetch new task for container container_1475401111718_0102_01_000202
+2016-10-02 11:42:43,278 INFO [TezChild] task.ContainerReporter: Sleeping for 200ms before retrying getTask again. Got null now. Next getTask sleep message after 2000ms
+2016-10-02 11:42:45,307 INFO [TezChild] task.ContainerReporter: Sleeping for 200ms before retrying getTask again. Got null now. Next getTask sleep message after 2000ms

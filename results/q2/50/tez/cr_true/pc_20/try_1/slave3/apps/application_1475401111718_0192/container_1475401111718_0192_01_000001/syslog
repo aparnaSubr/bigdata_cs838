@@ -1,0 +1,63 @@
+2016-10-02 13:35:17,534 INFO [main] app.DAGAppMaster: Created DAGAppMaster for application appattempt_1475401111718_0192_000001, versionInfo=[ component=tez-dag, version=0.7.1-SNAPSHOT, revision=d14ae59157d003130e6fc8eb66a2782ef3c9c27b, SCM-URL=scm:git:https://git-wip-us.apache.org/repos/asf/tez.git, buildTime=2015-09-06T00:14:40Z ]
+2016-10-02 13:35:17,616 INFO [main] app.DAGAppMaster: Comparing client version with AM version, clientVersion=0.7.1-SNAPSHOT, AMVersion=0.7.1-SNAPSHOT
+2016-10-02 13:35:20,900 INFO [main] app.DAGAppMaster: Adding session token to jobTokenSecretManager for application
+2016-10-02 13:35:20,938 INFO [main] common.AsyncDispatcher: Registering class org.apache.tez.dag.app.rm.container.AMContainerEventType for class org.apache.tez.dag.app.rm.container.AMContainerMap
+2016-10-02 13:35:20,967 INFO [main] common.AsyncDispatcher: Registering class org.apache.tez.dag.app.rm.node.AMNodeEventType for class org.apache.tez.dag.app.rm.node.AMNodeTracker
+2016-10-02 13:35:20,989 INFO [main] common.AsyncDispatcher: Registering class org.apache.tez.dag.app.dag.event.DAGAppMasterEventType for class org.apache.tez.dag.app.DAGAppMaster$DAGAppMasterEventHandler
+2016-10-02 13:35:20,992 INFO [main] common.AsyncDispatcher: Registering class org.apache.tez.dag.app.dag.event.DAGEventType for class org.apache.tez.dag.app.DAGAppMaster$DagEventDispatcher
+2016-10-02 13:35:20,992 INFO [main] common.AsyncDispatcher: Registering class org.apache.tez.dag.app.dag.event.VertexEventType for class org.apache.tez.dag.app.DAGAppMaster$VertexEventDispatcher
+2016-10-02 13:35:20,996 INFO [main] common.AsyncDispatcher: Registering class org.apache.tez.dag.app.dag.event.TaskEventType for class org.apache.tez.dag.app.DAGAppMaster$TaskEventDispatcher
+2016-10-02 13:35:21,000 INFO [main] common.AsyncDispatcher: Registering class org.apache.tez.dag.app.dag.event.TaskAttemptEventType for class org.apache.tez.dag.app.DAGAppMaster$TaskAttemptEventDispatcher
+2016-10-02 13:35:21,000 INFO [main] common.AsyncDispatcher: Registering class org.apache.tez.dag.app.dag.event.SpeculatorEventType for independent dispatch using: class org.apache.tez.dag.app.DAGAppMaster$SpeculatorEventHandler
+2016-10-02 13:35:21,000 INFO [main] common.AsyncDispatcher: Registering class org.apache.tez.dag.app.dag.event.SpeculatorEventType for class org.apache.tez.dag.app.DAGAppMaster$SpeculatorEventHandler
+2016-10-02 13:35:21,136 INFO [main] common.AsyncDispatcher: Registering class org.apache.tez.dag.app.rm.AMSchedulerEventType for class org.apache.tez.dag.app.rm.TaskSchedulerEventHandler
+2016-10-02 13:35:21,161 INFO [main] common.AsyncDispatcher: Registering class org.apache.tez.dag.app.rm.NMCommunicatorEventType for class org.apache.tez.dag.app.launcher.ContainerLauncherImpl
+2016-10-02 13:35:21,544 INFO [main] node.AMNodeTracker: blacklistDisablePercent is 33, blacklistingEnabled: true, maxTaskFailuresPerNode: 10
+2016-10-02 13:35:21,545 ERROR [main] web.WebUIService: Tez UI History URL is not set
+2016-10-02 13:35:21,547 INFO [main] launcher.ContainerLauncherImpl: Upper limit on the thread pool size is 500
+2016-10-02 13:35:21,547 INFO [main] history.HistoryEventHandler: Initializing HistoryEventHandler
+2016-10-02 13:35:21,551 INFO [main] impl.SimpleHistoryLoggingService: Using configured log file location for SimpleHistoryLoggingService logDirPath=hdfs://10.0.0.4:8020/tmp/tez-history
+2016-10-02 13:35:21,577 INFO [main] impl.SimpleHistoryLoggingService: Initializing SimpleHistoryLoggingService, logFileLocation=hdfs://10.0.0.4:8020/tmp/tez-history/history.txt.appattempt_1475401111718_0192_000001, maxErrors=10
+2016-10-02 13:35:21,577 INFO [main] recovery.RecoveryService: Initializing RecoveryService
+2016-10-02 13:35:21,578 INFO [main] history.HistoryEventHandler: [HISTORY][DAG:N/A][Event:APP_LAUNCHED]: applicationId=application_1475401111718_0192, appSubmitTime=1475415310649, launchTime=1475415317528
+2016-10-02 13:35:21,579 INFO [main] history.HistoryEventHandler: [HISTORY][DAG:N/A][Event:AM_LAUNCHED]: appAttemptId=appattempt_1475401111718_0192_000001, appSubmitTime=1475415310649, launchTime=1475415317528
+2016-10-02 13:35:21,591 INFO [ServiceThread:org.apache.tez.dag.history.HistoryEventHandler] history.HistoryEventHandler: Starting HistoryEventHandler
+2016-10-02 13:35:21,601 INFO [ServiceThread:org.apache.tez.dag.history.HistoryEventHandler] impl.SimpleHistoryLoggingService: Starting SimpleHistoryLoggingService
+2016-10-02 13:35:21,632 INFO [ServiceThread:org.apache.tez.dag.app.launcher.ContainerLauncherImpl] impl.ContainerManagementProtocolProxy: yarn.client.max-cached-nodemanagers-proxies : 0
+2016-10-02 13:35:21,691 INFO [ServiceThread:DAGClientRPCServer] ipc.CallQueueManager: Using callQueue class java.util.concurrent.LinkedBlockingQueue
+2016-10-02 13:35:21,691 INFO [ServiceThread:org.apache.tez.dag.app.TaskAttemptListenerImpTezDag] ipc.CallQueueManager: Using callQueue class java.util.concurrent.LinkedBlockingQueue
+2016-10-02 13:35:21,759 INFO [Socket Reader #1 for port 48135] ipc.Server: Starting Socket Reader #1 for port 48135
+2016-10-02 13:35:21,759 INFO [Socket Reader #1 for port 36973] ipc.Server: Starting Socket Reader #1 for port 36973
+2016-10-02 13:35:21,828 INFO [HistoryEventHandlingThread] impl.SimpleHistoryLoggingService: Writing event APP_LAUNCHED to history file
+2016-10-02 13:35:21,828 INFO [ServiceThread:org.apache.tez.dag.history.HistoryEventHandler] recovery.RecoveryService: Starting RecoveryService
+2016-10-02 13:35:21,913 INFO [IPC Server Responder] ipc.Server: IPC Server Responder: starting
+2016-10-02 13:35:21,914 INFO [IPC Server listener on 48135] ipc.Server: IPC Server listener on 48135: starting
+2016-10-02 13:35:21,915 INFO [IPC Server Responder] ipc.Server: IPC Server Responder: starting
+2016-10-02 13:35:21,915 INFO [IPC Server listener on 36973] ipc.Server: IPC Server listener on 36973: starting
+2016-10-02 13:35:21,922 INFO [ServiceThread:DAGClientRPCServer] client.DAGClientServer: Instantiated DAGClientRPCServer at vm3/10.0.0.6:48135
+2016-10-02 13:35:21,927 INFO [ServiceThread:org.apache.tez.dag.app.TaskAttemptListenerImpTezDag] app.TaskAttemptListenerImpTezDag: Instantiated TaskAttemptListener RPC at vm3/10.0.0.6:36973
+2016-10-02 13:35:21,940 INFO [HistoryEventHandlingThread] impl.SimpleHistoryLoggingService: Writing event AM_LAUNCHED to history file
+2016-10-02 13:35:22,071 INFO [ServiceThread:org.apache.tez.dag.app.web.WebUIService] mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2016-10-02 13:35:22,074 INFO [ServiceThread:org.apache.tez.dag.app.web.WebUIService] http.HttpRequestLog: Http request log for http.requests. is not defined
+2016-10-02 13:35:22,084 INFO [ServiceThread:org.apache.tez.dag.app.web.WebUIService] http.HttpServer2: Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer2$QuotingInputFilter)
+2016-10-02 13:35:22,112 INFO [ServiceThread:org.apache.tez.dag.app.web.WebUIService] http.HttpServer2: Added filter AM_PROXY_FILTER (class=org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter) to context 
+2016-10-02 13:35:22,112 INFO [ServiceThread:org.apache.tez.dag.app.web.WebUIService] http.HttpServer2: Added filter AM_PROXY_FILTER (class=org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter) to context static
+2016-10-02 13:35:22,116 INFO [ServiceThread:org.apache.tez.dag.app.web.WebUIService] http.HttpServer2: adding path spec: /*
+2016-10-02 13:35:22,123 INFO [ServiceThread:org.apache.tez.dag.app.web.WebUIService] http.HttpServer2: Jetty bound to port 51040
+2016-10-02 13:35:22,123 INFO [ServiceThread:org.apache.tez.dag.app.web.WebUIService] mortbay.log: jetty-6.1.26
+2016-10-02 13:35:22,164 INFO [ServiceThread:org.apache.tez.dag.app.web.WebUIService] mortbay.log: Extract jar:file:/workspace/storage/data/local/nm/filecache/10/tez-0.7.1-SNAPSHOT.tar.gz/lib/hadoop-yarn-common-2.6.0.jar!/webapps/ to /tmp/Jetty_0_0_0_0_51040_webapps____.gqobq3/webapp
+2016-10-02 13:35:22,390 INFO [ServiceThread:org.apache.tez.dag.app.web.WebUIService] mortbay.log: NO JSP Support for /, did not find org.apache.jasper.servlet.JspServlet
+2016-10-02 13:35:22,514 INFO [ServiceThread:org.apache.tez.dag.app.web.WebUIService] mortbay.log: Started HttpServer2$SelectChannelConnectorWithSafeStartup@0.0.0.0:51040
+2016-10-02 13:35:22,514 INFO [ServiceThread:org.apache.tez.dag.app.web.WebUIService] webapp.WebApps: Web app / started at 51040
+2016-10-02 13:35:22,933 INFO [ServiceThread:org.apache.tez.dag.app.web.WebUIService] webapp.WebApps: Registered webapp guice modules
+2016-10-02 13:35:22,934 INFO [ServiceThread:org.apache.tez.dag.app.web.WebUIService] web.WebUIService: Instantiated WebUIService at http://vm3:51040/ui/
+2016-10-02 13:35:23,023 INFO [ServiceThread:org.apache.tez.dag.app.rm.TaskSchedulerEventHandler] rm.YarnTaskSchedulerService: TaskScheduler initialized with configuration: maxRMHeartbeatInterval: 250, containerReuseEnabled: true, reuseRackLocal: false, reuseNonLocal: false, localitySchedulingDelay: 250, preemptionPercentage: 10, numHeartbeatsBetweenPreemptions: 3, idleContainerMinTimeout: 5000, idleContainerMaxTimeout: 10000, sessionMinHeldContainers: 0
+2016-10-02 13:35:23,089 INFO [ServiceThread:org.apache.tez.dag.app.rm.TaskSchedulerEventHandler] client.RMProxy: Connecting to ResourceManager at /10.0.0.4:8030
+2016-10-02 13:35:23,470 INFO [main] history.HistoryEventHandler: [HISTORY][DAG:N/A][Event:AM_STARTED]: appAttemptId=appattempt_1475401111718_0192_000001, startTime=1475415323470
+2016-10-02 13:35:23,470 INFO [HistoryEventHandlingThread] impl.SimpleHistoryLoggingService: Writing event AM_STARTED to history file
+2016-10-02 13:35:23,470 INFO [main] app.DAGAppMaster: In Session mode. Waiting for DAG over RPC
+2016-10-02 13:35:23,570 INFO [AMRM Callback Handler Thread] rm.YarnTaskSchedulerService: App total resource memory: 92160 cpu: 0 taskAllocations: 0
+2016-10-02 13:35:23,572 INFO [Dispatcher thread: Central] node.AMNodeTracker: Num cluster nodes = 4
+2016-10-02 13:35:28,137 INFO [IPC Server handler 0 on 48135] app.DAGAppMaster: Starting DAG submitted via RPC: ubuntu_20161002133524_5a23d62d-487b-4c6a-807e-657c5f375d8b:1
+2016-10-02 13:35:28,378 INFO [IPC Server handler 0 on 48135] app.DAGAppMaster: Generating DAG graphviz file, dagId=dag_1475401111718_0192_1, filePath=/mnt/logs/apps/application_1475401111718_0192/container_1475401111718_0192_01_000001/dag_1475401111718_0192_1.dot
+2016-10-02 13:35:28,420 INFO [IPC Server handler 0 on 48135] common.TezUtilsInternal: Redirecting log file based on addend: dag_1475401111718_0192_1

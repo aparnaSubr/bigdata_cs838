@@ -1,0 +1,9 @@
+2016-10-02 13:12:04,782 INFO [main] task.TezChild: TezChild starting
+2016-10-02 13:12:04,794 INFO [main] task.TezChild: PID, containerIdentifier:  9241, container_1475401111718_0188_01_000467
+2016-10-02 13:12:05,575 INFO [TezChild] task.ContainerReporter: Attempting to fetch new task for container container_1475401111718_0188_01_000467
+2016-10-02 13:12:05,801 INFO [TezChild] task.ContainerReporter: Got TaskUpdate for containerId= container_1475401111718_0188_01_000467: 0 ms after starting to poll. TaskInfo: shouldDie: false, currentTaskAttemptId: attempt_1475401111718_0188_1_03_000045_0
+2016-10-02 13:12:05,803 INFO [main] common.TezUtilsInternal: Redirecting log file based on addend: attempt_1475401111718_0188_1_03_000045_0
+2016-10-02 13:12:12,350 INFO [TezChild] task.ContainerReporter: Attempting to fetch new task for container container_1475401111718_0188_01_000467
+2016-10-02 13:12:14,318 INFO [TezChild] task.ContainerReporter: Sleeping for 200ms before retrying getTask again. Got null now. Next getTask sleep message after 2000ms
+2016-10-02 13:12:16,348 INFO [TezChild] task.ContainerReporter: Sleeping for 200ms before retrying getTask again. Got null now. Next getTask sleep message after 2000ms
+2016-10-02 13:12:18,373 INFO [TezChild] task.ContainerReporter: Sleeping for 200ms before retrying getTask again. Got null now. Next getTask sleep message after 2000ms

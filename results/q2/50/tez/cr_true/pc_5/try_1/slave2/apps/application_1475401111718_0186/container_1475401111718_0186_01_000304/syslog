@@ -1,0 +1,14 @@
+2016-10-02 12:58:08,607 INFO [main] task.TezChild: TezChild starting
+2016-10-02 12:58:08,618 INFO [main] task.TezChild: PID, containerIdentifier:  5960, container_1475401111718_0186_01_000304
+2016-10-02 12:58:09,843 INFO [TezChild] task.ContainerReporter: Attempting to fetch new task for container container_1475401111718_0186_01_000304
+2016-10-02 12:58:10,285 INFO [TezChild] task.ContainerReporter: Got TaskUpdate for containerId= container_1475401111718_0186_01_000304: 0 ms after starting to poll. TaskInfo: shouldDie: false, currentTaskAttemptId: attempt_1475401111718_0186_1_04_000001_0
+2016-10-02 12:58:10,287 INFO [main] common.TezUtilsInternal: Redirecting log file based on addend: attempt_1475401111718_0186_1_04_000001_0
+2016-10-02 12:59:07,614 INFO [TezChild] task.ContainerReporter: Attempting to fetch new task for container container_1475401111718_0186_01_000304
+2016-10-02 12:59:09,581 INFO [TezChild] task.ContainerReporter: Sleeping for 200ms before retrying getTask again. Got null now. Next getTask sleep message after 2000ms
+2016-10-02 12:59:11,604 INFO [TezChild] task.ContainerReporter: Sleeping for 200ms before retrying getTask again. Got null now. Next getTask sleep message after 2000ms
+2016-10-02 12:59:13,636 INFO [TezChild] task.ContainerReporter: Sleeping for 200ms before retrying getTask again. Got null now. Next getTask sleep message after 2000ms
+2016-10-02 12:59:15,662 INFO [TezChild] task.ContainerReporter: Sleeping for 200ms before retrying getTask again. Got null now. Next getTask sleep message after 2000ms
+2016-10-02 12:59:17,285 INFO [TezChild] task.ContainerReporter: Got TaskUpdate for containerId= container_1475401111718_0186_01_000304: 9668 ms after starting to poll. TaskInfo: shouldDie: true
+2016-10-02 12:59:17,285 INFO [main] task.TezChild: ContainerTask returned shouldDie=true for container container_1475401111718_0186_01_000304, Exiting
+2016-10-02 12:59:17,285 INFO [main] task.TezChild: Shutdown invoked for container container_1475401111718_0186_01_000304
+2016-10-02 12:59:17,286 INFO [main] task.TezChild: Shutting down container container_1475401111718_0186_01_000304

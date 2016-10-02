@@ -1,0 +1,149 @@
+2016-10-02 12:58:00,333 INFO [main] task.TezChild: Localizing additional local resources for Task : {}
+2016-10-02 12:58:00,333 INFO [main] task.TezChild: Done localizing additional resources
+2016-10-02 12:58:00,333 INFO [main] metrics.TaskCounterUpdater:  Using ResourceCalculatorProcessTree : org.apache.tez.util.TezMxBeanResourceCalculator@62e062d3
+2016-10-02 12:58:00,333 INFO [main] runtime.LogicalIOProcessorRuntimeTask: Initializing LogicalIOProcessorRuntimeTask with TaskSpec: DAGName : ubuntu_20161002125700_b1705cf6-d039-4558-9897-831d865d8764:1, VertexName: Map 5, VertexParallelism: 50, TaskAttemptID:attempt_1475401111718_0186_1_03_000038_0, processorName=org.apache.hadoop.hive.ql.exec.tez.MapTezProcessor, inputSpecListSize=1, outputSpecListSize=1, inputSpecList=[{{ sourceVertexName=store_returns, physicalEdgeCount=1, inputClassName=org.apache.tez.mapreduce.input.MRInputLegacy }}, ], outputSpecList=[{{ destinationVertexName=Reducer 2, physicalEdgeCount=3, outputClassName=org.apache.tez.runtime.library.output.OrderedPartitionedKVOutput }}, ]
+2016-10-02 12:58:00,333 INFO [main] resources.MemoryDistributor: InitialMemoryDistributor (isEnabled=true) invoked with: numInputs=1, numOutputs=1, JVM.maxFree=4287627264
+2016-10-02 12:58:00,333 INFO [TezChild] task.TezTaskRunner: Initializing task, taskAttemptId=attempt_1475401111718_0186_1_03_000038_0
+2016-10-02 12:58:00,334 INFO [TezChild] runtime.LogicalIOProcessorRuntimeTask: Initializing LogicalProcessorIORuntimeTask
+2016-10-02 12:58:00,334 INFO [TaskHeartbeatThread] task.TaskReporter: Routing events from heartbeat response to task, currentTaskAttemptId=attempt_1475401111718_0186_1_03_000038_0, eventCount=1 fromEventId=0 nextFromEventId=0
+2016-10-02 12:58:00,334 INFO [TezChild] runtime.LogicalIOProcessorRuntimeTask: Creating processor, processorClassName=org.apache.hadoop.hive.ql.exec.tez.MapTezProcessor
+2016-10-02 12:58:00,335 INFO [Initializer 0] runtime.LogicalIOProcessorRuntimeTask: Initializing Input using InputSpec: { sourceVertexName=store_returns, physicalEdgeCount=1, inputClassName=org.apache.tez.mapreduce.input.MRInputLegacy }
+2016-10-02 12:58:00,335 INFO [TezChild] runtime.LogicalIOProcessorRuntimeTask: Initializing processor, processorClassName=org.apache.hadoop.hive.ql.exec.tez.MapTezProcessor
+2016-10-02 12:58:00,335 INFO [TezChild] log.PerfLogger: <PERFLOG method=TezInitializeProcessor from=org.apache.hadoop.hive.ql.exec.tez.TezProcessor>
+2016-10-02 12:58:00,338 INFO [TezChild] log.PerfLogger: </PERFLOG method=TezInitializeProcessor start=1475413080335 end=1475413080338 duration=3 from=org.apache.hadoop.hive.ql.exec.tez.TezProcessor>
+2016-10-02 12:58:00,338 INFO [TezChild] runtime.LogicalIOProcessorRuntimeTask: Initialized processor, processorClassName=org.apache.hadoop.hive.ql.exec.tez.MapTezProcessor
+2016-10-02 12:58:00,338 INFO [TezChild] runtime.LogicalIOProcessorRuntimeTask: Waiting for 2 initializers to finish
+2016-10-02 12:58:00,339 INFO [Initializer 0] runtime.LogicalIOProcessorRuntimeTask: Creating Input
+2016-10-02 12:58:00,339 INFO [Initializer 0] runtime.LogicalIOProcessorRuntimeTask: Initializing Input with src edge: store_returns
+2016-10-02 12:58:00,339 INFO [Initializer 0] resources.MemoryDistributor$RequestorInfo: Received request: 0, type: INPUT, componentVertexName: store_returns
+2016-10-02 12:58:00,335 INFO [Initializer 1] runtime.LogicalIOProcessorRuntimeTask: Initializing Output using OutputSpec: { destinationVertexName=Reducer 2, physicalEdgeCount=3, outputClassName=org.apache.tez.runtime.library.output.OrderedPartitionedKVOutput }
+2016-10-02 12:58:00,343 INFO [Initializer 1] runtime.LogicalIOProcessorRuntimeTask: Creating Output
+2016-10-02 12:58:00,343 INFO [Initializer 1] runtime.LogicalIOProcessorRuntimeTask: Initializing Output with dest edge: Reducer 2
+2016-10-02 12:58:00,344 INFO [Initializer 1] impl.ExternalSorter: Requested SortBufferSize (tez.runtime.io.sort.mb): 1024
+2016-10-02 12:58:00,344 INFO [Initializer 1] resources.MemoryDistributor$RequestorInfo: Received request: 1073741824, type: OUTPUT, componentVertexName: Reducer 2
+2016-10-02 12:58:00,354 INFO [Initializer 1] runtime.LogicalIOProcessorRuntimeTask: Initialized Output with dest edge: Reducer 2
+2016-10-02 12:58:00,366 INFO [Initializer 0] input.MRInput: Using New mapreduce API: false, split information via event: true
+2016-10-02 12:58:00,367 INFO [Initializer 0] input.MRInputLegacy: MRInputLegacy deferring initialization
+2016-10-02 12:58:00,367 INFO [Initializer 0] runtime.LogicalIOProcessorRuntimeTask: Initialized Input with src edge: store_returns
+2016-10-02 12:58:00,367 INFO [TezChild] runtime.LogicalIOProcessorRuntimeTask: Waiting for 1 initializers to finish
+2016-10-02 12:58:00,367 INFO [TezChild] runtime.LogicalIOProcessorRuntimeTask: All initializers finished
+2016-10-02 12:58:00,367 INFO [TezChild] resources.MemoryDistributor: Using Allocator class: org.apache.tez.runtime.library.resources.WeightedScalingMemoryDistributor
+2016-10-02 12:58:00,367 INFO [TezChild] resources.WeightedScalingMemoryDistributor: Falling back to RequestType.OTHER for class: org.apache.tez.mapreduce.input.MRInputLegacy
+2016-10-02 12:58:00,367 INFO [TezChild] resources.WeightedScalingMemoryDistributor: ScaleFactor: 1, for type: OTHER
+2016-10-02 12:58:00,367 INFO [TezChild] resources.WeightedScalingMemoryDistributor: ScaleFactor: 12, for type: SORTED_OUTPUT
+2016-10-02 12:58:00,367 INFO [TezChild] resources.WeightedScalingMemoryDistributor: InitialReservationFraction=0.3, AdditionalReservationFractionForIOs=0.03, finalReserveFractionUsed=0.32999999999999996
+2016-10-02 12:58:00,367 INFO [TezChild] resources.WeightedScalingMemoryDistributor: Scaling Requests. NumRequests: 2, numScaledRequests: 13, TotalRequested: 1073741824, TotalRequestedScaled: 9.911462990769231E8, TotalJVMHeap: 4287627264, TotalAvailable: 2872710266, TotalRequested/TotalJVMHeap:0.25
+2016-10-02 12:58:00,367 INFO [TezChild] resources.MemoryDistributor: Informing: INPUT, store_returns, org.apache.tez.mapreduce.input.MRInputLegacy: requested=0, allocated=0
+2016-10-02 12:58:00,367 INFO [TezChild] resources.MemoryDistributor: Informing: OUTPUT, Reducer 2, org.apache.tez.runtime.library.output.OrderedPartitionedKVOutput: requested=1073741824, allocated=1073741824
+2016-10-02 12:58:00,367 INFO [TezChild] runtime.LogicalIOProcessorRuntimeTask: Starting Inputs/Outputs
+2016-10-02 12:58:00,367 INFO [TezChild] runtime.LogicalIOProcessorRuntimeTask: Num IOs determined for AutoStart: 0
+2016-10-02 12:58:00,367 INFO [TezChild] runtime.LogicalIOProcessorRuntimeTask: AutoStartComplete
+2016-10-02 12:58:00,368 INFO [TezChild] task.TezTaskRunner: Running task, taskAttemptId=attempt_1475401111718_0186_1_03_000038_0
+2016-10-02 12:58:00,368 INFO [TezChild] log.PerfLogger: <PERFLOG method=TezRunProcessor from=org.apache.hadoop.hive.ql.exec.tez.TezProcessor>
+2016-10-02 12:58:00,368 INFO [TezChild] tez.TezProcessor: Running task: attempt_1475401111718_0186_1_03_000038_0_10016
+2016-10-02 12:58:00,368 INFO [TezChild] tez.ObjectCache: Found ubuntu_20161002125700_b1705cf6-d039-4558-9897-831d865d8764__MAP_PLAN__ in cache with value: org.apache.hadoop.hive.ql.plan.MapWork@efd6e34
+2016-10-02 12:58:00,368 INFO [TezChild] log.PerfLogger: <PERFLOG method=TezInitializeOperators from=org.apache.hadoop.hive.ql.exec.tez.RecordProcessor>
+2016-10-02 12:58:00,368 INFO [TezChild] MapredContext: MapredContext initialized.
+2016-10-02 12:58:00,368 INFO [TezChild] input.MRInput: MRInput setup to received 1 events
+2016-10-02 12:58:00,368 INFO [TezChild] tez.MapRecordProcessor: The input names are: [store_returns]
+2016-10-02 12:58:00,375 INFO [TezChild] input.MRInput: Initialzed MRInput: store_returns
+2016-10-02 12:58:00,375 INFO [TezChild] input.MRInputLegacy: Awaiting init event before initializing record reader
+2016-10-02 12:58:00,375 INFO [TezChild] input.MRInput: Initializing RecordReader from event
+2016-10-02 12:58:00,375 INFO [TezChild] input.MRInput: Split Details -> SplitClass: org.apache.hadoop.mapred.split.TezGroupedSplit, OldSplit: org.apache.hadoop.mapred.split.TezGroupedSplit@75f432e
+2016-10-02 12:58:00,375 INFO [TezChild] exec.Utilities: PLAN PATH = hdfs://10.0.0.4:8020/tmp/hive/ubuntu/1849e787-7e41-4c5b-8ccc-642a7277ef53/hive_2016-10-02_12-57-00_992_2105313679751444383-1/ubuntu/_tez_scratch_dir/08cd4be3-7373-4ea2-b1cb-e6aa3386cba2/map.xml
+2016-10-02 12:58:00,419 INFO [TezChild] io.HiveContextAwareRecordReader: Processing file hdfs://10.0.0.4:8020/tmp/tpcds-generate/db_1/50/store_returns/data-m-00034
+2016-10-02 12:58:00,419 INFO [TezChild] lib.MRReaderMapred: Processing split: org.apache.hadoop.mapred.split.TezGroupedSplit@75f432e
+2016-10-02 12:58:00,419 INFO [TezChild] input.MRInput: Initialized RecordReader from event
+2016-10-02 12:58:00,419 INFO [TezChild] impl.ExternalSorter: Initial Mem : 1073741824, assignedMb=1024
+2016-10-02 12:58:00,420 INFO [TezChild] impl.ExternalSorter: keySerializer=org.apache.tez.runtime.library.common.serializer.TezBytesWritableSerialization$TezBytesWritableSerializer@307c5cac; valueSerializer=org.apache.tez.runtime.library.common.serializer.TezBytesWritableSerialization$TezBytesWritableSerializer@34a83912; comparator=org.apache.tez.runtime.library.common.comparator.TezBytesComparator@b44f693; conf=org.apache.tez.runtime.library.common.serializer.TezBytesWritableSerialization,org.apache.tez.runtime.library.common.serializer.TezBytesWritableSerialization,org.apache.hadoop.io.serializer.WritableSerialization,org.apache.hadoop.io.serializer.avro.AvroSpecificSerialization,org.apache.hadoop.io.serializer.avro.AvroReflectSerialization
+2016-10-02 12:58:00,420 INFO [TezChild] impl.ExternalSorter: Instantiating Partitioner: [org.apache.tez.mapreduce.partition.MRPartitioner]
+2016-10-02 12:58:00,420 INFO [TezChild] common.TezRuntimeUtils: Using partitioner class: org.apache.tez.mapreduce.partition.MRPartitioner
+2016-10-02 12:58:00,420 INFO [TezChild] common.TezRuntimeUtils: No combiner specified via tez.runtime.combiner.class. Combiner will not be used
+2016-10-02 12:58:00,420 INFO [TezChild] impl.PipelinedSorter: Number of Blocks : 1, maxMemUsage=1073741824, BLOCK_SIZE=1073741824, finalMergeEnabled=true, pipelinedShuffle=false, sendEmptyPartitionDetails=true
+2016-10-02 12:58:00,826 INFO [TezChild] impl.PipelinedSorter: tez.runtime.io.sort.mb = 1024
+2016-10-02 12:58:00,826 INFO [TezChild] impl.PipelinedSorter: reserved.remaining() = 1073741824
+2016-10-02 12:58:00,826 INFO [TezChild] impl.PipelinedSorter: reserved.metasize = 16777216
+2016-10-02 12:58:00,826 INFO [TezChild] impl.PipelinedSorter: Using the HashComparator
+2016-10-02 12:58:00,826 INFO [TezChild] tez.MapRecordProcessor: Main input name is Map 5
+2016-10-02 12:58:00,826 INFO [TezChild] exec.MapOperator: Initializing operator MAP[14]
+2016-10-02 12:58:00,827 INFO [TezChild] exec.MapOperator: Initialization Done 14 MAP
+2016-10-02 12:58:00,827 INFO [TezChild] exec.MapOperator: Operator 14 MAP initialized
+2016-10-02 12:58:00,828 INFO [TezChild] tez.MapRecordProcessor: 
+<MAP>Id =14
+  <Children>
+    <TS>Id =8
+      <Children>
+        <FIL>Id =9
+          <Children>
+            <RS>Id =10
+              <Children>
+              <\Children>
+              <Parent>Id = 9 null<\Parent>
+            <\RS>
+          <\Children>
+          <Parent>Id = 8 null<\Parent>
+        <\FIL>
+      <\Children>
+      <Parent>Id = 14 null<\Parent>
+    <\TS>
+  <\Children>
+  <Parent><\Parent>
+<\MAP>
+2016-10-02 12:58:00,829 INFO [TezChild] exec.TableScanOperator: Initializing operator TS[8]
+2016-10-02 12:58:00,829 INFO [TezChild] exec.TableScanOperator: Initialization Done 8 TS
+2016-10-02 12:58:00,829 INFO [TezChild] exec.TableScanOperator: Operator 8 TS initialized
+2016-10-02 12:58:00,829 INFO [TezChild] exec.TableScanOperator: Initializing children of 8 TS
+2016-10-02 12:58:00,829 INFO [TezChild] exec.FilterOperator: Initializing child 9 FIL
+2016-10-02 12:58:00,829 INFO [TezChild] exec.FilterOperator: Initializing operator FIL[9]
+2016-10-02 12:58:00,829 INFO [TezChild] exec.FilterOperator: Initialization Done 9 FIL
+2016-10-02 12:58:00,829 INFO [TezChild] exec.FilterOperator: Operator 9 FIL initialized
+2016-10-02 12:58:00,829 INFO [TezChild] exec.FilterOperator: Initializing children of 9 FIL
+2016-10-02 12:58:00,829 INFO [TezChild] exec.ReduceSinkOperator: Initializing child 10 RS
+2016-10-02 12:58:00,829 INFO [TezChild] exec.ReduceSinkOperator: Initializing operator RS[10]
+2016-10-02 12:58:00,829 INFO [TezChild] exec.ReduceSinkOperator: Using tag = 1
+2016-10-02 12:58:00,829 INFO [TezChild] exec.ReduceSinkOperator: Initialization Done 10 RS
+2016-10-02 12:58:00,829 INFO [TezChild] exec.ReduceSinkOperator: Operator 10 RS initialized
+2016-10-02 12:58:00,829 INFO [TezChild] exec.OperatorUtils: Setting output collector: RS[10] --> Reducer 2
+2016-10-02 12:58:00,829 INFO [TezChild] log.PerfLogger: </PERFLOG method=TezInitializeOperators start=1475413080368 end=1475413080829 duration=461 from=org.apache.hadoop.hive.ql.exec.tez.RecordProcessor>
+2016-10-02 12:58:00,830 INFO [TezChild] exec.Utilities: PLAN PATH = hdfs://10.0.0.4:8020/tmp/hive/ubuntu/1849e787-7e41-4c5b-8ccc-642a7277ef53/hive_2016-10-02_12-57-00_992_2105313679751444383-1/ubuntu/_tez_scratch_dir/08cd4be3-7373-4ea2-b1cb-e6aa3386cba2/map.xml
+2016-10-02 12:58:00,921 WARN [TezChild] lazy.LazyStruct: Extra bytes detected at the end of the row! Ignoring similar problems.
+2016-10-02 12:58:00,921 INFO [TezChild] exec.ReduceSinkOperator: keys are [reducesinkkey0, reducesinkkey1, reducesinkkey2] num distributions: 3
+2016-10-02 12:58:00,921 INFO [TezChild] exec.ReduceSinkOperator: RS[10]: records written - 1
+2016-10-02 12:58:00,921 INFO [TezChild] exec.MapOperator: MAP[14]: records read - 1
+2016-10-02 12:58:00,921 INFO [TezChild] exec.ReduceSinkOperator: RS[10]: records written - 10
+2016-10-02 12:58:00,921 INFO [TezChild] exec.MapOperator: MAP[14]: records read - 10
+2016-10-02 12:58:00,921 INFO [TezChild] exec.MapOperator: MAP[14]: records read - 100
+2016-10-02 12:58:00,921 INFO [TezChild] exec.ReduceSinkOperator: RS[10]: records written - 100
+2016-10-02 12:58:00,923 INFO [TezChild] exec.MapOperator: MAP[14]: records read - 1000
+2016-10-02 12:58:00,923 INFO [TezChild] exec.ReduceSinkOperator: RS[10]: records written - 1000
+2016-10-02 12:58:00,940 INFO [TezChild] exec.MapOperator: MAP[14]: records read - 10000
+2016-10-02 12:58:00,941 INFO [TezChild] exec.ReduceSinkOperator: RS[10]: records written - 10000
+2016-10-02 12:58:01,841 INFO [TezChild] exec.MapOperator: MAP[14]: records read - 100000
+2016-10-02 12:58:01,892 INFO [TezChild] exec.ReduceSinkOperator: RS[10]: records written - 100000
+2016-10-02 12:58:03,327 INFO [TezChild] log.PerfLogger: </PERFLOG method=TezRunProcessor start=1475413080368 end=1475413083327 duration=2959 from=org.apache.hadoop.hive.ql.exec.tez.TezProcessor>
+2016-10-02 12:58:03,327 INFO [TezChild] exec.MapOperator: 14 finished. closing... 
+2016-10-02 12:58:03,327 INFO [TezChild] exec.MapOperator: RECORDS_IN_Map_5:287219
+2016-10-02 12:58:03,327 INFO [TezChild] exec.MapOperator: DESERIALIZE_ERRORS:0
+2016-10-02 12:58:03,327 INFO [TezChild] exec.TableScanOperator: 8 finished. closing... 
+2016-10-02 12:58:03,327 INFO [TezChild] exec.FilterOperator: 9 finished. closing... 
+2016-10-02 12:58:03,327 INFO [TezChild] exec.ReduceSinkOperator: 10 finished. closing... 
+2016-10-02 12:58:03,327 INFO [TezChild] exec.ReduceSinkOperator: RS[10]: records written - 272191
+2016-10-02 12:58:03,327 INFO [TezChild] exec.ReduceSinkOperator: RECORDS_OUT_INTERMEDIATE_Map_5:272191
+2016-10-02 12:58:03,327 INFO [TezChild] exec.ReduceSinkOperator: 10 Close done
+2016-10-02 12:58:03,327 INFO [TezChild] exec.FilterOperator: 9 Close done
+2016-10-02 12:58:03,327 INFO [TezChild] exec.TableScanOperator: 8 Close done
+2016-10-02 12:58:03,327 INFO [TezChild] exec.MapOperator: 14 Close done
+2016-10-02 12:58:03,327 INFO [TezChild] task.TezTaskRunner: Closing task, taskAttemptId=attempt_1475401111718_0186_1_03_000038_0
+2016-10-02 12:58:03,327 INFO [TezChild] impl.PipelinedSorter: Starting flush of map output
+2016-10-02 12:58:03,328 INFO [TezChild] impl.PipelinedSorter: Span0.length = 272191, perItem = 21
+2016-10-02 12:58:03,960 INFO [TezChild] impl.PipelinedSorter: done sorting span=0, length=272191, time=632
+2016-10-02 12:58:03,961 INFO [TezChild] impl.PipelinedSorter: Heap = SpanIterator<0:272190> (span=Span[16777216,5716011]),
+2016-10-02 12:58:03,961 INFO [TezChild] impl.PipelinedSorter: Spilling to /workspace/storage/data/local/nm/usercache/ubuntu/appcache/application_1475401111718_0186/output/attempt_1475401111718_0186_1_03_000038_0_10018_0/file.out
+2016-10-02 12:58:04,075 INFO [TezChild] impl.PipelinedSorter: numSpills=1, finalOutputFile=/workspace/storage/data/local/nm/usercache/ubuntu/appcache/application_1475401111718_0186/output/attempt_1475401111718_0186_1_03_000038_0_10018/file.out, finalIndexFile=/workspace/storage/data/local/nm/usercache/ubuntu/appcache/application_1475401111718_0186/output/attempt_1475401111718_0186_1_03_000038_0_10018/file.out.index, filename=/workspace/storage/data/local/nm/usercache/ubuntu/appcache/application_1475401111718_0186/output/attempt_1475401111718_0186_1_03_000038_0_10018_0/file.out, indexFilename=/workspace/storage/data/local/nm/usercache/ubuntu/appcache/application_1475401111718_0186/output/attempt_1475401111718_0186_1_03_000038_0_10018_0/file.out.index
+2016-10-02 12:58:04,076 INFO [TezChild] runtime.LogicalIOProcessorRuntimeTask: Joining on EventRouter
+2016-10-02 12:58:04,077 INFO [TezChild] task.TezTaskRunner: Task completed, taskAttemptId=attempt_1475401111718_0186_1_03_000038_0, fatalErrorOccurred=false
+2016-10-02 12:58:04,081 INFO [TezChild] runtime.LogicalIOProcessorRuntimeTask: Final Counters : Counters: 28 [[File System Counters FILE_BYTES_READ=80, FILE_BYTES_WRITTEN=6260503, FILE_READ_OPS=0, FILE_LARGE_READ_OPS=0, FILE_WRITE_OPS=0, HDFS_BYTES_READ=34341641, HDFS_BYTES_WRITTEN=0, HDFS_READ_OPS=1, HDFS_LARGE_READ_OPS=0, HDFS_WRITE_OPS=0][org.apache.tez.common.counters.TaskCounter SPILLED_RECORDS=272191, GC_TIME_MILLIS=0, CPU_MILLISECONDS=1650, PHYSICAL_MEMORY_BYTES=3426222080, VIRTUAL_MEMORY_BYTES=5582139392, COMMITTED_HEAP_BYTES=3426222080, INPUT_RECORDS_PROCESSED=287219, OUTPUT_RECORDS=272191, OUTPUT_BYTES=5716011, OUTPUT_BYTES_WITH_OVERHEAD=6260411, OUTPUT_BYTES_PHYSICAL=6260423, ADDITIONAL_SPILLS_BYTES_WRITTEN=0, ADDITIONAL_SPILLS_BYTES_READ=0, ADDITIONAL_SPILL_COUNT=0, SHUFFLE_CHUNK_COUNT=1][HIVE DESERIALIZE_ERRORS=0, RECORDS_IN_Map_5=287219, RECORDS_OUT_INTERMEDIATE_Map_5=272191]]
+2016-10-02 12:58:04,081 INFO [TezChild] impl.TezInputContextImpl: Cleared TezInputContextImpl related information
+2016-10-02 12:58:04,081 INFO [TezChild] impl.TezOutputContextImpl: Cleared TezOutputContextImpl related information
+2016-10-02 12:58:04,081 INFO [TezChild] impl.TezProcessorContextImpl: Cleared TezProcessorContextImpl related information
+2016-10-02 12:58:04,182 INFO [main] common.TezUtilsInternal: Redirecting log file based on addend: 

@@ -1,0 +1,103 @@
+
+Logging initialized using configuration in jar:file:/home/ubuntu/software/hive-1.2.1/lib/hive-common-1.2.1.jar!/hive-log4j.properties
+Hive history file=/tmp/ubuntu/hive_job_log_41ae5ec4-924e-4b1c-9548-e5229eed6c7a_499911407.txt
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/home/ubuntu/software/tez-0.7.1-SNAPSHOT-minimal/lib/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/home/ubuntu/software/hadoop-2.6.0/share/hadoop/common/lib/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+OK
+Time taken: 0.942 seconds
+Query ID = ubuntu_20161002114728_d8d765ea-b8eb-455e-8304-a7db61a1bb19
+Total jobs = 1
+Launching Job 1 out of 1
+
+
+Status: Running (Executing on YARN cluster with App id application_1475401111718_0105)
+
+Map 1: -/-	Map 5: -/-	Map 6: -/-	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 0/50	Map 5: 0/1	Map 6: 0/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 0(+4)/50	Map 5: 0/1	Map 6: 0/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 0(+4)/50	Map 5: 0/1	Map 6: 0/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 0(+10)/50	Map 5: 0(+1)/1	Map 6: 0(+1)/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 0(+14)/50	Map 5: 0(+1)/1	Map 6: 0(+1)/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 0(+14)/50	Map 5: 0(+1)/1	Map 6: 0(+1)/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 0(+14)/50	Map 5: 0(+1)/1	Map 6: 0(+1)/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 0(+14)/50	Map 5: 0(+1)/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 0(+14)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 0(+15)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 0(+16)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 1(+15)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 2(+14)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 2(+15)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 3(+15)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 4(+14)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 7(+11)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 9(+9)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 10(+8)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 11(+7)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 12(+6)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 12(+10)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 15(+8)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 16(+7)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 16(+8)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 16(+9)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 16(+10)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 16(+13)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 16(+14)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 16(+15)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 16(+16)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 17(+15)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 18(+14)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 18(+15)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 18(+16)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 19(+15)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 20(+14)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 21(+13)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 21(+14)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 23(+12)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 24(+11)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 25(+11)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 26(+10)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 27(+10)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 28(+9)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 28(+8)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 29(+8)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 29(+9)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 29(+11)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 30(+10)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 31(+9)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 31(+11)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 31(+12)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 32(+11)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 33(+12)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 33(+13)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 34(+12)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 34(+13)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 35(+12)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 35(+14)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 35(+15)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 37(+13)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 37(+13)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39(+11)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 40(+10)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 41(+9)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 42(+8)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 43(+7)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 44(+6)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 45(+5)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 46(+4)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 47(+3)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 48(+2)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 49(+1)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 50/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 50/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0(+1)/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 50/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 1/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 50/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 1/1	Reducer 3: 0(+1)/1	Reducer 4: 0/1	
+Map 1: 50/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 1/1	Reducer 3: 1/1	Reducer 4: 0/1	
+Map 1: 50/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 1/1	Reducer 3: 1/1	Reducer 4: 0(+1)/1	
+Map 1: 50/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 1/1	Reducer 3: 1/1	Reducer 4: 1/1	
+OK
+Time taken: 77.528 seconds, Fetched: 100 row(s)
+16.51user 0.94system 1:40.22elapsed 17%CPU (0avgtext+0avgdata 709364maxresident)k
+114296inputs+1024outputs (111major+80024minor)pagefaults 0swaps

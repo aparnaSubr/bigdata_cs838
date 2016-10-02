@@ -1,0 +1,289 @@
+2016-10-02 11:46:19,611 INFO [main] task.TezChild: Localizing additional local resources for Task : {}
+2016-10-02 11:46:19,611 INFO [main] task.TezChild: Done localizing additional resources
+2016-10-02 11:46:19,612 INFO [main] metrics.TaskCounterUpdater:  Using ResourceCalculatorProcessTree : org.apache.tez.util.TezMxBeanResourceCalculator@54179bc
+2016-10-02 11:46:19,612 INFO [main] runtime.LogicalIOProcessorRuntimeTask: Initializing LogicalIOProcessorRuntimeTask with TaskSpec: DAGName : ubuntu_20161002114536_9e514912-ce4b-48f8-8523-5304e915d276:1, VertexName: Map 1, VertexParallelism: 50, TaskAttemptID:attempt_1475401111718_0104_1_02_000036_0, processorName=org.apache.hadoop.hive.ql.exec.tez.MapTezProcessor, inputSpecListSize=3, outputSpecListSize=1, inputSpecList=[{{ sourceVertexName=web_sales, physicalEdgeCount=1, inputClassName=org.apache.tez.mapreduce.input.MRInputLegacy }}, {{ sourceVertexName=Map 5, physicalEdgeCount=1, inputClassName=org.apache.tez.runtime.library.input.UnorderedKVInput }}, {{ sourceVertexName=Map 6, physicalEdgeCount=1, inputClassName=org.apache.tez.runtime.library.input.UnorderedKVInput }}, ], outputSpecList=[{{ destinationVertexName=Reducer 2, physicalEdgeCount=1, outputClassName=org.apache.tez.runtime.library.output.OrderedPartitionedKVOutput }}, ]
+2016-10-02 11:46:19,612 INFO [main] resources.MemoryDistributor: InitialMemoryDistributor (isEnabled=true) invoked with: numInputs=3, numOutputs=1, JVM.maxFree=4287627264
+2016-10-02 11:46:19,612 INFO [TezChild] task.TezTaskRunner: Initializing task, taskAttemptId=attempt_1475401111718_0104_1_02_000036_0
+2016-10-02 11:46:19,612 INFO [TezChild] runtime.LogicalIOProcessorRuntimeTask: Initializing LogicalProcessorIORuntimeTask
+2016-10-02 11:46:19,613 INFO [TezChild] runtime.LogicalIOProcessorRuntimeTask: Creating processor, processorClassName=org.apache.hadoop.hive.ql.exec.tez.MapTezProcessor
+2016-10-02 11:46:19,613 INFO [Initializer 0] runtime.LogicalIOProcessorRuntimeTask: Initializing Input using InputSpec: { sourceVertexName=web_sales, physicalEdgeCount=1, inputClassName=org.apache.tez.mapreduce.input.MRInputLegacy }
+2016-10-02 11:46:19,613 INFO [Initializer 0] runtime.LogicalIOProcessorRuntimeTask: Creating Input
+2016-10-02 11:46:19,614 INFO [Initializer 0] runtime.LogicalIOProcessorRuntimeTask: Initializing Input with src edge: web_sales
+2016-10-02 11:46:19,614 INFO [Initializer 0] resources.MemoryDistributor$RequestorInfo: Received request: 0, type: INPUT, componentVertexName: web_sales
+2016-10-02 11:46:19,614 INFO [TaskHeartbeatThread] task.TaskReporter: Routing events from heartbeat response to task, currentTaskAttemptId=attempt_1475401111718_0104_1_02_000036_0, eventCount=3 fromEventId=0 nextFromEventId=2
+2016-10-02 11:46:19,616 INFO [Initializer 2] runtime.LogicalIOProcessorRuntimeTask: Initializing Input using InputSpec: { sourceVertexName=Map 6, physicalEdgeCount=1, inputClassName=org.apache.tez.runtime.library.input.UnorderedKVInput }
+2016-10-02 11:46:19,616 INFO [Initializer 2] runtime.LogicalIOProcessorRuntimeTask: Creating Input
+2016-10-02 11:46:19,616 INFO [Initializer 2] runtime.LogicalIOProcessorRuntimeTask: Initializing Input with src edge: Map 6
+2016-10-02 11:46:19,616 INFO [TezChild] runtime.LogicalIOProcessorRuntimeTask: Initializing processor, processorClassName=org.apache.hadoop.hive.ql.exec.tez.MapTezProcessor
+2016-10-02 11:46:19,616 INFO [TezChild] log.PerfLogger: <PERFLOG method=TezInitializeProcessor from=org.apache.hadoop.hive.ql.exec.tez.TezProcessor>
+2016-10-02 11:46:19,618 INFO [Initializer 2] resources.MemoryDistributor$RequestorInfo: Received request: 1503238528, type: INPUT, componentVertexName: Map 6
+2016-10-02 11:46:19,621 INFO [Initializer 2] runtime.LogicalIOProcessorRuntimeTask: Initialized Input with src edge: Map 6
+2016-10-02 11:46:19,624 INFO [Initializer 3] runtime.LogicalIOProcessorRuntimeTask: Initializing Output using OutputSpec: { destinationVertexName=Reducer 2, physicalEdgeCount=1, outputClassName=org.apache.tez.runtime.library.output.OrderedPartitionedKVOutput }
+2016-10-02 11:46:19,627 INFO [Initializer 1] runtime.LogicalIOProcessorRuntimeTask: Initializing Input using InputSpec: { sourceVertexName=Map 5, physicalEdgeCount=1, inputClassName=org.apache.tez.runtime.library.input.UnorderedKVInput }
+2016-10-02 11:46:19,627 INFO [Initializer 1] runtime.LogicalIOProcessorRuntimeTask: Creating Input
+2016-10-02 11:46:19,627 INFO [Initializer 1] runtime.LogicalIOProcessorRuntimeTask: Initializing Input with src edge: Map 5
+2016-10-02 11:46:19,629 INFO [Initializer 1] resources.MemoryDistributor$RequestorInfo: Received request: 1503238528, type: INPUT, componentVertexName: Map 5
+2016-10-02 11:46:19,629 INFO [Initializer 1] runtime.LogicalIOProcessorRuntimeTask: Initialized Input with src edge: Map 5
+2016-10-02 11:46:19,648 INFO [Initializer 3] runtime.LogicalIOProcessorRuntimeTask: Creating Output
+2016-10-02 11:46:19,648 INFO [Initializer 3] runtime.LogicalIOProcessorRuntimeTask: Initializing Output with dest edge: Reducer 2
+2016-10-02 11:46:19,655 INFO [Initializer 3] impl.ExternalSorter: Requested SortBufferSize (tez.runtime.io.sort.mb): 1024
+2016-10-02 11:46:19,655 INFO [Initializer 3] resources.MemoryDistributor$RequestorInfo: Received request: 1073741824, type: OUTPUT, componentVertexName: Reducer 2
+2016-10-02 11:46:19,655 INFO [Initializer 3] runtime.LogicalIOProcessorRuntimeTask: Initialized Output with dest edge: Reducer 2
+2016-10-02 11:46:19,660 INFO [Initializer 0] input.MRInput: Using New mapreduce API: false, split information via event: true
+2016-10-02 11:46:19,660 INFO [Initializer 0] input.MRInputLegacy: MRInputLegacy deferring initialization
+2016-10-02 11:46:19,660 INFO [Initializer 0] runtime.LogicalIOProcessorRuntimeTask: Initialized Input with src edge: web_sales
+2016-10-02 11:46:19,677 INFO [TezChild] log.PerfLogger: </PERFLOG method=TezInitializeProcessor start=1475408779616 end=1475408779677 duration=61 from=org.apache.hadoop.hive.ql.exec.tez.TezProcessor>
+2016-10-02 11:46:19,677 INFO [TezChild] runtime.LogicalIOProcessorRuntimeTask: Initialized processor, processorClassName=org.apache.hadoop.hive.ql.exec.tez.MapTezProcessor
+2016-10-02 11:46:19,677 INFO [TezChild] runtime.LogicalIOProcessorRuntimeTask: Waiting for 4 initializers to finish
+2016-10-02 11:46:19,677 INFO [TezChild] runtime.LogicalIOProcessorRuntimeTask: Waiting for 3 initializers to finish
+2016-10-02 11:46:19,677 INFO [TezChild] runtime.LogicalIOProcessorRuntimeTask: Waiting for 2 initializers to finish
+2016-10-02 11:46:19,677 INFO [TezChild] runtime.LogicalIOProcessorRuntimeTask: Waiting for 1 initializers to finish
+2016-10-02 11:46:19,677 INFO [TezChild] runtime.LogicalIOProcessorRuntimeTask: All initializers finished
+2016-10-02 11:46:19,677 INFO [TezChild] resources.MemoryDistributor: Using Allocator class: org.apache.tez.runtime.library.resources.WeightedScalingMemoryDistributor
+2016-10-02 11:46:19,678 INFO [TezChild] resources.WeightedScalingMemoryDistributor: Falling back to RequestType.OTHER for class: org.apache.tez.mapreduce.input.MRInputLegacy
+2016-10-02 11:46:19,678 INFO [TezChild] resources.WeightedScalingMemoryDistributor: ScaleFactor: 1, for type: OTHER
+2016-10-02 11:46:19,678 INFO [TezChild] resources.WeightedScalingMemoryDistributor: ScaleFactor: 1, for type: UNSORTED_INPUT
+2016-10-02 11:46:19,678 INFO [TezChild] resources.WeightedScalingMemoryDistributor: ScaleFactor: 1, for type: UNSORTED_INPUT
+2016-10-02 11:46:19,678 INFO [TezChild] resources.WeightedScalingMemoryDistributor: ScaleFactor: 12, for type: SORTED_OUTPUT
+2016-10-02 11:46:19,678 INFO [TezChild] resources.WeightedScalingMemoryDistributor: InitialReservationFraction=0.3, AdditionalReservationFractionForIOs=0.06, finalReserveFractionUsed=0.36
+2016-10-02 11:46:19,678 INFO [TezChild] resources.WeightedScalingMemoryDistributor: Scaling Requests. NumRequests: 4, numScaledRequests: 15, TotalRequested: 4080218880, TotalRequestedScaled: 1.0594252629333334E9, TotalJVMHeap: 4287627264, TotalAvailable: 2744081448, TotalRequested/TotalJVMHeap:0.95
+2016-10-02 11:46:19,678 INFO [TezChild] resources.MemoryDistributor: Informing: INPUT, web_sales, org.apache.tez.mapreduce.input.MRInputLegacy: requested=0, allocated=0
+2016-10-02 11:46:19,678 INFO [TezChild] resources.MemoryDistributor: Informing: INPUT, Map 6, org.apache.tez.runtime.library.input.UnorderedKVInput: requested=1503238528, allocated=259575268
+2016-10-02 11:46:19,678 INFO [TezChild] resources.MemoryDistributor: Informing: INPUT, Map 5, org.apache.tez.runtime.library.input.UnorderedKVInput: requested=1503238528, allocated=259575268
+2016-10-02 11:46:19,678 INFO [TezChild] resources.MemoryDistributor: Informing: OUTPUT, Reducer 2, org.apache.tez.runtime.library.output.OrderedPartitionedKVOutput: requested=1073741824, allocated=1073741824
+2016-10-02 11:46:19,678 INFO [TezChild] runtime.LogicalIOProcessorRuntimeTask: Starting Inputs/Outputs
+2016-10-02 11:46:19,678 INFO [TezChild] runtime.LogicalIOProcessorRuntimeTask: Num IOs determined for AutoStart: 0
+2016-10-02 11:46:19,678 INFO [TezChild] runtime.LogicalIOProcessorRuntimeTask: AutoStartComplete
+2016-10-02 11:46:19,689 INFO [TezChild] task.TezTaskRunner: Running task, taskAttemptId=attempt_1475401111718_0104_1_02_000036_0
+2016-10-02 11:46:19,689 INFO [TezChild] log.PerfLogger: <PERFLOG method=TezRunProcessor from=org.apache.hadoop.hive.ql.exec.tez.TezProcessor>
+2016-10-02 11:46:19,689 INFO [TezChild] tez.TezProcessor: Running task: attempt_1475401111718_0104_1_02_000036_0_10011
+2016-10-02 11:46:19,689 INFO [TezChild] tez.ObjectCache: Found ubuntu_20161002114536_9e514912-ce4b-48f8-8523-5304e915d276__MAP_PLAN__ in cache with value: org.apache.hadoop.hive.ql.plan.MapWork@254cb208
+2016-10-02 11:46:19,690 INFO [TezChild] log.PerfLogger: <PERFLOG method=TezInitializeOperators from=org.apache.hadoop.hive.ql.exec.tez.RecordProcessor>
+2016-10-02 11:46:19,690 INFO [TezChild] MapredContext: MapredContext initialized.
+2016-10-02 11:46:19,690 INFO [TezChild] input.MRInput: MRInput setup to received 1 events
+2016-10-02 11:46:19,691 INFO [TezChild] tez.MapRecordProcessor: The input names are: [web_sales, Map 5, Map 6]
+2016-10-02 11:46:19,697 INFO [TezChild] input.MRInput: Initialzed MRInput: web_sales
+2016-10-02 11:46:19,697 INFO [TezChild] input.MRInput: Initializing RecordReader from event
+2016-10-02 11:46:19,697 INFO [TezChild] input.MRInput: Split Details -> SplitClass: org.apache.hadoop.mapred.split.TezGroupedSplit, OldSplit: org.apache.hadoop.mapred.split.TezGroupedSplit@f94be93
+2016-10-02 11:46:19,697 INFO [TezChild] exec.Utilities: PLAN PATH = hdfs://10.0.0.4:8020/tmp/hive/ubuntu/c5c73a3c-76f0-44bd-bd84-49ee81772366/hive_2016-10-02_11-45-36_903_5050821757992607851-1/ubuntu/_tez_scratch_dir/f0bb9bc9-4a85-48b4-8189-fd1478e1cd3c/map.xml
+2016-10-02 11:46:19,757 INFO [TezChild] io.HiveContextAwareRecordReader: Processing file hdfs://10.0.0.4:8020/tmp/tpcds-generate/db_1/50/web_sales/data-m-00036
+2016-10-02 11:46:19,758 INFO [TezChild] lib.MRReaderMapred: Processing split: org.apache.hadoop.mapred.split.TezGroupedSplit@f94be93
+2016-10-02 11:46:19,758 INFO [TezChild] input.MRInput: Initialized RecordReader from event
+2016-10-02 11:46:19,765 INFO [TezChild] impl.ExternalSorter: Initial Mem : 1073741824, assignedMb=1024
+2016-10-02 11:46:19,765 INFO [TezChild] impl.ExternalSorter: keySerializer=org.apache.tez.runtime.library.common.serializer.TezBytesWritableSerialization$TezBytesWritableSerializer@2118108a; valueSerializer=org.apache.tez.runtime.library.common.serializer.TezBytesWritableSerialization$TezBytesWritableSerializer@32e5e4ff; comparator=org.apache.tez.runtime.library.common.comparator.TezBytesComparator@642a4679; conf=org.apache.tez.runtime.library.common.serializer.TezBytesWritableSerialization,org.apache.tez.runtime.library.common.serializer.TezBytesWritableSerialization,org.apache.hadoop.io.serializer.WritableSerialization,org.apache.hadoop.io.serializer.avro.AvroSpecificSerialization,org.apache.hadoop.io.serializer.avro.AvroReflectSerialization
+2016-10-02 11:46:19,765 INFO [TezChild] impl.ExternalSorter: Instantiating Partitioner: [org.apache.tez.mapreduce.partition.MRPartitioner]
+2016-10-02 11:46:19,766 INFO [TezChild] common.TezRuntimeUtils: Using partitioner class: org.apache.tez.mapreduce.partition.MRPartitioner
+2016-10-02 11:46:19,766 INFO [TezChild] common.TezRuntimeUtils: No combiner specified via tez.runtime.combiner.class. Combiner will not be used
+2016-10-02 11:46:19,766 INFO [TezChild] impl.PipelinedSorter: Number of Blocks : 1, maxMemUsage=1073741824, BLOCK_SIZE=1073741824, finalMergeEnabled=true, pipelinedShuffle=false, sendEmptyPartitionDetails=true
+2016-10-02 11:46:20,465 INFO [TezChild] impl.PipelinedSorter: tez.runtime.io.sort.mb = 1024
+2016-10-02 11:46:20,471 INFO [TezChild] impl.PipelinedSorter: reserved.remaining() = 1073741824
+2016-10-02 11:46:20,471 INFO [TezChild] impl.PipelinedSorter: reserved.metasize = 16777216
+2016-10-02 11:46:20,471 INFO [TezChild] impl.PipelinedSorter: Using the HashComparator
+2016-10-02 11:46:20,490 INFO [TezChild] tez.MapRecordProcessor: Main input name is Map 1
+2016-10-02 11:46:20,490 INFO [TezChild] exec.MapOperator: Initializing operator MAP[12]
+2016-10-02 11:46:20,490 INFO [TezChild] exec.MapOperator: Initialization Done 12 MAP
+2016-10-02 11:46:20,490 INFO [TezChild] exec.MapOperator: Operator 12 MAP initialized
+2016-10-02 11:46:20,493 INFO [TezChild] tez.MapRecordProcessor: 
+<MAP>Id =12
+  <Children>
+    <TS>Id =0
+      <Children>
+        <FIL>Id =1
+          <Children>
+            <MAPJOIN>Id =2
+              <Children>
+                <MAPJOIN>Id =3
+                  <Children>
+                    <FIL>Id =4
+                      <Children>
+                        <SEL>Id =5
+                          <Children>
+                            <GBY>Id =6
+                              <Children>
+                                <RS>Id =7
+                                  <Children>
+                                  <\Children>
+                                  <Parent>Id = 6 null<\Parent>
+                                <\RS>
+                              <\Children>
+                              <Parent>Id = 5 null<\Parent>
+                            <\GBY>
+                          <\Children>
+                          <Parent>Id = 4 null<\Parent>
+                        <\SEL>
+                      <\Children>
+                      <Parent>Id = 3 null<\Parent>
+                    <\FIL>
+                  <\Children>
+                  <Parent>Id = 2 nullId = 8 
+                <HASHTABLEDUMMY>Id =8
+                  <Children>null
+                  <\Children>
+                  <Parent><\Parent>
+                <\HASHTABLEDUMMY><\Parent>
+                <\MAPJOIN>
+              <\Children>
+              <Parent>Id = 1 nullId = 9 
+            <HASHTABLEDUMMY>Id =9
+              <Children>null
+              <\Children>
+              <Parent><\Parent>
+            <\HASHTABLEDUMMY><\Parent>
+            <\MAPJOIN>
+          <\Children>
+          <Parent>Id = 0 null<\Parent>
+        <\FIL>
+      <\Children>
+      <Parent>Id = 12 null<\Parent>
+    <\TS>
+  <\Children>
+  <Parent><\Parent>
+<\MAP>
+2016-10-02 11:46:20,493 INFO [TezChild] exec.TableScanOperator: Initializing operator TS[0]
+2016-10-02 11:46:20,493 INFO [TezChild] exec.TableScanOperator: Initialization Done 0 TS
+2016-10-02 11:46:20,493 INFO [TezChild] exec.TableScanOperator: Operator 0 TS initialized
+2016-10-02 11:46:20,493 INFO [TezChild] exec.TableScanOperator: Initializing children of 0 TS
+2016-10-02 11:46:20,493 INFO [TezChild] exec.FilterOperator: Initializing child 1 FIL
+2016-10-02 11:46:20,493 INFO [TezChild] exec.FilterOperator: Initializing operator FIL[1]
+2016-10-02 11:46:20,493 INFO [TezChild] exec.FilterOperator: Initialization Done 1 FIL
+2016-10-02 11:46:20,493 INFO [TezChild] exec.FilterOperator: Operator 1 FIL initialized
+2016-10-02 11:46:20,493 INFO [TezChild] exec.FilterOperator: Initializing children of 1 FIL
+2016-10-02 11:46:20,493 INFO [TezChild] exec.MapJoinOperator: Initializing child 2 MAPJOIN
+2016-10-02 11:46:20,493 INFO [TezChild] exec.HashTableDummyOperator: Initializing operator HASHTABLEDUMMY[9]
+2016-10-02 11:46:20,493 INFO [TezChild] exec.HashTableDummyOperator: Initialization Done 9 HASHTABLEDUMMY
+2016-10-02 11:46:20,494 INFO [TezChild] exec.HashTableDummyOperator: Operator 9 HASHTABLEDUMMY initialized
+2016-10-02 11:46:20,494 INFO [TezChild] exec.HashTableDummyOperator: Initializing children of 9 HASHTABLEDUMMY
+2016-10-02 11:46:20,494 INFO [TezChild] exec.MapJoinOperator: Initializing child 2 MAPJOIN
+2016-10-02 11:46:20,494 INFO [TezChild] exec.MapJoinOperator: Initializing operator MAPJOIN[2]
+2016-10-02 11:46:20,495 INFO [TezChild] exec.CommonJoinOperator: JOIN struct<_col0:int,_col3:int,_col23:float,_col37:int,_col38:string,_col41:string,_col42:float,_col47:string,_col49:string> totalsz = 9
+2016-10-02 11:46:20,495 INFO [TezChild] exec.MapJoinOperator: This is not bucket map join, so cache
+2016-10-02 11:46:20,498 INFO [TezChild] exec.MapJoinOperator: Initialization Done 2 MAPJOIN
+2016-10-02 11:46:20,498 INFO [TezChild] exec.MapJoinOperator: Operator 2 MAPJOIN initialized
+2016-10-02 11:46:20,498 INFO [TezChild] exec.MapJoinOperator: Initializing children of 2 MAPJOIN
+2016-10-02 11:46:20,498 INFO [pool-19-thread-1] tez.ObjectCache: Found ubuntu_20161002114536_9e514912-ce4b-48f8-8523-5304e915d276__HASH_MAP_MAPJOIN_35_container in cache with value: ([Lorg.apache.hadoop.hive.ql.exec.persistence.MapJoinTableContainer;@1af938fc,[Lorg.apache.hadoop.hive.ql.exec.persistence.MapJoinTableContainerSerDe;@600c3639)
+2016-10-02 11:46:20,498 INFO [TezChild] exec.MapJoinOperator: Initializing child 3 MAPJOIN
+2016-10-02 11:46:20,498 INFO [TezChild] exec.HashTableDummyOperator: Initializing operator HASHTABLEDUMMY[8]
+2016-10-02 11:46:20,498 INFO [TezChild] exec.HashTableDummyOperator: Initialization Done 8 HASHTABLEDUMMY
+2016-10-02 11:46:20,498 INFO [TezChild] exec.HashTableDummyOperator: Operator 8 HASHTABLEDUMMY initialized
+2016-10-02 11:46:20,498 INFO [TezChild] exec.HashTableDummyOperator: Initializing children of 8 HASHTABLEDUMMY
+2016-10-02 11:46:20,498 INFO [TezChild] exec.MapJoinOperator: Initializing child 3 MAPJOIN
+2016-10-02 11:46:20,498 INFO [TezChild] exec.MapJoinOperator: Initializing operator MAPJOIN[3]
+2016-10-02 11:46:20,500 INFO [TezChild] exec.CommonJoinOperator: JOIN struct<_col0:int,_col3:int,_col23:float,_col37:int,_col38:string,_col41:string,_col42:float,_col47:string,_col49:string,_col62:int,_col64:string> totalsz = 11
+2016-10-02 11:46:20,500 INFO [TezChild] exec.MapJoinOperator: This is not bucket map join, so cache
+2016-10-02 11:46:20,500 INFO [TezChild] exec.MapJoinOperator: Initialization Done 3 MAPJOIN
+2016-10-02 11:46:20,500 INFO [TezChild] exec.MapJoinOperator: Operator 3 MAPJOIN initialized
+2016-10-02 11:46:20,500 INFO [TezChild] exec.MapJoinOperator: Initializing children of 3 MAPJOIN
+2016-10-02 11:46:20,500 INFO [pool-19-thread-1] tez.ObjectCache: Found ubuntu_20161002114536_9e514912-ce4b-48f8-8523-5304e915d276__HASH_MAP_MAPJOIN_36_container in cache with value: ([Lorg.apache.hadoop.hive.ql.exec.persistence.MapJoinTableContainer;@20103d15,[Lorg.apache.hadoop.hive.ql.exec.persistence.MapJoinTableContainerSerDe;@a1a3e25)
+2016-10-02 11:46:20,500 INFO [TezChild] exec.FilterOperator: Initializing child 4 FIL
+2016-10-02 11:46:20,500 INFO [TezChild] exec.FilterOperator: Initializing operator FIL[4]
+2016-10-02 11:46:20,501 INFO [TezChild] exec.FilterOperator: Initialization Done 4 FIL
+2016-10-02 11:46:20,501 INFO [TezChild] exec.FilterOperator: Operator 4 FIL initialized
+2016-10-02 11:46:20,501 INFO [TezChild] exec.FilterOperator: Initializing children of 4 FIL
+2016-10-02 11:46:20,501 INFO [TezChild] exec.SelectOperator: Initializing child 5 SEL
+2016-10-02 11:46:20,501 INFO [TezChild] exec.SelectOperator: Initializing operator SEL[5]
+2016-10-02 11:46:20,501 INFO [TezChild] exec.SelectOperator: SELECT struct<_col0:int,_col3:int,_col23:float,_col37:int,_col38:string,_col41:string,_col42:float,_col47:string,_col49:string,_col62:int,_col64:string>
+2016-10-02 11:46:20,501 INFO [TezChild] exec.SelectOperator: Initialization Done 5 SEL
+2016-10-02 11:46:20,501 INFO [TezChild] exec.SelectOperator: Operator 5 SEL initialized
+2016-10-02 11:46:20,501 INFO [TezChild] exec.SelectOperator: Initializing children of 5 SEL
+2016-10-02 11:46:20,501 INFO [TezChild] exec.GroupByOperator: Initializing child 6 GBY
+2016-10-02 11:46:20,501 INFO [TezChild] exec.GroupByOperator: Initializing operator GBY[6]
+2016-10-02 11:46:20,501 INFO [TezChild] exec.GroupByOperator: Initialization Done 6 GBY
+2016-10-02 11:46:20,501 INFO [TezChild] exec.GroupByOperator: Operator 6 GBY initialized
+2016-10-02 11:46:20,501 INFO [TezChild] exec.GroupByOperator: Initializing children of 6 GBY
+2016-10-02 11:46:20,501 INFO [TezChild] exec.ReduceSinkOperator: Initializing child 7 RS
+2016-10-02 11:46:20,501 INFO [TezChild] exec.ReduceSinkOperator: Initializing operator RS[7]
+2016-10-02 11:46:20,502 INFO [TezChild] exec.ReduceSinkOperator: Using tag = -1
+2016-10-02 11:46:20,502 INFO [TezChild] exec.ReduceSinkOperator: Initialization Done 7 RS
+2016-10-02 11:46:20,502 INFO [TezChild] exec.ReduceSinkOperator: Operator 7 RS initialized
+2016-10-02 11:46:20,502 INFO [TezChild] exec.OperatorUtils: Setting output collector: RS[7] --> Reducer 2
+2016-10-02 11:46:20,502 INFO [TezChild] log.PerfLogger: </PERFLOG method=TezInitializeOperators start=1475408779690 end=1475408780502 duration=812 from=org.apache.hadoop.hive.ql.exec.tez.RecordProcessor>
+2016-10-02 11:46:20,502 INFO [TezChild] exec.Utilities: PLAN PATH = hdfs://10.0.0.4:8020/tmp/hive/ubuntu/c5c73a3c-76f0-44bd-bd84-49ee81772366/hive_2016-10-02_11-45-36_903_5050821757992607851-1/ubuntu/_tez_scratch_dir/f0bb9bc9-4a85-48b4-8189-fd1478e1cd3c/map.xml
+2016-10-02 11:46:20,575 WARN [TezChild] lazy.LazyStruct: Extra bytes detected at the end of the row! Ignoring similar problems.
+2016-10-02 11:46:20,575 INFO [TezChild] exec.MapOperator: MAP[12]: records read - 1
+2016-10-02 11:46:20,575 INFO [TezChild] exec.MapOperator: MAP[12]: records read - 10
+2016-10-02 11:46:20,575 INFO [TezChild] exec.MapOperator: MAP[12]: records read - 100
+2016-10-02 11:46:20,580 INFO [TezChild] exec.MapOperator: MAP[12]: records read - 1000
+2016-10-02 11:46:20,630 INFO [TezChild] exec.MapOperator: MAP[12]: records read - 10000
+2016-10-02 11:46:21,055 INFO [TezChild] exec.MapOperator: MAP[12]: records read - 100000
+2016-10-02 11:46:28,597 INFO [TezChild] io.HiveContextAwareRecordReader: Processing file hdfs://10.0.0.4:8020/tmp/tpcds-generate/db_1/50/web_sales/data-m-00036
+2016-10-02 11:46:30,101 INFO [TezChild] log.PerfLogger: </PERFLOG method=TezRunProcessor start=1475408779689 end=1475408790101 duration=10412 from=org.apache.hadoop.hive.ql.exec.tez.TezProcessor>
+2016-10-02 11:46:30,101 INFO [TezChild] exec.MapOperator: 12 finished. closing... 
+2016-10-02 11:46:30,101 INFO [TezChild] exec.MapOperator: RECORDS_IN_Map_1:720631
+2016-10-02 11:46:30,101 INFO [TezChild] exec.MapOperator: DESERIALIZE_ERRORS:0
+2016-10-02 11:46:30,101 INFO [TezChild] exec.TableScanOperator: 0 finished. closing... 
+2016-10-02 11:46:30,101 INFO [TezChild] exec.FilterOperator: 1 finished. closing... 
+2016-10-02 11:46:30,101 INFO [TezChild] exec.FilterOperator: 1 Close done
+2016-10-02 11:46:30,101 INFO [TezChild] exec.TableScanOperator: 0 Close done
+2016-10-02 11:46:30,101 INFO [TezChild] exec.MapOperator: 12 Close done
+2016-10-02 11:46:30,101 INFO [TezChild] exec.HashTableDummyOperator: 9 finished. closing... 
+2016-10-02 11:46:30,101 INFO [TezChild] exec.MapJoinOperator: 2 finished. closing... 
+2016-10-02 11:46:30,101 INFO [TezChild] persistence.BytesBytesMultiHashMap: Map metrics: keys allocated 8192, keys assigned 1140, write conflict 1269, write max dist 8, read conflict 249987, expanded 0 times in 0ms
+2016-10-02 11:46:30,101 INFO [TezChild] persistence.BytesBytesMultiHashMap: Map metrics: keys allocated 8192, keys assigned 1155, write conflict 1228, write max dist 7, read conflict 252388, expanded 0 times in 0ms
+2016-10-02 11:46:30,101 INFO [TezChild] persistence.BytesBytesMultiHashMap: Map metrics: keys allocated 8192, keys assigned 1179, write conflict 1340, write max dist 7, read conflict 265530, expanded 0 times in 0ms
+2016-10-02 11:46:30,101 INFO [TezChild] persistence.BytesBytesMultiHashMap: Map metrics: keys allocated 8192, keys assigned 1177, write conflict 1363, write max dist 7, read conflict 268493, expanded 0 times in 0ms
+2016-10-02 11:46:30,101 INFO [TezChild] persistence.BytesBytesMultiHashMap: Map metrics: keys allocated 8192, keys assigned 1133, write conflict 1228, write max dist 7, read conflict 254753, expanded 0 times in 0ms
+2016-10-02 11:46:30,101 INFO [TezChild] persistence.BytesBytesMultiHashMap: Map metrics: keys allocated 8192, keys assigned 1138, write conflict 1345, write max dist 7, read conflict 257854, expanded 0 times in 0ms
+2016-10-02 11:46:30,101 INFO [TezChild] persistence.BytesBytesMultiHashMap: Map metrics: keys allocated 8192, keys assigned 1110, write conflict 1204, write max dist 6, read conflict 244310, expanded 0 times in 0ms
+2016-10-02 11:46:30,101 INFO [TezChild] persistence.BytesBytesMultiHashMap: Map metrics: keys allocated 8192, keys assigned 1161, write conflict 1301, write max dist 6, read conflict 257085, expanded 0 times in 0ms
+2016-10-02 11:46:30,101 INFO [TezChild] persistence.BytesBytesMultiHashMap: Map metrics: keys allocated 8192, keys assigned 1111, write conflict 1186, write max dist 6, read conflict 247690, expanded 0 times in 0ms
+2016-10-02 11:46:30,101 INFO [TezChild] persistence.BytesBytesMultiHashMap: Map metrics: keys allocated 8192, keys assigned 1180, write conflict 1317, write max dist 6, read conflict 262589, expanded 0 times in 0ms
+2016-10-02 11:46:30,101 INFO [TezChild] persistence.BytesBytesMultiHashMap: Map metrics: keys allocated 8192, keys assigned 1137, write conflict 1266, write max dist 7, read conflict 263098, expanded 0 times in 0ms
+2016-10-02 11:46:30,101 INFO [TezChild] persistence.BytesBytesMultiHashMap: Map metrics: keys allocated 8192, keys assigned 1169, write conflict 1267, write max dist 6, read conflict 257431, expanded 0 times in 0ms
+2016-10-02 11:46:30,101 INFO [TezChild] persistence.BytesBytesMultiHashMap: Map metrics: keys allocated 8192, keys assigned 1171, write conflict 1304, write max dist 7, read conflict 268896, expanded 0 times in 0ms
+2016-10-02 11:46:30,101 INFO [TezChild] persistence.BytesBytesMultiHashMap: Map metrics: keys allocated 8192, keys assigned 1202, write conflict 1398, write max dist 7, read conflict 265856, expanded 0 times in 0ms
+2016-10-02 11:46:30,101 INFO [TezChild] persistence.BytesBytesMultiHashMap: Map metrics: keys allocated 8192, keys assigned 1132, write conflict 1216, write max dist 6, read conflict 252046, expanded 0 times in 0ms
+2016-10-02 11:46:30,101 INFO [TezChild] persistence.BytesBytesMultiHashMap: Map metrics: keys allocated 8192, keys assigned 1150, write conflict 1297, write max dist 7, read conflict 255859, expanded 0 times in 0ms
+2016-10-02 11:46:30,101 INFO [TezChild] exec.MapJoinOperator: 2 Close done
+2016-10-02 11:46:30,101 INFO [TezChild] exec.HashTableDummyOperator: 9 Close done
+2016-10-02 11:46:30,101 INFO [TezChild] exec.HashTableDummyOperator: 8 finished. closing... 
+2016-10-02 11:46:30,101 INFO [TezChild] exec.MapJoinOperator: 3 finished. closing... 
+2016-10-02 11:46:30,101 INFO [TezChild] persistence.BytesBytesMultiHashMap: Map metrics: keys allocated 8192, keys assigned 0, write conflict 0, write max dist 0, read conflict 0, expanded 0 times in 0ms
+2016-10-02 11:46:30,102 INFO [TezChild] persistence.BytesBytesMultiHashMap: Map metrics: keys allocated 8192, keys assigned 0, write conflict 0, write max dist 0, read conflict 0, expanded 0 times in 0ms
+2016-10-02 11:46:30,102 INFO [TezChild] persistence.BytesBytesMultiHashMap: Map metrics: keys allocated 8192, keys assigned 1, write conflict 0, write max dist 0, read conflict 0, expanded 0 times in 0ms
+2016-10-02 11:46:30,102 INFO [TezChild] persistence.BytesBytesMultiHashMap: Map metrics: keys allocated 8192, keys assigned 4, write conflict 0, write max dist 0, read conflict 0, expanded 0 times in 0ms
+2016-10-02 11:46:30,102 INFO [TezChild] persistence.BytesBytesMultiHashMap: Map metrics: keys allocated 8192, keys assigned 3, write conflict 0, write max dist 0, read conflict 0, expanded 0 times in 0ms
+2016-10-02 11:46:30,102 INFO [TezChild] persistence.BytesBytesMultiHashMap: Map metrics: keys allocated 8192, keys assigned 1, write conflict 0, write max dist 0, read conflict 0, expanded 0 times in 0ms
+2016-10-02 11:46:30,102 INFO [TezChild] persistence.BytesBytesMultiHashMap: Map metrics: keys allocated 8192, keys assigned 3, write conflict 0, write max dist 0, read conflict 0, expanded 0 times in 0ms
+2016-10-02 11:46:30,102 INFO [TezChild] persistence.BytesBytesMultiHashMap: Map metrics: keys allocated 8192, keys assigned 3, write conflict 0, write max dist 0, read conflict 0, expanded 0 times in 0ms
+2016-10-02 11:46:30,102 INFO [TezChild] persistence.BytesBytesMultiHashMap: Map metrics: keys allocated 8192, keys assigned 3, write conflict 0, write max dist 0, read conflict 620, expanded 0 times in 0ms
+2016-10-02 11:46:30,102 INFO [TezChild] persistence.BytesBytesMultiHashMap: Map metrics: keys allocated 8192, keys assigned 3, write conflict 0, write max dist 0, read conflict 0, expanded 0 times in 0ms
+2016-10-02 11:46:30,102 INFO [TezChild] persistence.BytesBytesMultiHashMap: Map metrics: keys allocated 8192, keys assigned 1, write conflict 0, write max dist 0, read conflict 0, expanded 0 times in 0ms
+2016-10-02 11:46:30,102 INFO [TezChild] persistence.BytesBytesMultiHashMap: Map metrics: keys allocated 8192, keys assigned 2, write conflict 0, write max dist 0, read conflict 456, expanded 0 times in 0ms
+2016-10-02 11:46:30,102 INFO [TezChild] persistence.BytesBytesMultiHashMap: Map metrics: keys allocated 8192, keys assigned 0, write conflict 0, write max dist 0, read conflict 0, expanded 0 times in 0ms
+2016-10-02 11:46:30,102 INFO [TezChild] persistence.BytesBytesMultiHashMap: Map metrics: keys allocated 8192, keys assigned 3, write conflict 0, write max dist 0, read conflict 0, expanded 0 times in 0ms
+2016-10-02 11:46:30,102 INFO [TezChild] persistence.BytesBytesMultiHashMap: Map metrics: keys allocated 8192, keys assigned 3, write conflict 0, write max dist 0, read conflict 479, expanded 0 times in 0ms
+2016-10-02 11:46:30,102 INFO [TezChild] persistence.BytesBytesMultiHashMap: Map metrics: keys allocated 8192, keys assigned 1, write conflict 0, write max dist 0, read conflict 0, expanded 0 times in 0ms
+2016-10-02 11:46:30,102 INFO [TezChild] exec.FilterOperator: 4 finished. closing... 
+2016-10-02 11:46:30,102 INFO [TezChild] exec.SelectOperator: 5 finished. closing... 
+2016-10-02 11:46:30,102 INFO [TezChild] exec.GroupByOperator: 6 finished. closing... 
+2016-10-02 11:46:30,102 INFO [TezChild] exec.GroupByOperator: Begin Hash Table flush: size = 1903
+2016-10-02 11:46:30,102 INFO [TezChild] exec.ReduceSinkOperator: keys are [_col0, _col1, _col2, _col3, _col4] num distributions: 5
+2016-10-02 11:46:30,102 INFO [TezChild] exec.ReduceSinkOperator: RS[7]: records written - 1
+2016-10-02 11:46:30,102 INFO [TezChild] exec.ReduceSinkOperator: RS[7]: records written - 10
+2016-10-02 11:46:30,103 INFO [TezChild] exec.ReduceSinkOperator: RS[7]: records written - 100
+2016-10-02 11:46:30,115 INFO [TezChild] exec.ReduceSinkOperator: RS[7]: records written - 1000
+2016-10-02 11:46:30,138 INFO [TezChild] exec.ReduceSinkOperator: 7 finished. closing... 
+2016-10-02 11:46:30,138 INFO [TezChild] exec.ReduceSinkOperator: RS[7]: records written - 1903
+2016-10-02 11:46:30,138 INFO [TezChild] exec.ReduceSinkOperator: RECORDS_OUT_INTERMEDIATE_Map_1:1903
+2016-10-02 11:46:30,138 INFO [TezChild] exec.ReduceSinkOperator: 7 Close done
+2016-10-02 11:46:30,138 INFO [TezChild] exec.GroupByOperator: 6 Close done
+2016-10-02 11:46:30,138 INFO [TezChild] exec.SelectOperator: 5 Close done
+2016-10-02 11:46:30,138 INFO [TezChild] exec.FilterOperator: 4 Close done
+2016-10-02 11:46:30,138 INFO [TezChild] exec.MapJoinOperator: 3 Close done
+2016-10-02 11:46:30,138 INFO [TezChild] exec.HashTableDummyOperator: 8 Close done
+2016-10-02 11:46:30,141 INFO [TezChild] task.TezTaskRunner: Closing task, taskAttemptId=attempt_1475401111718_0104_1_02_000036_0
+2016-10-02 11:46:30,141 INFO [TezChild] impl.PipelinedSorter: Starting flush of map output
+2016-10-02 11:46:30,141 INFO [TezChild] impl.PipelinedSorter: Span0.length = 1903, perItem = 153
+2016-10-02 11:46:30,143 INFO [TezChild] impl.PipelinedSorter: done sorting span=0, length=1903, time=2
+2016-10-02 11:46:30,144 INFO [TezChild] impl.PipelinedSorter: Heap = SpanIterator<0:1902> (span=Span[16777216,292825]),
+2016-10-02 11:46:30,144 INFO [TezChild] impl.PipelinedSorter: Spilling to /workspace/storage/data/local/nm/usercache/ubuntu/appcache/application_1475401111718_0104/output/attempt_1475401111718_0104_1_02_000036_0_10014_0/file.out
+2016-10-02 11:46:30,156 INFO [TezChild] impl.PipelinedSorter: numSpills=1, finalOutputFile=/workspace/storage/data/local/nm/usercache/ubuntu/appcache/application_1475401111718_0104/output/attempt_1475401111718_0104_1_02_000036_0_10014/file.out, finalIndexFile=/workspace/storage/data/local/nm/usercache/ubuntu/appcache/application_1475401111718_0104/output/attempt_1475401111718_0104_1_02_000036_0_10014/file.out.index, filename=/workspace/storage/data/local/nm/usercache/ubuntu/appcache/application_1475401111718_0104/output/attempt_1475401111718_0104_1_02_000036_0_10014_0/file.out, indexFilename=/workspace/storage/data/local/nm/usercache/ubuntu/appcache/application_1475401111718_0104/output/attempt_1475401111718_0104_1_02_000036_0_10014_0/file.out.index
+2016-10-02 11:46:30,157 INFO [TezChild] runtime.LogicalIOProcessorRuntimeTask: Joining on EventRouter
+2016-10-02 11:46:30,158 INFO [TezChild] task.TezTaskRunner: Task completed, taskAttemptId=attempt_1475401111718_0104_1_02_000036_0, fatalErrorOccurred=false
+2016-10-02 11:46:30,161 INFO [TezChild] runtime.LogicalIOProcessorRuntimeTask: Final Counters : Counters: 29 [[File System Counters FILE_BYTES_READ=32, FILE_BYTES_WRITTEN=297779, FILE_READ_OPS=0, FILE_LARGE_READ_OPS=0, FILE_WRITE_OPS=0, HDFS_BYTES_READ=152551667, HDFS_BYTES_WRITTEN=0, HDFS_READ_OPS=2, HDFS_LARGE_READ_OPS=0, HDFS_WRITE_OPS=0][org.apache.tez.common.counters.TaskCounter SPILLED_RECORDS=1903, GC_TIME_MILLIS=389, CPU_MILLISECONDS=3030, PHYSICAL_MEMORY_BYTES=1679294464, VIRTUAL_MEMORY_BYTES=5593624576, COMMITTED_HEAP_BYTES=1679294464, INPUT_RECORDS_PROCESSED=720631, OUTPUT_RECORDS=1903, OUTPUT_BYTES=292825, OUTPUT_BYTES_WITH_OVERHEAD=297743, OUTPUT_BYTES_PHYSICAL=297747, ADDITIONAL_SPILLS_BYTES_WRITTEN=0, ADDITIONAL_SPILLS_BYTES_READ=0, ADDITIONAL_SPILL_COUNT=0, SHUFFLE_CHUNK_COUNT=1, SHUFFLE_BYTES_DECOMPRESSED=0][HIVE DESERIALIZE_ERRORS=0, RECORDS_IN_Map_1=720631, RECORDS_OUT_INTERMEDIATE_Map_1=1903]]
+2016-10-02 11:46:30,161 INFO [TezChild] impl.TezInputContextImpl: Cleared TezInputContextImpl related information
+2016-10-02 11:46:30,161 INFO [TezChild] impl.TezInputContextImpl: Cleared TezInputContextImpl related information
+2016-10-02 11:46:30,162 INFO [TezChild] impl.TezInputContextImpl: Cleared TezInputContextImpl related information
+2016-10-02 11:46:30,162 INFO [TezChild] impl.TezOutputContextImpl: Cleared TezOutputContextImpl related information
+2016-10-02 11:46:30,162 INFO [TezChild] impl.TezProcessorContextImpl: Cleared TezProcessorContextImpl related information
+2016-10-02 11:46:30,262 INFO [main] common.TezUtilsInternal: Redirecting log file based on addend: 

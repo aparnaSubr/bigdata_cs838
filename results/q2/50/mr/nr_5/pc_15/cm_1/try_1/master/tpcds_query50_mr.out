@@ -1,0 +1,121 @@
+
+Logging initialized using configuration in jar:file:/home/ubuntu/software/hive-1.2.1/lib/hive-common-1.2.1.jar!/hive-log4j.properties
+Hive history file=/tmp/ubuntu/hive_job_log_4305272a-15f4-4639-8768-e5641c0fb950_566344201.txt
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/home/ubuntu/software/tez-0.7.1-SNAPSHOT-minimal/lib/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/home/ubuntu/software/hadoop-2.6.0/share/hadoop/common/lib/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+OK
+Time taken: 1.092 seconds
+Query ID = ubuntu_20161002150441_2024ae1c-0427-4365-8e9d-4053df7b9755
+Total jobs = 10
+Stage-1 is selected by condition resolver.
+Launching Job 1 out of 10
+Number of reduce tasks not specified. Defaulting to jobconf value of: 5
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1475401111718_0243, Tracking URL = http://vm1:8088/proxy/application_1475401111718_0243/
+Kill Command = /home/ubuntu/software/hadoop-2.6.0/bin/hadoop job  -kill job_1475401111718_0243
+Hadoop job information for Stage-1: number of mappers: 82; number of reducers: 5
+2016-10-02 15:04:54,199 Stage-1 map = 0%,  reduce = 0%
+2016-10-02 15:05:07,971 Stage-1 map = 1%,  reduce = 0%, Cumulative CPU 53.22 sec
+2016-10-02 15:05:10,083 Stage-1 map = 2%,  reduce = 0%, Cumulative CPU 75.76 sec
+2016-10-02 15:05:12,168 Stage-1 map = 3%,  reduce = 0%, Cumulative CPU 89.62 sec
+2016-10-02 15:05:14,265 Stage-1 map = 6%,  reduce = 0%, Cumulative CPU 103.23 sec
+2016-10-02 15:05:15,304 Stage-1 map = 7%,  reduce = 0%, Cumulative CPU 109.21 sec
+2016-10-02 15:05:19,503 Stage-1 map = 8%,  reduce = 0%, Cumulative CPU 132.9 sec
+2016-10-02 15:05:20,580 Stage-1 map = 13%,  reduce = 0%, Cumulative CPU 152.32 sec
+2016-10-02 15:05:22,754 Stage-1 map = 14%,  reduce = 0%, Cumulative CPU 173.95 sec
+2016-10-02 15:05:23,802 Stage-1 map = 15%,  reduce = 0%, Cumulative CPU 179.06 sec
+2016-10-02 15:05:26,934 Stage-1 map = 16%,  reduce = 0%, Cumulative CPU 176.1 sec
+2016-10-02 15:05:35,246 Stage-1 map = 17%,  reduce = 0%, Cumulative CPU 217.72 sec
+2016-10-02 15:05:36,285 Stage-1 map = 18%,  reduce = 0%, Cumulative CPU 234.81 sec
+2016-10-02 15:05:38,359 Stage-1 map = 19%,  reduce = 0%, Cumulative CPU 249.92 sec
+2016-10-02 15:05:39,396 Stage-1 map = 20%,  reduce = 0%, Cumulative CPU 257.68 sec
+2016-10-02 15:05:41,465 Stage-1 map = 21%,  reduce = 0%, Cumulative CPU 270.33 sec
+2016-10-02 15:05:42,503 Stage-1 map = 22%,  reduce = 0%, Cumulative CPU 278.04 sec
+2016-10-02 15:05:44,572 Stage-1 map = 21%,  reduce = 0%, Cumulative CPU 257.71 sec
+2016-10-02 15:05:45,609 Stage-1 map = 23%,  reduce = 0%, Cumulative CPU 268.85 sec
+2016-10-02 15:05:47,673 Stage-1 map = 25%,  reduce = 0%, Cumulative CPU 284.18 sec
+2016-10-02 15:05:48,709 Stage-1 map = 26%,  reduce = 0%, Cumulative CPU 288.48 sec
+2016-10-02 15:05:49,742 Stage-1 map = 27%,  reduce = 0%, Cumulative CPU 291.66 sec
+2016-10-02 15:05:50,774 Stage-1 map = 100%,  reduce = 100%, Cumulative CPU 291.66 sec
+MapReduce Total cumulative CPU time: 4 minutes 51 seconds 660 msec
+Ended Job = job_1475401111718_0243 with errors
+Error during job, obtaining debugging information...
+Examining task ID: task_1475401111718_0243_m_000012 (and more) from job job_1475401111718_0243
+Examining task ID: task_1475401111718_0243_m_000015 (and more) from job job_1475401111718_0243
+Examining task ID: task_1475401111718_0243_m_000019 (and more) from job job_1475401111718_0243
+Examining task ID: task_1475401111718_0243_m_000016 (and more) from job job_1475401111718_0243
+Examining task ID: task_1475401111718_0243_m_000034 (and more) from job job_1475401111718_0243
+
+Task with the most failures(4): 
+-----
+Task ID:
+  task_1475401111718_0243_m_000008
+
+URL:
+  http://vm1:8088/taskdetails.jsp?jobid=job_1475401111718_0243&tipid=task_1475401111718_0243_m_000008
+-----
+Diagnostic Messages for this Task:
+No space available in any of the local directories.
+
+
+FAILED: Execution Error, return code 2 from org.apache.hadoop.hive.ql.exec.mr.MapRedTask
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 82  Reduce: 5   Cumulative CPU: 291.66 sec   HDFS Read: 5936593326 HDFS Write: 0 FAIL
+Total MapReduce CPU Time Spent: 4 minutes 51 seconds 660 msec
+org.apache.hadoop.ipc.RemoteException(org.apache.hadoop.hdfs.server.namenode.SafeModeException): Cannot delete /tmp/hive/ubuntu/4305272a-15f4-4639-8768-e5641c0fb950. Name node is in safe mode.
+Resources are low on NN. Please add or free up more resources then turn off safe mode manually. NOTE:  If you turn off safe mode before adding resources, the NN will immediately return to safe mode. Use "hdfs dfsadmin -safemode leave" to turn safe mode off.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.checkNameNodeSafeMode(FSNamesystem.java:1364)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.deleteInternal(FSNamesystem.java:3967)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.deleteInt(FSNamesystem.java:3925)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.delete(FSNamesystem.java:3909)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.delete(NameNodeRpcServer.java:786)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.delete(ClientNamenodeProtocolServerSideTranslatorPB.java:589)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:619)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:962)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2039)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2035)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1628)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2033)
+
+	at org.apache.hadoop.ipc.Client.call(Client.java:1468)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1399)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:232)
+	at com.sun.proxy.$Proxy13.delete(Unknown Source)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolTranslatorPB.delete(ClientNamenodeProtocolTranslatorPB.java:521)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:187)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:102)
+	at com.sun.proxy.$Proxy14.delete(Unknown Source)
+	at org.apache.hadoop.hdfs.DFSClient.delete(DFSClient.java:1929)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$12.doCall(DistributedFileSystem.java:638)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$12.doCall(DistributedFileSystem.java:634)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.delete(DistributedFileSystem.java:634)
+	at org.apache.hadoop.hive.ql.session.SessionState.dropSessionPaths(SessionState.java:697)
+	at org.apache.hadoop.hive.ql.session.SessionState.close(SessionState.java:1500)
+	at org.apache.hadoop.hive.cli.CliSessionState.close(CliSessionState.java:66)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:683)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:621)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:221)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:136)
+Command exited with non-zero status 2
+18.60user 1.13system 1:17.69elapsed 25%CPU (0avgtext+0avgdata 732780maxresident)k
+113336inputs+3712outputs (109major+83184minor)pagefaults 0swaps

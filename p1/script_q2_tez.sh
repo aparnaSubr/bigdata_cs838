@@ -14,7 +14,7 @@ dev_file_loc="/proc/net/dev"
 diskstats_file_loc="/proc/diskstats"
 
 workload_dir="/home/ubuntu/workload/hive-tpcds-tpch-workload"
-output_dir="/home/ubuntu/bigdata_cs838/results/q2_${query_id}/$1/cr$6/pc$7/try_$trial/$3"
+output_dir="/home/ubuntu/bigdata_cs838/results/q2/${query_id}/$1/cr$6/pc$7/try_$trial/$3"
 
 if [ $1 = "tez" ]; then	
 		jhist_file_loc="/tmp/tez-history"

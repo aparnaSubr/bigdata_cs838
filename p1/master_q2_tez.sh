@@ -13,7 +13,7 @@ else
         try_number=$3
 fi
 
-out_dir="/home/ubuntu/bigdata_cs838/results/q2_${query_id}/$1/$4/$5/try_$try_number/"
+out_dir="/home/ubuntu/bigdata_cs838/results/q2/${query_id}/$1/$4/$5/try_$try_number/"
 
 echo "\n***** master_q2_tez.sh $1 q-$2 t-$3 cr-$4 pc-$5 start\n"
 

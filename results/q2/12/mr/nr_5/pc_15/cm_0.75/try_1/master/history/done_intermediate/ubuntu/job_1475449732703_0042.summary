@@ -1,0 +1,1 @@
+{jobId=job_1475449732703_0042,submitTime=1475451605130,launchTime=1475451608379,firstMapTaskLaunchTime=1475451610631,firstReduceTaskLaunchTime=0,finishTime=1475451622423,resourcesPerMap=4800,resourcesPerReduce=0,numMaps=7,numReduces=0,user=ubuntu,queue=default,status=SUCCEEDED,mapSlotSeconds=339,reduceSlotSeconds=0,jobName=select  i_item_desc \n      \,i_category...100(Stage-8)

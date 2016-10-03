@@ -1,0 +1,24 @@
+#tez_or_mr=(tez mr)                                                                                   
+tez_or_mr=(mr)                                                                                       
+query_ids=( 12 21 50 71 85 )                                                                        
+#query_ids=( 21 )                                                                                     
+num_tries=$1                                                                                         
+                                                                                                     
+if [ "$#" -lt 1 ]; then                                                                              
+        echo "You haven't entered num_tries paramter. So, default=1 number of times each query will be  run"   
+fi
+                                                                                                                                                                                                           
+for query_id in "${query_ids[@]}"
+do                                                                                                                                                                                                         
+        for type in "${tez_or_mr[@]}"  				
+        	do
+                for i in `seq 1 $num_tries`                                                  
+                do
+			            #mkdir -p $i
+                        #echo "python 1c_parser.py $2/${query_id}/mr/try_$i/master/history/ > $i/parse_done_intermediate_$query_id.txt" 
+                        echo "/u/v/a/vaibhav/private/838/assign1/query_run_output/q1/${query_id}/mr/try_$i/master/history/"
+                        python parser.py "/u/v/a/vaibhav/private/838/assign1/query_run_output/q1/${query_id}/mr/try_$i/master/history/" > intermediate_files/query_${query_id}_try_${i}.txt 
+                        #python parser_mr.py "/home/ubuntu/query_run_output/${query_id}/mr/try_$i/master/history/done/2016/09/30/000000" > $i/parse_done_$query_id.txt    
+                done
+        done                
+done

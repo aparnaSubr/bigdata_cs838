@@ -23,15 +23,15 @@ Read (MB)	Write (MB)
 
 
 Query12	mr	nr5	pc15	cm1	trial1
-Time taken:	 170.965	seconds
+Time taken:	 159.91	seconds
 Fetched:	 100	row(s)
 TotalNetStats
 eth0 rx (MB)	eth0 tx (MB)	lo rx (MB)	lo tx (MB)
-2250	2164	9656	9656
+2077	1998	9800	9800
 
 TotalDiskStats
 Read (MB)	Write (MB)
-7592	3119
+7592	3926
 
 
 Query12	mr	nr5	pc20	cm1	trial1

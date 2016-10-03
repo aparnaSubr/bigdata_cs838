@@ -6,7 +6,7 @@ import fnmatch
 
 output_dir = "graphs/"
 matches = []
-for root, dirnames, filenames in os.walk(sys.argv[1]):
+for root, dirnames, filenames in os.walk(sys.argv[1]): # intermediate_files
     for filename in fnmatch.filter(filenames, '*.txt'):
         matches.append(os.path.join(root, filename))
 

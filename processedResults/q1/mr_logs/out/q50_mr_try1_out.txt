@@ -1,0 +1,270 @@
+
+Logging initialized using configuration in jar:file:/home/ubuntu/software/hive-1.2.1/lib/hive-common-1.2.1.jar!/hive-log4j.properties
+Hive history file=/tmp/ubuntu/hive_job_log_1e015075-bf7c-4166-b900-aed857878665_43772873.txt
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/home/ubuntu/software/tez-0.7.1-SNAPSHOT-minimal/lib/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/home/ubuntu/software/hadoop-2.6.0/share/hadoop/common/lib/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+OK
+Time taken: 1.103 seconds
+Query ID = ubuntu_20161001075846_bf19ccb8-f099-48f0-9d6f-9769c2a3d4d7
+Total jobs = 10
+Stage-1 is selected by condition resolver.
+Launching Job 1 out of 10
+Number of reduce tasks not specified. Estimated from input data size: 86
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1475271333482_0100, Tracking URL = http://vm1:8088/proxy/application_1475271333482_0100/
+Kill Command = /home/ubuntu/software/hadoop-2.6.0/bin/hadoop job  -kill job_1475271333482_0100
+Hadoop job information for Stage-1: number of mappers: 82; number of reducers: 86
+2016-10-01 07:58:58,927 Stage-1 map = 0%,  reduce = 0%
+2016-10-01 07:59:12,785 Stage-1 map = 1%,  reduce = 0%, Cumulative CPU 69.89 sec
+2016-10-01 07:59:14,905 Stage-1 map = 2%,  reduce = 0%, Cumulative CPU 86.69 sec
+2016-10-01 07:59:15,953 Stage-1 map = 3%,  reduce = 0%, Cumulative CPU 87.92 sec
+2016-10-01 07:59:16,997 Stage-1 map = 4%,  reduce = 0%, Cumulative CPU 92.67 sec
+2016-10-01 07:59:18,039 Stage-1 map = 7%,  reduce = 0%, Cumulative CPU 106.53 sec
+2016-10-01 07:59:23,224 Stage-1 map = 8%,  reduce = 0%, Cumulative CPU 129.47 sec
+2016-10-01 07:59:24,274 Stage-1 map = 12%,  reduce = 0%, Cumulative CPU 148.69 sec
+2016-10-01 07:59:27,442 Stage-1 map = 16%,  reduce = 0%, Cumulative CPU 198.89 sec
+2016-10-01 07:59:28,492 Stage-1 map = 17%,  reduce = 0%, Cumulative CPU 201.8 sec
+2016-10-01 07:59:29,559 Stage-1 map = 19%,  reduce = 0%, Cumulative CPU 211.77 sec
+2016-10-01 07:59:31,738 Stage-1 map = 20%,  reduce = 0%, Cumulative CPU 215.95 sec
+2016-10-01 07:59:41,161 Stage-1 map = 22%,  reduce = 0%, Cumulative CPU 289.03 sec
+2016-10-01 07:59:42,200 Stage-1 map = 23%,  reduce = 0%, Cumulative CPU 299.27 sec
+2016-10-01 07:59:43,245 Stage-1 map = 24%,  reduce = 0%, Cumulative CPU 309.06 sec
+2016-10-01 07:59:46,386 Stage-1 map = 25%,  reduce = 0%, Cumulative CPU 327.92 sec
+2016-10-01 07:59:47,437 Stage-1 map = 26%,  reduce = 0%, Cumulative CPU 333.73 sec
+2016-10-01 07:59:49,534 Stage-1 map = 28%,  reduce = 0%, Cumulative CPU 350.68 sec
+2016-10-01 07:59:50,605 Stage-1 map = 30%,  reduce = 0%, Cumulative CPU 365.27 sec
+2016-10-01 07:59:51,682 Stage-1 map = 32%,  reduce = 0%, Cumulative CPU 381.76 sec
+2016-10-01 07:59:52,737 Stage-1 map = 35%,  reduce = 0%, Cumulative CPU 398.38 sec
+2016-10-01 07:59:53,825 Stage-1 map = 37%,  reduce = 0%, Cumulative CPU 412.0 sec
+2016-10-01 07:59:54,896 Stage-1 map = 38%,  reduce = 0%, Cumulative CPU 417.89 sec
+2016-10-01 07:59:55,945 Stage-1 map = 39%,  reduce = 0%, Cumulative CPU 425.16 sec
+2016-10-01 08:00:06,411 Stage-1 map = 40%,  reduce = 0%, Cumulative CPU 498.21 sec
+2016-10-01 08:00:08,482 Stage-1 map = 41%,  reduce = 0%, Cumulative CPU 506.45 sec
+2016-10-01 08:00:09,538 Stage-1 map = 42%,  reduce = 0%, Cumulative CPU 518.83 sec
+2016-10-01 08:00:10,582 Stage-1 map = 43%,  reduce = 0%, Cumulative CPU 519.98 sec
+2016-10-01 08:00:11,626 Stage-1 map = 44%,  reduce = 0%, Cumulative CPU 528.94 sec
+2016-10-01 08:00:12,677 Stage-1 map = 46%,  reduce = 0%, Cumulative CPU 539.2 sec
+2016-10-01 08:00:14,760 Stage-1 map = 47%,  reduce = 0%, Cumulative CPU 556.95 sec
+2016-10-01 08:00:15,797 Stage-1 map = 48%,  reduce = 0%, Cumulative CPU 563.32 sec
+2016-10-01 08:00:16,900 Stage-1 map = 49%,  reduce = 0%, Cumulative CPU 572.12 sec
+2016-10-01 08:00:17,958 Stage-1 map = 52%,  reduce = 0%, Cumulative CPU 591.64 sec
+2016-10-01 08:00:19,005 Stage-1 map = 53%,  reduce = 0%, Cumulative CPU 599.71 sec
+2016-10-01 08:00:20,052 Stage-1 map = 55%,  reduce = 0%, Cumulative CPU 612.46 sec
+2016-10-01 08:00:21,092 Stage-1 map = 58%,  reduce = 0%, Cumulative CPU 630.7 sec
+2016-10-01 08:00:22,130 Stage-1 map = 59%,  reduce = 0%, Cumulative CPU 635.0 sec
+2016-10-01 08:00:35,707 Stage-1 map = 61%,  reduce = 0%, Cumulative CPU 720.24 sec
+2016-10-01 08:00:36,750 Stage-1 map = 62%,  reduce = 0%, Cumulative CPU 725.19 sec
+2016-10-01 08:00:37,792 Stage-1 map = 63%,  reduce = 0%, Cumulative CPU 731.93 sec
+2016-10-01 08:00:38,843 Stage-1 map = 64%,  reduce = 0%, Cumulative CPU 740.0 sec
+2016-10-01 08:00:39,889 Stage-1 map = 65%,  reduce = 0%, Cumulative CPU 746.47 sec
+2016-10-01 08:00:43,016 Stage-1 map = 66%,  reduce = 0%, Cumulative CPU 760.15 sec
+2016-10-01 08:00:44,051 Stage-1 map = 67%,  reduce = 0%, Cumulative CPU 764.83 sec
+2016-10-01 08:00:45,083 Stage-1 map = 68%,  reduce = 0%, Cumulative CPU 769.63 sec
+2016-10-01 08:00:46,119 Stage-1 map = 69%,  reduce = 0%, Cumulative CPU 780.28 sec
+2016-10-01 08:00:47,159 Stage-1 map = 70%,  reduce = 0%, Cumulative CPU 791.67 sec
+2016-10-01 08:00:48,190 Stage-1 map = 72%,  reduce = 0%, Cumulative CPU 800.74 sec
+2016-10-01 08:00:50,263 Stage-1 map = 73%,  reduce = 0%, Cumulative CPU 818.7 sec
+2016-10-01 08:00:52,335 Stage-1 map = 74%,  reduce = 0%, Cumulative CPU 826.85 sec
+2016-10-01 08:00:56,477 Stage-1 map = 75%,  reduce = 0%, Cumulative CPU 840.28 sec
+2016-10-01 08:00:58,574 Stage-1 map = 76%,  reduce = 0%, Cumulative CPU 860.36 sec
+2016-10-01 08:00:59,633 Stage-1 map = 77%,  reduce = 0%, Cumulative CPU 873.88 sec
+2016-10-01 08:01:01,715 Stage-1 map = 80%,  reduce = 0%, Cumulative CPU 902.93 sec
+2016-10-01 08:01:02,760 Stage-1 map = 81%,  reduce = 0%, Cumulative CPU 911.16 sec
+2016-10-01 08:01:03,815 Stage-1 map = 82%,  reduce = 0%, Cumulative CPU 914.25 sec
+2016-10-01 08:01:05,907 Stage-1 map = 84%,  reduce = 0%, Cumulative CPU 933.96 sec
+2016-10-01 08:01:06,952 Stage-1 map = 85%,  reduce = 0%, Cumulative CPU 936.83 sec
+2016-10-01 08:01:07,993 Stage-1 map = 86%,  reduce = 0%, Cumulative CPU 949.58 sec
+2016-10-01 08:01:09,047 Stage-1 map = 87%,  reduce = 0%, Cumulative CPU 956.51 sec
+2016-10-01 08:01:10,090 Stage-1 map = 88%,  reduce = 0%, Cumulative CPU 963.34 sec
+2016-10-01 08:01:12,161 Stage-1 map = 89%,  reduce = 0%, Cumulative CPU 978.47 sec
+2016-10-01 08:01:13,204 Stage-1 map = 90%,  reduce = 0%, Cumulative CPU 991.44 sec
+2016-10-01 08:01:14,239 Stage-1 map = 91%,  reduce = 0%, Cumulative CPU 1001.47 sec
+2016-10-01 08:01:16,299 Stage-1 map = 92%,  reduce = 0%, Cumulative CPU 1020.67 sec
+2016-10-01 08:01:17,331 Stage-1 map = 94%,  reduce = 0%, Cumulative CPU 1029.41 sec
+2016-10-01 08:01:19,390 Stage-1 map = 95%,  reduce = 0%, Cumulative CPU 1036.88 sec
+2016-10-01 08:01:20,424 Stage-1 map = 96%,  reduce = 0%, Cumulative CPU 1041.62 sec
+2016-10-01 08:01:23,537 Stage-1 map = 97%,  reduce = 0%, Cumulative CPU 1049.35 sec
+2016-10-01 08:01:25,611 Stage-1 map = 98%,  reduce = 0%, Cumulative CPU 1058.61 sec
+2016-10-01 08:01:28,700 Stage-1 map = 99%,  reduce = 0%, Cumulative CPU 1076.29 sec
+2016-10-01 08:01:29,730 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 1078.06 sec
+2016-10-01 08:01:40,162 Stage-1 map = 100%,  reduce = 1%, Cumulative CPU 1084.14 sec
+2016-10-01 08:01:41,209 Stage-1 map = 100%,  reduce = 4%, Cumulative CPU 1103.34 sec
+2016-10-01 08:01:42,264 Stage-1 map = 100%,  reduce = 9%, Cumulative CPU 1131.15 sec
+2016-10-01 08:01:44,389 Stage-1 map = 100%,  reduce = 14%, Cumulative CPU 1160.9 sec
+2016-10-01 08:01:45,423 Stage-1 map = 100%,  reduce = 17%, Cumulative CPU 1182.14 sec
+2016-10-01 08:01:46,479 Stage-1 map = 100%,  reduce = 19%, Cumulative CPU 1189.23 sec
+2016-10-01 08:01:51,703 Stage-1 map = 100%,  reduce = 22%, Cumulative CPU 1207.43 sec
+2016-10-01 08:01:53,820 Stage-1 map = 100%,  reduce = 24%, Cumulative CPU 1223.27 sec
+2016-10-01 08:01:54,920 Stage-1 map = 100%,  reduce = 28%, Cumulative CPU 1243.19 sec
+2016-10-01 08:01:55,971 Stage-1 map = 100%,  reduce = 31%, Cumulative CPU 1264.27 sec
+2016-10-01 08:01:57,014 Stage-1 map = 100%,  reduce = 34%, Cumulative CPU 1278.73 sec
+2016-10-01 08:01:58,054 Stage-1 map = 100%,  reduce = 37%, Cumulative CPU 1299.38 sec
+2016-10-01 08:02:03,264 Stage-1 map = 100%,  reduce = 39%, Cumulative CPU 1312.49 sec
+2016-10-01 08:02:04,351 Stage-1 map = 100%,  reduce = 42%, Cumulative CPU 1326.68 sec
+2016-10-01 08:02:06,481 Stage-1 map = 100%,  reduce = 45%, Cumulative CPU 1346.35 sec
+2016-10-01 08:02:07,522 Stage-1 map = 100%,  reduce = 46%, Cumulative CPU 1355.24 sec
+2016-10-01 08:02:08,558 Stage-1 map = 100%,  reduce = 51%, Cumulative CPU 1382.38 sec
+2016-10-01 08:02:09,613 Stage-1 map = 100%,  reduce = 54%, Cumulative CPU 1401.34 sec
+2016-10-01 08:02:10,687 Stage-1 map = 100%,  reduce = 56%, Cumulative CPU 1410.36 sec
+2016-10-01 08:02:14,845 Stage-1 map = 100%,  reduce = 57%, Cumulative CPU 1416.82 sec
+2016-10-01 08:02:15,902 Stage-1 map = 100%,  reduce = 60%, Cumulative CPU 1437.57 sec
+2016-10-01 08:02:18,015 Stage-1 map = 100%,  reduce = 62%, Cumulative CPU 1445.72 sec
+2016-10-01 08:02:19,065 Stage-1 map = 100%,  reduce = 66%, Cumulative CPU 1471.45 sec
+2016-10-01 08:02:20,146 Stage-1 map = 100%,  reduce = 68%, Cumulative CPU 1486.73 sec
+2016-10-01 08:02:21,181 Stage-1 map = 100%,  reduce = 71%, Cumulative CPU 1499.84 sec
+2016-10-01 08:02:22,222 Stage-1 map = 100%,  reduce = 74%, Cumulative CPU 1519.38 sec
+2016-10-01 08:02:26,417 Stage-1 map = 100%,  reduce = 75%, Cumulative CPU 1528.63 sec
+2016-10-01 08:02:27,468 Stage-1 map = 100%,  reduce = 79%, Cumulative CPU 1548.68 sec
+2016-10-01 08:02:29,569 Stage-1 map = 100%,  reduce = 80%, Cumulative CPU 1556.93 sec
+2016-10-01 08:02:30,619 Stage-1 map = 100%,  reduce = 83%, Cumulative CPU 1575.66 sec
+2016-10-01 08:02:31,683 Stage-1 map = 100%,  reduce = 86%, Cumulative CPU 1583.02 sec
+2016-10-01 08:02:32,719 Stage-1 map = 100%,  reduce = 87%, Cumulative CPU 1596.64 sec
+2016-10-01 08:02:33,761 Stage-1 map = 100%,  reduce = 88%, Cumulative CPU 1604.34 sec
+2016-10-01 08:02:34,792 Stage-1 map = 100%,  reduce = 91%, Cumulative CPU 1623.71 sec
+2016-10-01 08:02:35,822 Stage-1 map = 100%,  reduce = 93%, Cumulative CPU 1632.7 sec
+2016-10-01 08:02:36,860 Stage-1 map = 100%,  reduce = 94%, Cumulative CPU 1639.6 sec
+2016-10-01 08:02:38,919 Stage-1 map = 100%,  reduce = 97%, Cumulative CPU 1653.88 sec
+2016-10-01 08:02:39,952 Stage-1 map = 100%,  reduce = 98%, Cumulative CPU 1660.02 sec
+2016-10-01 08:02:40,982 Stage-1 map = 100%,  reduce = 99%, Cumulative CPU 1667.03 sec
+2016-10-01 08:02:42,014 Stage-1 map = 100%,  reduce = 100%, Cumulative CPU 1673.97 sec
+MapReduce Total cumulative CPU time: 27 minutes 53 seconds 970 msec
+Ended Job = job_1475271333482_0100
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/home/ubuntu/software/tez-0.7.1-SNAPSHOT-minimal/lib/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/home/ubuntu/software/hadoop-2.6.0/share/hadoop/common/lib/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+Execution log at: /tmp/ubuntu/ubuntu_20161001075846_bf19ccb8-f099-48f0-9d6f-9769c2a3d4d7.log
+2016-10-01 08:02:46	Starting to launch local task to process map join;	maximum memory = 932184064
+2016-10-01 08:02:47	Dump the side-table for tag: 1 with group count: 144 into file: file:/tmp/ubuntu/1e015075-bf7c-4166-b900-aed857878665/hive_2016-10-01_07-58-46_680_4427603187758175091-1/-local-10017/HashTable-Stage-17/MapJoin-mapfile41--.hashtable
+2016-10-01 08:02:47	Uploaded 1 File to: file:/tmp/ubuntu/1e015075-bf7c-4166-b900-aed857878665/hive_2016-10-01_07-58-46_680_4427603187758175091-1/-local-10017/HashTable-Stage-17/MapJoin-mapfile41--.hashtable (13095 bytes)
+2016-10-01 08:02:47	End of local task; Time Taken: 1.388 sec.
+Execution completed successfully
+MapredLocal task succeeded
+Launching Job 2 out of 10
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1475271333482_0101, Tracking URL = http://vm1:8088/proxy/application_1475271333482_0101/
+Kill Command = /home/ubuntu/software/hadoop-2.6.0/bin/hadoop job  -kill job_1475271333482_0101
+Hadoop job information for Stage-17: number of mappers: 4; number of reducers: 0
+2016-10-01 08:02:53,113 Stage-17 map = 0%,  reduce = 0%
+2016-10-01 08:03:05,407 Stage-17 map = 14%,  reduce = 0%, Cumulative CPU 23.16 sec
+2016-10-01 08:03:08,537 Stage-17 map = 33%,  reduce = 0%, Cumulative CPU 34.85 sec
+2016-10-01 08:03:11,623 Stage-17 map = 51%,  reduce = 0%, Cumulative CPU 46.39 sec
+2016-10-01 08:03:14,700 Stage-17 map = 74%,  reduce = 0%, Cumulative CPU 57.86 sec
+2016-10-01 08:03:17,784 Stage-17 map = 92%,  reduce = 0%, Cumulative CPU 69.24 sec
+2016-10-01 08:03:18,810 Stage-17 map = 93%,  reduce = 0%, Cumulative CPU 69.67 sec
+2016-10-01 08:03:19,835 Stage-17 map = 96%,  reduce = 0%, Cumulative CPU 71.03 sec
+2016-10-01 08:03:20,859 Stage-17 map = 100%,  reduce = 0%, Cumulative CPU 73.82 sec
+MapReduce Total cumulative CPU time: 1 minutes 13 seconds 820 msec
+Ended Job = job_1475271333482_0101
+Stage-23 is selected by condition resolver.
+Stage-24 is filtered out by condition resolver.
+Stage-3 is filtered out by condition resolver.
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/home/ubuntu/software/tez-0.7.1-SNAPSHOT-minimal/lib/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/home/ubuntu/software/hadoop-2.6.0/share/hadoop/common/lib/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+Execution log at: /tmp/ubuntu/ubuntu_20161001075846_bf19ccb8-f099-48f0-9d6f-9769c2a3d4d7.log
+2016-10-01 08:03:25	Starting to launch local task to process map join;	maximum memory = 932184064
+2016-10-01 08:03:26	Dump the side-table for tag: 1 with group count: 73049 into file: file:/tmp/ubuntu/1e015075-bf7c-4166-b900-aed857878665/hive_2016-10-01_07-58-46_680_4427603187758175091-1/-local-10013/HashTable-Stage-14/MapJoin-mapfile21--.hashtable
+2016-10-01 08:03:26	Uploaded 1 File to: file:/tmp/ubuntu/1e015075-bf7c-4166-b900-aed857878665/hive_2016-10-01_07-58-46_680_4427603187758175091-1/-local-10013/HashTable-Stage-14/MapJoin-mapfile21--.hashtable (1541779 bytes)
+2016-10-01 08:03:26	End of local task; Time Taken: 1.801 sec.
+Execution completed successfully
+MapredLocal task succeeded
+Launching Job 4 out of 10
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1475271333482_0102, Tracking URL = http://vm1:8088/proxy/application_1475271333482_0102/
+Kill Command = /home/ubuntu/software/hadoop-2.6.0/bin/hadoop job  -kill job_1475271333482_0102
+Hadoop job information for Stage-14: number of mappers: 5; number of reducers: 0
+2016-10-01 08:03:32,481 Stage-14 map = 0%,  reduce = 0%
+2016-10-01 08:03:42,907 Stage-14 map = 20%,  reduce = 0%, Cumulative CPU 4.08 sec
+2016-10-01 08:03:44,987 Stage-14 map = 23%,  reduce = 0%, Cumulative CPU 29.52 sec
+2016-10-01 08:03:47,066 Stage-14 map = 27%,  reduce = 0%, Cumulative CPU 32.81 sec
+2016-10-01 08:03:54,292 Stage-14 map = 46%,  reduce = 0%, Cumulative CPU 68.65 sec
+2016-10-01 08:03:55,321 Stage-14 map = 54%,  reduce = 0%, Cumulative CPU 71.89 sec
+2016-10-01 08:03:57,374 Stage-14 map = 64%,  reduce = 0%, Cumulative CPU 81.19 sec
+2016-10-01 08:04:01,495 Stage-14 map = 74%,  reduce = 0%, Cumulative CPU 98.69 sec
+2016-10-01 08:04:03,550 Stage-14 map = 100%,  reduce = 0%, Cumulative CPU 108.05 sec
+MapReduce Total cumulative CPU time: 1 minutes 48 seconds 50 msec
+Ended Job = job_1475271333482_0102
+Stage-21 is selected by condition resolver.
+Stage-22 is filtered out by condition resolver.
+Stage-4 is filtered out by condition resolver.
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/home/ubuntu/software/tez-0.7.1-SNAPSHOT-minimal/lib/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/home/ubuntu/software/hadoop-2.6.0/share/hadoop/common/lib/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+Execution log at: /tmp/ubuntu/ubuntu_20161001075846_bf19ccb8-f099-48f0-9d6f-9769c2a3d4d7.log
+2016-10-01 08:04:08	Starting to launch local task to process map join;	maximum memory = 932184064
+2016-10-01 08:04:10	Dump the side-table for tag: 1 with group count: 30 into file: file:/tmp/ubuntu/1e015075-bf7c-4166-b900-aed857878665/hive_2016-10-01_07-58-46_680_4427603187758175091-1/-local-10009/HashTable-Stage-11/MapJoin-mapfile01--.hashtable
+2016-10-01 08:04:10	Uploaded 1 File to: file:/tmp/ubuntu/1e015075-bf7c-4166-b900-aed857878665/hive_2016-10-01_07-58-46_680_4427603187758175091-1/-local-10009/HashTable-Stage-11/MapJoin-mapfile01--.hashtable (893 bytes)
+2016-10-01 08:04:10	End of local task; Time Taken: 1.627 sec.
+Execution completed successfully
+MapredLocal task succeeded
+Launching Job 6 out of 10
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1475271333482_0103, Tracking URL = http://vm1:8088/proxy/application_1475271333482_0103/
+Kill Command = /home/ubuntu/software/hadoop-2.6.0/bin/hadoop job  -kill job_1475271333482_0103
+Hadoop job information for Stage-11: number of mappers: 5; number of reducers: 0
+2016-10-01 08:04:22,580 Stage-11 map = 0%,  reduce = 0%
+2016-10-01 08:04:32,878 Stage-11 map = 11%,  reduce = 0%, Cumulative CPU 7.39 sec
+2016-10-01 08:04:33,905 Stage-11 map = 31%,  reduce = 0%, Cumulative CPU 12.47 sec
+2016-10-01 08:04:34,932 Stage-11 map = 62%,  reduce = 0%, Cumulative CPU 32.69 sec
+2016-10-01 08:04:36,984 Stage-11 map = 82%,  reduce = 0%, Cumulative CPU 37.76 sec
+2016-10-01 08:04:38,011 Stage-11 map = 100%,  reduce = 0%, Cumulative CPU 41.0 sec
+MapReduce Total cumulative CPU time: 41 seconds 0 msec
+Ended Job = job_1475271333482_0103
+Launching Job 7 out of 10
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1475271333482_0104, Tracking URL = http://vm1:8088/proxy/application_1475271333482_0104/
+Kill Command = /home/ubuntu/software/hadoop-2.6.0/bin/hadoop job  -kill job_1475271333482_0104
+Hadoop job information for Stage-5: number of mappers: 2; number of reducers: 1
+2016-10-01 08:04:43,859 Stage-5 map = 0%,  reduce = 0%
+2016-10-01 08:04:50,024 Stage-5 map = 100%,  reduce = 0%, Cumulative CPU 2.56 sec
+2016-10-01 08:04:56,187 Stage-5 map = 100%,  reduce = 100%, Cumulative CPU 3.76 sec
+MapReduce Total cumulative CPU time: 3 seconds 760 msec
+Ended Job = job_1475271333482_0104
+Launching Job 8 out of 10
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1475271333482_0105, Tracking URL = http://vm1:8088/proxy/application_1475271333482_0105/
+Kill Command = /home/ubuntu/software/hadoop-2.6.0/bin/hadoop job  -kill job_1475271333482_0105
+Hadoop job information for Stage-6: number of mappers: 1; number of reducers: 1
+2016-10-01 08:05:02,998 Stage-6 map = 0%,  reduce = 0%
+2016-10-01 08:05:08,232 Stage-6 map = 100%,  reduce = 0%, Cumulative CPU 1.17 sec
+2016-10-01 08:05:13,397 Stage-6 map = 100%,  reduce = 100%, Cumulative CPU 2.4 sec
+MapReduce Total cumulative CPU time: 2 seconds 400 msec
+Ended Job = job_1475271333482_0105
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 82  Reduce: 86   Cumulative CPU: 1673.97 sec   HDFS Read: 21844875476 HDFS Write: 490208950 SUCCESS
+Stage-Stage-17: Map: 4   Cumulative CPU: 73.82 sec   HDFS Read: 490266936 HDFS Write: 1194927563 SUCCESS
+Stage-Stage-14: Map: 5   Cumulative CPU: 108.05 sec   HDFS Read: 1194997181 HDFS Write: 1234824447 SUCCESS
+Stage-Stage-11: Map: 5   Cumulative CPU: 41.0 sec   HDFS Read: 1234937658 HDFS Write: 33638 SUCCESS
+Stage-Stage-5: Map: 2  Reduce: 1   Cumulative CPU: 3.76 sec   HDFS Read: 52654 HDFS Write: 7303 SUCCESS
+Stage-Stage-6: Map: 1  Reduce: 1   Cumulative CPU: 2.4 sec   HDFS Read: 18618 HDFS Write: 6427 SUCCESS
+Total MapReduce CPU Time Spent: 31 minutes 43 seconds 0 msec
+OK
+Time taken: 387.8 seconds, Fetched: 72 row(s)
+50.50user 5.04system 6:35.10elapsed 14%CPU (0avgtext+0avgdata 1151488maxresident)k
+113624inputs+473216outputs (109major+183726minor)pagefaults 0swaps

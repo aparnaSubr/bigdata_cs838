@@ -1,0 +1,2 @@
+Total Maps:  8
+Total Reduces:  212

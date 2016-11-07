@@ -47,6 +47,6 @@ def main():
 
 if __name__ == '__main__':
     if len(sys.argv) != 2:
-        print('Usage: PartBQuestion3.py <hdfs-monitoring-directory>')
+        print('Usage: $SPARK_HOME/bin/spark-submit PartBQuestion3.py <hdfs-monitoring-directory>')
         sys.exit(0)
     main()

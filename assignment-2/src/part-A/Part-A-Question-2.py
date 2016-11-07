@@ -34,9 +34,9 @@ def calculate_contributions(urls, rank):
         yield (url, float(rank) / float(num_links) )
 
 def main():
-    links = sc.textFile('hdfs://' + sys.argv[1], 100).filter(valid_lines).map(split_from_to).distinct().groupByKey()
+    links = sc.textFile('hdfs://' + sys.argv[1], 100).filter(valid_lines).map(split_from_to).distinct().groupByKey().partitionBy(30)
     num_iterations = int(sys.argv[2])
-    ranks = links.map(lambda node : (node[0], 1.0))
+    ranks = links.mapValues(lambda node : 1.0) 
     
     for i in range(num_iterations):
         contributions = links.join(ranks).flatMap( lambda x : calculate_contributions(x[1][0], x[1][1]) )
@@ -46,7 +46,7 @@ def main():
     output = ranks.collect()
     sc.stop()
     for (link, rank) in output:
-        print('{2}. Node {0} : Rank {1}'.format(link, rank, num))
+        print('{2}. Node {0} : Rank {1}'.format(link, rank, num) )
         num += 1
 
     

@@ -7,10 +7,14 @@ reset-directories.sh:
 2. Remove old output files and spark-metadata (if any)
 3. Re-create staging and monitoring directories and copy the split-dataset to staging/
 
+COMMAND : . ~/part-B/reset-directories.sh 
+
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 
 hdfs-5s-copy.sh:
 Atomically moves one file from the staging directory to the monitoring directory hdfs:///user/ubuntu/staging, hdfs:///user/ubuntu/monitoring
+
+COMMAND : cd ~/part-B; ./hdfs-5s-copy.sh
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -23,6 +27,8 @@ Question 1:
 5. query is the handler returned to control execution after calling start() on the streaming query.
 6. Output mode is 'complete' as aggregation based on window intervals and interaction is done.
    Output is displayed on console.
+
+COMMAND : $SPARK_HOME/bin/spark-submit ~/part-B/PartBQuestion1.py <hdfs-path-monitoring-dir : hdfs:///user/ubuntu/monitoring>
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -38,6 +44,8 @@ Question 2:
    Trigger interval of 10 seconds processes query every 10 seconds. 
    If execution does not complete before the start of the next trigger interval, processing will begin again at the next trigger interval (and not as soon as execution is complete). 
 
+COMMAND : $SPARK_HOME/bin/spark-submit ~/part-B/PartBQuestion2.py <hdfs-path-monitoring-dir : hdfs:///user/ubuntu/monitoring>
+
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 
 Question 3:
@@ -50,5 +58,7 @@ Question 3:
 7. Output mode is 'complete' as aggregation based on user-id, interaction groups is done.
    Output is displayed on console.
    Trigger interval of 5 seconds triggers processing every 5 seconds. Processing begins on the next trigger interval if execution does not complete.
+
+COMMAND : $SPARK_HOME/bin/spark-submit ~/part-B/PartBQuestion3.py <hdfs-path-monitoring-dir : hdfs:///user/ubuntu/monitoring>
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------

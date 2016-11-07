@@ -22,6 +22,8 @@ for each iteration :
 
 output : apply collect() action on ranks
 
+COMMAND : $SPARK_HOME/bin/spark-submit ~/part-A/PartAQuestion1.py <hdfs-path-input-file : /user/ubuntu/web-BerkStan.txt> <num-iterations : 10>
+
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 
 Question 2:
@@ -44,6 +46,8 @@ for each iteration :
 
 output : apply collect() action on ranks
 
+COMMAND : $SPARK_HOME/bin/spark-submit ~/part-A/PartAQuestion2.py <hdfs-path-input-file : /user/ubuntu/web-BerkStan.txt> <num-iterations : 10>
+
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 
 Question 3:
@@ -65,5 +69,7 @@ for each iteration :
     <ranks : (to-URL, updated-rank)>
 
 output : apply collect() action on ranks
+
+COMMAND : $SPARK_HOME/bin/spark-submit ~/part-A/PartAQuestion3.py <hdfs-path-input-file : /user/ubuntu/web-BerkStan.txt> <num-iterations : 10>
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------

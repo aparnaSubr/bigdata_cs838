@@ -145,6 +145,14 @@ stop_storm(){
     pdsh -R exec -f $THREADS -w ^machines ssh -o ConnectTimeout=$TIMEOUT %h '( . /home/ubuntu/run.sh -q ; jps | sort | grep "supervisor" ;)'
 }
 
+cache_clean(){
+    echo "Clearing caches"
+    pdsh -R exec -f $THREADS -w ^machines ssh -o ConnectTimeout=$TIMEOUT %h '( sudo sh -c "sync; echo 3 > /proc/sys/vm/drop_caches"; )'
+}
+
+display_stats(){
+	pdsh -R exec -f $THREADS -w ^machines ssh -o ConnectTimeout=$TIMEOUT %h '( cat /proc/net/dev | grep eth0; cat /proc/diskstats | grep vda1;)'
+}
 
 start_all(){
 	start_hdfs

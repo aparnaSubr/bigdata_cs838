@@ -1,0 +1,17 @@
+\begin{table}[H]
+\centering
+\begin{tabular}{|p{2cm}|p{2cm}|p{2cm}|}
+\hline
+ & & \\
+Number of partitions & Completion time & Number of tasks (all stages) \\ 
+ & & \\
+\hline
+2 & 11 min & 286 \\
+\hline
+50 & 2.6 min & 7150 \\
+\hline
+100 & 3.1 min & 14300 \\
+\hline
+\end{tabular}
+\caption{Page rank algorithm without custom partitioning}
+\end{table}

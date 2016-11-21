@@ -1,0 +1,16 @@
+Group Number: 14
+Group Members: Aparna Subramanian, Adithya Bhat
+
+** If the group member names are not shown, then you (or your group partner) did not update the NetID in the docs we had provided.
+
+--------------------------------------------
+Instructions
+--------------------------------------------
+* Each group has access to 5 VMS each with 4 vCPUs, 20 GB RAM, 320 GB hard disk.
+* VM hostname has the following format: vm-<group_num>-<vm_num>. <group_num> is your group number. <vm_num> ranges from 1 to 5.
+* Only one of the VMs (vm-<group_num>-1) has a public IP (find the ip details in attached file: ipinfo_*.txt)
+* You can SSH into the VMs using the group<group_num>.pem file provided (find attached). Use this command to log in:  ssh -i group<group_num>.pem ubuntu@<publicip>. Change the permissions of the key file (chmod 600 group<group_num>.pem).
+* You should be able to log into other VMs from the VM with public ip. Passwordless SSH has already been configured.
+* Your /etc/hosts has also been configured already. Thus, you can you can SSH directly using VM names
+* pdsh and java has already been installed in your VMs
+* The directory structures has also been created; you would however have to download the required files (Hadoop, HIve, Spark, Storm, etc) to set up your cluster.
